@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2842841614
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1142ea37e7ddc2eed4a4a02759248a04
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/zhandoushibai.mp3
+Dependencies: []

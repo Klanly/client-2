@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1844280776
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 17e3e06815f31da3a0480d17d263a50f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/diyizhan.mp3
+Dependencies: []

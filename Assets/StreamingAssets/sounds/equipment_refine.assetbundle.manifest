@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3476178170
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 127740d8746700d257689d5c4339b91f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/equipment_refine.mp3
+Dependencies: []

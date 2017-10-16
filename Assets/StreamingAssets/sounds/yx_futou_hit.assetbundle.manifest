@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3633825321
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 11e0f06975bdf108a2663872720b8eaf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_futou_hit.ogg
+Dependencies: []

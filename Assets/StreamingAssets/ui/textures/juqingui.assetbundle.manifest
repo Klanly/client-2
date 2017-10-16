@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2208883895
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1578375415b806054076ef10195aa8f2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/juqingUI/anniu-dianji.png
+- Assets/ArtAssets/original/UI/juqingUI/kuang.png
+- Assets/ArtAssets/original/UI/juqingUI/anniu.png
+- Assets/ArtAssets/original/UI/juqingUI/duihua.png
+- Assets/ArtAssets/original/UI/juqingUI/skip.png
+Dependencies: []

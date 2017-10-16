@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 1673094594
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 709636375a9a6986e94c9b76069d1cad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e1df931356ea1f750388c5eab599547c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/models/characters/m_boss_extinction_01.prefab
+Dependencies: []

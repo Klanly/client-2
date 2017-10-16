@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3321666460
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a945b0b60a58c0566ba837098e686f07
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/LoadingScene/loding.jpg
+- Assets/ArtAssets/original/UI/LoadingScene/jindutiao1-2.png
+- Assets/ArtAssets/original/UI/LoadingScene/loading.jpg
+- Assets/ArtAssets/original/UI/LoadingScene/loading-1.jpg
+- Assets/ArtAssets/original/UI/LoadingScene/jindutiao1-1.png
+- Assets/ArtAssets/original/UI/LoadingScene/jindutiao1-3.png
+- Assets/ArtAssets/original/UI/LoadingScene/jiazai1-1.png
+- Assets/ArtAssets/original/UI/LoadingScene/jiazai1-2.png
+Dependencies: []

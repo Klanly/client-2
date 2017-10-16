@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 1348840021
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 80e70ddfc66930819046b3669dc9e7c5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/VIP/tubiaodi.png
+- Assets/ArtAssets/original/UI/VIP/huiyuan-1.png
+- Assets/ArtAssets/original/UI/VIP/jiantou.png
+- Assets/ArtAssets/original/UI/VIP/ditiao.png
+- Assets/ArtAssets/original/UI/VIP/xiatiao-2.png
+- Assets/ArtAssets/original/UI/VIP/wangzhehuiyuan.png
+- Assets/ArtAssets/original/UI/VIP/zuan.png
+- Assets/ArtAssets/original/UI/VIP/shangchengshangbiao.png
+- Assets/ArtAssets/original/UI/VIP/yijihuo.png
+- Assets/ArtAssets/original/UI/VIP/huiyuan-3.png
+- Assets/ArtAssets/original/UI/VIP/yishuzi-1.png
+- Assets/ArtAssets/original/UI/VIP/haohuahuiyuan.png
+- Assets/ArtAssets/original/UI/VIP/tubiao-1.png
+- Assets/ArtAssets/original/UI/VIP/xiatiao-3.png
+- Assets/ArtAssets/original/UI/VIP/zuanshihuiyuan.png
+- Assets/ArtAssets/original/UI/VIP/xiatiao-1.png
+- Assets/ArtAssets/original/UI/VIP/youbiao.png
+- Assets/ArtAssets/original/UI/VIP/zuobiao.png
+- Assets/ArtAssets/original/UI/VIP/tubiao-2.png
+- Assets/ArtAssets/original/UI/VIP/vip-di.jpg
+- Assets/ArtAssets/original/UI/VIP/huiyuan-2.png
+Dependencies: []

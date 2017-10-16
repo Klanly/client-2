@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1469834939
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3d1977a60febc292b528b9e116d627e7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/qiangkuang/kuang-3.png
+- Assets/ArtAssets/original/UI/qiangkuang/youjian.png
+- Assets/ArtAssets/original/UI/qiangkuang/beijing.jpg
+- Assets/ArtAssets/original/UI/qiangkuang/qiandai.png
+- Assets/ArtAssets/original/UI/qiangkuang/huangmo.png
+- Assets/ArtAssets/original/UI/qiangkuang/di2.png
+- Assets/ArtAssets/original/UI/qiangkuang/shamo.png
+- Assets/ArtAssets/original/UI/qiangkuang/kuang.png
+- Assets/ArtAssets/original/UI/qiangkuang/xuedi.png
+- Assets/ArtAssets/original/UI/qiangkuang/lvdi.png
+- Assets/ArtAssets/original/UI/qiangkuang/shijian.png
+- Assets/ArtAssets/original/UI/qiangkuang/di.png
+Dependencies: []

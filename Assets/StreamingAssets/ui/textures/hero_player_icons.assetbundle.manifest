@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1532875595
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bc95e931a991820154cf2b9d3284366c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Titan_Sword_001.jpg
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Angel_ASword_002.png
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Magician_Staff_001.jpg
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Dmgoddess_Bow_002.png
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Dead_Sword_002.png
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Dead_Sword_001.jpg
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Titan_Sword_002.png
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Dmgoddess_Bow_001.jpg
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Angel_ASword_001.jpg
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Mars_Ss_002.png
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Mars_Ss_001.jpg
+- Assets/ArtAssets/original/UI/hero_player_icons/h_Magician_Staff_002.png
+Dependencies: []

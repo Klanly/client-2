@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2164949489
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 918a6bbc663c73979c4ebe3818756ee7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/jiayisuoUI/xiaomai1-2.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/shengjiliangshang1-2.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/jindutiao1-1.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/zuodi1-1.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/liangcaodian.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/tubiaodi2-1.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/youdi1-1.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/jiantou1-2.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/jiaoyisuo.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/xiaomai1-1.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/jindutiao1-2.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/jiantou1-1.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/jindutiao1-3.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/tubiaodi1-1.png
+- Assets/ArtAssets/original/UI/jiayisuoUI/shengjiliangshang1-1.png
+Dependencies: []

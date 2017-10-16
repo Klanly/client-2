@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 4122387847
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7aff26b1cf8f21a5c2d213f340ea9779
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 227be382f9b89f13199ad6e6e00163e4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_angel_att4_001.prefab
+Dependencies: []

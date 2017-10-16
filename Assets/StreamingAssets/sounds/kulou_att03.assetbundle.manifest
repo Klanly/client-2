@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 819466860
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: aaa37366eb31afa6c821f96ba960b63a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/kulou_att03.mp3
+Dependencies: []

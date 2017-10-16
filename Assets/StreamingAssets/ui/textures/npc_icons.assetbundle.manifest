@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1255888120
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 287c5477cae8379e362304a9e3174217
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/npc_icons/castle_girl_npc_001.jpg
+Dependencies: []

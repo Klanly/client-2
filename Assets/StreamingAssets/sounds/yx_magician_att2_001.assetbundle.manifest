@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2510205265
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a50fa3662719afbcfd58a114f9492524
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_magician_att2_001.ogg
+Dependencies: []

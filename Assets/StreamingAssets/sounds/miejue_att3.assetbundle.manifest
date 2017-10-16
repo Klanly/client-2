@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3766326384
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6258f2a8fb6b8b39ee0dc395ed3bb6d5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/miejue_att3.mp3
+Dependencies: []

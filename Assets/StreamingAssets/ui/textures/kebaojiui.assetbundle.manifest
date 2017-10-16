@@ -1,0 +1,66 @@
+ManifestFileVersion: 0
+CRC: 2310996204
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8a36d13d370f82d7f6a7c97a87edf08c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/kebaojiUI/jian1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/huaqiandixian1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-6.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandidu1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandidu1-3.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaojikuang1-5.png
+- Assets/ArtAssets/original/UI/kebaojiUI/dishu1-5.png
+- Assets/ArtAssets/original/UI/kebaojiUI/jjjjjjjjjjjjjj.png
+- Assets/ArtAssets/original/UI/kebaojiUI/dishu1-4.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-5.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi1-3.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi2-4.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandidu1-4.png
+- Assets/ArtAssets/original/UI/kebaojiUI/tips1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi1-4.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi2-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/hechenganniu1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-5-5.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaojikuang1-3.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-2-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/zi.png
+- Assets/ArtAssets/original/UI/kebaojiUI/dishu1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/wenhao1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/huaqiandi2-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/dishu1-3.png
+- Assets/ArtAssets/original/UI/kebaojiUI/hechengdi1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/guanbi1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-3.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaojikuang1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaojikuang1-4.png
+- Assets/ArtAssets/original/UI/kebaojiUI/di.png
+- Assets/ArtAssets/original/UI/kebaojiUI/hechenganniu1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi2-3.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-4.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandi2-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/dun1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/huaqiandi1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/dishu1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/yeqiandidu1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaojikuang1-2.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/hechengdi1-1.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-3-3.png
+- Assets/ArtAssets/original/UI/kebaojiUI/kebaoji1-4-4.png
+- Assets/ArtAssets/original/UI/kebaojiUI/equipment-gou1-1.png
+Dependencies: []

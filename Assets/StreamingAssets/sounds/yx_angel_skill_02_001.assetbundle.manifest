@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1382214454
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 87d65d08f1ec3506ebc4c401df3c27b8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_angel_skill_02_001.ogg
+Dependencies: []

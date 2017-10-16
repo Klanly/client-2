@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 110776138
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: da246d66c3684f4dabc879bdca82700c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7ddc58849e1a2a367a7de3340f6e785b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: be92a52caf4fa8b489a826dbb753b38f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_arm_battle_catapult_1.prefab
+Dependencies: []

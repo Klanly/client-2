@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 4214541362
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 86f27221a370d9509f406ec8a92bbe8b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cbb4880583fba77aa583aa6e5a9092f2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_angel_skill_01_001.prefab
+Dependencies: []

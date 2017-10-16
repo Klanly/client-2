@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 216847308
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e76a05df6999ea49266bd86d03a60403
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_magician_skill_03_001.ogg
+Dependencies: []

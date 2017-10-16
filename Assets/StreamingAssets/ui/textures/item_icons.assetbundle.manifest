@@ -1,0 +1,95 @@
+ManifestFileVersion: 0
+CRC: 1830981917
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 25f790c2e61d389e00d2a1bbc75371f3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00004_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_expdata_00001_s.png
+- Assets/ArtAssets/original/UI/item_icons/shop_diamond_005.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00001.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00002.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00015.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00004.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00007.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00023.png
+- Assets/ArtAssets/original/UI/item_icons/huangguang1-1.png
+- Assets/ArtAssets/original/UI/item_icons/item_coburg_00001.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00013.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00005.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00009_s.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Green_001_xs.png
+- Assets/ArtAssets/original/UI/item_icons/shop_diamond_006.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_White_001_xs.png
+- Assets/ArtAssets/original/UI/item_icons/item_coburg_00002.png
+- Assets/ArtAssets/original/UI/item_icons/shop_diamond_003.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Purple_001.png
+- Assets/ArtAssets/original/UI/item_icons/shop_diamond_002.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00007_s.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Orange_001_xs.png
+- Assets/ArtAssets/original/UI/item_icons/item_currency_00003_s.png
+- Assets/ArtAssets/original/UI/item_icons/jiangbei1-1.png
+- Assets/ArtAssets/original/UI/item_icons/item_expdata_00003_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00009.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00002_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00011.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00010.png
+- Assets/ArtAssets/original/UI/item_icons/guojiagongxian.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00025.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Green_001.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00001_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00004.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Blue_001.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00010.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00003.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00031.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00003.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00019.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00003_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00027.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00008.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00008_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00012.png
+- Assets/ArtAssets/original/UI/item_icons/item_arm_00030.png
+- Assets/ArtAssets/original/UI/item_icons/item_arm_00031.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00006_s.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Blue_001_xs.png
+- Assets/ArtAssets/original/UI/item_icons/item_debris_00001.png
+- Assets/ArtAssets/original/UI/item_icons/item_talent_00001.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00015.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00020.png
+- Assets/ArtAssets/original/UI/item_icons/jiangzhang1-2.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00030.png
+- Assets/ArtAssets/original/UI/item_icons/yingxiongjinbi1-1.png
+- Assets/ArtAssets/original/UI/item_icons/item_arm_00029.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00014.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00001.png
+- Assets/ArtAssets/original/UI/item_icons/item_boss_00001_s.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Purple_001_xs.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00006.png
+- Assets/ArtAssets/original/UI/item_icons/jiangzhang1-1.png
+- Assets/ArtAssets/original/UI/item_icons/item_currency_00002_s.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_White_001.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00035.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00002.png
+- Assets/ArtAssets/original/UI/item_icons/shop_diamond_001.png
+- Assets/ArtAssets/original/UI/item_icons/item_artifact_00005_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_exp_00005.png
+- Assets/ArtAssets/original/UI/item_icons/item_coburg_00003.png
+- Assets/ArtAssets/original/UI/item_icons/item_equip_00010.png
+- Assets/ArtAssets/original/UI/item_icons/shop_diamond_004.png
+- Assets/ArtAssets/original/UI/item_icons/Equip_Orange_001.png
+- Assets/ArtAssets/original/UI/item_icons/item_expdata_00002_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_currency_00001_s.png
+- Assets/ArtAssets/original/UI/item_icons/item_expdata_00004_s.png
+Dependencies: []

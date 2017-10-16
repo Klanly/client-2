@@ -1,0 +1,68 @@
+ManifestFileVersion: 0
+CRC: 1932814845
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 505b67a43421849ae51c0f76d5d96594
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/MiniMap/m_boss1-1.png
+- Assets/ArtAssets/original/UI/MiniMap/m_xg.png
+- Assets/ArtAssets/original/UI/MiniMap/huangmo_dz_hh.png
+- Assets/ArtAssets/original/UI/MiniMap/e_boss1-4.png
+- Assets/ArtAssets/original/UI/MiniMap/hpbar2.png
+- Assets/ArtAssets/original/UI/MiniMap/huangmo_dz_yt.png
+- Assets/ArtAssets/original/UI/MiniMap/e_xg.png
+- Assets/ArtAssets/original/UI/MiniMap/hpbarbg.png
+- Assets/ArtAssets/original/UI/MiniMap/touxiangkuang1-4.png
+- Assets/ArtAssets/original/UI/MiniMap/hpbar.png
+- Assets/ArtAssets/original/UI/MiniMap/tamalagebi_fb_qt.png
+- Assets/ArtAssets/original/UI/MiniMap/m_wall1-2.png
+- Assets/ArtAssets/original/UI/MiniMap/e_tower2-1.png
+- Assets/ArtAssets/original/UI/MiniMap/yonghengshenlin_fb02_qt.png
+- Assets/ArtAssets/original/UI/MiniMap/guowangchengbao_dz.png
+- Assets/ArtAssets/original/UI/MiniMap/tamalagebi_fb_yt.png
+- Assets/ArtAssets/original/UI/MiniMap/jiantou-2.png
+- Assets/ArtAssets/original/UI/MiniMap/m_wall1-1.png
+- Assets/ArtAssets/original/UI/MiniMap/m_crystal1-2.png
+- Assets/ArtAssets/original/UI/MiniMap/touxiangkuang1-1.png
+- Assets/ArtAssets/original/UI/MiniMap/m_tower1-2.png
+- Assets/ArtAssets/original/UI/MiniMap/jiantou-1.png
+- Assets/ArtAssets/original/UI/MiniMap/e_crystal2-1.png
+- Assets/ArtAssets/original/UI/MiniMap/m_tower1-1.png
+- Assets/ArtAssets/original/UI/MiniMap/tamalagebi_fb02_hy.png
+- Assets/ArtAssets/original/UI/MiniMap/tamalagebi_dz_qt.png
+- Assets/ArtAssets/original/UI/MiniMap/yonghengshenlin_fb02_yt.png
+- Assets/ArtAssets/original/UI/MiniMap/yonghengshenlin_dz_hh.png
+- Assets/ArtAssets/original/UI/MiniMap/e_tower2-2.png
+- Assets/ArtAssets/original/UI/MiniMap/bingfengyiji_fb02_yt.png
+- Assets/ArtAssets/original/UI/MiniMap/e_jyg.png
+- Assets/ArtAssets/original/UI/MiniMap/e_boss1-1.png
+- Assets/ArtAssets/original/UI/MiniMap/e_boss1-2.png
+- Assets/ArtAssets/original/UI/MiniMap/touxiangkuang1-3.png
+- Assets/ArtAssets/original/UI/MiniMap/bingfengyiji_fb_yt.png
+- Assets/ArtAssets/original/UI/MiniMap/bingfengyiji_fb_hy.png
+- Assets/ArtAssets/original/UI/MiniMap/bingfengyiji_fb02_hy.png
+- Assets/ArtAssets/original/UI/MiniMap/e_crystal2-2.png
+- Assets/ArtAssets/original/UI/MiniMap/m_boss1-2.png
+- Assets/ArtAssets/original/UI/MiniMap/yonghengshenlin_fb_hy.png
+- Assets/ArtAssets/original/UI/MiniMap/m_crystal1-1.png
+- Assets/ArtAssets/original/UI/MiniMap/tamalagebi_dz_hy.png
+- Assets/ArtAssets/original/UI/MiniMap/touxiangkuang1-2.png
+- Assets/ArtAssets/original/UI/MiniMap/m_jyg.png
+- Assets/ArtAssets/original/UI/MiniMap/e_wall1-2.png
+- Assets/ArtAssets/original/UI/MiniMap/tamalagebi_fb02_qt.png
+- Assets/ArtAssets/original/UI/MiniMap/yonghengshenlin_fb_qt.png
+- Assets/ArtAssets/original/UI/MiniMap/hpbar1.png
+- Assets/ArtAssets/original/UI/MiniMap/e_wall1-1.png
+- Assets/ArtAssets/original/UI/MiniMap/yonghengshenlin_dz_hy.png
+- Assets/ArtAssets/original/UI/MiniMap/e_boss1-3.png
+Dependencies: []

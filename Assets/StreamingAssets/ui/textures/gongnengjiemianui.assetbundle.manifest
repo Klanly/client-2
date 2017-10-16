@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 3259629898
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0d3d23f478ef8388b62d0fc7dc7324d3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/shenqi1-3.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/shenqi1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/suodi.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/yingxiong1-2.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/heidi.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/kebao1-2.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/yingxiong.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/kebao.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/zhuangbei1-2.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/zhuangbei.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/yingxiong1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/kebao1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/shenshou1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/chengzhang1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/jianbiandikuang1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/shenqi1-2.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/bingzhong1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/bingzhong.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/bingzhong1-2.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/zhuangbei1-1.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/shenqi.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/shenshou1-2.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/shenshou.png
+- Assets/ArtAssets/original/UI/gongnengjiemianUI/xian.png
+Dependencies: []

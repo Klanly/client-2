@@ -1,0 +1,45 @@
+ManifestFileVersion: 0
+CRC: 4017013701
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6d7ff6d232da4f755cde9af4bbb64fb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/denglujiemian/mima.png
+- Assets/ArtAssets/original/UI/denglujiemian/xuanzefuwuqi.png
+- Assets/ArtAssets/original/UI/denglujiemian/logo-512.png
+- Assets/ArtAssets/original/UI/denglujiemian/xuanze1-1.png
+- Assets/ArtAssets/original/UI/denglujiemian/LOGO-guangrongzhange.png
+- Assets/ArtAssets/original/UI/denglujiemian/shurukuang1-1.png
+- Assets/ArtAssets/original/UI/denglujiemian/fanyejiantou.png
+- Assets/ArtAssets/original/UI/denglujiemian/logo-114.png
+- Assets/ArtAssets/original/UI/denglujiemian/logo-96.png
+- Assets/ArtAssets/original/UI/denglujiemian/shurukuang1-2.png
+- Assets/ArtAssets/original/UI/denglujiemian/jinruyouxi.png
+- Assets/ArtAssets/original/UI/denglujiemian/lv.png
+- Assets/ArtAssets/original/UI/denglujiemian/xuanze1-3.png
+- Assets/ArtAssets/original/UI/denglujiemian/zhanghao.png
+- Assets/ArtAssets/original/UI/denglujiemian/kaifaanniu.png
+- Assets/ArtAssets/original/UI/denglujiemian/NEW.png
+- Assets/ArtAssets/original/UI/denglujiemian/xuanze1-2.png
+- Assets/ArtAssets/original/UI/denglujiemian/huanfujiantou.png
+- Assets/ArtAssets/original/UI/denglujiemian/xiaochu.png
+- Assets/ArtAssets/original/UI/denglujiemian/logo-72.png
+- Assets/ArtAssets/original/UI/denglujiemian/xuanze1-4.png
+- Assets/ArtAssets/original/UI/denglujiemian/fanyedi.png
+- Assets/ArtAssets/original/UI/denglujiemian/beijing_1.jpg
+- Assets/ArtAssets/original/UI/denglujiemian/kaishiyoxui.png
+- Assets/ArtAssets/original/UI/denglujiemian/huang.png
+- Assets/ArtAssets/original/UI/denglujiemian/LOGO.png
+- Assets/ArtAssets/original/UI/denglujiemian/fengexian.png
+- Assets/ArtAssets/original/UI/denglujiemian/shaizi.png
+Dependencies: []

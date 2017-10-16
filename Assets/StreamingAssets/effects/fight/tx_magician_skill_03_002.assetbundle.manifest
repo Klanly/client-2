@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 1834272389
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f49a0928e0b99f57c51c95cae4631be0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e61fb26dfbfa1496808e9d7526e5b283
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_magician_skill_03_002.prefab
+Dependencies: []

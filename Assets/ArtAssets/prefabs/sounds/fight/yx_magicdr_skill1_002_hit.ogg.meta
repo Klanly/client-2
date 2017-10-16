@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e7f2271ddc7d0e94db3e9d2433215a3f
+timeCreated: 1474268392
+licenseType: Free
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  3D: 1
+  userData: 
+  assetBundleName: sounds/yx_magicdr_skill1_002_hit.assetbundle
+  assetBundleVariant: 

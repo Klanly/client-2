@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 289699931
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4b186a45728b3b8547fa6b53772f1cb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a0a51f5c3f7fd651133076030b80e7f6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: be92a52caf4fa8b489a826dbb753b38f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_hurricanedr_skill_001.prefab
+Dependencies: []

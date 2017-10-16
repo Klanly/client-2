@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 2447230589
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: eb98da77c890d6a2d12d38f0a1d1ed79
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 227be382f9b89f13199ad6e6e00163e4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_ghorndr_att1_001.prefab
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1678824726
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e480ea571831d2118ce1d8feb222152d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_bigbear_skill_001.ogg
+Dependencies: []

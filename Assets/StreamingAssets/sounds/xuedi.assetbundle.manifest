@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2228243636
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8ce02944e29a18bbf1d7c00fbb6e2a90
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/xuedi.mp3
+Dependencies: []

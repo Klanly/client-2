@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 1723976005
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b3c0447c595db3de6bedeb32d0db11ac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Stscythe_Sword_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Giantbat_n_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Wilddr_n_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Hurricanedr_n_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Nocrowndr_n_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Ghorndr_n_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Magicdr_n_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Theadfdr_n_001.jpg
+- Assets/ArtAssets/original/UI/god_beast_icons/Ma_Bigbear_n_001.jpg
+Dependencies: []

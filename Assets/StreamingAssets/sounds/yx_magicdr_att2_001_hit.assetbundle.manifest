@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2945980132
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 83b58227f0c4b59e7b56f487c7921a6f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_magicdr_att2_001_hit.ogg
+Dependencies: []

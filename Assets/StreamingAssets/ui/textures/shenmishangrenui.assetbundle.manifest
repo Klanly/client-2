@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2491762120
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 273c88245b44dc06935c1d9623e031aa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/shenmishangrenUI/8.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/hongxian.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/dijianbiamn1-2.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/anniu11-1.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/quanquan1-1.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/dikuang2-1.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/dikuang1-3.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/ditiao.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/dianjizhuangtai.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/shenmishangren.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/shoucigoumai1-2.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/9.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/quanquan1-2.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/zhekoubiaoqian.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/dikuang1-1.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/shoucigoumai1-1.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/ditu1-1.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/7.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/shijiantubiao.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/di.png
+- Assets/ArtAssets/original/UI/shenmishangrenUI/dikuang1-2.png
+Dependencies: []

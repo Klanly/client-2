@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2711850364
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6994a3d6396da26e0d95538c8a73a169
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/kuise_siwang.mp3
+Dependencies: []

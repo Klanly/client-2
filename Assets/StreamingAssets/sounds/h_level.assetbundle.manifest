@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 107715928
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: de986381804d859916c54e3dc797fb66
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/h_level.mp3
+Dependencies: []

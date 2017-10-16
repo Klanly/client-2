@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1403907284
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ca06ff979295995bbb6f3e7f75354604
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/juren_run.mp3
+Dependencies: []

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 30106467
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5422697ce97583d05eb342c48fcff80c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/chakanxinxi/yongyoushenshou.png
+- Assets/ArtAssets/original/UI/chakanxinxi/PVEzhenrong.png
+- Assets/ArtAssets/original/UI/chakanxinxi/yongyoubingzhong.png
+- Assets/ArtAssets/original/UI/chakanxinxi/di-peidaishenqi.png
+- Assets/ArtAssets/original/UI/chakanxinxi/PVPzhenrong.png
+Dependencies: []

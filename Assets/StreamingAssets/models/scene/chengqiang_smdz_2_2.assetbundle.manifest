@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1364922856
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 83f3bd720335c8a8030e76978040d548
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c36852cf91aedc89f35536fecb94e1b3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/models/scene/chengqiang_smdz_2_2.prefab
+Dependencies: []

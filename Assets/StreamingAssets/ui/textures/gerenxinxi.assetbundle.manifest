@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 3002720135
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 18c1c8f2cd83b81647a1476c9a3f6ed6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/gerenxinxi/dianjixiugai.png
+- Assets/ArtAssets/original/UI/gerenxinxi/dengji.png
+- Assets/ArtAssets/original/UI/gerenxinxi/id.png
+- Assets/ArtAssets/original/UI/gerenxinxi/jingyan.png
+- Assets/ArtAssets/original/UI/gerenxinxi/xiugaimingcheng.png
+- Assets/ArtAssets/original/UI/gerenxinxi/shaizi.png
+- Assets/ArtAssets/original/UI/gerenxinxi/gonghui.png
+- Assets/ArtAssets/original/UI/gerenxinxi/gerenxinxidi1-1.png
+- Assets/ArtAssets/original/UI/gerenxinxi/shili.png
+- Assets/ArtAssets/original/UI/gerenxinxi/gerenxinxidi1-2.png
+- Assets/ArtAssets/original/UI/gerenxinxi/gerenxinxidixian.png
+- Assets/ArtAssets/original/UI/gerenxinxi/xinxidi.png
+- Assets/ArtAssets/original/UI/gerenxinxi/mingchengdi.png
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4102816167
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6dc567c3de0f7cc13ef712168f22ecfa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_dmgoddess_att1_001.mp3
+Dependencies: []

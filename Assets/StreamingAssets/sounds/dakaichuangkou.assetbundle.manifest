@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4228612139
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e50515ac8c7b84795020abd322caead4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/dakaichuangkou.mp3
+Dependencies: []

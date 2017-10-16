@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2491331654
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0edeb2637e65d5d7e0ad13db11deb193
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/kulou_siwang.mp3
+Dependencies: []

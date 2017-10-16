@@ -1,0 +1,52 @@
+ManifestFileVersion: 0
+CRC: 283195473
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dba329b8d5bf4898c2cf97b1740eeb34
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfudi1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfujineng1-2.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zhanlidi1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/shengming1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/shuxing1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/shizhuang1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/shuxingdi1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfujiantou1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/kuaisushengjidi1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zhanli1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/mogong.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/fangyu1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/di1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfu1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/yingxiongdikuang1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/jiantou1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/di1-2.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfujiantou1-2.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfudi1-2.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/mofang.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zhiyetubiao.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfu1-2.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/yingxiong1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/tianfu.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zhongzu.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/suhuadongtiao1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zhuangbei.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zhishijiantou1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/shengji1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/yingxiongdikuang1-2.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/suhuadongtiao1-2.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/gongji1-1.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/jineng.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zhandui.png
+- Assets/ArtAssets/original/UI/YingxiongxinxiUI/zuoceanniudi.png
+Dependencies: []

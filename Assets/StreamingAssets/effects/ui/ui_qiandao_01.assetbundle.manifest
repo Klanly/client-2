@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2429170065
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 38e09fe6019d6fab51023b73ebb9fad8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 936905464a88d4318c1e2c71b4c678db
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89dbb56a26c4dbc4fb52a134f486816d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/ui/ui_qiandao_01.prefab
+Dependencies: []

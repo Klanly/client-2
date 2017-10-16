@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 268077606
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b61e5bad6d8a43311542eda1d2412dc3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_angel_att4_001.ogg
+Dependencies: []

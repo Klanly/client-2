@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2112559967
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 847ebfbadd269899090091c08913eacb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/baochong_siwang.mp3
+Dependencies: []

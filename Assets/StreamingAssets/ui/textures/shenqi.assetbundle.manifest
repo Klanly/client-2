@@ -1,0 +1,71 @@
+ManifestFileVersion: 0
+CRC: 3373638223
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 18661fd75b3e4403c37b2c928c227bb5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/shenqi/xilian.png
+- Assets/ArtAssets/original/UI/shenqi/zi-4.png
+- Assets/ArtAssets/original/UI/shenqi/zhuhun1-2.png
+- Assets/ArtAssets/original/UI/shenqi/shizi1-1.png
+- Assets/ArtAssets/original/UI/shenqi/suo.png
+- Assets/ArtAssets/original/UI/shenqi/zhuhun1-1.png
+- Assets/ArtAssets/original/UI/shenqi/dengji4.png
+- Assets/ArtAssets/original/UI/shenqi/jiesuo.png
+- Assets/ArtAssets/original/UI/shenqi/juexingji1-1.png
+- Assets/ArtAssets/original/UI/shenqi/dengji2.png
+- Assets/ArtAssets/original/UI/shenqi/new.png
+- Assets/ArtAssets/original/UI/shenqi/chuancheng1-1.png
+- Assets/ArtAssets/original/UI/shenqi/chuancheng1-2.png
+- Assets/ArtAssets/original/UI/shenqi/taiyang1-1.png
+- Assets/ArtAssets/original/UI/shenqi/long1-1.png
+- Assets/ArtAssets/original/UI/shenqi/yichuandai.png
+- Assets/ArtAssets/original/UI/shenqi/yu1-1.png
+- Assets/ArtAssets/original/UI/shenqi/jiantouxia.png
+- Assets/ArtAssets/original/UI/shenqi/guanbi.png
+- Assets/ArtAssets/original/UI/shenqi/dagou1-2.png
+- Assets/ArtAssets/original/UI/shenqi/kehecheng.png
+- Assets/ArtAssets/original/UI/shenqi/tianjia.png
+- Assets/ArtAssets/original/UI/shenqi/dianjizhuangtai.png
+- Assets/ArtAssets/original/UI/shenqi/zi-1.png
+- Assets/ArtAssets/original/UI/shenqi/jindu2.png
+- Assets/ArtAssets/original/UI/shenqi/jindu1.png
+- Assets/ArtAssets/original/UI/shenqi/qianghua1-2.png
+- Assets/ArtAssets/original/UI/shenqi/xiangqinganniu.png
+- Assets/ArtAssets/original/UI/shenqi/shenqi.png
+- Assets/ArtAssets/original/UI/shenqi/rongjie1-2.png
+- Assets/ArtAssets/original/UI/shenqi/guang-1.png
+- Assets/ArtAssets/original/UI/shenqi/shenqi-di1.png
+- Assets/ArtAssets/original/UI/shenqi/suoding.png
+- Assets/ArtAssets/original/UI/shenqi/dengji5.png
+- Assets/ArtAssets/original/UI/shenqi/xiong1-1.png
+- Assets/ArtAssets/original/UI/shenqi/xuanze.png
+- Assets/ArtAssets/original/UI/shenqi/shenshouzongzhandouli.png
+- Assets/ArtAssets/original/UI/shenqi/dengji1.png
+- Assets/ArtAssets/original/UI/shenqi/dengji3.png
+- Assets/ArtAssets/original/UI/shenqi/guang-2.png
+- Assets/ArtAssets/original/UI/shenqi/meigui1-1.png
+- Assets/ArtAssets/original/UI/shenqi/xiliandi.png
+- Assets/ArtAssets/original/UI/shenqi/zi-3.png
+- Assets/ArtAssets/original/UI/shenqi/qianghua1-1.png
+- Assets/ArtAssets/original/UI/shenqi/haiguaii1-1.png
+- Assets/ArtAssets/original/UI/shenqi/dagou1-1.png
+- Assets/ArtAssets/original/UI/shenqi/lu1-1.png
+- Assets/ArtAssets/original/UI/shenqi/rongjie1-1.png
+- Assets/ArtAssets/original/UI/shenqi/zuocexuanze.png
+- Assets/ArtAssets/original/UI/shenqi/zi-2.png
+- Assets/ArtAssets/original/UI/shenqi/shenqi-di2.png
+- Assets/ArtAssets/original/UI/shenqi/juexingji1-2.png
+- Assets/ArtAssets/original/UI/shenqi/ying1-1.png
+- Assets/ArtAssets/original/UI/shenqi/weihuode.png
+Dependencies: []

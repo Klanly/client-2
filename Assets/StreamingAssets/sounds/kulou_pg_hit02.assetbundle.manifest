@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 846651173
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 614c20f7983be974298900d1a7cdf58b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/kulou_pg_hit02.mp3
+Dependencies: []

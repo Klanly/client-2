@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3114618993
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1c25c9c1f59aca94001e7fb751932640
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2ddc25a2d4e255cb1d5d0cd2c3d7677a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dca1327706ae9144185e9f6583f4e222, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89dbb56a26c4dbc4fb52a134f486816d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_buff_battle_001.prefab
+Dependencies: []

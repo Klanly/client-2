@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1155593215
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 245e64344a85fb0c91e2d3a75f52dc90
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2504a0a0a1a2ca9cb2ff8d3ae9623dd7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_magicdr_skill_002.prefab
+Dependencies: []

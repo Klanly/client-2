@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 320425200
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 481671ddc7dfdcfcc42830ea5ffe5682
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/huoqiu-hit.mp3
+Dependencies: []

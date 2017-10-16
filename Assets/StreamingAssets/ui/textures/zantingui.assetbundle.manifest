@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 3602100097
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dc2f0b91ad4fa6b4b672c8e376aade5e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/zantingUI/qizhi1-2.png
+- Assets/ArtAssets/original/UI/zantingUI/wancheng.png
+- Assets/ArtAssets/original/UI/zantingUI/xingxing1-1.png
+- Assets/ArtAssets/original/UI/zantingUI/xingxing1-2.png
+- Assets/ArtAssets/original/UI/zantingUI/qizhi1-1.png
+- Assets/ArtAssets/original/UI/zantingUI/shenglitiaojian.png
+- Assets/ArtAssets/original/UI/zantingUI/biaoti1-1.png
+- Assets/ArtAssets/original/UI/zantingUI/di1-1.png
+- Assets/ArtAssets/original/UI/zantingUI/biaotidi1-1.png
+- Assets/ArtAssets/original/UI/zantingUI/shibantixoajian.png
+- Assets/ArtAssets/original/UI/zantingUI/di1-2.png
+- Assets/ArtAssets/original/UI/zantingUI/biaotidi1-2.png
+Dependencies: []

@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 646416017
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7e25fb2c08cb287e8d851b43529c3af0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/huodeyingxiongUI/dikuanghuode1-2.png
+- Assets/ArtAssets/original/UI/huodeyingxiongUI/dikuanghuode1-1.png
+Dependencies: []

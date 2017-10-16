@@ -1,0 +1,97 @@
+ManifestFileVersion: 0
+CRC: 2019547986
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 51aa0a94295430ccf2256564edfc97ff
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-wenzi2.png
+- Assets/ArtAssets/original/UI/pipeizhan/heitie2.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei5.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiandantu.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-05.png
+- Assets/ArtAssets/original/UI/pipeizhan/heitie1.png
+- Assets/ArtAssets/original/UI/pipeizhan/VS.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-8.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-ditu.png
+- Assets/ArtAssets/original/UI/pipeizhan/lan.png
+- Assets/ArtAssets/original/UI/pipeizhan/pipeidi.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-6.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei5-2.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei2.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-02.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-04.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-4.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-0.png
+- Assets/ArtAssets/original/UI/pipeizhan/zhuan1.png
+- Assets/ArtAssets/original/UI/pipeizhan/huangjin2.png
+- Assets/ArtAssets/original/UI/pipeizhan/bojin1.png
+- Assets/ArtAssets/original/UI/pipeizhan/guang.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-tubiao2.png
+- Assets/ArtAssets/original/UI/pipeizhan/xingxing.png
+- Assets/ArtAssets/original/UI/pipeizhan/3st.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei2-2.png
+- Assets/ArtAssets/original/UI/pipeizhan/di-wenli.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-tubiao3.png
+- Assets/ArtAssets/original/UI/pipeizhan/zhuan2.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-1.png
+- Assets/ArtAssets/original/UI/pipeizhan/bojin3.png
+- Assets/ArtAssets/original/UI/pipeizhan/qizhi1-1.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-9.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-07.png
+- Assets/ArtAssets/original/UI/pipeizhan/1st.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-06.png
+- Assets/ArtAssets/original/UI/pipeizhan/shengwangshangdian.png
+- Assets/ArtAssets/original/UI/pipeizhan/xian.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-wenzi1.png
+- Assets/ArtAssets/original/UI/pipeizhan/zhuan3.png
+- Assets/ArtAssets/original/UI/pipeizhan/hong.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-chibang2.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-01.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-03.png
+- Assets/ArtAssets/original/UI/pipeizhan/huangjin1.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-ditu2.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei4-2.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei3.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-00.png
+- Assets/ArtAssets/original/UI/pipeizhan/baiyin2.png
+- Assets/ArtAssets/original/UI/pipeizhan/bojin2.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-ditu3.png
+- Assets/ArtAssets/original/UI/pipeizhan/pipeipaihangdi.png
+- Assets/ArtAssets/original/UI/pipeizhan/kunnan.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiandan.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei1-2.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-tubiao1.png
+- Assets/ArtAssets/original/UI/pipeizhan/di.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-08.png
+- Assets/ArtAssets/original/UI/pipeizhan/heitie3.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-5.png
+- Assets/ArtAssets/original/UI/pipeizhan/2st.png
+- Assets/ArtAssets/original/UI/pipeizhan/baoyin1.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei4.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-3.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-09.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-chibang1.png
+- Assets/ArtAssets/original/UI/pipeizhan/qizhi1-3.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei1.png
+- Assets/ArtAssets/original/UI/pipeizhan/kunnantu.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-2.png
+- Assets/ArtAssets/original/UI/pipeizhan/baiyin3.png
+- Assets/ArtAssets/original/UI/pipeizhan/shangcheng.png
+- Assets/ArtAssets/original/UI/pipeizhan/qizhi1-2.png
+- Assets/ArtAssets/original/UI/pipeizhan/anniu-vs.png
+- Assets/ArtAssets/original/UI/pipeizhan/jiesuan-7.png
+- Assets/ArtAssets/original/UI/pipeizhan/wenhaokuang.png
+- Assets/ArtAssets/original/UI/pipeizhan/duanwei3-2.png
+- Assets/ArtAssets/original/UI/pipeizhan/vsanniu.png
+- Assets/ArtAssets/original/UI/pipeizhan/huangjin3.png
+Dependencies: []

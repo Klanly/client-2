@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1144875229
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 315da5366662d1bd347fb298420dd357
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/jiesuo.mp3
+Dependencies: []

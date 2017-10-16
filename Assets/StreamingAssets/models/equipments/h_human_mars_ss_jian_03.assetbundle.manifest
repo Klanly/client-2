@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 1655791392
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f7198ee57eb81d0e293f781d55e0e2b5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 54c2fe504a31438a0c6e1df7f465b278
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 29e8de74bc9555f4aa1c52cabcabf1c4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: be92a52caf4fa8b489a826dbb753b38f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/models/equipments/h_human_mars_ss_jian_03.prefab
+Dependencies: []

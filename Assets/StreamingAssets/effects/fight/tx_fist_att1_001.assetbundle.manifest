@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 611307543
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 53c8aba1459bd282d75b21b0d8b5cb8a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c77864b7b63cfd5eeff9ee9ff240e018
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_fist_att1_001.prefab
+Dependencies: []

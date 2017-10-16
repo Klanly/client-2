@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 244888985
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ed629a15126ce6845fc84845a06b5140
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/zhongsheng.mp3
+Dependencies: []

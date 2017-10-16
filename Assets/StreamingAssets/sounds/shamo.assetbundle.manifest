@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1942508251
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 43fa5f96604346c96e3f0e07b9647a4f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/shamo.mp3
+Dependencies: []

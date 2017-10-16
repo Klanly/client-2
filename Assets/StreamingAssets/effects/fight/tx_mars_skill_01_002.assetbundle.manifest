@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 1810236009
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dde3f367ce6d9a978bff2e4b43aa93e4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 09d868a116b370934f0e60000bf5f457
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89dbb56a26c4dbc4fb52a134f486816d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_mars_skill_01_002.prefab
+Dependencies: []

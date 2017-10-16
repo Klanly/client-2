@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1820315687
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ea9180e7f85b45aa4c9b4c4c437685ba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_extinction_skill_001.ogg
+Dependencies: []

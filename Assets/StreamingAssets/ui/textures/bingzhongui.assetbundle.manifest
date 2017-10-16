@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 2165570302
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fdec505495c33dd962f433b46013e139
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/bingzhongUI/xiaohao.png
+- Assets/ArtAssets/original/UI/bingzhongUI/xian1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/shengji2-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/tianfu.png
+- Assets/ArtAssets/original/UI/bingzhongUI/tips.png
+- Assets/ArtAssets/original/UI/bingzhongUI/youjiantou1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/bingzhongshengji.png
+- Assets/ArtAssets/original/UI/bingzhongUI/shenxing1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/gongji1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/youjiantou1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/xingxing1-3.png
+- Assets/ArtAssets/original/UI/bingzhongUI/shenxing1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/shengming1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/mogong.png
+- Assets/ArtAssets/original/UI/bingzhongUI/xingxing1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/mofang.png
+- Assets/ArtAssets/original/UI/bingzhongUI/di1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/tips-di.png
+- Assets/ArtAssets/original/UI/bingzhongUI/zuoceanniudi.png
+- Assets/ArtAssets/original/UI/bingzhongUI/jiantou1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/xian1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/jiantou1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/di1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/ditiao1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/fangyu1-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/tankuang1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/shengji2-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/zizhi.png
+- Assets/ArtAssets/original/UI/bingzhongUI/tubiaodi2-1.png
+- Assets/ArtAssets/original/UI/bingzhongUI/zhongzu.png
+- Assets/ArtAssets/original/UI/bingzhongUI/ditiao1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/xingxing1-2.png
+- Assets/ArtAssets/original/UI/bingzhongUI/tankuang1-3.png
+- Assets/ArtAssets/original/UI/bingzhongUI/tankuang1-1.png
+Dependencies: []

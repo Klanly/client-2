@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 4108175854
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2de072865f238a67df819743dc40d266
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/wangzhezhita/tanchuang2.png
+- Assets/ArtAssets/original/UI/wangzhezhita/di6.png
+- Assets/ArtAssets/original/UI/wangzhezhita/di3.png
+- Assets/ArtAssets/original/UI/wangzhezhita/di2.png
+- Assets/ArtAssets/original/UI/wangzhezhita/tanchuang1.png
+- Assets/ArtAssets/original/UI/wangzhezhita/di5.png
+- Assets/ArtAssets/original/UI/wangzhezhita/di4.png
+- Assets/ArtAssets/original/UI/wangzhezhita/xian.png
+- Assets/ArtAssets/original/UI/wangzhezhita/di5-1.png
+- Assets/ArtAssets/original/UI/wangzhezhita/di1.png
+- Assets/ArtAssets/original/UI/wangzhezhita/dianji.png
+- Assets/ArtAssets/original/UI/wangzhezhita/faguang.png
+- Assets/ArtAssets/original/UI/wangzhezhita/beijing.jpg
+- Assets/ArtAssets/original/UI/wangzhezhita/ceng.png
+- Assets/ArtAssets/original/UI/wangzhezhita/tanchuang3.png
+- Assets/ArtAssets/original/UI/wangzhezhita/luxian.png
+- Assets/ArtAssets/original/UI/wangzhezhita/tanchuang.png
+Dependencies: []

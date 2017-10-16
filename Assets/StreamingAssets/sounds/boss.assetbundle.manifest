@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 140332571
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d661439aa897527894106f95aee18f07
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/boss.mp3
+Dependencies: []

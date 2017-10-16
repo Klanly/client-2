@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1806971683
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 36e1f0f16f4ead3057ed5d1a2ba3c41f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 227be382f9b89f13199ad6e6e00163e4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_ui_battle_green_001.prefab
+Dependencies: []

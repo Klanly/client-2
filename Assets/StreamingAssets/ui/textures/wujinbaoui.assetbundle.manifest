@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 355022543
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a82cad0a93d19b6b03a704ee3a53766e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/wujinbaoUI/buff1-3.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/guanka1-2.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/guanka1-1.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/baoxiang1-7.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/tishiti1-1.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/guanka1-5.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/buff1-2.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/guanka1-3.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/baoxiang1-6.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/yingxiongjinbi1-1.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/luxiantu1-1.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/guanka1-6.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/buff1-1.png
+- Assets/ArtAssets/original/UI/wujinbaoUI/guanka1-4.png
+Dependencies: []

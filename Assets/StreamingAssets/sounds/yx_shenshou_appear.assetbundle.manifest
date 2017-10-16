@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1454443822
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0eb983e4ecf0adf35c893478f5522050
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_shenshou_appear.ogg
+Dependencies: []

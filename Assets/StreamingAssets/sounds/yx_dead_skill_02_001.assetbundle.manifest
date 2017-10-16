@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3460428274
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 180bc54e131f3bdf0b4ad7f6774d061f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_dead_skill_02_001.ogg
+Dependencies: []

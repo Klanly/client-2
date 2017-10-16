@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3068743832
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ec5ee843ed6b3517614f1bcb09eea709
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/nvshen_skill.mp3
+Dependencies: []

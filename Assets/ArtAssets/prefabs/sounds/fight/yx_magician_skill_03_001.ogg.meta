@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9f6303ce330ec6048abbf881681a8eb7
+timeCreated: 1483535969
+licenseType: Free
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  3D: 1
+  userData: 
+  assetBundleName: sounds/yx_magician_skill_03_001.assetbundle
+  assetBundleVariant: 

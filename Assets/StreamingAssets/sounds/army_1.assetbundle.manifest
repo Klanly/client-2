@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1360020292
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8211c9ee8a92cc5848961b1f2e7f81ad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/army_1.mp3
+Dependencies: []

@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 363380949
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1a5d51f3937f239596fb5484edc15e00
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_006.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_015.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_016.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_020.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_005.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_010.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_021.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_003.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_011.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_009.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_019.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_013.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_014.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_004.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_018.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_007.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_008.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_012.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_017.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_002.jpg
+- Assets/ArtAssets/original/UI/buff_icons/ui_buff_battle_001.jpg
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4020347403
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 65489f17db0ca878879ce123be760928
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/shenshoufuben.mp3
+Dependencies: []

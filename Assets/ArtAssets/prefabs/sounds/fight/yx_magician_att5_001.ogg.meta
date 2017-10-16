@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9b9c215d1a9f0c347ba2c5f1f20b5b15
+timeCreated: 1483535969
+licenseType: Free
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  3D: 1
+  userData: 
+  assetBundleName: sounds/yx_magician_att5_001.assetbundle
+  assetBundleVariant: 

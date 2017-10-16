@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1324475828
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c0f22cac16f011efd290a281280a877d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/kulou_shouji.mp3
+Dependencies: []

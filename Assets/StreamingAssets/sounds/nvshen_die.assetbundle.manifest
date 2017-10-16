@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2263001703
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 48c1c7c5c15d014e4b57ba88f908f4c8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/nvshen_die.mp3
+Dependencies: []

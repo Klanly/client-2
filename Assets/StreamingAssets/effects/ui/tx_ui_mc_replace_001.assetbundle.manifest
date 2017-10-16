@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 2206537947
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8eca1832f3370f55cc0fec6d3f0592d6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b89a332c7276634db106f9e003f730c9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/ui/tx_ui_mc_replace_001.prefab
+Dependencies: []

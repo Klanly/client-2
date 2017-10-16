@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BBF40CB-4875-DD68-F11D-13EC9E660958}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.6.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\DeadTime.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\Delay.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\F3DParticleScale.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\ParticleScaler.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\SM_RotateThis.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\SM_prefabGenerator.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\ScrollingUVs.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\UIDepth.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\cb.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\test_two_uv.cs" />
+    <Compile Include="Assets\ArtAssets\original\Effects\plug-in\test_uv.cs" />
+    <Compile Include="Assets\ArtAssets\original\T4M\Scripts\T4MBillBObjSC.cs" />
+    <Compile Include="Assets\ArtAssets\original\T4M\Scripts\T4MLodObjSC.cs" />
+    <Compile Include="Assets\ArtAssets\original\T4M\Scripts\T4MObjSC.cs" />
+    <Compile Include="Assets\ArtAssets\original\T4M\Scripts\T4MPartSC.cs" />
+    <Compile Include="Assets\ArtAssets\original\T4M\Scripts\T4MPlantObjSC.cs" />
+    <Compile Include="Assets\ArtAssets\original\T4M\Tutorial\Scripts\FlyCam.cs" />
+    <Compile Include="Assets\ArtAssets\original\T4M\Tutorial\Scripts\WaypointCam.cs" />
+    <Compile Include="Assets\CharacterEditor\AddEffectSetting.cs" />
+    <Compile Include="Assets\CharacterEditor\Alert.cs" />
+    <Compile Include="Assets\CharacterEditor\AttributeSetting.cs" />
+    <Compile Include="Assets\CharacterEditor\CharacterEditor.cs" />
+    <Compile Include="Assets\CharacterEditor\DataManager.cs" />
+    <Compile Include="Assets\CharacterEditor\EffectList.cs" />
+    <Compile Include="Assets\CharacterEditor\ModelList.cs" />
+    <Compile Include="Assets\CharacterEditor\core\EditorCameraController.cs" />
+    <Compile Include="Assets\Scripts\Client.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\AnimationClipEventHandler.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\AnimationType.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\CharacterAnimatorController.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\CommonModel.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\Creature.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\Entity.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\NEffect.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\SceneEntity.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\SelectorKeeper.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\TCreature.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\AttackState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\CreatureStateType.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\DeadState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\FSMFactory.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\HitMoveState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\HitState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\IdleState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\RunState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\WalkState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\EventSystem\EventDispatcher.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\EventSystem\IEvent.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\EventSystem\IEventDispatcher.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\FSM\FSMState.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\FSM\FSMStateMachine.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\FSM\FSMTranslation.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\FSM\FSMTranslationMap.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Manager\ABManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Manager\ConfigManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Manager\ObjectPoolManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Manager\ResourceManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Manager\SEffectManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Manager\TimerManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\ObjectPool\GameObjectPool.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Util\EventTriggerListener.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Util\GUtil.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Util\GameConst.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Util\Loom.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Util\ParticleHelper.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Util\Util.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\ActionInfo.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\BindTypes.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\BoneTypes.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\CharacterConfigInfo.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\CommonProperties.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\EffectInfo.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\EffectTypes.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\ShakeCameraConfigInfo.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\AccordionTest.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\CenteredSliderLabel.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Combobox\KeyValueCombobox.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Combobox\KeyValueListView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Combobox\KeyValueListViewDataSource.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Combobox\KeyValueListViewItem.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\DialogInputHelper.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\DialogTreeViewInputHelper.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\Chat\ChatLine.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\Chat\ChatLineComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\Chat\ChatView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\Chat\ChatViewTest.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewCustomSample\ListViewCustomSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewCustomSample\ListViewCustomSampleComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewCustomSample\ListViewCustomSampleItemDescription.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewImages\ListViewImages.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewImages\ListViewImagesComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewImages\ListViewImagesItem.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewNoColoring.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewSlider\ListViewSlider.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewSlider\ListViewSliderComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewSlider\ListViewSliderItem.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewUnderlineSample\ListViewUnderlineSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewUnderlineSample\ListViewUnderlineSampleComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewUnderlineSample\ListViewUnderlineSampleItemDescription.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewVariableHeight\ListViewVariableHeight.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewVariableHeight\ListViewVariableHeightComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\ListViewVariableHeight\ListViewVariableHeightItemDescription.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\TasksView\Task.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\TasksView\TaskAutocomplete.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\TasksView\TaskComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\TasksView\TaskPicker.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\TasksView\TaskTests.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ListView\TasksView\TaskView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Picker\PickerIntTest.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\PopupTest.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Progressbar\SampleProgressBar1.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Progressbar\SampleProgressBar2.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Progressbar\SampleProgressbar.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\RangeSlider\RangeSliderFloatSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\RangeSlider\RangeSliderSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\HarborShop\HarborListView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\HarborShop\HarborListViewComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\HarborShop\HarborOrder.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\HarborShop\HarborOrderLine.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\HarborShop\HarborShop.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\IOrder.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\IOrderLine.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\Item.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\JRPGShop\JRPGOrder.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\JRPGShop\JRPGOrderLine.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\JRPGShop\JRPGShop.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\JRPGShop\TraderListView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\JRPGShop\TraderListViewComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\Prices.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\ResultOrderLine.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Shops\Trader.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\StandaloneExit.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\SwitchTest.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Table\SteamSpyComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Table\SteamSpyItem.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Table\SteamSpyView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Table\Table.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Table\TableCell.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Table\TableRow.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\Table\TableRowComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\ListViewSaveIndicies.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\LocalizationSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\SampleFilter.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\SmokeTest.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestColorPicker.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestColorPickerRange.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestFolderRenamed\TestScriptRenamed.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestListView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestListViewPerformance.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestListViewSlider.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestNotify.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestPaginator.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestScrollRectEvents.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestSpinnerFloat.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TestTreeView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestScripts\TreeViewListeners.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TestTabs.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewComponentSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewIcons.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewIconsDataSource.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewIconsLayoutWidthExtender.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewIconsTest.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewItemSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewResizeHelper.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewSampleDataSource.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewSampleDragSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewSampleDropSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TileView\TileViewToggleDirection.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ToDoList\ToDoListView.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ToDoList\ToDoListViewComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\ToDoList\ToDoListViewItem.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewCheckboxes\TestTreeViewCheckboxes.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewCheckboxes\TreeViewCheckboxes.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewCheckboxes\TreeViewCheckboxesComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewCheckboxes\TreeViewCheckboxesItem.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewSample.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewSampleComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewSampleData.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewSampleItem.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewSampleItemContinent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewSampleItemCountry.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\TreeView\TreeViewToggle\TreeViewToggleComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Sample Assets\UITestSamples.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Accordion\Accordion.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Accordion\AccordionEvent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Accordion\AccordionItem.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Accordion\AccordionItemComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Autocomplete\Autocomplete.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Autocomplete\AutocompleteCustom.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Autocomplete\AutocompleteDataSource.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Autocomplete\AutocompleteIcons.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\CenteredSlider\CenteredSlider.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\CenteredSlider\CenteredSliderBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\CenteredSlider\CenteredSliderVertical.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorHSV.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPicker.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPickerABlock.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPickerColorBlock.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPickerHSVBlock.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPickerHSVPalette.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPickerRGBBlock.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPickerRGBPalette.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\ColorPickerRange.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ColorPicker\IColorPickerBlock.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Combobox\Combobox.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Combobox\ComboboxCustom.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Combobox\ComboboxIcons.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Combobox\ComboboxIconsItemComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Connector\ConnectorBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Connector\ConnectorLine.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Connector\MultipleConnector.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Connector\SingleConnector.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\BringToFront.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\Dialog.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\DialogActions.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\DialogButtonComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\DialogButtonComponentBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\DialogInfo.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\DialogInfoBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\Picker.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\PickerIcons.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\PickerInt.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\PickerString.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Dialog\Popup.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\BaseDragSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\DragSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\IDropSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\ListViewDropIndicator.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\ListViewIconsDragSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\ListViewIconsDropSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\TreeViewDropSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\TreeViewNodeDragSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Drag-and-Drop\TreeViewNodeDropSupport.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Draggable\Draggable.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Draggable\DraggableHandle.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Draggable\OnDragKeepSelected.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Draggable\OnDragListener.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\EasyLayout\EasyLayout.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\EasyLayout\EasyLayoutCompact.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\EasyLayout\EasyLayoutExtensions.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\EasyLayout\EasyLayoutGrid.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\EasyLayout\EasyLayoutUtilites.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ITemplatable.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\LayoutSwitcher\LayoutSwitcher.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\LayoutSwitcher\UILayout.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\LayoutSwitcher\UIPosition.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\EasyLayoutBridge.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\IItemHeight.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ILayoutBridge.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\IListViewItemHeight.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListView.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewCustom.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewCustomHeight.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewGameObjects.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewHeight.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewIcons.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewIconsItemComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewInt\ListViewInt.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewInt\ListViewIntComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewInt\ListViewIntComponentBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewItem.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewItemEventData.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\ListViewStringComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ListView\StandardLayoutBridge.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Listeners\TransformListener.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Notify\Notify.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Notify\NotifyInfoBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Notify\NotifySequenceManager.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Progressbar.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\RangeSlider\RangeSlider.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\RangeSlider\RangeSliderBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\RangeSlider\RangeSliderFloat.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\RangeSlider\RangeSliderFloatVertical.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\RangeSlider\RangeSliderHandle.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\RangeSlider\RangeSliderVertical.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Resizable\Resizable.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Resizable\ResizableHeader.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Resizable\ResizableHeaderCell.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Resizable\ResizableHeaderDragCell.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Resizable\Splitter.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ScrollRectUtilites\ListViewPaginator.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ScrollRectUtilites\ScrollRectEvents.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ScrollRectUtilites\ScrollRectPage.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ScrollRectUtilites\ScrollRectPageWithNumber.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ScrollRectUtilites\ScrollRectPaginator.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\ScrollRectUtilites\ScrollRectRestrictedDrag.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\SlideBlock\SlideBlock.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\SlideBlock\SlideBlockHandle.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Spinner\Spinner.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Spinner\SpinnerBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Spinner\SpinnerFloat.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Switch\Switch.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Switch\SwitchGroup.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\Tab.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabButton.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabButtonComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabButtonComponentBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabIconActiveButton.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabIconButton.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabIconButtonBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabIconDefaultButton.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabIcons.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\Tabs.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabsCustom.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tabs\TabsIcons.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Templates.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TileView\TileView.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TileView\TileViewScrollRectFitter.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Tooltip.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\ListNode.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeNode.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeNodeToggle.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeView.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeViewComponent.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeViewComponentBase.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeViewCustom.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeViewDataSource.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\TreeView\TreeViewItem.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\Animations.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ButtonAdvanced.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ComparisonCompare.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\DragRedirect.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\Extensions.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ICollectionChanged.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ICollectionItemChanged.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\IInputFieldProxy.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\IObservable.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\IObservableList.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ImageAdvanced.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\InputFieldListener.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\InputFieldProxy.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ModalHelper.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ObservableList.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\ResizeListener.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\SelectListener.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\SelectableHelper.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\SlideUp.cs" />
+    <Compile Include="Assets\UIWidgets\Standart Assets\Utilites\Utilites.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ArtAssets\original\Effects\plug-in\100013_shici_AlphaSet.shader" />
+    <None Include="Assets\ArtAssets\original\Effects\plug-in\Additive_Layer.shader" />
+    <None Include="Assets\ArtAssets\original\Effects\plug-in\Distortion Bump.shader" />
+    <None Include="Assets\ArtAssets\original\Effects\plug-in\EasyWater1_TD.shader" />
+    <None Include="Assets\ArtAssets\original\Effects\plug-in\SM_TransparentRim.shader" />
+    <None Include="Assets\ArtAssets\original\Effects\plug-in\UI-Alpha.shader" />
+    <None Include="Assets\ArtAssets\original\Effects\plug-in\effect_Distort.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\READMEFIRST.txt" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\PreviewT4M.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\PreviewT4M1.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel1\T4M 2 Textures Auto BeastLM 2DrawCall.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel1\T4M 2 Textures ManualAdd BeastLM_1DC.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel1\T4M 2 Textures ManualAdd CustoLM 1DC.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Bump\T4M 2 TexturesBumped Mobile.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Bump\T4M 2 TexturesBumped.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Bump\T4M 3 TexturesBumped Mobile.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Bump\T4M 3 TexturesBumped.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Bump\T4M 4 TexturesBumped.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\BumpSpec\T4M 2 TexturesBumpSpec Mobile.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\BumpSpec\T4M 2 TexturesBumpSpec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\BumpSpec\T4M 3 TexturesBumpSpec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Diffuse\T4M 2 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Diffuse\T4M 3 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Diffuse\T4M 4 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Diffuse\T4M 5 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Diffuse\T4M 6 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Diffuse\T4M World Projection Shader.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\DirectionLM\T4M 2 TexturesBumped DLM mobile.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\DirectionLM\T4M 2 TexturesBumped DLM.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\DirectionLM\T4M 3 TexturesBumped DLM.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Specular\T4M 2 Textures Spec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Specular\T4M 3 Textures Spec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Specular\T4M 4 Textures Spec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Toon\T4M 2 Textures Toon.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Toon\T4M 3 Textures Toon.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Toon\T4M 4 Textures Toon.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unified\T4M 2 TexturesUnified.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unified\T4M 3 TexturesUnified.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unified\T4M 4 TexturesUnified.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unlit\2TexturesUnlit.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unlit\3TexturesUnlit.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unlit\4TexturesUnlit.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unlit\5TexturesUnlit.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unlit\6TexturesUnlit.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unlit\6TexturesUnlitNoLM.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel2\Unlit\T4M World Projection Shader Unlit+LM.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Bump\T4M 2 TexturesBump.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Bump\T4M 3 TexturesBump.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Bump\T4M 4 TexturesBump.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\BumpSpec\T4M 2 TexturesBumpSpec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\BumpSpec\T4M 3 TexturesBumpSpec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\BumpSpec\T4M 4 TexturesBumpSpec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Diffuse\T4M 2 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Diffuse\T4M 3 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Diffuse\T4M 4 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Diffuse\T4M 5 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Diffuse\T4M 6 Textures.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Specular\T4M 2 TexturesSpec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Specular\T4M 3 TexturesSpec.shader" />
+    <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Specular\T4M 4 TexturesSpec.shader" />
+    <None Include="Assets\ArtAssets\prefabs\configs\ai.xml" />
+    <None Include="Assets\ArtAssets\prefabs\configs\h_human_mars_01.xml" />
+    <None Include="Assets\ArtAssets\prefabs\configs\shakecamera.xml" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\GlodYellow_small_font\GoldYellowSmall.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\Gold_font\Glod_font1.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\Hell_big_font\Hell_big_font.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\Hell_small_font\Hell_small_font.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\Vip_big_font\Vip_big_font.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\Vip_small_font\Vip_small_font.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\chinese_gloden_small\chinese_gloden_small.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\chinese_grey_small\chinese_grey_small.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\chinese_red_small\chinese_red_small.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\gloden_small\gloden_small.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\green_small\green_small.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\grey_small\grey_small.fnt" />
+    <None Include="Assets\ArtAssets\prefabs\fonts\herofont\herofont.fnt" />
+    <None Include="Assets\Shaders\UIGradientShaderHLineHSV.shader" />
+    <None Include="Assets\Shaders\UIGradientShaderHLineRGB.shader" />
+    <None Include="Assets\Shaders\UIGradientShaderPlaneHSV.shader" />
+    <None Include="Assets\Shaders\UIGradientShaderPlaneRGB.shader" />
+    <None Include="Assets\Shaders\UIGradientShaderVLineHSV.shader" />
+    <None Include="Assets\Shaders\UIGradientShaderVLineRGB.shader" />
+    <None Include="Assets\UIWidgets\Sample Assets\classes.txt" />
+    <None Include="Assets\UIWidgets\Sample Assets\countries.txt" />
+    <None Include="Assets\UIWidgets\changelog.txt" />
+    <None Include="Assets\UIWidgets\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>

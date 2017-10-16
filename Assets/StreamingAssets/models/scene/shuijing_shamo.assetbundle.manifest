@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 2649758828
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4d108fe5109bc77bf3b6a62d01d703d7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5cf67798d778d0f1024f6b6ba01fbb08
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: be92a52caf4fa8b489a826dbb753b38f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 208
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/models/scene/shuijing_shamo.prefab
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 513657842
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b39453e3c3b470d3cb13fa4833bcd806
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/guojia.mp3
+Dependencies: []

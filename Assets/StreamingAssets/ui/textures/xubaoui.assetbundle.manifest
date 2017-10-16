@@ -1,0 +1,63 @@
+ManifestFileVersion: 0
+CRC: 1279414580
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 98588040f2972e2e74d7ab71e6d5289a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/xubaoUI/shenshoubaoxiang.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-2.png
+- Assets/ArtAssets/original/UI/xubaoUI/shenpinbaoxiang1-2-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/xuanbaoxiangdi1-2.png
+- Assets/ArtAssets/original/UI/xubaoUI/shijiandi.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-13.png
+- Assets/ArtAssets/original/UI/xubaoUI/dengjidi1-4.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-12.png
+- Assets/ArtAssets/original/UI/xubaoUI/xunbao1-4.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-8.png
+- Assets/ArtAssets/original/UI/xubaoUI/vipbaoxiang.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-9.png
+- Assets/ArtAssets/original/UI/xubaoUI/vipbaoxiang-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/fangpinbaoxiang1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/shenpinbaoxiang1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-4.png
+- Assets/ArtAssets/original/UI/xubaoUI/xunbao1-5.png
+- Assets/ArtAssets/original/UI/xubaoUI/xiyou.png
+- Assets/ArtAssets/original/UI/xubaoUI/shenpinbaoxiang1-1-2.png
+- Assets/ArtAssets/original/UI/xubaoUI/fangpinbaoxiang1-1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-7.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-10.png
+- Assets/ArtAssets/original/UI/xubaoUI/dengjidi1-5.png
+- Assets/ArtAssets/original/UI/xubaoUI/tishidi1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/xuanbaoxiangdi1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/fanhui.png
+- Assets/ArtAssets/original/UI/xubaoUI/shijian.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-14.png
+- Assets/ArtAssets/original/UI/xubaoUI/xunbao1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/xunbao1-3.png
+- Assets/ArtAssets/original/UI/xubaoUI/xunbao1-6.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-6.png
+- Assets/ArtAssets/original/UI/xubaoUI/bingzhongbaoxiang.png
+- Assets/ArtAssets/original/UI/xubaoUI/dengjidi1-3.png
+- Assets/ArtAssets/original/UI/xubaoUI/baoxiangdi1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/fangpinbaoxiang1-2.png
+- Assets/ArtAssets/original/UI/xubaoUI/dengjidi1-2.png
+- Assets/ArtAssets/original/UI/xubaoUI/fangpinbaoxiang1-2-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/shenmibaoxiang.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-11.png
+- Assets/ArtAssets/original/UI/xubaoUI/xunbao1-2.png
+- Assets/ArtAssets/original/UI/xubaoUI/shenpinbaoxiang1-2.png
+- Assets/ArtAssets/original/UI/xubaoUI/dengjidi1-1.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-3.png
+- Assets/ArtAssets/original/UI/xubaoUI/bidebaoxiang1-5.png
+Dependencies: []

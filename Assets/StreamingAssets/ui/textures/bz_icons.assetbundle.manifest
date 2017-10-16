@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 3820797839
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1995d0575590eae83439f87635c7ab9a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/bz_icons/arm_spirit_assassin_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Spirit_Assassin_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Archer_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Giant_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Shields_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_dwarf_doubleaxe_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_human_mage_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_human_shields_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Pikeman_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_human_bs_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Spirit_Archer_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Giant_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_dwarf_archer_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Doubleaxe_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_human_archers_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Bs_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Hunter_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Archers_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Spirit_Assassin_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_dwarf_hunter_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Archers_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Archer_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Doubleaxe_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Archer_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Giant_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Bs_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Archer_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Mage_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_human_pikeman_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_spirit_archer_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/arm_human_archer_001.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Spirit_Archer_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Shields_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Dwarf_Hunter_002.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Mage_003.jpg
+- Assets/ArtAssets/original/UI/bz_icons/Arm_Human_Pikeman_003.jpg
+Dependencies: []

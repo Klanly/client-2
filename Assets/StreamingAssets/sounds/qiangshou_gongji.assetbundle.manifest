@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3350439274
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c8ad20b64eab7f1af98a23b148389a61
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/qiangshou_gongji.mp3
+Dependencies: []

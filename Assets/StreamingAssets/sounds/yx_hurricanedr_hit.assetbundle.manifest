@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4082643030
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 59f456f559a9c5d813e9c2aad7e8d366
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_hurricanedr_hit.ogg
+Dependencies: []

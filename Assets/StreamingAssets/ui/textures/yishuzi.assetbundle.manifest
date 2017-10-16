@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 1229601794
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3e42eb035aa1206df7cac09dd8a7ac2a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/yishuzi/0007.png
+- Assets/ArtAssets/original/UI/yishuzi/0005.png
+- Assets/ArtAssets/original/UI/yishuzi/0004.png
+- Assets/ArtAssets/original/UI/yishuzi/0000.png
+- Assets/ArtAssets/original/UI/yishuzi/0003.png
+- Assets/ArtAssets/original/UI/yishuzi/shenshouzhandouli.png
+- Assets/ArtAssets/original/UI/yishuzi/0002.png
+- Assets/ArtAssets/original/UI/yishuzi/yingxiongzhandouli.png
+- Assets/ArtAssets/original/UI/yishuzi/zhandouli1-1.png
+- Assets/ArtAssets/original/UI/yishuzi/0006.png
+- Assets/ArtAssets/original/UI/yishuzi/0008.png
+- Assets/ArtAssets/original/UI/yishuzi/shenqizhandouli.png
+- Assets/ArtAssets/original/UI/yishuzi/0009.png
+- Assets/ArtAssets/original/UI/yishuzi/0001.png
+- Assets/ArtAssets/original/UI/yishuzi/bingzhongzhandouli.png
+Dependencies: []

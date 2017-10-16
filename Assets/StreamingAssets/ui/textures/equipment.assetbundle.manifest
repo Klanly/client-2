@@ -1,0 +1,74 @@
+ManifestFileVersion: 0
+CRC: 685036194
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d949ef73a32e0192a85305f709299523
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/equipment/xunzhang1-1.png
+- Assets/ArtAssets/original/UI/equipment/biaoqiandi1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-12.png
+- Assets/ArtAssets/original/UI/equipment/huizhang1-1.png
+- Assets/ArtAssets/original/UI/equipment/biaoqiandi1-4.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-11.png
+- Assets/ArtAssets/original/UI/equipment/yijianzhuangbei.png
+- Assets/ArtAssets/original/UI/equipment/xunzhang1-2.png
+- Assets/ArtAssets/original/UI/equipment/zhuangbeitiliandi1-1.png
+- Assets/ArtAssets/original/UI/equipment/suotou1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-4.png
+- Assets/ArtAssets/original/UI/equipment/zhanyi1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-13.png
+- Assets/ArtAssets/original/UI/equipment/zhuangbeikuangdi1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-5.png
+- Assets/ArtAssets/original/UI/equipment/zhuangbeitiliandi1-2.png
+- Assets/ArtAssets/original/UI/equipment/equipment-jiangbiandi1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-3.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-2.png
+- Assets/ArtAssets/original/UI/equipment/jiantou1-2.png
+- Assets/ArtAssets/original/UI/equipment/biaoqiandi1-3.png
+- Assets/ArtAssets/original/UI/equipment/juesemeichengdi2-2.png
+- Assets/ArtAssets/original/UI/equipment/yeqiandian1-2.png
+- Assets/ArtAssets/original/UI/equipment/juesemeichengdi2-1.png
+- Assets/ArtAssets/original/UI/equipment/huizhang1-4.png
+- Assets/ArtAssets/original/UI/equipment/mengban1-1.png
+- Assets/ArtAssets/original/UI/equipment/huizhang1-2.png
+- Assets/ArtAssets/original/UI/equipment/shengji1-2.png
+- Assets/ArtAssets/original/UI/equipment/huizhang1-3.png
+- Assets/ArtAssets/original/UI/equipment/juesemeichengdi1-1.png
+- Assets/ArtAssets/original/UI/equipment/yeqiandian1-1.png
+- Assets/ArtAssets/original/UI/equipment/kezhuangbeidi1-1.png
+- Assets/ArtAssets/original/UI/equipment/equipment-gou1-1.png
+- Assets/ArtAssets/original/UI/equipment/zhuangbeidi1-2.png
+- Assets/ArtAssets/original/UI/equipment/tishidian1-1.png
+- Assets/ArtAssets/original/UI/equipment/zhuangbeikuang1-2.png
+- Assets/ArtAssets/original/UI/equipment/xunzhang1-3.png
+- Assets/ArtAssets/original/UI/equipment/jiantou1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-9.png
+- Assets/ArtAssets/original/UI/equipment/renwutiaodi.png
+- Assets/ArtAssets/original/UI/equipment/shengji1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-1.png
+- Assets/ArtAssets/original/UI/equipment/biaoqiandi1-2.png
+- Assets/ArtAssets/original/UI/equipment/diban1-1.png
+- Assets/ArtAssets/original/UI/equipment/zhezhao1-1.png
+- Assets/ArtAssets/original/UI/equipment/duihuadi1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-6.png
+- Assets/ArtAssets/original/UI/equipment/dijianbiamn2-1.png
+- Assets/ArtAssets/original/UI/equipment/zhuangbeidi1-1.png
+- Assets/ArtAssets/original/UI/equipment/anniu8-1.png
+- Assets/ArtAssets/original/UI/equipment/zhuangbei1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-8.png
+- Assets/ArtAssets/original/UI/equipment/anniu8-2.png
+- Assets/ArtAssets/original/UI/equipment/guanbi1-1.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-10.png
+- Assets/ArtAssets/original/UI/equipment/yeqiandian1-3.png
+- Assets/ArtAssets/original/UI/equipment/junxian1-7.png
+Dependencies: []

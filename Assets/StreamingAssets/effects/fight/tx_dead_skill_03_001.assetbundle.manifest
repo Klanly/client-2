@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2316264003
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 444030fa4a5d42af9a91a1f8d302dcb8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0c7bc2305de23dc37396b90bd7a5e15e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_dead_skill_03_001.prefab
+Dependencies: []

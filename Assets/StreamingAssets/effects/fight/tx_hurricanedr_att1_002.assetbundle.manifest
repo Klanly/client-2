@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 268755190
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e04e8808f514569d825a8c770f9e6760
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 227be382f9b89f13199ad6e6e00163e4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_hurricanedr_att1_002.prefab
+Dependencies: []

@@ -1,0 +1,95 @@
+ManifestFileVersion: 0
+CRC: 4162851545
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6dcb83b859419258b3a63c9a23719997
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/huodong/zi-di-fuli.png
+- Assets/ArtAssets/original/UI/huodong/ditiao1-2.png
+- Assets/ArtAssets/original/UI/huodong/ziti-7.png
+- Assets/ArtAssets/original/UI/huodong/di-xiaobiaoti.png
+- Assets/ArtAssets/original/UI/huodong/shenshou.png
+- Assets/ArtAssets/original/UI/huodong/anniu2-fuli.png
+- Assets/ArtAssets/original/UI/huodong/ziti-6.png
+- Assets/ArtAssets/original/UI/huodong/tupian2-1.jpg
+- Assets/ArtAssets/original/UI/huodong/di-shouchong.jpg
+- Assets/ArtAssets/original/UI/huodong/zi1-3-1.png
+- Assets/ArtAssets/original/UI/huodong/biaoti-shouchong.png
+- Assets/ArtAssets/original/UI/huodong/tupian2-4.jpg
+- Assets/ArtAssets/original/UI/huodong/di-fuli.png
+- Assets/ArtAssets/original/UI/huodong/di-juese.png
+- Assets/ArtAssets/original/UI/huodong/xian1-1.png
+- Assets/ArtAssets/original/UI/huodong/zi1-4-1.png
+- Assets/ArtAssets/original/UI/huodong/anniu1.png
+- Assets/ArtAssets/original/UI/huodong/xian1-2.png
+- Assets/ArtAssets/original/UI/huodong/libao2.png
+- Assets/ArtAssets/original/UI/huodong/xian1-3.png
+- Assets/ArtAssets/original/UI/huodong/tupian3-3.jpg
+- Assets/ArtAssets/original/UI/huodong/ziti-8.png
+- Assets/ArtAssets/original/UI/huodong/tupian1-1.jpg
+- Assets/ArtAssets/original/UI/huodong/di-fuli1-2.png
+- Assets/ArtAssets/original/UI/huodong/guang-wupin.png
+- Assets/ArtAssets/original/UI/huodong/tupian3-5.jpg
+- Assets/ArtAssets/original/UI/huodong/tupian1-2.jpg
+- Assets/ArtAssets/original/UI/huodong/anniu-huodong.png
+- Assets/ArtAssets/original/UI/huodong/tupian1-3.jpg
+- Assets/ArtAssets/original/UI/huodong/heidi.png
+- Assets/ArtAssets/original/UI/huodong/zi1-2-1.png
+- Assets/ArtAssets/original/UI/huodong/fuli-di.jpg
+- Assets/ArtAssets/original/UI/huodong/di-zhenpinxiangou.jpg
+- Assets/ArtAssets/original/UI/huodong/ziti-5.png
+- Assets/ArtAssets/original/UI/huodong/anniu1-fuli.png
+- Assets/ArtAssets/original/UI/huodong/name-1.png
+- Assets/ArtAssets/original/UI/huodong/tupian3-2.jpg
+- Assets/ArtAssets/original/UI/huodong/ziti-1.png
+- Assets/ArtAssets/original/UI/huodong/shourentou.png
+- Assets/ArtAssets/original/UI/huodong/tupian3-4.jpg
+- Assets/ArtAssets/original/UI/huodong/tupian2-2.jpg
+- Assets/ArtAssets/original/UI/huodong/zi1-4-2.png
+- Assets/ArtAssets/original/UI/huodong/ditiao1-2-fuli.png
+- Assets/ArtAssets/original/UI/huodong/zi-2-fuli.png
+- Assets/ArtAssets/original/UI/huodong/biaoti-xiyoubaowu.png
+- Assets/ArtAssets/original/UI/huodong/tupian3-1.jpg
+- Assets/ArtAssets/original/UI/huodong/tishi-2.png
+- Assets/ArtAssets/original/UI/huodong/huangguan.png
+- Assets/ArtAssets/original/UI/huodong/toukui.png
+- Assets/ArtAssets/original/UI/huodong/anniu-huodong-1.png
+- Assets/ArtAssets/original/UI/huodong/guang-fuli.png
+- Assets/ArtAssets/original/UI/huodong/zi1-1-2.png
+- Assets/ArtAssets/original/UI/huodong/tupian2-3.jpg
+- Assets/ArtAssets/original/UI/huodong/tishi-1.png
+- Assets/ArtAssets/original/UI/huodong/di-1zuanVIP.jpg
+- Assets/ArtAssets/original/UI/huodong/zi1-2-2.png
+- Assets/ArtAssets/original/UI/huodong/di-fuli2.png
+- Assets/ArtAssets/original/UI/huodong/di-fuli1-1.png
+- Assets/ArtAssets/original/UI/huodong/zi1-1-1.png
+- Assets/ArtAssets/original/UI/huodong/anniu2.png
+- Assets/ArtAssets/original/UI/huodong/zi1-3-2.png
+- Assets/ArtAssets/original/UI/huodong/ziti-4.png
+- Assets/ArtAssets/original/UI/huodong/di-fuli1.png
+- Assets/ArtAssets/original/UI/huodong/biaoti-menghuo.png
+- Assets/ArtAssets/original/UI/huodong/guang2.png
+- Assets/ArtAssets/original/UI/huodong/tupian1-4.jpg
+- Assets/ArtAssets/original/UI/huodong/ditiao.png
+- Assets/ArtAssets/original/UI/huodong/ditiao1-1.png
+- Assets/ArtAssets/original/UI/huodong/biaoti-1zuanVIP.png
+- Assets/ArtAssets/original/UI/huodong/ziti-9.png
+- Assets/ArtAssets/original/UI/huodong/ziti-zuan.png
+- Assets/ArtAssets/original/UI/huodong/shuangjian.png
+- Assets/ArtAssets/original/UI/huodong/zi-fuli.png
+- Assets/ArtAssets/original/UI/huodong/ziti-3.png
+- Assets/ArtAssets/original/UI/huodong/ziti-2.png
+- Assets/ArtAssets/original/UI/huodong/di-lianxuchognzhi.png
+- Assets/ArtAssets/original/UI/huodong/ziti-0.png
+- Assets/ArtAssets/original/UI/huodong/guang1.png
+Dependencies: []

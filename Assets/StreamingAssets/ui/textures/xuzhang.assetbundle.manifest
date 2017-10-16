@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1583429867
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f0a46c2e18f77108c86792ade49c5cd9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/xuzhang/yuanzhengdituzhezhao.png
+- Assets/ArtAssets/original/UI/xuzhang/biaotixian.png
+- Assets/ArtAssets/original/UI/xuzhang/yuanzhengditu.png
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3340270817
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f764d25ece15611c1eec46adaab567a4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/scene_desert.mp3
+Dependencies: []

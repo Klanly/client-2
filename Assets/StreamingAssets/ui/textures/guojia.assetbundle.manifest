@@ -1,0 +1,116 @@
+ManifestFileVersion: 0
+CRC: 3258036092
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3ff3d7eb033f5224d1a1f3c3451ed802
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/guojia/kulou.png
+- Assets/ArtAssets/original/UI/guojia/zhufu1-2.png
+- Assets/ArtAssets/original/UI/guojia/gongchengshibai.png
+- Assets/ArtAssets/original/UI/guojia/shouchengshengli.png
+- Assets/ArtAssets/original/UI/guojia/tishidi1-2.png
+- Assets/ArtAssets/original/UI/guojia/liebiaodi1-1.png
+- Assets/ArtAssets/original/UI/guojia/guang3.png
+- Assets/ArtAssets/original/UI/guojia/di-gongfang.png
+- Assets/ArtAssets/original/UI/guojia/guizhejiangli.png
+- Assets/ArtAssets/original/UI/guojia/zidongzhandou.png
+- Assets/ArtAssets/original/UI/guojia/jifenbang.png
+- Assets/ArtAssets/original/UI/guojia/zhufudi1-2.jpg
+- Assets/ArtAssets/original/UI/guojia/lu.png
+- Assets/ArtAssets/original/UI/guojia/guojiajuanxian-lan.jpg
+- Assets/ArtAssets/original/UI/guojia/di-liebiao-1.png
+- Assets/ArtAssets/original/UI/guojia/yizhushou1.png
+- Assets/ArtAssets/original/UI/guojia/guojiajuanxian-zi.jpg
+- Assets/ArtAssets/original/UI/guojia/di-wodeliebiao.png
+- Assets/ArtAssets/original/UI/guojia/binsi2.png
+- Assets/ArtAssets/original/UI/guojia/liebiaodi1-6.png
+- Assets/ArtAssets/original/UI/guojia/liebiaodi1-4.png
+- Assets/ArtAssets/original/UI/guojia/di-juewei-2.png
+- Assets/ArtAssets/original/UI/guojia/zhushou.png
+- Assets/ArtAssets/original/UI/guojia/di-wodejifen.png
+- Assets/ArtAssets/original/UI/guojia/zhandoubiaoshi.png
+- Assets/ArtAssets/original/UI/guojia/di-liebiao-2.png
+- Assets/ArtAssets/original/UI/guojia/jbdi1-4.png
+- Assets/ArtAssets/original/UI/guojia/yizhushou2.png
+- Assets/ArtAssets/original/UI/guojia/di-suoshuzhenrong.png
+- Assets/ArtAssets/original/UI/guojia/binsi1.png
+- Assets/ArtAssets/original/UI/guojia/langdi-1.png
+- Assets/ArtAssets/original/UI/guojia/beijingwangguo.png
+- Assets/ArtAssets/original/UI/guojia/di.png
+- Assets/ArtAssets/original/UI/guojia/zhufu1-1.png
+- Assets/ArtAssets/original/UI/guojia/leijijindu-1.jpg
+- Assets/ArtAssets/original/UI/guojia/benguo.png
+- Assets/ArtAssets/original/UI/guojia/anniu-guli.png
+- Assets/ArtAssets/original/UI/guojia/xiaoxuetiao2.png
+- Assets/ArtAssets/original/UI/guojia/langdi.png
+- Assets/ArtAssets/original/UI/guojia/hongxuetiao1-1.png
+- Assets/ArtAssets/original/UI/guojia/ludi.png
+- Assets/ArtAssets/original/UI/guojia/di-baoxiangdaojishi.png
+- Assets/ArtAssets/original/UI/guojia/hongxuetiao1-2.png
+- Assets/ArtAssets/original/UI/guojia/lansexuetiao1-2.png
+- Assets/ArtAssets/original/UI/guojia/di-jiangli-lv.jpg
+- Assets/ArtAssets/original/UI/guojia/di-tishiwenzi.png
+- Assets/ArtAssets/original/UI/guojia/di-jiangli-cheng.jpg
+- Assets/ArtAssets/original/UI/guojia/lansetouxiang.png
+- Assets/ArtAssets/original/UI/guojia/shuomingdi.png
+- Assets/ArtAssets/original/UI/guojia/di-duiwu-1.png
+- Assets/ArtAssets/original/UI/guojia/xiaoxuetiao.png
+- Assets/ArtAssets/original/UI/guojia/shizidi.png
+- Assets/ArtAssets/original/UI/guojia/jingong.png
+- Assets/ArtAssets/original/UI/guojia/zidongzhandou1-2.png
+- Assets/ArtAssets/original/UI/guojia/di-duiwu.png
+- Assets/ArtAssets/original/UI/guojia/wangguoshangdian.png
+- Assets/ArtAssets/original/UI/guojia/zhufudi1-1.jpg
+- Assets/ArtAssets/original/UI/guojia/dunpai.png
+- Assets/ArtAssets/original/UI/guojia/shizi.png
+- Assets/ArtAssets/original/UI/guojia/tishi-tiaojian.png
+- Assets/ArtAssets/original/UI/guojia/lansexuetiao1-1.png
+- Assets/ArtAssets/original/UI/guojia/di-jiangli-lan.jpg
+- Assets/ArtAssets/original/UI/guojia/xiantiao.png
+- Assets/ArtAssets/original/UI/guojia/guojiazhufu.png
+- Assets/ArtAssets/original/UI/guojia/zidongzhandou1-1.png
+- Assets/ArtAssets/original/UI/guojia/liebiaodi1-2.png
+- Assets/ArtAssets/original/UI/guojia/jiantou.png
+- Assets/ArtAssets/original/UI/guojia/shizidi-1.png
+- Assets/ArtAssets/original/UI/guojia/leijijindu.jpg
+- Assets/ArtAssets/original/UI/guojia/jia1.png
+- Assets/ArtAssets/original/UI/guojia/di-jiangli-zi.jpg
+- Assets/ArtAssets/original/UI/guojia/jia2.png
+- Assets/ArtAssets/original/UI/guojia/gonggao.png
+- Assets/ArtAssets/original/UI/guojia/liebiaodi1-3.png
+- Assets/ArtAssets/original/UI/guojia/lang.png
+- Assets/ArtAssets/original/UI/guojia/gongchengshengli.png
+- Assets/ArtAssets/original/UI/guojia/guojiajuanxian-lv.jpg
+- Assets/ArtAssets/original/UI/guojia/shouchengshibai.png
+- Assets/ArtAssets/original/UI/guojia/vsdi.png
+- Assets/ArtAssets/original/UI/guojia/hongsetouxiang.png
+- Assets/ArtAssets/original/UI/guojia/guojiagongxian.png
+- Assets/ArtAssets/original/UI/guojia/tiaoguo.png
+- Assets/ArtAssets/original/UI/guojia/baofengwangguo.png
+- Assets/ArtAssets/original/UI/guojia/fanhui.png
+- Assets/ArtAssets/original/UI/guojia/fengexian.png
+- Assets/ArtAssets/original/UI/guojia/zhandoudinglan.png
+- Assets/ArtAssets/original/UI/guojia/huodongshenqi.png
+- Assets/ArtAssets/original/UI/guojia/ludi-1.png
+- Assets/ArtAssets/original/UI/guojia/biaotiwenli.png
+- Assets/ArtAssets/original/UI/guojia/di-juewei.png
+- Assets/ArtAssets/original/UI/guojia/guojiashangdian.png
+- Assets/ArtAssets/original/UI/guojia/kuang.png
+- Assets/ArtAssets/original/UI/guojia/kaiyanwangguo.png
+- Assets/ArtAssets/original/UI/guojia/touxiangkuang.png
+- Assets/ArtAssets/original/UI/guojia/biaotidi.png
+- Assets/ArtAssets/original/UI/guojia/guanggao.png
+- Assets/ArtAssets/original/UI/guojia/vs.png
+- Assets/ArtAssets/original/UI/guojia/liebiaodi1-5.png
+- Assets/ArtAssets/original/UI/guojia/di-gongfang-1.png
+Dependencies: []

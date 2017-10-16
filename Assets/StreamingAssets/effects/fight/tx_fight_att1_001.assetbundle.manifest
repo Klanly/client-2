@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3623213086
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bde133c4dd5ca9186bd09582e6551b3e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 89f164984d260123f5382c7a577eac0c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_fight_att1_001.prefab
+Dependencies: []

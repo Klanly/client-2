@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2991258551
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7f0c7df2973bf4c44e5a151779d9ac31
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/kuloudao.mp3
+Dependencies: []

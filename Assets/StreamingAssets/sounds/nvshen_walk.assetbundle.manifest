@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 107278735
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d84c64824b8b9e95749a83c9d4a719b5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/nvshen_walk.mp3
+Dependencies: []

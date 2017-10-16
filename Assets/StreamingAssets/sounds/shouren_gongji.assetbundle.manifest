@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3412465692
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: aefd090c20bee24efa202824be5e8754
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/shouren_gongji.mp3
+Dependencies: []

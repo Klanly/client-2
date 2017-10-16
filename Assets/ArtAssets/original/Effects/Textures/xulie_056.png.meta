@@ -1,0 +1,544 @@
+fileFormatVersion: 2
+guid: ad91304ff58073f4ca7f706332a4e1b0
+timeCreated: 1480930165
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: UItubiao_liuguang_0
+    21300002: UItubiao_liuguang_1
+    21300004: UItubiao_liuguang_2
+    21300006: UItubiao_liuguang_3
+    21300008: UItubiao_liuguang_4
+    21300010: UItubiao_liuguang_5
+    21300012: UItubiao_liuguang_6
+    21300014: UItubiao_liuguang_7
+    21300016: UItubiao_liuguang_8
+    21300018: UItubiao_liuguang_9
+    21300020: UItubiao_liuguang_10
+    21300022: UItubiao_liuguang_11
+    21300024: UItubiao_liuguang_12
+    21300026: UItubiao_liuguang_13
+    21300028: UItubiao_liuguang_14
+    21300030: UItubiao_liuguang_15
+    21300032: UItubiao_liuguang_16
+    21300034: UItubiao_liuguang_17
+    21300036: UItubiao_liuguang_18
+    21300038: UItubiao_liuguang_19
+    21300040: UItubiao_liuguang_20
+    21300042: xulie_056_0
+    21300044: xulie_056_1
+    21300046: xulie_056_2
+    21300048: xulie_056_3
+    21300050: xulie_056_4
+    21300052: xulie_056_5
+    21300054: xulie_056_6
+    21300056: xulie_056_7
+    21300058: xulie_056_8
+    21300060: xulie_056_9
+    21300062: xulie_056_10
+    21300064: xulie_056_11
+    21300066: xulie_056_12
+    21300068: xulie_056_13
+    21300070: xulie_056_14
+    21300072: xulie_056_15
+    21300074: xulie_056_16
+    21300076: xulie_056_17
+    21300078: xulie_056_18
+    21300080: xulie_056_19
+    21300082: xulie_056_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: xulie_056_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63, y: 19}
+        - {x: -63, y: -18}
+        - {x: -56, y: -20}
+        - {x: 58, y: -20}
+        - {x: 58, y: 19}
+    - name: xulie_056_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 19}
+        - {x: -57, y: 17}
+        - {x: -64, y: 4}
+        - {x: -64, y: -8}
+        - {x: -57, y: -20}
+        - {x: 44, y: -20}
+        - {x: 58, y: 15}
+        - {x: 58, y: 17}
+        - {x: 57, y: 19}
+      - - {x: 55, y: -11}
+        - {x: 50, y: -11}
+        - {x: 46, y: -16}
+        - {x: 47, y: -19}
+        - {x: 55, y: -19}
+        - {x: 57, y: -17}
+        - {x: 57, y: -12}
+    - name: xulie_056_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61, y: 19}
+        - {x: -64, y: 7}
+        - {x: -64, y: -7}
+        - {x: -56, y: -20}
+        - {x: 56, y: -20}
+        - {x: 58, y: -16}
+        - {x: 58, y: 19}
+    - name: xulie_056_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61, y: 19}
+        - {x: -64, y: 7}
+        - {x: -64, y: -7}
+        - {x: -56, y: -20}
+        - {x: 51, y: -20}
+        - {x: 58, y: -11}
+        - {x: 58, y: 19}
+    - name: xulie_056_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58, y: 19}
+        - {x: -64, y: 8}
+        - {x: -64, y: -13}
+        - {x: -60, y: -20}
+        - {x: 49, y: -20}
+        - {x: 58, y: 10}
+        - {x: 58, y: 17}
+        - {x: 57, y: 19}
+    - name: xulie_056_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61, y: 19}
+        - {x: -64, y: 7}
+        - {x: -64, y: -7}
+        - {x: -57, y: -20}
+        - {x: 40, y: -20}
+        - {x: 42, y: -14}
+        - {x: 58, y: 7}
+        - {x: 58, y: 19}
+    - name: xulie_056_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61, y: 19}
+        - {x: -64, y: 7}
+        - {x: -64, y: -7}
+        - {x: -56, y: -20}
+        - {x: 44, y: -20}
+        - {x: 58, y: 10}
+        - {x: 58, y: 19}
+    - name: xulie_056_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 19}
+        - {x: -61, y: 19}
+        - {x: -64, y: 7}
+        - {x: -64, y: -7}
+        - {x: -56, y: -20}
+        - {x: 36, y: -20}
+        - {x: 40, y: -17}
+        - {x: 40, y: -14}
+        - {x: 58, y: 10}
+      - - {x: 51, y: -15}
+        - {x: 54, y: -19}
+        - {x: 57, y: -18}
+        - {x: 57, y: -13}
+        - {x: 56, y: -11}
+        - {x: 54, y: -11}
+        - {x: 51, y: -12}
+    - name: xulie_056_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61, y: 19}
+        - {x: -64, y: 8}
+        - {x: -64, y: -8}
+        - {x: -58, y: -20}
+        - {x: 45, y: -20}
+        - {x: 58, y: 11}
+        - {x: 58, y: 19}
+      - - {x: 52, y: -17}
+        - {x: 54, y: -19}
+        - {x: 57, y: -18}
+        - {x: 57, y: -13}
+        - {x: 55, y: -11}
+        - {x: 52, y: -12}
+    - name: xulie_056_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 19}
+        - {x: -63, y: 5}
+        - {x: -63, y: -8}
+        - {x: -56, y: -20}
+        - {x: 51, y: -20}
+        - {x: 58, y: -9}
+        - {x: 58, y: 19}
+    - name: xulie_056_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 19}
+        - {x: -61, y: 17}
+        - {x: -61, y: -15}
+        - {x: -60, y: -20}
+        - {x: 52, y: -20}
+        - {x: 58, y: 15}
+        - {x: 58, y: 19}
+    - name: xulie_056_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 19}
+        - {x: -61, y: 11}
+        - {x: -61, y: -15}
+        - {x: -57, y: -20}
+        - {x: 51, y: -20}
+        - {x: 55, y: -5}
+        - {x: 58, y: 15}
+        - {x: 58, y: 19}
+    - name: xulie_056_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61, y: 19}
+        - {x: -61, y: -19}
+        - {x: -55, y: -20}
+        - {x: 53, y: -20}
+        - {x: 55, y: -19}
+        - {x: 58, y: 0}
+        - {x: 58, y: 19}
+    - name: xulie_056_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58, y: 19}
+        - {x: -61, y: 13}
+        - {x: -61, y: -17}
+        - {x: -59, y: -20}
+        - {x: 58, y: -20}
+        - {x: 58, y: 18}
+        - {x: 57, y: 19}
+    - name: xulie_056_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: 19}
+        - {x: -59, y: 18}
+        - {x: -61, y: 9}
+        - {x: -61, y: 5}
+        - {x: -59, y: 4}
+        - {x: -61, y: -2}
+        - {x: -61, y: -18}
+        - {x: -60, y: -20}
+        - {x: 58, y: -20}
+        - {x: 58, y: 19}
+    - name: xulie_056_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: -2}
+        - {x: 58, y: 13}
+        - {x: 58, y: 17}
+        - {x: 57, y: 18}
+        - {x: 51, y: 19}
+        - {x: -61, y: 19}
+        - {x: -61, y: -17}
+        - {x: -56, y: -20}
+        - {x: 56, y: -20}
+        - {x: 58, y: -15}
+        - {x: 58, y: -11}
+        - {x: 49, y: 1}
+    - name: xulie_056_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: 19}
+        - {x: -57, y: 17}
+        - {x: -61, y: 11}
+        - {x: -61, y: -20}
+        - {x: 56, y: -20}
+        - {x: 58, y: -19}
+        - {x: 58, y: 18}
+        - {x: 57, y: 19}
+      - - {x: -64, y: -2}
+        - {x: -63, y: -3}
+        - {x: -60, y: -2}
+        - {x: -60, y: 1}
+        - {x: -63, y: 2}
+        - {x: -64, y: 1}
+    - name: xulie_056_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 14}
+        - {x: 58, y: 17}
+        - {x: 57, y: 19}
+        - {x: -56, y: 19}
+        - {x: -57, y: 17}
+        - {x: -61, y: 10}
+        - {x: -61, y: -14}
+        - {x: -56, y: -20}
+        - {x: 39, y: -20}
+        - {x: 42, y: -13}
+        - {x: 29, y: -6}
+        - {x: 44, y: 2}
+      - - {x: 52, y: -6}
+        - {x: 50, y: -6}
+        - {x: 43, y: -9}
+        - {x: 40, y: -16}
+        - {x: 40, y: -18}
+        - {x: 42, y: -19}
+        - {x: 55, y: -19}
+        - {x: 57, y: -17}
+        - {x: 57, y: -11}
+      - - {x: -64, y: 2}
+        - {x: -63, y: -1}
+        - {x: -60, y: -1}
+        - {x: -58, y: 1}
+        - {x: -59, y: 4}
+        - {x: -62, y: 4}
+    - name: xulie_056_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 15}
+        - {x: 58, y: 19}
+        - {x: -57, y: 19}
+        - {x: -57, y: 17}
+        - {x: -61, y: 8}
+        - {x: -61, y: 5}
+        - {x: -59, y: 4}
+        - {x: -61, y: -6}
+        - {x: -61, y: -14}
+        - {x: -56, y: -20}
+        - {x: 39, y: -20}
+        - {x: 42, y: -13}
+        - {x: 29, y: -6}
+        - {x: 47, y: 1}
+      - - {x: 56, y: -11}
+        - {x: 49, y: -11}
+        - {x: 44, y: -15}
+        - {x: 44, y: -16}
+        - {x: 45, y: -19}
+        - {x: 55, y: -19}
+        - {x: 57, y: -17}
+        - {x: 57, y: -12}
+    - name: xulie_056_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 19}
+        - {x: -54, y: 19}
+        - {x: -57, y: 17}
+        - {x: -61, y: 11}
+        - {x: -61, y: -20}
+        - {x: 41, y: -20}
+        - {x: 47, y: -17}
+        - {x: 58, y: 8}
+        - {x: 58, y: 16}
+      - - {x: 56, y: -12}
+        - {x: 51, y: -12}
+        - {x: 46, y: -15}
+        - {x: 46, y: -17}
+        - {x: 47, y: -19}
+        - {x: 55, y: -19}
+        - {x: 57, y: -17}
+        - {x: 57, y: -13}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

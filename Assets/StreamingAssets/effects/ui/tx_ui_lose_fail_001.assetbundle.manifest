@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 3228834642
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f729f3a23cf6455cb9c213ee88ccf62e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e3fd7388782667af38cfcfee4cb18625
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/ui/tx_ui_lose_fail_001.prefab
+Dependencies:
+- F:/client/Assets/StreamingAssets/ui/textures/jiesuanui.assetbundle

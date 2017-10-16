@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 1389851992
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ea05f6a2026f20d57845e5972542a951
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/mobai/diguang-2.png
+- Assets/ArtAssets/original/UI/mobai/wudoushen.png
+- Assets/ArtAssets/original/UI/mobai/zhizun.png
+- Assets/ArtAssets/original/UI/mobai/huoguo.png
+- Assets/ArtAssets/original/UI/mobai/touxiandi.png
+- Assets/ArtAssets/original/UI/mobai/zhanshen.png
+- Assets/ArtAssets/original/UI/mobai/dizuo.png
+- Assets/ArtAssets/original/UI/mobai/zuiqiang.png
+- Assets/ArtAssets/original/UI/mobai/diguang-1.png
+- Assets/ArtAssets/original/UI/mobai/mobai.png
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1486610581
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 04712678ad88db300b46a9fafa57cb8e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/wangcheng.mp3
+Dependencies: []

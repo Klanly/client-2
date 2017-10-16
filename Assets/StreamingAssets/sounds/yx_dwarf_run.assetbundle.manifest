@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 313185804
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bad5c0cbacad5542928a92b2216b24b0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_dwarf_run.ogg
+Dependencies: []

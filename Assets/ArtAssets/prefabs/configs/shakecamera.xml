@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* id不能重复
+* number_of_shakes 重复次数
+* shake_amount_x x方向的抖动值建议范围0-2
+* shake_amount_y y方向的抖动值建议范围0-2
+* shake_amount_z z方向的抖动值建议范围0-2
+* rotation_amount_x x方向的旋转值建议范围0-10
+* rotation_amount_y y方向的旋转值建议范围0-10
+* rotation_amount_z z方向的旋转值建议范围0-10
+* distance 改变值的比例建议范围0-1
+* speed 速度0-100
+* decay 衰变值 填0 就是匀速范围0-1
+-->
+<database n="shakecamera"> 
+    <table n="parames">
+        <c n="id">上下小幅度</c>
+        <c n="number_of_shakes">1</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">0.15</c>
+        <c n="shake_amount_z">0</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">30</c>
+        <c n="decay">0</c>
+    </table>
+    <table n="parames">
+        <c n="id">左右小幅度</c>
+        <c n="number_of_shakes">1</c>
+        <c n="shake_amount_x">0.15</c>
+        <c n="shake_amount_y">0</c>
+        <c n="shake_amount_z">0</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">40</c>
+        <c n="decay">0</c>
+    </table>
+    <table n="parames">
+        <c n="id">上下左右小幅度</c>
+        <c n="number_of_shakes">1</c>
+        <c n="shake_amount_x">0.15</c>
+        <c n="shake_amount_y">0.15</c>
+        <c n="shake_amount_z">0</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">50</c>
+        <c n="decay">0</c>
+    </table>
+    <table n="parames">
+        <c n="id">上下小幅度战士</c>
+        <c n="number_of_shakes">2</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">0.3</c>
+        <c n="shake_amount_z">0</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">80</c>
+        <c n="decay">0</c>
+    </table>
+    <table n="parames">
+        <c n="id">上下大幅度</c>
+        <c n="number_of_shakes">4</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">4</c>
+        <c n="shake_amount_z">0</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">85</c>
+        <c n="decay">0</c>
+    </table>
+    <table n="parames">
+        <c n="id">镜头里外伸缩</c>
+        <c n="number_of_shakes">1</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">0</c>
+        <c n="shake_amount_z">2</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">70</c>
+        <c n="decay">0.3</c>
+    </table>
+  		<table n="parames">
+        <c n="id">上下中幅度</c>
+        <c n="number_of_shakes">3</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">1</c>
+        <c n="shake_amount_z">0</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">70</c>
+        <c n="decay">0</c>
+    </table>
+       <table n="parames">
+        <c n="id">镜头里外伸缩大幅度</c>
+        <c n="number_of_shakes">2</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">0</c>
+        <c n="shake_amount_z">2</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">10</c>
+        <c n="decay">1</c>
+    </table>
+   		<table n="parames">
+        <c n="id">镜头拉伸</c>
+        <c n="number_of_shakes">1</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">0</c>
+        <c n="shake_amount_z">28</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">15</c>
+        <c n="decay">0.5</c>
+    </table>
+    	<table n="parames">
+        <c n="id">镜头拉伸2</c>
+        <c n="number_of_shakes">1</c>
+        <c n="shake_amount_x">0</c>
+        <c n="shake_amount_y">0</c>
+        <c n="shake_amount_z">10</c>
+        <c n="rotation_amount_x">0</c>
+        <c n="rotation_amount_y">0</c>
+        <c n="rotation_amount_z">0</c>
+        <c n="distance">1</c>
+        <c n="speed">14</c>
+        <c n="decay">0.3</c>
+    </table>
+     <table n="parames">
+        <c n="id">旧震屏大幅度</c>
+        <c n="type">1</c>
+        <c n="firsttime">0.1</c>
+        <c n="secondtime">0.4</c>
+        <c n="isdiminishing">1</c>
+        <c n="range">10</c>
+    </table>
+        <table n="parames">
+        <c n="id">旧震屏小幅度</c>
+        <c n="type">1</c>
+        <c n="firsttime">0.1</c>
+        <c n="secondtime">0.6</c>
+        <c n="isdiminishing">0</c>
+        <c n="range">5</c>
+    </table>
+</database>

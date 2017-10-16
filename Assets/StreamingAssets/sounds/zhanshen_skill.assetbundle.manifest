@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2491428712
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b2b934789db7932044cddcb34cdd652c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/zhanshen_skill.mp3
+Dependencies: []

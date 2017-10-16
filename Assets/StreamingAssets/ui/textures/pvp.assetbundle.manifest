@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 2676155942
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f45c4b0ebff045d06d6b2d1709c540aa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/PVP/pipeizhan.png
+- Assets/ArtAssets/original/UI/PVP/pipei.png
+- Assets/ArtAssets/original/UI/PVP/jingji.png
+- Assets/ArtAssets/original/UI/PVP/jingjichang.png
+- Assets/ArtAssets/original/UI/PVP/jingji-dianji.png
+- Assets/ArtAssets/original/UI/PVP/guang.png
+- Assets/ArtAssets/original/UI/PVP/pipei-dianji.png
+Dependencies: []

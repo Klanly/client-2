@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 181730340
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 870d931930637c09aa80a5b01b0bc5e4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/kulou_fly.mp3
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2486510129
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4aeb2e6e9454b3c62a83fdc820bd82ed
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_theadfdr_att1_001.ogg
+Dependencies: []

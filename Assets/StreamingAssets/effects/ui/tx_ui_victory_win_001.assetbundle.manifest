@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 4093511900
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a3208bc0c3531c75891b5a3f496014f5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9eca705f54bb90995928df45130cce9e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 29e8de74bc9555f4aa1c52cabcabf1c4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/ui/tx_ui_victory_win_001.prefab
+Dependencies:
+- F:/client/Assets/StreamingAssets/ui/textures/jiesuanui.assetbundle

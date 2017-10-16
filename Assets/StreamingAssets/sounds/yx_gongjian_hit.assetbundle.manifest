@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 161923289
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4c9ea80d642af90c0fbb22dd1932c27e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_gongjian_hit.ogg
+Dependencies: []

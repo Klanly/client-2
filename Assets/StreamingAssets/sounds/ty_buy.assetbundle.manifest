@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1272421308
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 86970b4604470f8ff85ec2b753da203d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/ty_buy.mp3
+Dependencies: []

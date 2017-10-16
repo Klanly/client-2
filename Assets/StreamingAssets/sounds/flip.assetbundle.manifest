@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2013303884
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e6781530b6d7fbb895ef653f3fc1ae8a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/flip.mp3
+Dependencies: []

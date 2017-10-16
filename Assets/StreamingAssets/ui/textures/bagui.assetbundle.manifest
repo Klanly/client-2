@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2395647296
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 22b8a96058d1f1d858010a825eeb66d8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/BagUI/B.png
+- Assets/ArtAssets/original/UI/BagUI/D.png
+- Assets/ArtAssets/original/UI/BagUI/diguang1-1.png
+- Assets/ArtAssets/original/UI/BagUI/A.png
+- Assets/ArtAssets/original/UI/BagUI/pkuang.png
+- Assets/ArtAssets/original/UI/BagUI/S.png
+- Assets/ArtAssets/original/UI/BagUI/C.png
+- Assets/ArtAssets/original/UI/BagUI/ziti_test.png
+Dependencies: []

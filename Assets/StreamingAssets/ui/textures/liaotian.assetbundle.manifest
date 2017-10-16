@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2346680005
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a05cb9a59fc4ecd6cd7e775a6263bd8a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/liaotian/queding.png
+- Assets/ArtAssets/original/UI/liaotian/diban.png
+- Assets/ArtAssets/original/UI/liaotian/jiahaoyou.png
+- Assets/ArtAssets/original/UI/liaotian/liaotian.png
+- Assets/ArtAssets/original/UI/liaotian/liaotiankuang-1.png
+- Assets/ArtAssets/original/UI/liaotian/chakan.png
+- Assets/ArtAssets/original/UI/liaotian/liaotiankuang-2.png
+- Assets/ArtAssets/original/UI/liaotian/siliao.png
+- Assets/ArtAssets/original/UI/liaotian/guanbi.png
+Dependencies: []

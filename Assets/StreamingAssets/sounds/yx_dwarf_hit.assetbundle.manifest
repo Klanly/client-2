@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2157251091
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8a0666b1f2b5de1bd0732272702ad147
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_dwarf_hit.mp3
+Dependencies: []

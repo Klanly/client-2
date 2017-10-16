@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1200530479
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bc4c09505d1e54bee0bae2f1ca7adadb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ee3468f345ee890a7475e2222ba0bf0b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 92
+  Script: {instanceID: 0}
+- Class: 124
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_xiayu_0001.prefab
+Dependencies: []

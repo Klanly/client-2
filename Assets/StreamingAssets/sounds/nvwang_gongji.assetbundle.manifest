@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1552397162
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 059d1835ac4b854219767536467a95db
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/nvwang_gongji.mp3
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1817406256
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 39d96deea58ffb8c76742897ad1e822d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/daodun_gongji.mp3
+Dependencies: []

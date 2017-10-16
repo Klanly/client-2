@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 1432607543
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f456141e6f8f74de40cf9237f3316fbc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/youjian/di-2.png
+- Assets/ArtAssets/original/UI/youjian/di-4.png
+- Assets/ArtAssets/original/UI/youjian/yilin-1.png
+- Assets/ArtAssets/original/UI/youjian/anniu-1.png
+- Assets/ArtAssets/original/UI/youjian/anniu-2.png
+- Assets/ArtAssets/original/UI/youjian/yilin-2.png
+- Assets/ArtAssets/original/UI/youjian/nex1-1.png
+- Assets/ArtAssets/original/UI/youjian/di-1.png
+- Assets/ArtAssets/original/UI/youjian/di-3.png
+- Assets/ArtAssets/original/UI/youjian/youjian-1.png
+- Assets/ArtAssets/original/UI/youjian/youjian-2.png
+Dependencies: []

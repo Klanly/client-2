@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1471216525
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 770361359c0fbeb6532a76a0811d1146
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/juren_walk.mp3
+Dependencies: []

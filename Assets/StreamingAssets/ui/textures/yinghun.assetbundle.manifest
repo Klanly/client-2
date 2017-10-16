@@ -1,0 +1,61 @@
+ManifestFileVersion: 0
+CRC: 1350482209
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d251474f3e020aaf45bffc88730c1873
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/yinghun/jingling.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-10.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-7.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-13.png
+- Assets/ArtAssets/original/UI/yinghun/taitan.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-12.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-1.png
+- Assets/ArtAssets/original/UI/yinghun/di-yingxiong.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-5.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-24.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-22.png
+- Assets/ArtAssets/original/UI/yinghun/di-lv.png
+- Assets/ArtAssets/original/UI/yinghun/di-huang.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-14.png
+- Assets/ArtAssets/original/UI/yinghun/di-bai.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-9.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-17.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-11.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-15.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-21.png
+- Assets/ArtAssets/original/UI/yinghun/yuhuo.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-23.png
+- Assets/ArtAssets/original/UI/yinghun/kuang-cheng.png
+- Assets/ArtAssets/original/UI/yinghun/aoshu.png
+- Assets/ArtAssets/original/UI/yinghun/di-xingxing.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-19.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-8.png
+- Assets/ArtAssets/original/UI/yinghun/yinghun.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-16.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-6.png
+- Assets/ArtAssets/original/UI/yinghun/di-hong.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-18.png
+- Assets/ArtAssets/original/UI/yinghun/di-mingcheng.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-3.png
+- Assets/ArtAssets/original/UI/yinghun/anniu.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-4.png
+- Assets/ArtAssets/original/UI/yinghun/yuanquan.png
+- Assets/ArtAssets/original/UI/yinghun/di-zuobian.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-2.png
+- Assets/ArtAssets/original/UI/yinghun/di-zhenfa.png
+- Assets/ArtAssets/original/UI/yinghun/guangming.png
+- Assets/ArtAssets/original/UI/yinghun/di-lan.png
+- Assets/ArtAssets/original/UI/yinghun/faguang.png
+- Assets/ArtAssets/original/UI/yinghun/hunshi-20.png
+Dependencies: []

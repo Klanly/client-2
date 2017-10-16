@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 176557696
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f6f3eb8042e9cd7507f138b1bc5ec589
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/ui/gold.mp3
+Dependencies: []

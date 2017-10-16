@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3682557684
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cb9cbadf87a33d0a41394ea48b9861ae
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/bg/scene_town.mp3
+Dependencies: []

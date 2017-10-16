@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3634587167
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8cc5b9301e8128665f8d839ca685e777
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 89f164984d260123f5382c7a577eac0c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/effects/fight/tx_deadl_att2,4,5_001_2.prefab
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 392983405
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6fc17d33a0b1109f859c1e4a020c0cdb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/zhanshen_att5.mp3
+Dependencies: []

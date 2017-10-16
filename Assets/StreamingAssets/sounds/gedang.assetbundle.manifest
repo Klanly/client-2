@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3742080379
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b4a5d4cae7526c25b99a016adb6d17af
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/gedang.mp3
+Dependencies: []

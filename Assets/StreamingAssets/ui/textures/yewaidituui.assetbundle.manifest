@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 3147636489
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9afddfc26b5fc172c59be9ad3d0b11b6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi1-2.png
+- Assets/ArtAssets/original/UI/yewaidituUI/biaoti1-2.png
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi1-4.png
+- Assets/ArtAssets/original/UI/yewaidituUI/xinzeng.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tudi1-2.png
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi2-4.png
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi2-3.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tu1-4.png
+- Assets/ArtAssets/original/UI/yewaidituUI/biaoti1-5.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tu1-2.png
+- Assets/ArtAssets/original/UI/yewaidituUI/renwudi1-2.png
+- Assets/ArtAssets/original/UI/yewaidituUI/biaoti1-6.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tu1-3.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tudi1-4.png
+- Assets/ArtAssets/original/UI/yewaidituUI/paihang.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tudi1-1.png
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi1-1.png
+- Assets/ArtAssets/original/UI/yewaidituUI/liaotian.png
+- Assets/ArtAssets/original/UI/yewaidituUI/dingkuang1-1.png
+- Assets/ArtAssets/original/UI/yewaidituUI/renwutiaodi.png
+- Assets/ArtAssets/original/UI/yewaidituUI/shili.png
+- Assets/ArtAssets/original/UI/yewaidituUI/huicheng.png
+- Assets/ArtAssets/original/UI/yewaidituUI/qianghua.png
+- Assets/ArtAssets/original/UI/yewaidituUI/shijieditu.jpg
+- Assets/ArtAssets/original/UI/yewaidituUI/shuangjian.png
+- Assets/ArtAssets/original/UI/yewaidituUI/renwudi1-3xian.png
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi2-2.png
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi2-1.png
+- Assets/ArtAssets/original/UI/yewaidituUI/yewaiditudi.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tudi1-3.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tu1-1.png
+- Assets/ArtAssets/original/UI/yewaidituUI/tanhao.png
+- Assets/ArtAssets/original/UI/yewaidituUI/shili1-2.png
+- Assets/ArtAssets/original/UI/yewaidituUI/mengban1-1.png
+- Assets/ArtAssets/original/UI/yewaidituUI/shuangjiandi.png
+- Assets/ArtAssets/original/UI/yewaidituUI/wancheng.png
+- Assets/ArtAssets/original/UI/yewaidituUI/biaojidian.png
+- Assets/ArtAssets/original/UI/yewaidituUI/renwudi1-1.png
+- Assets/ArtAssets/original/UI/yewaidituUI/fubendi1-3.png
+Dependencies: []

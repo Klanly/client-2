@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2029475577
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 78c868c24255d29848c097f72c046eba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_stscythe_att1_001.ogg
+Dependencies: []

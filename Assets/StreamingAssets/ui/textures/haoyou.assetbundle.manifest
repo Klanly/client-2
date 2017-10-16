@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 818631310
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 241103e5fea9dce9f8e20226f42fc58c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/haoyou/haoyou1-1.png
+- Assets/ArtAssets/original/UI/haoyou/haorenka.png
+- Assets/ArtAssets/original/UI/haoyou/paihang.png
+- Assets/ArtAssets/original/UI/haoyou/xin1-1.png
+- Assets/ArtAssets/original/UI/haoyou/tongyongditiao1-1.png
+- Assets/ArtAssets/original/UI/haoyou/xin1-2.png
+- Assets/ArtAssets/original/UI/haoyou/songaixin.png
+- Assets/ArtAssets/original/UI/haoyou/guanbi.png
+- Assets/ArtAssets/original/UI/haoyou/ditiao1-1.png
+- Assets/ArtAssets/original/UI/haoyou/liaotian.png
+- Assets/ArtAssets/original/UI/haoyou/tongyongdikuang1.png
+- Assets/ArtAssets/original/UI/haoyou/songaixin1-2.png
+- Assets/ArtAssets/original/UI/haoyou/gongji1-1.png
+- Assets/ArtAssets/original/UI/haoyou/tongyongdikuang2.png
+- Assets/ArtAssets/original/UI/haoyou/_0010_V.png
+- Assets/ArtAssets/original/UI/haoyou/haoyoushurukuang.png
+- Assets/ArtAssets/original/UI/haoyou/fangdajing.png
+- Assets/ArtAssets/original/UI/haoyou/anniu.png
+- Assets/ArtAssets/original/UI/haoyou/tongyongdikuang.png
+Dependencies: []

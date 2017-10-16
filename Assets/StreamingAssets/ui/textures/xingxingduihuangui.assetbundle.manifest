@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 3197654449
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: de19037d868a9404c16ac0c3315ea6a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/get1-1.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/baoxiang2-1.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/baoxiang1-1.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/ditu1-1.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/diguang1-2.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/baoxiang3-2.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/biaoti1-1.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/baoxiang2-2.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/renwutiaodi.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/jiantou1-1.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/baoxiang3-1.png
+- Assets/ArtAssets/original/UI/xingxingduihuanGUI/baoxiang1-2.png
+Dependencies: []

@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 3258699411
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 94df8b2bd88fd275ff868be6526a8a7b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5291c48f8daf64fe59980ad71995c218
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/models/equipments/h_human_magician_staff_04.prefab
+Dependencies: []

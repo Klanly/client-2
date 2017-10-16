@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3988961302
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3affd7ca20d9583e344a696d54a7aaa9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/feichong_die.mp3
+Dependencies: []

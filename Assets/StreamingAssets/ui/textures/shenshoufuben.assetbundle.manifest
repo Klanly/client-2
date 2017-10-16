@@ -1,0 +1,79 @@
+ManifestFileVersion: 0
+CRC: 2338846978
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 832a9205305d45c716c35b26dda55af8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben1-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shuxingtiao2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/lv.png
+- Assets/ArtAssets/original/UI/shenshoufuben/kejibaodi1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Bigbear_n_001_b.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shenshoutu1-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben5-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/anniu1-4.png
+- Assets/ArtAssets/original/UI/shenshoufuben/jufenglongwang2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben4-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/dikuang1-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shuxingtiao.png
+- Assets/ArtAssets/original/UI/shenshoufuben/dikuang1-1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Magicdr_n_001_b.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben3-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/tiao.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben2-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Stscythe_Sword_001_b.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Ghorndr_n_001_b.png
+- Assets/ArtAssets/original/UI/shenshoufuben/bingdi1-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/dikuang1-3.png
+- Assets/ArtAssets/original/UI/shenshoufuben/wushenshou.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben4-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/guilian2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/anniu1-3.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Hurricanedr_n_001_b.png
+- Assets/ArtAssets/original/UI/shenshoufuben/lannvwang2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/zhaojiduiwu.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shuaxin.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shuxingdi2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/juyuan.png
+- Assets/ArtAssets/original/UI/shenshoufuben/zhanqianzhunbei1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/jiantou1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/anniu1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/menghuo2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/lannvwang.png
+- Assets/ArtAssets/original/UI/shenshoufuben/huiying1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Theadfdr_n_001_b.png
+- Assets/ArtAssets/original/UI/shenshoufuben/anniu1-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/di.png
+- Assets/ArtAssets/original/UI/shenshoufuben/kejibaojiantou1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/biaoti1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/juyuan2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben2-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben6-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/bingdi1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/touxiangdi1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/guilian.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shenshoushenlin.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben5-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben3-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/biaoti1-2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/dikuang1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/jufenglongwang.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Wilddr_n_001_b.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben6-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/menghuo.png
+- Assets/ArtAssets/original/UI/shenshoufuben/huiying2.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shenshoutu1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/fuben1-1.png
+- Assets/ArtAssets/original/UI/shenshoufuben/shuxingdi.png
+- Assets/ArtAssets/original/UI/shenshoufuben/Ma_Nocrowndr_n_001_b.png
+Dependencies: []

@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 1209912302
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 093021f4d7d00867db1d6e63d41a11d6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/diyunshizheUI/huatiao2-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/jiangqudi1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/jiangzhang1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/huatiao2-3.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/yeqiandi1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/huatiao1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/huangguang1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/huatiao3-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/juesedipen1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/1st1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/xianggoudi1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/jingying1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/1st1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/weishangbang.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/shouling1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/1st2-3.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/paihangdi1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/huatiao1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/juesedipen1-3.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/jiangzhang1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/jiangqudi1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/jingying1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/1st1-3.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/shouling1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/1st2-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/baoxiang1-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/huatiao2-2.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/baoxiang1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/juesedipen1-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/1st2-1.png
+- Assets/ArtAssets/original/UI/diyunshizheUI/jiangqudi1-3.png
+Dependencies: []

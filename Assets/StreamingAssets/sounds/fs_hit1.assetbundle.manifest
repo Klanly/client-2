@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2533858491
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8798e8926dd2640bd54e248305ce4b9a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/fs_hit1.mp3
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1788182667
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a688bb2616bbcf94f9f19872556929be
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_dead_att3_001.ogg
+Dependencies: []

@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 1775724458
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 12ec5166e492d0c91533f2dc5052caca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: da408b5dcaec04fcfcfa0e4f4f4e9c31
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/fonts/vip_small_font.fontsettings
+- Assets/ArtAssets/prefabs/fonts/hell_small_font.fontsettings
+- Assets/ArtAssets/prefabs/fonts/grey_small.fontsettings
+- Assets/ArtAssets/prefabs/fonts/goldyellowsmall.fontsettings
+- Assets/ArtAssets/prefabs/fonts/herofont.fontsettings
+- Assets/ArtAssets/prefabs/fonts/chinese_gloden_small.fontsettings
+- Assets/ArtAssets/prefabs/fonts/green_small.fontsettings
+- Assets/ArtAssets/prefabs/fonts/hell_big_font.fontsettings
+- Assets/ArtAssets/prefabs/fonts/chinese_grey_small.fontsettings
+- Assets/ArtAssets/prefabs/fonts/chinese_red_small.fontsettings
+- Assets/ArtAssets/prefabs/fonts/vip_big_font.fontsettings
+- Assets/ArtAssets/prefabs/fonts/gloden_small.fontsettings
+- Assets/ArtAssets/prefabs/fonts/gold_font.fontsettings
+Dependencies: []

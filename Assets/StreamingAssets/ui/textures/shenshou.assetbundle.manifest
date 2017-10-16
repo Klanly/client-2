@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 2029596010
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b2f26b94447231db105d0cb0a7e108d2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/shenshou/shuxingdi.png
+- Assets/ArtAssets/original/UI/shenshou/guanghuanji.png
+- Assets/ArtAssets/original/UI/shenshou/jinengdikuang1-1.png
+- Assets/ArtAssets/original/UI/shenshou/suipian.png
+- Assets/ArtAssets/original/UI/shenshou/tiao.png
+- Assets/ArtAssets/original/UI/shenshou/di.jpg
+- Assets/ArtAssets/original/UI/shenshou/shenshou.png
+- Assets/ArtAssets/original/UI/shenshou/ditiao1-1.png
+- Assets/ArtAssets/original/UI/shenshou/kuangwaifaguang.png
+- Assets/ArtAssets/original/UI/shenshou/jinengdikuang1-2.png
+- Assets/ArtAssets/original/UI/shenshou/ditiao1-2.png
+- Assets/ArtAssets/original/UI/shenshou/dengjidi.png
+- Assets/ArtAssets/original/UI/shenshou/ditiao.png
+- Assets/ArtAssets/original/UI/shenshou/guanghuanji1-2.png
+- Assets/ArtAssets/original/UI/shenshou/jinengditu.png
+- Assets/ArtAssets/original/UI/shenshou/xuetiaoquan.png
+- Assets/ArtAssets/original/UI/shenshou/mingyueguanghuan.png
+- Assets/ArtAssets/original/UI/shenshou/jinengdi.png
+- Assets/ArtAssets/original/UI/shenshou/zuoyoujiantou.png
+Dependencies: []

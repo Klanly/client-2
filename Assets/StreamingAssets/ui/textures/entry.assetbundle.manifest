@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 703832502
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3bb3790455bbf5a1e42481bee3e21e48
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/entry/jindutiao1-2.png
+- Assets/ArtAssets/original/UI/entry/jindutiao1-3.png
+- Assets/ArtAssets/original/UI/entry/LOGO.png
+- Assets/ArtAssets/original/UI/entry/jindutiao1-1.png
+- Assets/ArtAssets/original/UI/entry/beijing.jpg
+Dependencies: []

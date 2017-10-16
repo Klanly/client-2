@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 3853139557
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 086764ed133da8a9012c6d453d13a6e5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/monster_icons/M_Goblin_Thief_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Worm_Dgs_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/m_skeleton_mage_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Spectre_Ghost_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Goblin_Shields_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Spectre_Ghostm_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Worm_Dbeast_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Spectre_Ghosta_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Goblin_Mage_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/m_skeleton_archer_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Bst_Infecteda_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Bst_Maga_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Ma_Bigbear_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Bst_Fist_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_BOSS_Queen_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Ma_Ghorndr_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Bst_Green_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Bst_Heavyo_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/m_skeleton_bigsword_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/m_skeleton_shields_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Worm_Batf_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_Goblin_Friedh_001.jpg
+- Assets/ArtAssets/original/UI/monster_icons/M_BOSS_Extinction_001.jpg
+Dependencies: []

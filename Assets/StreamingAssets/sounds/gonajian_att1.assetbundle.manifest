@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2075756835
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 29c4ac19fae951f6b929a615b96687c2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/gonajian_att1.mp3
+Dependencies: []

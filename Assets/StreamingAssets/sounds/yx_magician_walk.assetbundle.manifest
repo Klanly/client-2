@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1310799400
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fd659023ead0655902b7c8f3ca3495f0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_magician_walk.ogg
+Dependencies: []

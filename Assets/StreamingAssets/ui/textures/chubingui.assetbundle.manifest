@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 833318455
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ee1f2b38efac65223e3566501f256489
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/chubingUI/chubing1-1.png
+- Assets/ArtAssets/original/UI/chubingUI/mengban1-1.png
+- Assets/ArtAssets/original/UI/chubingUI/guanbi1-1.png
+- Assets/ArtAssets/original/UI/chubingUI/ditu1-2.png
+- Assets/ArtAssets/original/UI/chubingUI/bingzhongkuang1-3.png
+- Assets/ArtAssets/original/UI/chubingUI/zhiyetubiao.png
+- Assets/ArtAssets/original/UI/chubingUI/bingzhongkuang1-2.png
+- Assets/ArtAssets/original/UI/chubingUI/xuetiao1-1.png
+- Assets/ArtAssets/original/UI/chubingUI/bingzhongkuang1-1.png
+- Assets/ArtAssets/original/UI/chubingUI/dijianbiamn6-1.png
+- Assets/ArtAssets/original/UI/chubingUI/jia1-1.png
+- Assets/ArtAssets/original/UI/chubingUI/dijianbiamn4-1.png
+- Assets/ArtAssets/original/UI/chubingUI/bingzhongkuang1-4.png
+Dependencies: []

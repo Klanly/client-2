@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1426349709
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fa64c3bd9f7b70bc2dfaaf59094361e4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/sounds/fight/yx_extinction_att1_001.ogg
+Dependencies: []

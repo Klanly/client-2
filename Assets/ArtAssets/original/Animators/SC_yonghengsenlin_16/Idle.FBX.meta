@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 19f216bd628b51645a4a3c62f92018f4
+timeCreated: 1447840002
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: All
+    100002: Bone03
+    100004: Bone05
+    100006: Bone07
+    100008: Bone07(mirrored)
+    100010: Bone08
+    100012: Bone08(mirrored)
+    100014: Bone09
+    100016: Bone09(mirrored)
+    100018: Bone10
+    100020: Bone10(mirrored)
+    100022: Bone11
+    100024: Bone11(mirrored)
+    100026: Bone12
+    100028: Bone12(mirrored)
+    100030: Bone13
+    100032: Bone13(mirrored)
+    100034: Bone14
+    100036: Bone14(mirrored)
+    100038: Bone15
+    100040: Bone15(mirrored)
+    100042: Bone16
+    100044: Bone16(mirrored)
+    100046: Bone17
+    100048: Bone17(mirrored)
+    100050: Bone18
+    100052: Bone18(mirrored)
+    100054: Dummy01
+    100056: IK Chain01
+    100058: IK Chain02
+    100060: IK Chain03
+    100062: IK Chain04
+    100064: //RootNode
+    400000: All
+    400002: Bone03
+    400004: Bone05
+    400006: Bone07
+    400008: Bone07(mirrored)
+    400010: Bone08
+    400012: Bone08(mirrored)
+    400014: Bone09
+    400016: Bone09(mirrored)
+    400018: Bone10
+    400020: Bone10(mirrored)
+    400022: Bone11
+    400024: Bone11(mirrored)
+    400026: Bone12
+    400028: Bone12(mirrored)
+    400030: Bone13
+    400032: Bone13(mirrored)
+    400034: Bone14
+    400036: Bone14(mirrored)
+    400038: Bone15
+    400040: Bone15(mirrored)
+    400042: Bone16
+    400044: Bone16(mirrored)
+    400046: Bone17
+    400048: Bone17(mirrored)
+    400050: Bone18
+    400052: Bone18(mirrored)
+    400054: Dummy01
+    400056: IK Chain01
+    400058: IK Chain02
+    400060: IK Chain03
+    400062: IK Chain04
+    400064: //RootNode
+    7400000: Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 3
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: All
+        weight: 1
+      - path: All/Bone03
+        weight: 1
+      - path: All/Bone03/Bone05
+        weight: 1
+      - path: All/Bone03/Dummy01
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07/Bone08
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07/Bone08/Bone09
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07/Bone08/Bone09/Bone10
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07/Bone08/Bone09/Bone10/Bone11
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07/Bone08/Bone09/Bone10/Bone11/Bone12
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07(mirrored)/Bone08(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07(mirrored)/Bone08(mirrored)/Bone09(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07(mirrored)/Bone08(mirrored)/Bone09(mirrored)/Bone10(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07(mirrored)/Bone08(mirrored)/Bone09(mirrored)/Bone10(mirrored)/Bone11(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone07(mirrored)/Bone08(mirrored)/Bone09(mirrored)/Bone10(mirrored)/Bone11(mirrored)/Bone12(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13/Bone14
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13/Bone14/Bone15
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13/Bone14/Bone15/Bone16
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13/Bone14/Bone15/Bone16/Bone17
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13/Bone14/Bone15/Bone16/Bone17/Bone18
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13(mirrored)/Bone14(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13(mirrored)/Bone14(mirrored)/Bone15(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13(mirrored)/Bone14(mirrored)/Bone15(mirrored)/Bone16(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13(mirrored)/Bone14(mirrored)/Bone15(mirrored)/Bone16(mirrored)/Bone17(mirrored)
+        weight: 1
+      - path: All/Bone03/Dummy01/Bone13(mirrored)/Bone14(mirrored)/Bone15(mirrored)/Bone16(mirrored)/Bone17(mirrored)/Bone18(mirrored)
+        weight: 1
+      - path: All/IK Chain01
+        weight: 1
+      - path: All/IK Chain02
+        weight: 1
+      - path: All/IK Chain03
+        weight: 1
+      - path: All/IK Chain04
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

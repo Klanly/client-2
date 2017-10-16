@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 1947377771
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b71a6998daf4811f5f4ddbe372f6285b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/original/UI/yuanzheng/gongnengdi1-1.png
+- Assets/ArtAssets/original/UI/yuanzheng/tips1-2.png
+- Assets/ArtAssets/original/UI/yuanzheng/gongnengdi1-2.png
+- Assets/ArtAssets/original/UI/yuanzheng/biaoti1-2.png
+- Assets/ArtAssets/original/UI/yuanzheng/biaoti1-1.png
+- Assets/ArtAssets/original/UI/yuanzheng/tu1-2.png
+- Assets/ArtAssets/original/UI/yuanzheng/zuoyoujiantou.png
+- Assets/ArtAssets/original/UI/yuanzheng/biaoti1-5.png
+- Assets/ArtAssets/original/UI/yuanzheng/biaotidi.png
+- Assets/ArtAssets/original/UI/yuanzheng/mengban1-1.png
+- Assets/ArtAssets/original/UI/yuanzheng/qiangkuang.png
+- Assets/ArtAssets/original/UI/yuanzheng/tangkuangtitiao.png
+- Assets/ArtAssets/original/UI/yuanzheng/jiaoyin.png
+- Assets/ArtAssets/original/UI/yuanzheng/suo.png
+Dependencies: []
