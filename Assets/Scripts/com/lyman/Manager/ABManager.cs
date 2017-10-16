@@ -284,6 +284,7 @@ public class CreateAssetBundleAsync
         if (assetBundleCreateRequest.isDone)
         {
             TimerManager.RemoveHandler(timerInfo);
+            timerInfo = null;
             if (assetBundleCacheHandler != null)
             {
                 assetBundleCacheHandler(assetBundleName, assetBundleCreateRequest.assetBundle);

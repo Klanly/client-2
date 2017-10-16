@@ -392,6 +392,7 @@ public class AttributeSetting
     private void OnDelayHandler(float del)
     {
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
         float length = tCreature.GetCurrentActionLength();
         Debug.Log("n:" + currentActionInfo.ActionName + " / length:" + length);
         lengthMap.Add(currentActionInfo.ActionName, length);
@@ -688,11 +689,30 @@ public class AttributeSetting
 
 
 
-
+    private TimerInfo tTimerInfo;
     private void OnPreviewBtnClickHandler()
     {
-        Debug.LogError("preview");
+        Debug.LogError("start preview");
+        Alert.Show("预览准备中，请稍等......");
+        if (currentCharacterConfigInfo != null && currentActionInfo != null && tCreature != null)
+        {
+            if (currentActionInfo.ActionName != AnimationType.Idle)
+            {
+                tTimerInfo = TimerManager.AddDelayHandler(OnDelHandler, 2f, 1);
+                tCreature.PlayAnimation(AnimationType.Idle, true);
+            }
+        }
     }
+
+    private void OnDelHandler(float del)
+    {
+        Alert.Hide();
+        TimerManager.RemoveHandler(tTimerInfo);
+        tTimerInfo = null;
+        tCreature.PlayAnimation(currentActionInfo.ActionName, true);
+    }
+
+
     private void OnSaveBtnClickHandler()
     {
         

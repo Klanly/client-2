@@ -55,6 +55,7 @@ public class NEffect
     public void Stop()
     {
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
         SEffectManager.RecycleEffect(abName, prefabName, effect);
         if (audioSource != null)
         {

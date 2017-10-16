@@ -35,18 +35,20 @@ public class HitMoveState : FSMState
     public void Stop()
     {
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
     }
 
     public override void Destroy()
     {
         base.Destroy();
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
     }
 
     public void ReStart()
     {
         TimerManager.RemoveHandler(timerInfo);
-        
+        timerInfo = null;
         creature.FaceTo(AnAtt.GetPosition());
         creature.PlayAnimation(AnimationType.Hit,true,null, OnEndHandler);
         speed = MoveDistance / MoveTime;
@@ -71,6 +73,7 @@ public class HitMoveState : FSMState
         if (curTime >= MoveTime)
         {
             TimerManager.RemoveHandler(timerInfo);
+            timerInfo = null;
         }
         else
         {
@@ -83,6 +86,7 @@ public class HitMoveState : FSMState
     public override void OnLeave(FSMTranslation translatioin)
     {
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
     }
 }
 

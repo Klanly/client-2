@@ -11,6 +11,8 @@ class TimerTypes
 
 public class TimerInfo
 {
+    private static int index = 0;
+
     private Action<float> delayHandler;
     private int type = TimerTypes.EndlessLoop;
     
@@ -20,12 +22,14 @@ public class TimerInfo
     private float currentDelay;
     private int currentTimes;
     private bool pause;
-
+    private int myIndex;
     public TimerInfo()
     {
         currentDelay = 0f;
         currentTimes = 0;
         deleteFlag = false;
+        index++;
+        myIndex = index;
     }
     
 
@@ -158,9 +162,9 @@ public class TimerManager
         if (delayHandler != null)
         {
             TimerInfo timerInfo = GetTimerInfo();
+            timerInfo.DelayHandler = delayHandler;
             timerInfo.Type = TimerTypes.Delay;
             timerInfo.RepeatTimes = repeattimes;
-            timerInfo.DelayHandler = delayHandler;
             timerInfo.DelayTime = delaytime;
             timerInfo.DeleteFlag = false;
             runningTimerInfoList.Add(timerInfo);

@@ -211,6 +211,7 @@ public class Creature : SceneEntity
     private void OnEndHandler(float del)
     {
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
         if (OnActionEndHandler != null)
         {
             OnActionEndHandler();
@@ -275,6 +276,7 @@ public class Creature : SceneEntity
             StopOldActionEffect(currentActionName);
         }
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
         OnActionEndHandler = null;
         if (Model != null && characterConfigInfo != null)
         {
@@ -502,6 +504,7 @@ public class Creature : SceneEntity
     public override void Destroy()
     {
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
         for (int i = 0; i < nEffectCache.Count; ++i)
         {
             NEffect nEffect = nEffectCache[i];

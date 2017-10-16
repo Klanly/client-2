@@ -14,6 +14,7 @@ public class GameConst
     public const string SoundABDirectory = "sounds/";
     public const string CharacterModelABDirectory = "models/characters/";
     public const string EquipmentModelABDirectory = "models/equipments/";
+    public const string FightEffectABDirectory = "effects/fight/";
     /// <summary>
     /// 获取ab存放路径 在移动平台ab会存放在可读写目录便于热更新
     /// </summary>

@@ -14,7 +14,7 @@ public class SEffectManager
     public static GameObject GetEffect(string abName, string prefabName)
     {
         if (string.IsNullOrEmpty(abName) || string.IsNullOrEmpty(prefabName)) return null;
-        GameObject prefab = ResourceManager.GetGameObjectPrefab(abName, prefabName);
+        GameObject prefab = ResourceManager.GetGameObjectPrefab(GameConst.FightEffectABDirectory + abName, prefabName); 
         GameObjectPool gameObjectPool = ObjectPoolManager.Instance.CreatePool(abName + "_" + prefabName, CacheCount, prefab);
         GameObject go = gameObjectPool.GetGameObject();
         return go;

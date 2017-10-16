@@ -275,6 +275,7 @@ public class DataManager
         else
         {
             TimerManager.RemoveHandler(timerInfo);
+            timerInfo = null;
             // to do 保存完成
             if (OnCompleteHandler != null)
             {
