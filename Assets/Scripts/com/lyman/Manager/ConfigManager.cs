@@ -164,14 +164,14 @@ public class ConfigManager
 
 
     //获取模型配置信息
-    public static CharacterConfigInfo GetCharacterConfigInfo(string modelName)
+    public static CharacterConfigInfo GetCharacterConfigInfo(string modelName, bool isEditor = false)
     {
         CharacterConfigInfo characterConfigInfo;
         characterConfigInfos.TryGetValue(modelName, out characterConfigInfo);
         if (characterConfigInfo == null)
         {
             string name = modelName.ToLower();
-            XmlNodeList xmlnode = GetXML(name);
+            XmlNodeList xmlnode = GetXML(name, isEditor);
             if (xmlnode != null)
             {
                 ParseSingleCharacter(xmlnode);
@@ -318,34 +318,37 @@ public class ConfigManager
 
 
 
-    public static XmlNodeList GetXML(string abName)
+    
+
+    public static XmlNodeList GetXML(string abName,bool getByFile = false)
     {
         XmlNodeList nodeList = null;
         XmlDocument xmlDoc = null;
-        //System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
-        //stopwatch.Start();
-        string content = ResourceManager.GetText("configs/configs", abName);
-        //stopwatch.Stop();
-        //Debug.LogError("1用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
-        if (content != string.Empty)
+        if (!getByFile)
         {
+            string content = ResourceManager.GetText("configs/configs", abName);
             xmlDoc = new XmlDocument();
-            //stopwatch = new System.Diagnostics.Stopwatch();
-            //stopwatch.Start();
             xmlDoc.LoadXml(content);
-            //stopwatch.Stop();
-            //Debug.LogError("2用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
         }
-        
+        else
+        {
+            
+            string path = Application.dataPath + "/ArtAssets/prefabs/configs/" + abName + ".xml";
+            if (File.Exists(path))
+            {
+                xmlDoc = new XmlDocument();
+                xmlDoc.Load(path);
+            }
+            
+        }
         if (xmlDoc != null)
         {
             nodeList = xmlDoc.GetElementsByTagName("table");
             xmlDoc.RemoveAll();
             xmlDoc = null;
-
         }
-        Debug.Log(content);
         return nodeList;
     }
+
 
 }

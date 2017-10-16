@@ -6,8 +6,8 @@ using System.Text.RegularExpressions;
 public class CharacterConfigInfo
 {
     public string ModelName;
-    public float WalkSpeed = 0.1f;
-    public float RunSpeed = 0.1f;
+    public float WalkSpeed = 1.0f;
+    public float RunSpeed = 1.5f;
     public string LeftWeaponName = BindTypes.NONE;
     public string RightWeaponName = BindTypes.NONE;
     

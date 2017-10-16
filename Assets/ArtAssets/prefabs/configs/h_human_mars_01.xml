@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <table n='CharacterConfigInfo'>
 	<p n='ModelName'>h_human_mars_01</p>
-	<p n='WalkSpeed'>0.1</p>
-	<p n='RunSpeed'>0.1</p>
-	<p n='LeftWeaponName'>none</p>
-	<p n='RightWeaponName'>none</p>
+	<p n='WalkSpeed'>1.04</p>
+	<p n='RunSpeed'>1.48</p>
+	<p n='LeftWeaponName'>h_human_mars_ss_dun_01</p>
+	<p n='RightWeaponName'>h_human_mars_ss_jian_01</p>
 	<as n='actioninfos'>
 		<a n='ActionName'>Idle</a>
 		<a n='IsLoop'>0</a>
@@ -69,21 +69,30 @@
 		<a n='ActionName'>Run</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
-		<a n='SoundName'>none</a>
+		<a n='SoundName'>zhanshen_run</a>
 		<a n='SoundPlayDelayTime'>0</a>
 		<a n='AttRange'>3</a>
 		<a n='AttAngle'>90</a>
 		<a n='SelfMoveDistance'>0</a>
 		<a n='SelfMoveTime'>0</a>
 		<a n='IsHitMove'>0</a>
-		<a n='HitMoveDistance'>0</a>
-		<a n='HitMoveTime'>0</a>
+		<a n='HitMoveDistance'>0.1</a>
+		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>0</a>
-		<a n='HitFlyDistance'>0</a>
-		<a n='HitFlyTime'>0</a>
+		<a n='HitFlyDistance'>0.1</a>
+		<a n='HitFlyTime'>0.1</a>
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>
 		<es n='Effects'>
+			<acs n='acs'>
+				<ac n='EffectName'>tx_cj_smog_002</ac>
+				<ac n='EffectType'>0</ac>
+				<ac n='SoundName'>none</ac>
+				<ac n='SoundPlayDelayTime'>0</ac>
+				<ac n='BindType'>4</ac>
+				<ac n='BindName'>FootsPoint</ac>
+				<ac n='ColliderDisappear'>1</ac>
+			</acs>
 		</es>
 	</as>
 	<as n='actioninfos'>
