@@ -93,6 +93,9 @@ public class AddEffectSetting
         soundPlayPointSet.Step = DataManager.ActionSoundStep;
         soundPlayPointSet.OnValuesChange.AddListener(OnSoundPointSliderChangeHandler);
         
+
+
+
         effectBindTypeSet = go.transform.Find("effectBindSet/Combobox").GetComponent<Combobox>();
         effectBindTypeSet.ListView.Sort = false;
         effectBindTypeSet.ListView.DataSource = DataManager.GetEffectBindList();
@@ -228,6 +231,9 @@ public class AddEffectSetting
 
         soundDelayText.text = effectInfo.SoundPlayDelayTime.ToString();
         soundPlayPointSet.SetValue(effectInfo.SoundPlayDelayTime,DataManager.ActionSoundDelayMax);
+
+
+        isLoop.isOn = effectInfo.IsLoop;
 
         string by = BindTypes.GetKey(effectInfo.BindType);
         index = DataManager.GetEffectBindIndex(by);

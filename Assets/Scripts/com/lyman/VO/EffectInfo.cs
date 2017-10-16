@@ -38,6 +38,7 @@ public class EffectInfo
         effectInfo.SoundPlayDelayTime = SoundPlayDelayTime;
         effectInfo.BindType = BindType;
         effectInfo.BindName = BindName;
+        effectInfo.IsLoop = IsLoop;
         effectInfo.ColliderDisappear = ColliderDisappear;
         return effectInfo;
     }
@@ -58,6 +59,7 @@ public class EffectInfo
         PushToStringBuilder(stringBuilder, title, "SoundPlayDelayTime", SoundPlayDelayTime.ToString());
         PushToStringBuilder(stringBuilder, title, "BindType", BindType.ToString());
         PushToStringBuilder(stringBuilder, title, "BindName", BindName);
+        PushToStringBuilder(stringBuilder, title, "IsLoop", IsLoop ? "1" : "0");
         PushToStringBuilder(stringBuilder, title, "ColliderDisappear", (ColliderDisappear ? 1 : 0).ToString());
         stringBuilder.Append("\t\t\t</");
         stringBuilder.Append(titles);

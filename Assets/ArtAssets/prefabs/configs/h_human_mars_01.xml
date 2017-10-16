@@ -52,6 +52,7 @@
 				<ac n='SoundPlayDelayTime'>0</ac>
 				<ac n='BindType'>1</ac>
 				<ac n='BindName'>none</ac>
+				<ac n='IsLoop'>0</ac>
 				<ac n='ColliderDisappear'>1</ac>
 			</acs>
 			<his n='his'>
@@ -61,6 +62,7 @@
 				<hi n='SoundPlayDelayTime'>0</hi>
 				<hi n='BindType'>4</hi>
 				<hi n='BindName'>CenterPoint</hi>
+				<hi n='IsLoop'>0</hi>
 				<hi n='ColliderDisappear'>1</hi>
 			</his>
 		</es>
@@ -91,6 +93,7 @@
 				<ac n='SoundPlayDelayTime'>0</ac>
 				<ac n='BindType'>4</ac>
 				<ac n='BindName'>FootsPoint</ac>
+				<ac n='IsLoop'>1</ac>
 				<ac n='ColliderDisappear'>1</ac>
 			</acs>
 		</es>

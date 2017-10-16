@@ -156,6 +156,9 @@ public class ConfigManager
                     case "BindName":
                         effectinfo.BindName = value;
                         break;
+                    case "IsLoop":
+                        effectinfo.IsLoop = value == "1" ? true:false;
+                        break;
                 }
             }
             list.Add(effectinfo);
