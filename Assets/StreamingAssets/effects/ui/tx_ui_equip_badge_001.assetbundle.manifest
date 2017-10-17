@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2638873427
+CRC: 162698390
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5bfd97be84bb29d7a0b656c433224853
+    Hash: 3cc702107a4f57843de79c7216497410
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6cae3cf6a50d7cef69d458b4f836b9f6
@@ -42,4 +42,4 @@ ClassTypes:
 Assets:
 - Assets/ArtAssets/prefabs/effects/ui/tx_ui_equip_badge_001.prefab
 Dependencies:
-- F:/client/Assets/StreamingAssets/ui/textures/equipment.assetbundle
+- F:/client/client/Assets/StreamingAssets/ui/textures/equipment.assetbundle

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 509344077
+CRC: 2885395718
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 500378c20316f8bc30a8251778a041ec
+    Hash: 4600f5ff7f55233065d10f70ee5fd06b
   TypeTreeHash:
     serializedVersion: 2
     Hash: ea47ed63d37d9b4872a263f748c4df0a
@@ -32,4 +32,4 @@ ClassTypes:
 Assets:
 - Assets/ArtAssets/prefabs/effects/ui/tx_ui_field_att_001.prefab
 Dependencies:
-- F:/client/Assets/StreamingAssets/ui/textures/guojia.assetbundle
+- F:/client/client/Assets/StreamingAssets/ui/textures/guojia.assetbundle

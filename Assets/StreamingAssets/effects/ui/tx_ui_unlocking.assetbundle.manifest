@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3603581855
+CRC: 1186908282
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 768bcc73aeb2960f210d14507c0e8f05
+    Hash: 619144766ad42457cc069ac96d7e7028
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6cae3cf6a50d7cef69d458b4f836b9f6
@@ -42,4 +42,4 @@ ClassTypes:
 Assets:
 - Assets/ArtAssets/prefabs/effects/ui/tx_ui_unlocking.prefab
 Dependencies:
-- F:/client/Assets/StreamingAssets/ui/textures/common.assetbundle
+- F:/client/client/Assets/StreamingAssets/ui/textures/common.assetbundle

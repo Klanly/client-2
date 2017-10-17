@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4093511900
+CRC: 3845596653
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a3208bc0c3531c75891b5a3f496014f5
+    Hash: 5873b71f2f59bae7ba81874eaa7fc4c0
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9eca705f54bb90995928df45130cce9e
@@ -52,4 +52,4 @@ ClassTypes:
 Assets:
 - Assets/ArtAssets/prefabs/effects/ui/tx_ui_victory_win_001.prefab
 Dependencies:
-- F:/client/Assets/StreamingAssets/ui/textures/jiesuanui.assetbundle
+- F:/client/client/Assets/StreamingAssets/ui/textures/jiesuanui.assetbundle
