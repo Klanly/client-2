@@ -30,7 +30,7 @@
 		<a n='ActionName'>Walk</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
-		<a n='SoundName'>airen_shouji</a>
+		<a n='SoundName'>zhanshen_walk</a>
 		<a n='SoundPlayDelayTime'>0</a>
 		<a n='AttRange'>3</a>
 		<a n='AttAngle'>90</a>
@@ -45,26 +45,6 @@
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>
 		<es n='Effects'>
-			<acs n='acs'>
-				<ac n='EffectName'>3_sjbz_1</ac>
-				<ac n='EffectType'>0</ac>
-				<ac n='SoundName'>none</ac>
-				<ac n='SoundPlayDelayTime'>0</ac>
-				<ac n='BindType'>1</ac>
-				<ac n='BindName'>none</ac>
-				<ac n='IsLoop'>0</ac>
-				<ac n='ColliderDisappear'>1</ac>
-			</acs>
-			<his n='his'>
-				<hi n='EffectName'>guadian</hi>
-				<hi n='EffectType'>0</hi>
-				<hi n='SoundName'>none</hi>
-				<hi n='SoundPlayDelayTime'>0</hi>
-				<hi n='BindType'>4</hi>
-				<hi n='BindName'>CenterPoint</hi>
-				<hi n='IsLoop'>0</hi>
-				<hi n='ColliderDisappear'>1</hi>
-			</his>
 		</es>
 	</as>
 	<as n='actioninfos'>
@@ -102,18 +82,18 @@
 		<a n='ActionName'>Die</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
-		<a n='SoundName'>none</a>
+		<a n='SoundName'>zhanshen_die</a>
 		<a n='SoundPlayDelayTime'>0</a>
 		<a n='AttRange'>3</a>
 		<a n='AttAngle'>90</a>
 		<a n='SelfMoveDistance'>0</a>
 		<a n='SelfMoveTime'>0</a>
 		<a n='IsHitMove'>0</a>
-		<a n='HitMoveDistance'>0</a>
-		<a n='HitMoveTime'>0</a>
+		<a n='HitMoveDistance'>0.1</a>
+		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>0</a>
-		<a n='HitFlyDistance'>0</a>
-		<a n='HitFlyTime'>0</a>
+		<a n='HitFlyDistance'>0.1</a>
+		<a n='HitFlyTime'>0.1</a>
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>
 		<es n='Effects'>
@@ -123,27 +103,37 @@
 		<a n='ActionName'>Hit</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
-		<a n='SoundName'>none</a>
+		<a n='SoundName'>zhanshen_hit</a>
 		<a n='SoundPlayDelayTime'>0</a>
 		<a n='AttRange'>3</a>
 		<a n='AttAngle'>90</a>
 		<a n='SelfMoveDistance'>0</a>
 		<a n='SelfMoveTime'>0</a>
 		<a n='IsHitMove'>0</a>
-		<a n='HitMoveDistance'>0</a>
-		<a n='HitMoveTime'>0</a>
+		<a n='HitMoveDistance'>0.1</a>
+		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>0</a>
-		<a n='HitFlyDistance'>0</a>
-		<a n='HitFlyTime'>0</a>
+		<a n='HitFlyDistance'>0.1</a>
+		<a n='HitFlyTime'>0.1</a>
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>
 		<es n='Effects'>
+			<acs n='acs'>
+				<ac n='EffectName'>tx_mars_hit1_001</ac>
+				<ac n='EffectType'>0</ac>
+				<ac n='SoundName'>none</ac>
+				<ac n='SoundPlayDelayTime'>0</ac>
+				<ac n='BindType'>4</ac>
+				<ac n='BindName'>CenterPoint</ac>
+				<ac n='IsLoop'>0</ac>
+				<ac n='ColliderDisappear'>1</ac>
+			</acs>
 		</es>
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_1</a>
 		<a n='IsLoop'>0</a>
-		<a n='PlaySpeed'>1</a>
+		<a n='PlaySpeed'>1.8</a>
 		<a n='SoundName'>none</a>
 		<a n='SoundPlayDelayTime'>0</a>
 		<a n='AttRange'>3</a>
@@ -151,14 +141,34 @@
 		<a n='SelfMoveDistance'>0</a>
 		<a n='SelfMoveTime'>0</a>
 		<a n='IsHitMove'>0</a>
-		<a n='HitMoveDistance'>0</a>
-		<a n='HitMoveTime'>0</a>
+		<a n='HitMoveDistance'>0.1</a>
+		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>0</a>
-		<a n='HitFlyDistance'>0</a>
-		<a n='HitFlyTime'>0</a>
+		<a n='HitFlyDistance'>0.1</a>
+		<a n='HitFlyTime'>0.1</a>
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>
 		<es n='Effects'>
+			<acs n='acs'>
+				<ac n='EffectName'>tx_mars_att1_001</ac>
+				<ac n='EffectType'>0</ac>
+				<ac n='SoundName'>zhanshen_att1</ac>
+				<ac n='SoundPlayDelayTime'>0</ac>
+				<ac n='BindType'>4</ac>
+				<ac n='BindName'>FootsPoint</ac>
+				<ac n='IsLoop'>0</ac>
+				<ac n='ColliderDisappear'>1</ac>
+			</acs>
+			<his n='his'>
+				<hi n='EffectName'>tx_mars_hit1_001</hi>
+				<hi n='EffectType'>0</hi>
+				<hi n='SoundName'>none</hi>
+				<hi n='SoundPlayDelayTime'>0</hi>
+				<hi n='BindType'>4</hi>
+				<hi n='BindName'>CenterPoint</hi>
+				<hi n='IsLoop'>0</hi>
+				<hi n='ColliderDisappear'>1</hi>
+			</his>
 		</es>
 	</as>
 	<as n='actioninfos'>

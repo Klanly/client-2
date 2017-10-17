@@ -13,6 +13,11 @@ public class BoneTypes
     public static string HeadPoint = "HeadPoint";//头 HeadPoint(Y朝上，Z超前)
     public static string Headbar = "headbar";      //血条 headbar
 
+    public static string Weaponpoint = "weaponpoint";//武器上得挂点
+    //public static string Weaponpoint2 = "weaponpoint2";
+    //public static string Weaponpoint3 = "weaponpoint3";
+
+
     public static Dictionary<string, string> KeyToValueBoneList = new Dictionary<string, string>();
     public static Dictionary<string, string> ValueToKeyBoneList = new Dictionary<string, string>();
 
@@ -80,6 +85,11 @@ public class BoneTypes
             ValueToKeyBoneList.Add(key, Headbar);
 
 
+            key = Weaponpoint + "_武器上挂点1";
+            KeyToValueBoneList.Add(Weaponpoint, key);
+            ValueToKeyBoneList.Add(key, Weaponpoint);
+
+            
             //BoneList.Add(Weaponpoint, Weaponpoint + "_武器挂点1");
             //BoneList.Add(Weaponpoint2, Weaponpoint2 + "_武器挂点2");
             //BoneList.Add(Weaponpoint3, Weaponpoint3 + "_武器挂点3");
