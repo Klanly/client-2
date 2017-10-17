@@ -174,7 +174,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_2</a>
 		<a n='IsLoop'>0</a>
-		<a n='PlaySpeed'>1</a>
+		<a n='PlaySpeed'>1.6</a>
 		<a n='SoundName'>none</a>
 		<a n='SoundPlayDelayTime'>0</a>
 		<a n='AttRange'>3</a>
@@ -182,14 +182,34 @@
 		<a n='SelfMoveDistance'>0</a>
 		<a n='SelfMoveTime'>0</a>
 		<a n='IsHitMove'>0</a>
-		<a n='HitMoveDistance'>0</a>
-		<a n='HitMoveTime'>0</a>
+		<a n='HitMoveDistance'>0.1</a>
+		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>0</a>
-		<a n='HitFlyDistance'>0</a>
-		<a n='HitFlyTime'>0</a>
+		<a n='HitFlyDistance'>0.1</a>
+		<a n='HitFlyTime'>0.1</a>
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>
 		<es n='Effects'>
+			<acs n='acs'>
+				<ac n='EffectName'>tx_mars_att2_001</ac>
+				<ac n='EffectType'>0</ac>
+				<ac n='SoundName'>zhanshen_att2</ac>
+				<ac n='SoundPlayDelayTime'>0</ac>
+				<ac n='BindType'>1</ac>
+				<ac n='BindName'>none</ac>
+				<ac n='IsLoop'>0</ac>
+				<ac n='ColliderDisappear'>1</ac>
+			</acs>
+			<his n='his'>
+				<hi n='EffectName'>tx_mars_hit1_001</hi>
+				<hi n='EffectType'>0</hi>
+				<hi n='SoundName'>zs_hit1</hi>
+				<hi n='SoundPlayDelayTime'>0</hi>
+				<hi n='BindType'>4</hi>
+				<hi n='BindName'>CenterPoint</hi>
+				<hi n='IsLoop'>0</hi>
+				<hi n='ColliderDisappear'>1</hi>
+			</his>
 		</es>
 	</as>
 	<as n='actioninfos'>

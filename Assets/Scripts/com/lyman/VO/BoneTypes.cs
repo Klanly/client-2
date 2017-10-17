@@ -85,7 +85,7 @@ public class BoneTypes
             ValueToKeyBoneList.Add(key, Headbar);
 
 
-            key = Weaponpoint + "_武器上挂点1";
+            key = Weaponpoint + "_武器上的挂点1";
             KeyToValueBoneList.Add(Weaponpoint, key);
             ValueToKeyBoneList.Add(key, Weaponpoint);
 

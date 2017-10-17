@@ -217,7 +217,7 @@ public class AddEffectSetting
         OnEditorCompleteHandler = onEditorCompleteHandler;
         
 
-        int index = DataManager.GetEffectIndex(effectInfo.BindName);
+        int index = DataManager.GetEffectIndex(effectInfo.EffectName);
         effectNameSet.ListView.Select(index);
 
         int eType = effectInfo.EffectType;

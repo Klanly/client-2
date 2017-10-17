@@ -303,10 +303,11 @@ public class Creature : SceneEntity
                     {
                         continue;
                     }
-                    if (effectInfo.EffectType == EffectTypes.Normal && (effectInfo.BindType == BindTypes.None || effectInfo.BindName == BindTypes.NONE || string.IsNullOrEmpty(effectInfo.BindName)))
+                    if (effectInfo.EffectType == EffectTypes.Normal && effectInfo.BindType == BindTypes.Bone && (effectInfo.BindName == BindTypes.NONE || string.IsNullOrEmpty(effectInfo.BindName)))
                     {
                         continue;
-                    }
+                    } 
+                    
                     NEffect nEffect = GetEffect(effectInfo);
                     GameObject effect = nEffect.GetEffect();
                     if (effect == null) continue;
