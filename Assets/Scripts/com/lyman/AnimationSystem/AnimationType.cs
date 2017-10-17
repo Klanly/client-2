@@ -19,7 +19,15 @@ public class AnimationType
     public static string Dead = "Die";
     //受击
     public static string Hit = "Hit";
-    
+
+    //飞1
+    public static string Fly1 = "Fly_1";
+    //飞2
+    public static string Fly2 = "Fly_2";
+    //飞3
+    public static string Fly3 = "Fly_3";
+
+
     //攻击1
     public static string Attack1 = "Att_1";
     //攻击2

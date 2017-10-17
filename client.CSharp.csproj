@@ -122,6 +122,7 @@
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\CreatureStateType.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\DeadState.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\FSMFactory.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\HitFlyState.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\HitMoveState.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\HitState.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\IdleState.cs" />

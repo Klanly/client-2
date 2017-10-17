@@ -21,7 +21,7 @@ public class AttributeSetting
 
 
     private TCreature tCreature;
-
+    private TCreature beAttacker;
     public TCreature Target
     {
         set { tCreature = value; }
@@ -362,11 +362,11 @@ public class AttributeSetting
     private void OnActionnSelected(int index, string title)
     {
         Debug.Log(index + ":" + title);
-        string actionn = title;
-        currentActionInfo = currentCharacterConfigInfo.GetActionInfo(actionn);
+        string actionName = title;
+        currentActionInfo = currentCharacterConfigInfo.GetActionInfo(actionName);
         SetActionAttribute(currentActionInfo);
         if (tCreature == null) return;
-        tCreature.PlayAnimation(actionn, true, OnHitHandler, OnEndHandler);
+        tCreature.PlayAnimation(actionName, true);
         
         actionLengthMap.TryGetValue(currentCharacterConfigInfo.ModelName, out lengthMap);
         if (lengthMap == null)
@@ -374,10 +374,10 @@ public class AttributeSetting
             lengthMap = new Dictionary<string, float>();
             actionLengthMap.Add(currentCharacterConfigInfo.ModelName, lengthMap);
         }
-        if (lengthMap.ContainsKey(actionn))
+        if (lengthMap.ContainsKey(actionName))
         {
             float length = 0f;
-            lengthMap.TryGetValue(actionn, out length);
+            lengthMap.TryGetValue(actionName, out length);
             //设置delay时间点
             actionSoundPlayPointSet.SetLimit(DataManager.ActionSoundDelayMin, length);
             actionSoundPlayPointSet.SetValue(currentActionInfo.SoundPlayDelayTime, length);
@@ -401,14 +401,7 @@ public class AttributeSetting
         actionSoundPlayPointSet.SetValue(currentActionInfo.SoundPlayDelayTime, length);
     }
     
-    private void OnHitHandler()
-    {
-
-    }
-    private void OnEndHandler()
-    {
-
-    }
+    
 
     private void SetActionAttribute(ActionInfo actionInfo)
     {
@@ -709,13 +702,44 @@ public class AttributeSetting
         Alert.Hide();
         TimerManager.RemoveHandler(tTimerInfo);
         tTimerInfo = null;
-        tCreature.PlayAnimation(currentActionInfo.ActionName, true);
+        tCreature.PlayAnimation(currentActionInfo.ActionName, true,this.OnHitHandler, OnEndHandler);
     }
+
+    private void OnHitHandler()
+    {
+        if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
+        {
+            if (beAttacker == null)
+            {
+                beAttacker = new TCreature();
+            }
+            if (currentActionInfo.IsHitMove && currentActionInfo.HitMoveDistance > 0f && currentActionInfo.HitMoveTime > 0f)
+            {
+                
+            }
+            else if (currentActionInfo.IsHitFly && currentActionInfo.HitFlyDistance > 0f && currentActionInfo.HitFlyTime > 0f)
+            {
+
+            }
+            else
+            {
+                beAttacker.DoHit();
+            }
+        }
+    }
+
+    private void OnEndHandler()
+    {
+        if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
+        {
+
+        }
+    }
+
 
 
     private void OnSaveBtnClickHandler()
     {
-        
         Debug.LogError("save");
         Alert.Show("保存中。。。");
         DataManager.Save(OnCompleteHandler);

@@ -30,6 +30,12 @@ public class Creature : SceneEntity
 
     }
 
+    public CharacterController CharacterController
+    {
+        get { return characterController; }
+    }
+
+
     public float WalkSpeed
     {
         get { return walkSpeed; }
@@ -143,6 +149,13 @@ public class Creature : SceneEntity
 
     private void OnCreateCompleteHandler()
     {
+
+        characterController = Model.Container.GetComponent<CharacterController>();
+        if (characterController == null)
+        {
+            characterController = Model.Container.AddComponent<CharacterController>();
+        }
+
         if (onCreateComplete != null)
         {
             onCreateComplete();
@@ -611,6 +624,36 @@ public class Creature : SceneEntity
             if (FSM.CurrentState.ID != CreatureStateType.Hit && FSM.CurrentState.ID != CreatureStateType.HitFly && FSM.CurrentState.ID != CreatureStateType.HitMove && FSM.CurrentState.ID != CreatureStateType.Attack)
             {
                 FSM.changeState(CreatureStateType.Hit);
+            }
+        }
+    }
+
+    public void DoHitMove(float moveDistance, float moveTime)
+    {
+        if (FSM != null)
+        {
+            if (FSM.CurrentState.ID == CreatureStateType.Dead)
+            {
+                return;
+            }
+            if (FSM.CurrentState.ID != CreatureStateType.Hit && FSM.CurrentState.ID != CreatureStateType.HitFly && FSM.CurrentState.ID != CreatureStateType.Attack)
+            {
+                FSM.changeState(CreatureStateType.HitMove);
+            }
+        }
+    }
+
+    public void DoHitFly(float moveDistance, float moveTime)
+    {
+        if (FSM != null)
+        {
+            if (FSM.CurrentState.ID == CreatureStateType.Dead)
+            {
+                return;
+            }
+            if (FSM.CurrentState.ID != CreatureStateType.Hit && FSM.CurrentState.ID != CreatureStateType.HitMove && FSM.CurrentState.ID != CreatureStateType.Attack)
+            {
+                FSM.changeState(CreatureStateType.HitFly);
             }
         }
     }

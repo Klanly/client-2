@@ -14,6 +14,7 @@ public class FSMFactory
         HitState hitState = new HitState(owner);
         RunState runState = new RunState(owner);
         HitMoveState hitMoveState = new HitMoveState(owner);
+        
         translationMap.addState(dead);
         translationMap.addState(idle);
         translationMap.addState(walk);
