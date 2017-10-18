@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HitFlyState : FSMState
 {
-    private Creature anAttacker;
+    private Vector3 position;
     private Creature creature;
     private float flyDistance;
     private float flyTime;
@@ -16,10 +16,10 @@ public class HitFlyState : FSMState
     private List<string> actions = new List<string>();
     private int index;
 
-    public Creature AnAttacker
+    public Vector3 Position
     {
-        get { return anAttacker; }
-        set { anAttacker = value; }
+        get { return position; }
+        set { position = value; }
     }
     public float FlyDistance
     {
@@ -46,9 +46,9 @@ public class HitFlyState : FSMState
         
         TimerManager.RemoveHandler(timerInfo);
         timerInfo = null;
-       // characterController = creature.GetCharacterController();
+        characterController = creature.CharacterController;
         index = 0;
-        creature.FaceTo(AnAttacker.GetPosition());
+        creature.FaceTo(position);
         creature.PlayAnimation(actions[index]);
         speed = FlyDistance / FlyTime;
         curTime = 0f;

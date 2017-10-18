@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class HitMoveState : FSMState
 {
-    public Creature AnAtt;
+    private Vector3 position;
     private Creature creature;
     private float moveDistance;
     private float moveTime;
     private CharacterController characterController;
     private float speed;
     private float curTime;
+    private TimerInfo timerInfo;
 
     public float MoveDistance
     {
@@ -22,6 +23,12 @@ public class HitMoveState : FSMState
         get { return moveTime; }
         set { moveTime = value; }
     }
+    public Vector3 Position
+    {
+        get { return position; }
+        set { position = value; }
+    }
+
 
     public HitMoveState(Creature creature):base("Hit_Move",CreatureStateType.HitMove)
     {
@@ -49,22 +56,22 @@ public class HitMoveState : FSMState
     {
         TimerManager.RemoveHandler(timerInfo);
         timerInfo = null;
-        creature.FaceTo(AnAtt.GetPosition());
+        creature.FaceTo(Position);
         creature.PlayAnimation(AnimationType.Hit,true,null, OnEndHandler);
         speed = MoveDistance / MoveTime;
         curTime = 0f;
         timerInfo = TimerManager.AddHandler(OnTimeHandler);
     }
-    private TimerInfo timerInfo;
+    
     private void OnEndHandler()
     {
         if (creature.IsDead)
         {
-           // creature.DoDead();
+            creature.DoDead();
         }
         else
         {
-            //creature.DoIdle();
+            creature.DoIdle();
         }
     }
     private void OnTimeHandler(float delay)
@@ -77,8 +84,8 @@ public class HitMoveState : FSMState
         }
         else
         {
-            Vector3 targetPosition = creature.Model.Container.transform.TransformDirection(speed * Vector3.back);
-            characterController.SimpleMove(targetPosition);
+            Vector3 step = creature.Model.Container.transform.TransformDirection(speed * Vector3.back);
+            characterController.SimpleMove(step);
         }
     }
 

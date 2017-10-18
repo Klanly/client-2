@@ -14,7 +14,7 @@ public class FSMFactory
         HitState hitState = new HitState(owner);
         RunState runState = new RunState(owner);
         HitMoveState hitMoveState = new HitMoveState(owner);
-        
+        HitFlyState hitFlyState = new HitFlyState(owner);
         translationMap.addState(dead);
         translationMap.addState(idle);
         translationMap.addState(walk);
@@ -22,6 +22,7 @@ public class FSMFactory
         translationMap.addState(hitState);
         translationMap.addState(hitMoveState);
         translationMap.addState(attackState);
+        translationMap.addState(hitFlyState);
         translationMap.MixAll();
         translationMap.check();
         FSMStateMachine fsm = new FSMStateMachine(translationMap);

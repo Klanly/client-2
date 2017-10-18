@@ -169,6 +169,10 @@ public class Creature : SceneEntity
         {
             WearEquipment("added_rightweapon",characterConfigInfo.RightWeaponName, BoneTypes.Bone_Rwq);
         }
+        if (!isActive)
+        {
+            Hide();
+        }
     }
     
     public void WearEquipment(string saveName,string equipmentName, string parentName)
@@ -628,7 +632,7 @@ public class Creature : SceneEntity
         }
     }
 
-    public void DoHitMove(float moveDistance, float moveTime)
+    public void DoHitMove(Vector3 position,float moveDistance, float moveTime)
     {
         if (FSM != null)
         {
@@ -638,12 +642,26 @@ public class Creature : SceneEntity
             }
             if (FSM.CurrentState.ID != CreatureStateType.Hit && FSM.CurrentState.ID != CreatureStateType.HitFly && FSM.CurrentState.ID != CreatureStateType.Attack)
             {
-                FSM.changeState(CreatureStateType.HitMove);
+                HitMoveState hitMoveState = FSM.getStateByID(CreatureStateType.HitMove) as HitMoveState;
+                if (hitMoveState != null)
+                {
+                    hitMoveState.Position = position;
+                    hitMoveState.MoveDistance = moveDistance;
+                    hitMoveState.MoveTime = moveTime;
+                    if (FSM.CurrentState.ID == CreatureStateType.HitMove)
+                    {
+                        hitMoveState.ReStart();
+                    }
+                    else
+                    {
+                        FSM.changeState(CreatureStateType.HitMove);
+                    }
+                }
             }
         }
     }
 
-    public void DoHitFly(float moveDistance, float moveTime)
+    public void DoHitFly(Vector3 position, float flyDistance, float flyTime)
     {
         if (FSM != null)
         {
@@ -651,9 +669,17 @@ public class Creature : SceneEntity
             {
                 return;
             }
-            if (FSM.CurrentState.ID != CreatureStateType.Hit && FSM.CurrentState.ID != CreatureStateType.HitMove && FSM.CurrentState.ID != CreatureStateType.Attack)
+            if (FSM.CurrentState.ID != CreatureStateType.Hit && FSM.CurrentState.ID != CreatureStateType.HitMove && FSM.CurrentState.ID != CreatureStateType.Attack && FSM.CurrentState.ID != CreatureStateType.HitFly)
             {
-                FSM.changeState(CreatureStateType.HitFly);
+                HitFlyState hitFlyState = FSM.getStateByID(CreatureStateType.HitFly) as HitFlyState;
+                if (hitFlyState != null)
+                {
+                    hitFlyState.Position = position;
+                    hitFlyState.FlyDistance = flyDistance;
+                    hitFlyState.FlyTime = flyTime;
+                    FSM.changeState(CreatureStateType.HitFly);
+                }
+                
             }
         }
     }

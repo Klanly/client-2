@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UIWidgets;
 using System.IO;
+using System;
 public class AttributeSetting
 {
     private static AttributeSetting attributeSetting;
@@ -20,12 +21,21 @@ public class AttributeSetting
     }
 
 
-    private TCreature tCreature;
-    private TCreature beAttacker;
-    public TCreature Target
-    {
-        set { tCreature = value; }
-    }
+    //private TCreature tCreature;
+    //private TCreature beAttacker;
+    //public TCreature Target
+    //{
+    //    set
+    //    {
+    //        tCreature = value;
+    //        if (beAttacker == null)
+    //        {
+    //            beAttacker = new TCreature();
+    //            beAttacker.Init(tCreature.GetCharacterConfigInfo());
+    //        }
+    //        beAttacker.Hide();
+    //    }
+    //}
 
 
     private CharacterConfigInfo currentCharacterConfigInfo;
@@ -313,18 +323,19 @@ public class AttributeSetting
             ShowEffect(currentActionInfo.HitEffectInfos,false);
         }
     }
-    
 
+    public Action<string, string, string> OnWearWeaponHandler; 
     private void OnLeftWeaponSelected(int index, string title)
     {
         Debug.LogError(index + ":" + title);
         if (currentCharacterConfigInfo == null)
             return;
         currentCharacterConfigInfo.LeftWeaponName = title;
-        if (tCreature != null)
+        if (OnWearWeaponHandler != null)
         {
-            tCreature.WearEquipment("added_leftweapon", currentCharacterConfigInfo.LeftWeaponName, BoneTypes.Bone_Lwq);
+            OnWearWeaponHandler("added_leftweapon", currentCharacterConfigInfo.LeftWeaponName, BoneTypes.Bone_Lwq);
         }
+        
     }
     private void OnRightWeaponSelected(int index, string title)
     {
@@ -332,9 +343,9 @@ public class AttributeSetting
         if (currentCharacterConfigInfo == null)
             return;
         currentCharacterConfigInfo.RightWeaponName = title;
-        if (tCreature != null)
+        if (OnWearWeaponHandler != null)
         {
-            tCreature.WearEquipment("added_rightweapon", currentCharacterConfigInfo.RightWeaponName, BoneTypes.Bone_Rwq);
+            OnWearWeaponHandler("added_rightweapon", currentCharacterConfigInfo.RightWeaponName, BoneTypes.Bone_Rwq);
         }
     }
     
@@ -356,6 +367,8 @@ public class AttributeSetting
         runSpeedValue.text = v;
     }
 
+    public Action<string> OnActionSelectedHandler;
+
     private Dictionary<string, Dictionary<string, float>> actionLengthMap = new Dictionary<string, Dictionary<string, float>>();
     private TimerInfo timerInfo;
     Dictionary<string, float> lengthMap;
@@ -365,8 +378,12 @@ public class AttributeSetting
         string actionName = title;
         currentActionInfo = currentCharacterConfigInfo.GetActionInfo(actionName);
         SetActionAttribute(currentActionInfo);
-        if (tCreature == null) return;
-        tCreature.PlayAnimation(actionName, true);
+        if (OnActionSelectedHandler != null)
+        {
+            OnActionSelectedHandler(actionName);
+        }
+        //if (tCreature == null) return;
+        //tCreature.PlayAnimation(actionName, true);
         
         actionLengthMap.TryGetValue(currentCharacterConfigInfo.ModelName, out lengthMap);
         if (lengthMap == null)
@@ -388,12 +405,12 @@ public class AttributeSetting
             timerInfo = TimerManager.AddDelayHandler(OnDelayHandler, 0.2f, 1);
         }
     }
-
+    public Func<float> GetActionLength;
     private void OnDelayHandler(float del)
     {
         TimerManager.RemoveHandler(timerInfo);
         timerInfo = null;
-        float length = tCreature.GetCurrentActionLength();
+        float length = GetActionLength();// tCreature.GetCurrentActionLength();
         Debug.Log("n:" + currentActionInfo.ActionName + " / length:" + length);
         lengthMap.Add(currentActionInfo.ActionName, length);
         //设置delay时间点
@@ -681,63 +698,15 @@ public class AttributeSetting
     }
 
 
-
-    private TimerInfo tTimerInfo;
+    public Action<CharacterConfigInfo,ActionInfo> PreviewHandler;
+    
     private void OnPreviewBtnClickHandler()
     {
-        Debug.LogError("start preview");
-        Alert.Show("预览准备中，请稍等......");
-        if (currentCharacterConfigInfo != null && currentActionInfo != null && tCreature != null)
-        {
-            if (currentActionInfo.ActionName != AnimationType.Idle)
-            {
-                tTimerInfo = TimerManager.AddDelayHandler(OnDelHandler, 2f, 1);
-                tCreature.PlayAnimation(AnimationType.Idle, true);
-            }
-        }
+        if (PreviewHandler != null)
+            PreviewHandler(currentCharacterConfigInfo,currentActionInfo);
     }
 
-    private void OnDelHandler(float del)
-    {
-        Alert.Hide();
-        TimerManager.RemoveHandler(tTimerInfo);
-        tTimerInfo = null;
-        tCreature.PlayAnimation(currentActionInfo.ActionName, true,this.OnHitHandler, OnEndHandler);
-    }
-
-    private void OnHitHandler()
-    {
-        if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
-        {
-            if (beAttacker == null)
-            {
-                beAttacker = new TCreature();
-            }
-            if (currentActionInfo.IsHitMove && currentActionInfo.HitMoveDistance > 0f && currentActionInfo.HitMoveTime > 0f)
-            {
-                
-            }
-            else if (currentActionInfo.IsHitFly && currentActionInfo.HitFlyDistance > 0f && currentActionInfo.HitFlyTime > 0f)
-            {
-
-            }
-            else
-            {
-                beAttacker.DoHit();
-            }
-        }
-    }
-
-    private void OnEndHandler()
-    {
-        if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
-        {
-
-        }
-    }
-
-
-
+    
     private void OnSaveBtnClickHandler()
     {
         Debug.LogError("save");
