@@ -82,6 +82,9 @@ public class ConfigManager
                         case "AttAngle":
                             float.TryParse(value, out actionInfo.AttackAngle);
                             break;
+                        case "SelfMoveDelayTime":
+                            float.TryParse(value, out actionInfo.SelfMoveDelayTime);
+                            break;
                         case "SelfMoveDistance":
                             float.TryParse(value, out actionInfo.SelfMoveDistance);
                             break;

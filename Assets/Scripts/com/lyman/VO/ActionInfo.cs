@@ -15,7 +15,7 @@ public class ActionInfo
     //
 
     //攻击自身是否位移
-    public bool  IsSelfMove = false;
+    public float SelfMoveDelayTime = 0f;
     public float SelfMoveDistance = 0f;
     public float SelfMoveTime = 0f;
 
@@ -57,6 +57,9 @@ public class ActionInfo
         PushToStringBuilder(stringbuilder, "AttRange", AttackRadius.ToString());
         PushToStringBuilder(stringbuilder, "AttAngle", AttackAngle.ToString());
 
+
+        
+        PushToStringBuilder(stringbuilder, "SelfMoveDelayTime", SelfMoveDelayTime.ToString());
         PushToStringBuilder(stringbuilder, "SelfMoveDistance", SelfMoveDistance.ToString());
         PushToStringBuilder(stringbuilder, "SelfMoveTime", SelfMoveTime.ToString());
 

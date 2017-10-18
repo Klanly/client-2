@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scripts\com\lyman\Entity\SceneEntity.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\SelectorKeeper.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\TCreature.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\state\AttackPreviewState.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\AttackState.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\CreatureStateType.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\state\DeadState.cs" />

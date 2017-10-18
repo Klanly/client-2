@@ -299,10 +299,10 @@ public class Creature : SceneEntity
             if (currentActionInfo != null)
             {
                 bool loop = AnimationType.IsLoopAction(currentActionName);
-                if (currentActionInfo.IsSelfMove && currentActionInfo.SelfMoveTime > 0f && currentActionInfo.SelfMoveDistance > 0f && currentActionInfo.IsLoop)
+                if (currentActionInfo.SelfMoveTime > 0f && currentActionInfo.SelfMoveDistance > 0f && currentActionInfo.IsLoop)
                 {
                     OnActionEndHandler = endHandler;
-                    timerInfo = TimerManager.AddDelayHandler(OnEndHandler, currentActionInfo.SelfMoveTime, 1);
+                    timerInfo = TimerManager.AddDelayHandler(OnEndHandler, currentActionInfo.SelfMoveDelayTime + currentActionInfo.SelfMoveTime, 1);
                     Model.PlayAnimation(currentActionName, currentActionInfo.PlaySpeed, hitHandler, null);
                 }
                 else
