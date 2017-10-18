@@ -19,25 +19,7 @@ public class AttributeSetting
             return attributeSetting;
         }
     }
-
-
-    //private TCreature tCreature;
-    //private TCreature beAttacker;
-    //public TCreature Target
-    //{
-    //    set
-    //    {
-    //        tCreature = value;
-    //        if (beAttacker == null)
-    //        {
-    //            beAttacker = new TCreature();
-    //            beAttacker.Init(tCreature.GetCharacterConfigInfo());
-    //        }
-    //        beAttacker.Hide();
-    //    }
-    //}
-
-
+    
     private CharacterConfigInfo currentCharacterConfigInfo;
     private ActionInfo currentActionInfo;
 
@@ -60,6 +42,9 @@ public class AttributeSetting
     private RangeSliderFloat actionSoundPlayPointSet;
     private Text actionSoundPlayPointText;
 
+    private RangeSliderFloat selfMoveDelayTimeSet;
+    private Text selfMoveDelayText;
+    
     private RangeSliderFloat selfMoveDistanceSet;
     private Text selfMoveDistanceText;
 
@@ -159,8 +144,17 @@ public class AttributeSetting
         actionSoundPlayPointSet.Step = DataManager.ActionSoundStep;
         actionSoundPlayPointText = content.Find("actionSoundPlayPointSet/Text").GetComponent<Text>();
         actionSoundPlayPointSet.OnValuesChange.AddListener(OnActionSoundPointSliderChangeHandler);
-        
 
+
+
+
+        selfMoveDelayTimeSet = content.Find("selfMoveDelayTimeSet/RangeSliderFloat").GetComponent<RangeSliderFloat>();
+        selfMoveDelayTimeSet.SetLimit(0f, 10f);
+        selfMoveDelayTimeSet.Step = DataManager.Step;
+        selfMoveDelayText = content.Find("selfMoveDelayTimeSet/Text").GetComponent<Text>();
+        selfMoveDelayTimeSet.OnValuesChange.AddListener(OnSelfMoveDelaySliderChangeHandler);
+
+        
         selfMoveDistanceSet = content.Find("selfMoveDistanceSet/RangeSliderFloat").GetComponent<RangeSliderFloat>();
         selfMoveDistanceSet.SetLimit(DataManager.SelfMoveDistanceMin, DataManager.SelfMoveDistanceMax);
         selfMoveDistanceSet.Step = DataManager.Step;
@@ -426,6 +420,9 @@ public class AttributeSetting
         actionSpeedSet.SetValue(actionInfo.PlaySpeed, DataManager.ActionSpeedMax);
         actionSpeedtext.text = actionInfo.PlaySpeed.ToString();
 
+        selfMoveDelayTimeSet.SetValue(actionInfo.SelfMoveDelayTime,10f);
+        selfMoveDelayText.text = actionInfo.SelfMoveDelayTime.ToString();
+
         selfMoveDistanceSet.SetValue(actionInfo.SelfMoveDistance, DataManager.SelfMoveDistanceMax);
         selfMoveDistanceText.text = actionInfo.SelfMoveDistance.ToString();
 
@@ -544,6 +541,21 @@ public class AttributeSetting
         }
 
     }
+
+    
+    private void OnSelfMoveDelaySliderChangeHandler(float a, float b)
+    {
+        Debug.LogError("a:" + a + "/b:" + b);
+        if (currentActionInfo != null)
+        {
+            string v = a.ToString("0.00");
+            currentActionInfo.SelfMoveDelayTime = float.Parse(v);
+            selfMoveDelayText.text = v;
+        }
+    }
+
+
+
     private void OnSelfMoveDistanceSliderChangeHandler(float a, float b)
     {
         Debug.LogError("a:" + a + "/b:" + b);
