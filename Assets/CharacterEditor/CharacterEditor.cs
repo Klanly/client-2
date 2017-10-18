@@ -137,5 +137,9 @@ public class CharacterEditor : MonoBehaviour {
         {
             tCreature.Update(Time.deltaTime);
         }
+        if (beAttacker != null)
+        {
+            beAttacker.Update(Time.deltaTime);
+        }
     }
 }

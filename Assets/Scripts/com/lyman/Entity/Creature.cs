@@ -169,10 +169,7 @@ public class Creature : SceneEntity
         {
             WearEquipment("added_rightweapon",characterConfigInfo.RightWeaponName, BoneTypes.Bone_Rwq);
         }
-        if (!isActive)
-        {
-            Hide();
-        }
+        
     }
     
     public void WearEquipment(string saveName,string equipmentName, string parentName)
