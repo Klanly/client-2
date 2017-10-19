@@ -93,42 +93,50 @@ public class CharacterEditor : MonoBehaviour {
         Alert.Hide();
         TimerManager.RemoveHandler(tTimerInfo);
         tTimerInfo = null;
-        beAttacker.Show();
+        
         Vector3 pos = tCreature.Container.transform.TransformDirection(currentActionInfo.AttackRadius * Vector3.forward);
         beAttacker.SetPosition(pos.x, pos.y, pos.z);
         beAttacker.FaceTo(tCreature.GetPosition());
-        tCreature.PlayAnimation(currentActionInfo.ActionName, true, this.OnHitHandler, OnEndHandler);
-    }
-
-    private void OnHitHandler()
-    {
-        if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
+        if (AnimationType.IsAttackAction(currentActionInfo.ActionName))
         {
-
-            if (currentActionInfo.IsHitMove && currentActionInfo.HitMoveDistance > 0f && currentActionInfo.HitMoveTime > 0f)
-            {
-                beAttacker.DoHitMove(tCreature.GetPosition(), currentActionInfo.HitMoveDistance, currentActionInfo.HitMoveTime);
-            }
-            else if (currentActionInfo.IsHitFly && currentActionInfo.HitFlyDistance > 0f && currentActionInfo.HitFlyTime > 0f)
-            {
-                beAttacker.DoHitFly(tCreature.GetPosition(), currentActionInfo.HitMoveDistance, currentActionInfo.HitMoveTime);
-            }
-            else
-            {
-                beAttacker.DoHit();
-            }
+            beAttacker.Show();
+            tCreature.DoAttack(beAttacker, currentActionInfo);
+            //tCreature.PlayAnimation(currentActionInfo.ActionName, true, OnHitHandler, OnEndHandler);
         }
-    }
-
-    private void OnEndHandler()
-    {
-        if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
+        else
         {
-
+            beAttacker.Hide();
+            tCreature.PlayAnimation(currentActionInfo.ActionName, true);
         }
+        
     }
 
+    //private void OnHitHandler()
+    //{
+    //    if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
+    //    {
+    //        if (currentActionInfo.IsHitMove && currentActionInfo.HitMoveDistance > 0f && currentActionInfo.HitMoveTime > 0f)
+    //        {
+    //            beAttacker.DoHitMove(tCreature.GetPosition(), currentActionInfo.HitMoveDistance, currentActionInfo.HitMoveTime);
+    //        }
+    //        else if (currentActionInfo.IsHitFly && currentActionInfo.HitFlyDistance > 0f && currentActionInfo.HitFlyTime > 0f)
+    //        {
+    //            beAttacker.DoHitFly(tCreature.GetPosition(), currentActionInfo.HitMoveDistance, currentActionInfo.HitMoveTime);
+    //        }
+    //        else
+    //        {
+    //            beAttacker.DoHit();
+    //        }
+    //    }
+    //}
 
+    //private void OnEndHandler()
+    //{
+    //    if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
+    //    {
+
+    //    }
+    //}
 
     void Update ()
     {

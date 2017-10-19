@@ -7,9 +7,29 @@ using UnityEngine;
 public class AttackState : FSMState
 {
     private Creature creature;
-    private int skillId;
-    private string targetId = string.Empty;
     
+    private Creature target;
+
+    private bool isEntry;
+
+    private ActionInfo actionInfo;
+    private TimerInfo timerInfo;
+    private float speed;
+    private float delTime;
+    
+
+    public ActionInfo SetActionInfo
+    {
+        set { actionInfo = value; }
+    }
+
+    public Creature Target
+    {
+        get { return target;}
+        set { target = value; }
+    }
+
+
     public AttackState(Creature creature) : base("Attack", (uint)(CreatureStateType.Attack))
     {
         this.creature = creature;
@@ -17,33 +37,84 @@ public class AttackState : FSMState
     
     private void onPlayEndHandler()
     {
-       
+        creature.DoIdle();
     }
     
     private void OnPlayHitHandler()
     {
-        
+        if (actionInfo != null && AnimationType.IsAttackAction(actionInfo.ActionName))
+        {
+            if (actionInfo.IsHitMove && actionInfo.HitMoveDistance > 0f && actionInfo.HitMoveTime > 0f)
+            {
+                target.DoHitMove(creature.GetPosition(), actionInfo.HitMoveDistance, actionInfo.HitMoveTime);
+            }
+            else if (actionInfo.IsHitFly && actionInfo.HitFlyDistance > 0f && actionInfo.HitFlyTime > 0f)
+            {
+                target.DoHitFly(creature.GetPosition(), actionInfo.HitMoveDistance, actionInfo.HitMoveTime);
+            }
+            else
+            {
+                target.DoHit();
+            }
+        }
     }
     
     public override void OnLeave(FSMTranslation translation)
     {
         base.OnLeave(translation);
+        TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
+        isEntry = false;
     }
     
     public override void OnEnter(FSMTranslation translation)
     {
         base.OnEnter(translation);
-        
+        isEntry = false;
+        delTime = 0f;
+        if (actionInfo.SelfMoveDistance > 0f && actionInfo.SelfMoveTime > 0f)
+        {
+            speed = actionInfo.SelfMoveDistance / actionInfo.SelfMoveTime;
+            if (actionInfo.SelfMoveDelayTime > 0f)
+            {
+                timerInfo = TimerManager.AddDelayHandler(OnDelayHandler, actionInfo.SelfMoveDelayTime, 1);
+            }
+            else
+            {
+                isEntry = true;
+            }
+        }
+        creature.PlayAnimation(actionInfo.ActionName, true, OnPlayHitHandler, onPlayEndHandler);
     }
-    
 
-
-    private void exec(bool clearOld)
+    private void OnDelayHandler(float del)
     {
-       
+        TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
+        isEntry = true;
     }
+
+    
+    public override void Update(float deltaTime)
+    {
+        base.Update(deltaTime);
+        if (!isEntry) { return; }
+        delTime += deltaTime;
+        if (delTime <= actionInfo.SelfMoveDistance)
+        {
+            creature.Container.transform.TransformDirection(speed * Vector3.forward);
+        }
+        else
+        {
+            isEntry = false;
+            creature.DoIdle();
+        }
+    }
+
     public override void Destroy()
     {
         base.Destroy();
+        TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
     }
 }

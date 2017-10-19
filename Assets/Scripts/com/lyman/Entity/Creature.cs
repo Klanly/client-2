@@ -680,5 +680,24 @@ public class Creature : SceneEntity
             }
         }
     }
-
+    public void DoAttack(Creature target,ActionInfo actionInfo)
+    {
+        if (FSM != null)
+        {
+            if (FSM.CurrentState.ID == CreatureStateType.Dead)
+            {
+                return;
+            }
+            if (FSM.CurrentState.ID != CreatureStateType.Hit && FSM.CurrentState.ID != CreatureStateType.HitMove && FSM.CurrentState.ID != CreatureStateType.Attack && FSM.CurrentState.ID != CreatureStateType.HitFly)
+            {
+                AttackState attackState = FSM.getStateByID(CreatureStateType.Attack) as AttackState;
+                if (attackState != null)
+                {
+                    attackState.Target = target;
+                    attackState.SetActionInfo = actionInfo;
+                    FSM.changeState(CreatureStateType.Attack);
+                }
+            }
+        }
+    }
 }
