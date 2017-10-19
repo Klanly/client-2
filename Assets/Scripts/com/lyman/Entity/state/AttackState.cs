@@ -44,6 +44,9 @@ public class AttackState : FSMState
     {
         if (actionInfo != null && AnimationType.IsAttackAction(actionInfo.ActionName))
         {
+
+
+
             if (actionInfo.IsHitMove && actionInfo.HitMoveDistance > 0f && actionInfo.HitMoveTime > 0f)
             {
                 target.DoHitMove(creature.GetPosition(), actionInfo.HitMoveDistance, actionInfo.HitMoveTime);
@@ -102,7 +105,8 @@ public class AttackState : FSMState
         delTime += deltaTime;
         if (delTime <= actionInfo.SelfMoveDistance)
         {
-            creature.Container.transform.TransformDirection(speed * Vector3.forward);
+            Vector3 step = creature.Container.transform.TransformDirection(speed * Vector3.forward);
+            creature.CharacterController.SimpleMove(step);
         }
         else
         {

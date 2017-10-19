@@ -36,6 +36,7 @@ public class AttributeSetting
     private Combobox actionNameSet;
     private RangeSliderFloat actionSpeedSet;
     private Text actionSpeedtext;
+    private Toggle actionIsLoop;
 
     private Combobox actionSoundSet;
 
@@ -130,7 +131,12 @@ public class AttributeSetting
         actionSpeedSet.Step = DataManager.Step;
         actionSpeedtext = content.Find("actionSpeedSet/Text").GetComponent<Text>();
         actionSpeedSet.OnValuesChange.AddListener(OnActionSpeedSliderChangeHandler);
+
+        actionIsLoop = content.Find("actionIsLoop").GetComponent<Toggle>();
+        actionIsLoop.isOn = false;
+        actionIsLoop.onValueChanged.AddListener(OnActionIsLoopHandler);
         
+
         actionSoundSet = content.Find("actionSoundSet/combobox/Combobox").GetComponent<Combobox>();
         actionSoundSet.ListView.Sort = false;
         actionSoundSet.ListView.DataSource = DataManager.GetSoundList();
@@ -138,22 +144,17 @@ public class AttributeSetting
         
         //todo 动作音效延迟播放时间 最小值为0f 最大值为当前动作的总时间 暂时先按照配置
         actionSoundPlayPointSet = content.Find("actionSoundPlayPointSet/RangeSliderFloat").GetComponent<RangeSliderFloat>();
-
         
         actionSoundPlayPointSet.SetLimit(DataManager.ActionSoundDelayMin, DataManager.ActionSoundDelayMax);
         actionSoundPlayPointSet.Step = DataManager.ActionSoundStep;
         actionSoundPlayPointText = content.Find("actionSoundPlayPointSet/Text").GetComponent<Text>();
         actionSoundPlayPointSet.OnValuesChange.AddListener(OnActionSoundPointSliderChangeHandler);
-
-
-
-
+        
         selfMoveDelayTimeSet = content.Find("selfMoveDelayTimeSet/RangeSliderFloat").GetComponent<RangeSliderFloat>();
         selfMoveDelayTimeSet.SetLimit(0f, 10f);
         selfMoveDelayTimeSet.Step = DataManager.Step;
         selfMoveDelayText = content.Find("selfMoveDelayTimeSet/Text").GetComponent<Text>();
         selfMoveDelayTimeSet.OnValuesChange.AddListener(OnSelfMoveDelaySliderChangeHandler);
-
         
         selfMoveDistanceSet = content.Find("selfMoveDistanceSet/RangeSliderFloat").GetComponent<RangeSliderFloat>();
         selfMoveDistanceSet.SetLimit(DataManager.SelfMoveDistanceMin, DataManager.SelfMoveDistanceMax);
@@ -220,6 +221,8 @@ public class AttributeSetting
         shakeScreenToggle = content.Find("shakeScreenToggle").GetComponent<Toggle>();
         shakeScreenToggle.isOn = false;
         shakeScreenToggle.onValueChanged.AddListener(OnShakeCameraSelectHandler);
+
+        
 
         actionEffectsSet = content.Find("actionEffectsSet/ListView").GetComponent<ListView>();
         actionEffectsSet.OnSelect.AddListener(OnActionEffectSelectedHandler);
@@ -420,6 +423,8 @@ public class AttributeSetting
         actionSpeedSet.SetValue(actionInfo.PlaySpeed, DataManager.ActionSpeedMax);
         actionSpeedtext.text = actionInfo.PlaySpeed.ToString();
 
+        actionIsLoop.isOn = actionInfo.IsLoop;
+
         selfMoveDelayTimeSet.SetValue(actionInfo.SelfMoveDelayTime,10f);
         selfMoveDelayText.text = actionInfo.SelfMoveDelayTime.ToString();
 
@@ -529,6 +534,16 @@ public class AttributeSetting
             actionSpeedtext.text = v;
         }
     }
+    private void OnActionIsLoopHandler(bool isOn)
+    {
+        if (currentActionInfo != null)
+        {
+            currentActionInfo.IsLoop = isOn;
+        }
+    }
+
+
+
     private void OnActionSoundPointSliderChangeHandler(float a, float b)
     {
         Debug.LogError("a:" + a + "/b:" + b);

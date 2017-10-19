@@ -59,7 +59,7 @@ public class CharacterEditor : MonoBehaviour {
     {
         if (tCreature != null)
         {
-            tCreature.PlayAnimation(actionName, true);
+            tCreature.PlayAnimation(actionName, true, null, OnEndHandler);
         }
     }
 
@@ -106,7 +106,7 @@ public class CharacterEditor : MonoBehaviour {
         else
         {
             beAttacker.Hide();
-            tCreature.PlayAnimation(currentActionInfo.ActionName, true);
+            tCreature.PlayAnimation(currentActionInfo.ActionName, true,null, OnEndHandler);
         }
         
     }
@@ -130,13 +130,10 @@ public class CharacterEditor : MonoBehaviour {
     //    }
     //}
 
-    //private void OnEndHandler()
-    //{
-    //    if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
-    //    {
-
-    //    }
-    //}
+    private void OnEndHandler()
+    {
+        tCreature.PlayAnimation(AnimationType.Idle, true);
+    }
 
     void Update ()
     {
