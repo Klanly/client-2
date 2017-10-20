@@ -155,7 +155,11 @@ public class Creature : SceneEntity
         {
             characterController = Model.Container.AddComponent<CharacterController>();
         }
-
+        if (characterController != null)
+        {
+            characterController.height = 2f;
+            characterController.center = new Vector3(0f, 1f, 0f);
+        }
         if (onCreateComplete != null)
         {
             onCreateComplete();

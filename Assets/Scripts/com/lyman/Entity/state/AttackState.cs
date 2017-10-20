@@ -46,7 +46,7 @@ public class AttackState : FSMState
         {
 
 
-
+            if (Target == null) return;
             if (actionInfo.IsHitMove && actionInfo.HitMoveDistance > 0f && actionInfo.HitMoveTime > 0f)
             {
                 target.DoHitMove(creature.GetPosition(), actionInfo.HitMoveDistance, actionInfo.HitMoveTime);

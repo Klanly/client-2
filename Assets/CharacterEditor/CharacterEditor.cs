@@ -147,13 +147,13 @@ public class CharacterEditor : MonoBehaviour {
         TimerManager.RemoveHandler(tTimerInfo);
         tTimerInfo = null;
         
-        Vector3 pos = tCreature.Container.transform.TransformDirection(currentActionInfo.AttackRadius * Vector3.forward);
-        beAttacker.SetPosition(pos.x, pos.y, pos.z);
-        beAttacker.FaceTo(tCreature.GetPosition());
+        //Vector3 pos = tCreature.Container.transform.TransformDirection(currentActionInfo.AttackRadius * Vector3.forward);
+        //beAttacker.SetPosition(pos.x, pos.y, pos.z);
+        //beAttacker.FaceTo(tCreature.GetPosition());
         if (AnimationType.IsAttackAction(currentActionInfo.ActionName))
         {
-            beAttacker.Show();
-            tCreature.DoAttack(beAttacker, currentActionInfo);
+            //beAttacker.Show();
+            tCreature.DoAttack(null, currentActionInfo);
             //tCreature.PlayAnimation(currentActionInfo.ActionName, true, OnHitHandler, OnEndHandler);
         }
         else

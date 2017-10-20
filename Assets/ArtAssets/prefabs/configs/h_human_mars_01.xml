@@ -7,6 +7,7 @@
 	<p n='RightWeaponName'>h_human_mars_ss_jian_01</p>
 	<as n='actioninfos'>
 		<a n='ActionName'>Idle</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -29,6 +30,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Walk</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>zhanshen_walk</a>
@@ -51,6 +53,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Run</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>zhanshen_run</a>
@@ -83,6 +86,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Die</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>zhanshen_die</a>
@@ -105,6 +109,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Hit</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>zhanshen_hit</a>
@@ -137,15 +142,16 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_1</a>
+		<a n='Length'>1.733333</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1.8</a>
 		<a n='SoundName'>none</a>
 		<a n='SoundPlayDelayTime'>0</a>
 		<a n='AttRange'>3</a>
 		<a n='AttAngle'>90</a>
-		<a n='SelfMoveDelayTime'>1.29</a>
-		<a n='SelfMoveDistance'>3.17</a>
-		<a n='SelfMoveTime'>1.22</a>
+		<a n='SelfMoveDelayTime'>0.34</a>
+		<a n='SelfMoveDistance'>0.74</a>
+		<a n='SelfMoveTime'>0.48</a>
 		<a n='IsHitMove'>0</a>
 		<a n='HitMoveDistance'>0.1</a>
 		<a n='HitMoveTime'>0.1</a>
@@ -179,6 +185,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_2</a>
+		<a n='Length'>1.533333</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1.6</a>
 		<a n='SoundName'>none</a>
@@ -221,6 +228,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_3</a>
+		<a n='Length'>1.500001</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -231,11 +239,11 @@
 		<a n='SelfMoveDistance'>0</a>
 		<a n='SelfMoveTime'>0</a>
 		<a n='IsHitMove'>0</a>
-		<a n='HitMoveDistance'>0</a>
-		<a n='HitMoveTime'>0</a>
+		<a n='HitMoveDistance'>0.1</a>
+		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>0</a>
-		<a n='HitFlyDistance'>0</a>
-		<a n='HitFlyTime'>0</a>
+		<a n='HitFlyDistance'>0.1</a>
+		<a n='HitFlyTime'>0.1</a>
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>
 		<es n='Effects'>
@@ -243,6 +251,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_4</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -265,6 +274,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_5</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -287,6 +297,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_6</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -309,6 +320,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_7</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -331,6 +343,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Skill</a>
+		<a n='Length'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
