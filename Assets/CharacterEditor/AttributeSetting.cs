@@ -34,6 +34,7 @@ public class AttributeSetting
     private Text runSpeedValue;
 
     private Combobox actionNameSet;
+    private Text actionLengthText;
     private RangeSliderFloat actionSpeedSet;
     private Text actionSpeedtext;
     private Toggle actionIsLoop;
@@ -125,7 +126,12 @@ public class AttributeSetting
         actionNameSet.ListView.Sort = false;
         actionNameSet.ListView.DataSource = DataManager.GetActionList();
         actionNameSet.OnSelect.AddListener(OnActionnSelected);
-        
+
+        actionLengthText = content.Find("actionNameSet/actionLengthText").GetComponent<Text>();
+        actionLengthText.text = "0";
+
+
+
         actionSpeedSet = content.Find("actionSpeedSet/RangeSliderFloat").GetComponent<RangeSliderFloat>();
         actionSpeedSet.SetLimit(DataManager.ActionSpeedMin, DataManager.ActionSpeedMax);
         actionSpeedSet.Step = DataManager.Step;
@@ -407,6 +413,7 @@ public class AttributeSetting
         Debug.Log("n:" + currentActionInfo.ActionName + " / length:" + length);
         currentActionInfo.Length = length;
         lengthMap.Add(currentActionInfo.ActionName, length);
+        
         ReSet();
     }
 
@@ -415,6 +422,7 @@ public class AttributeSetting
         float length = 0f;
         lengthMap.TryGetValue(currentActionInfo.ActionName, out length);
         length = length / currentActionInfo.PlaySpeed;
+        actionLengthText.text = length.ToString()+"秒";
         //设置delay时间点
         if (string.IsNullOrEmpty(currentActionInfo.SoundName) && currentActionInfo.SoundName != BindTypes.NONE)
         {
@@ -555,6 +563,10 @@ public class AttributeSetting
             string v = a.ToString("0.00");
             currentActionInfo.PlaySpeed = float.Parse(v);
             actionSpeedtext.text = v;
+
+            float length = currentActionInfo.Length / currentActionInfo.PlaySpeed;
+            actionLengthText.text = length.ToString() + "秒";
+
         }
     }
     private void OnActionIsLoopHandler(bool isOn)

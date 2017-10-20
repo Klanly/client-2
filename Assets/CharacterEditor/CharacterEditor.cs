@@ -80,8 +80,8 @@ public class CharacterEditor : MonoBehaviour {
         currentActionInfo = actionInfo;
         if (currentCharacterConfigInfo != null && currentActionInfo != null && tCreature != null)
         {
-            
-
+            bool isCorrect = CheckActionInfo(currentActionInfo);
+            if (!isCorrect) return;
 
             if (currentActionInfo.ActionName != AnimationType.Idle)
             {
