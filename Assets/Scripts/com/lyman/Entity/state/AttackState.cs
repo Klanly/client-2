@@ -73,7 +73,6 @@ public class AttackState : FSMState
     public override void OnEnter(FSMTranslation translation)
     {
         base.OnEnter(translation);
-        isEntry = false;
         delTime = 0f;
         if (actionInfo.SelfMoveDistance > 0f && actionInfo.SelfMoveTime > 0f)
         {
@@ -88,6 +87,7 @@ public class AttackState : FSMState
             }
         }
         creature.PlayAnimation(actionInfo.ActionName, true, OnPlayHitHandler, onPlayEndHandler);
+        
     }
 
     private void OnDelayHandler(float del)

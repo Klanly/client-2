@@ -80,6 +80,9 @@ public class CharacterEditor : MonoBehaviour {
         currentActionInfo = actionInfo;
         if (currentCharacterConfigInfo != null && currentActionInfo != null && tCreature != null)
         {
+            
+
+
             if (currentActionInfo.ActionName != AnimationType.Idle)
             {
                 tTimerInfo = TimerManager.AddDelayHandler(OnDelHandler, 2f, 1);
@@ -87,6 +90,56 @@ public class CharacterEditor : MonoBehaviour {
             }
         }
     }
+
+    private bool CheckActionInfo(ActionInfo actionInfo)
+    {
+        if (!actionInfo.IsLoop)
+        {
+            if (!string.IsNullOrEmpty(actionInfo.SoundName) && actionInfo.SoundName != BindTypes.NONE)
+            {
+                if (actionInfo.SoundPlayDelayTime > actionInfo.Length)
+                {
+                    Alert.Show(actionInfo.ActionName + "的动作音效的延迟播放时间不能大于动作自身时间!!!", 5);
+                    return false;
+                }
+            }
+            if (actionInfo.SelfMoveDistance > 0f && actionInfo.SelfMoveTime > 0f)
+            {
+                if (actionInfo.SelfMoveDelayTime + actionInfo.SelfMoveTime > actionInfo.Length)
+                {
+                    Alert.Show(actionInfo.ActionName + "为非循环动作,自身位移延迟时间+自身位移时间不能大于动作自身时间!!!", 5);
+                    return false;
+                }
+            }
+        }
+        else
+        {
+
+        }
+
+
+        if (actionInfo.IsHitFly && actionInfo.IsHitMove)
+        {
+            Alert.Show(actionInfo.ActionName + "动作不能同时击飞和击退!!!", 5);
+            return false;
+        }
+
+        if (actionInfo.IsHitMove && (actionInfo.HitMoveDistance <= 0f || actionInfo.HitMoveTime <= 0f))
+        {
+            Alert.Show(actionInfo.ActionName + "带击退功能的动作,击退时间和击退距离都得大于0!!!", 5);
+            return false;
+        }
+        if (actionInfo.IsHitFly && (actionInfo.HitFlyDistance <= 0f || actionInfo.HitFlyTime <= 0f))
+        {
+            Alert.Show(actionInfo.ActionName + "带击飞功能的动作,击飞时间和击飞距离都得大于0!!!", 5);
+            return false;
+        }
+
+
+        return true;
+    }
+
+
     private TimerInfo tTimerInfo;
     private void OnDelHandler(float del)
     {

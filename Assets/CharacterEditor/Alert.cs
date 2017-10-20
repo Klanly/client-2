@@ -7,6 +7,9 @@ public class Alert
     private static GameObject content;
     private static GameObject mask;
     private static Text text;
+    private static TimerInfo timerInfo;
+    private static int index;
+    private static string msgContent;
     public static void Init(GameObject container)
     {
         content = container;
@@ -15,13 +18,38 @@ public class Alert
         content.SetActive(false);
     }
 
-    public static void Show(string msg)
+    public static void Show(string msg,int hideTime  = 0)
     {
+        msgContent = msg; 
         if (content != null)
         {
             content.SetActive(true);
         }
-        text.text = msg;
+
+        if (hideTime <= 0)
+        {
+            text.text = msgContent;
+        }
+        else
+        {
+            index = hideTime;
+            text.text = msgContent + " " + index;
+            timerInfo = TimerManager.AddDelayHandler(OnDelHandler, 1f, (uint)hideTime+1);
+        }
+    }
+
+
+    private static void OnDelHandler(float del)
+    {
+        index--;
+        if (index > 0)
+        {
+            text.text = msgContent + " " + index;
+        }
+        else
+        {
+            Hide();
+        }
     }
 
     public static void Hide()
@@ -30,6 +58,7 @@ public class Alert
         {
             content.SetActive(false);
         }
+        TimerManager.RemoveHandler(timerInfo);
     }
 
 }

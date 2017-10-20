@@ -390,11 +390,7 @@ public class AttributeSetting
         }
         if (lengthMap.ContainsKey(actionName))
         {
-            float length = 0f;
-            lengthMap.TryGetValue(actionName, out length);
-            //设置delay时间点
-            actionSoundPlayPointSet.SetLimit(DataManager.ActionSoundDelayMin, length);
-            actionSoundPlayPointSet.SetValue(currentActionInfo.SoundPlayDelayTime, length);
+            ReSet();
         }
         else
         {
@@ -407,15 +403,42 @@ public class AttributeSetting
     {
         TimerManager.RemoveHandler(timerInfo);
         timerInfo = null;
-        float length = GetActionLength();// tCreature.GetCurrentActionLength();
+        float length = GetActionLength();
         Debug.Log("n:" + currentActionInfo.ActionName + " / length:" + length);
+        currentActionInfo.Length = length;
         lengthMap.Add(currentActionInfo.ActionName, length);
-        //设置delay时间点
-        actionSoundPlayPointSet.SetLimit(DataManager.ActionSoundDelayMin, length);
-        actionSoundPlayPointSet.SetValue(currentActionInfo.SoundPlayDelayTime, length);
+        ReSet();
     }
-    
-    
+
+    private void ReSet()
+    {
+        float length = 0f;
+        lengthMap.TryGetValue(currentActionInfo.ActionName, out length);
+        length = length / currentActionInfo.PlaySpeed;
+        //设置delay时间点
+        if (string.IsNullOrEmpty(currentActionInfo.SoundName) && currentActionInfo.SoundName != BindTypes.NONE)
+        {
+            actionSoundPlayPointSet.SetLimit(DataManager.ActionSoundDelayMin, length);
+            if (currentActionInfo.SoundPlayDelayTime > length)
+                currentActionInfo.SoundPlayDelayTime = length;
+            actionSoundPlayPointSet.SetValue(currentActionInfo.SoundPlayDelayTime, length);
+        }
+        //if (currentActionInfo.SelfMoveDistance > 0f && currentActionInfo.SelfMoveTime > 0f)
+        //{
+        //    if (!currentActionInfo.IsLoop)
+        //    {
+        //        if (currentActionInfo.SelfMoveDelayTime + currentActionInfo.SelfMoveTime > length)
+        //        {
+        //            Alert.Show("请重新设置自身位移时间，和自身位移延迟时间！！！");
+        //        }
+        //    }
+        //    else
+        //    {
+
+        //    }
+        //}
+    }
+
 
     private void SetActionAttribute(ActionInfo actionInfo)
     {

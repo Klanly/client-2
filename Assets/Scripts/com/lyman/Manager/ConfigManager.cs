@@ -64,6 +64,9 @@ public class ConfigManager
                         case "ActionName":
                             actionInfo.ActionName = value;
                             break;
+                        case "Length":
+                            float.TryParse(value, out actionInfo.Length);
+                            break;
                         case "PlaySpeed":
                             float.TryParse(value, out actionInfo.PlaySpeed);
                             break;
