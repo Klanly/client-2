@@ -44,8 +44,6 @@ public class AttackState : FSMState
     {
         if (actionInfo != null && AnimationType.IsAttackAction(actionInfo.ActionName))
         {
-
-
             if (Target == null) return;
             if (actionInfo.IsHitMove && actionInfo.HitMoveDistance > 0f && actionInfo.HitMoveTime > 0f)
             {
@@ -53,7 +51,7 @@ public class AttackState : FSMState
             }
             else if (actionInfo.IsHitFly && actionInfo.HitFlyDistance > 0f && actionInfo.HitFlyTime > 0f)
             {
-                target.DoHitFly(creature.GetPosition(), actionInfo.HitMoveDistance, actionInfo.HitMoveTime);
+                target.DoHitFly(creature.GetPosition(), actionInfo.HitFlyDistance, actionInfo.HitFlyTime);
             }
             else
             {

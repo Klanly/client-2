@@ -695,22 +695,22 @@ public class AttributeSetting
         {
             currentActionInfo.IsHitFly = isSelect;
             hitFlyText.text = isSelect ? "1" : "0";
-            if (!currentActionInfo.IsHitFly)
-            {
-                currentActionInfo.HitFlyDistance = DataManager.HitFlyDistanceMin;
-                currentActionInfo.HitFlyTime = DataManager.HitFlyTimeMin;
-            }
-            hitFlyDistanceSet.SetValue(currentActionInfo.HitFlyDistance, DataManager.HitFlyDistanceMax);
-            hitFlyDistanceText.text = currentActionInfo.HitFlyDistance.ToString();
-            hitFlyTimeSet.SetValue(currentActionInfo.HitFlyTime, DataManager.HitFlyTimeMax);
-            hitFlyTimeText.text = currentActionInfo.HitFlyTime.ToString();
+            //if (!currentActionInfo.IsHitFly)
+            //{
+            //    currentActionInfo.HitFlyDistance = DataManager.HitFlyDistanceMin;
+            //    currentActionInfo.HitFlyTime = DataManager.HitFlyTimeMin;
+            //}
+            //hitFlyDistanceSet.SetValue(currentActionInfo.HitFlyDistance, DataManager.HitFlyDistanceMax);
+            //hitFlyDistanceText.text = currentActionInfo.HitFlyDistance.ToString();
+            //hitFlyTimeSet.SetValue(currentActionInfo.HitFlyTime, DataManager.HitFlyTimeMax);
+            //hitFlyTimeText.text = currentActionInfo.HitFlyTime.ToString();
         }
     }
 
 
     private void OnHitFlyDistanceSliderChangeHandler(float a, float b)
     {
-        if (currentActionInfo != null && currentActionInfo.IsHitFly)
+        if (currentActionInfo != null)// && currentActionInfo.IsHitFly)
         {
             string v = a.ToString("0.00");
             currentActionInfo.HitFlyDistance = float.Parse(v);
@@ -720,7 +720,7 @@ public class AttributeSetting
     }
     private void OnHitFlyTimeSliderChangeHandler(float a, float b)
     {
-        if (currentActionInfo != null && currentActionInfo.IsHitFly)
+        if (currentActionInfo != null)// && currentActionInfo.IsHitFly)
         {
             string v = a.ToString("0.00");
             currentActionInfo.HitFlyTime = float.Parse(v);

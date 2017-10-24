@@ -85,7 +85,7 @@ public class HitMoveState : FSMState
         else
         {
             Vector3 step = creature.Model.Container.transform.TransformDirection(speed * Vector3.back);
-            characterController.SimpleMove(step);
+            creature.CharacterController.SimpleMove(step);
         }
     }
 
