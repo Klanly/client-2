@@ -150,11 +150,11 @@
 		<a n='AttRange'>3</a>
 		<a n='AttAngle'>90</a>
 		<a n='SelfMoveDelayTime'>0.34</a>
-		<a n='SelfMoveDistance'>0.74</a>
+		<a n='SelfMoveDistance'>0.52</a>
 		<a n='SelfMoveTime'>0.48</a>
-		<a n='IsHitMove'>0</a>
-		<a n='HitMoveDistance'>0.1</a>
-		<a n='HitMoveTime'>0.1</a>
+		<a n='IsHitMove'>1</a>
+		<a n='HitMoveDistance'>1.17</a>
+		<a n='HitMoveTime'>0.53</a>
 		<a n='IsHitFly'>0</a>
 		<a n='HitFlyDistance'>0.1</a>
 		<a n='HitFlyTime'>0.1</a>

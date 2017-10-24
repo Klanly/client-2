@@ -614,11 +614,6 @@ public class AttributeSetting
             string v = a.ToString("0.00");
             currentActionInfo.SelfMoveDistance = float.Parse(v);
             selfMoveDistanceText.text = v;
-            if (currentActionInfo.SelfMoveDistance == 0f)
-            {
-                currentActionInfo.SelfMoveTime = 0f;
-                selfMoveTimeText.text = a.ToString();
-            }
         }
     }
     private void OnSelfMoveTimeSliderChangeHandler(float a, float b)
