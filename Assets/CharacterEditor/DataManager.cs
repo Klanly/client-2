@@ -38,7 +38,7 @@ public class DataManager
     public static float HitFlyTimeMin = 0.1f;
     public static float HitFlyTimeMax = 20f;
 
-    public static float Step = 0.1f;
+    public static float Step = 0.01f;
 
     public static float ActionSoundDelayMin = 0f;
     public static float ActionSoundDelayMax = 5f;

@@ -150,15 +150,15 @@ public class AddEffectSetting
         }
         else if (ty == EffectTypes.Bullet)
         {
-            effectBindTypeSet.transform.parent.gameObject.SetActive(false);
-            effectBindNameSet.transform.parent.gameObject.SetActive(false);
-            text1.SetActive(false);
-            text2.SetActive(false);
-            if (effectInfo != null)
-            {
-                effectInfo.BindType = BindTypes.None;
-                effectInfo.BindName = BindTypes.NONE;
-            }
+            //effectBindTypeSet.transform.parent.gameObject.SetActive(false);
+            //effectBindNameSet.transform.parent.gameObject.SetActive(false);
+            //text1.SetActive(false);
+            //text2.SetActive(false);
+            //if (effectInfo != null)
+            //{
+            //    effectInfo.BindType = BindTypes.None;
+            //    effectInfo.BindName = BindTypes.NONE;
+            //}
         }
     }
 

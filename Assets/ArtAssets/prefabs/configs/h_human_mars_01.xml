@@ -53,7 +53,7 @@
 	</as>
 	<as n='actioninfos'>
 		<a n='ActionName'>Run</a>
-		<a n='Length'>0</a>
+		<a n='Length'>0.6666667</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>zhanshen_run</a>
@@ -199,7 +199,7 @@
 		<a n='HitMoveDistance'>0.1</a>
 		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>1</a>
-		<a n='HitFlyDistance'>5.28</a>
+		<a n='HitFlyDistance'>4.73</a>
 		<a n='HitFlyTime'>0.47</a>
 		<a n='ShakeScreen'>none</a>
 		<a n='DefaultShakeScene'>0</a>

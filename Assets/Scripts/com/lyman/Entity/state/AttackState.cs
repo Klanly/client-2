@@ -42,20 +42,27 @@ public class AttackState : FSMState
     
     private void OnPlayHitHandler()
     {
+        if (Target == null) return;
         if (actionInfo != null && AnimationType.IsAttackAction(actionInfo.ActionName))
         {
-            if (Target == null) return;
-            if (actionInfo.IsHitMove && actionInfo.HitMoveDistance > 0f && actionInfo.HitMoveTime > 0f)
+            if (!actionInfo.IsLangAttack)
             {
-                target.DoHitMove(creature.GetPosition(), actionInfo.HitMoveDistance, actionInfo.HitMoveTime);
-            }
-            else if (actionInfo.IsHitFly && actionInfo.HitFlyDistance > 0f && actionInfo.HitFlyTime > 0f)
-            {
-                target.DoHitFly(creature.GetPosition(), actionInfo.HitFlyDistance, actionInfo.HitFlyTime);
+                if (actionInfo.IsHitMove && actionInfo.HitMoveDistance > 0f && actionInfo.HitMoveTime > 0f)
+                {
+                    target.DoHitMove(creature.GetPosition(), actionInfo.HitMoveDistance, actionInfo.HitMoveTime);
+                }
+                else if (actionInfo.IsHitFly && actionInfo.HitFlyDistance > 0f && actionInfo.HitFlyTime > 0f)
+                {
+                    target.DoHitFly(creature.GetPosition(), actionInfo.HitFlyDistance, actionInfo.HitFlyTime);
+                }
+                else
+                {
+                    target.DoHit();
+                }
             }
             else
             {
-                target.DoHit();
+
             }
         }
     }

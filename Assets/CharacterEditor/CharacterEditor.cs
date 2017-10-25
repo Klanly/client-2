@@ -154,7 +154,6 @@ public class CharacterEditor : MonoBehaviour {
         {
             beAttacker.Show();
             tCreature.DoAttack(beAttacker, currentActionInfo);
-           // tCreature.PlayAnimation(currentActionInfo.ActionName, true, OnHitHandler, OnEndHandler);
         }
         else
         {
@@ -163,25 +162,7 @@ public class CharacterEditor : MonoBehaviour {
         }
     }
 
-    //private void OnHitHandler()
-    //{
-    //    if (currentActionInfo != null && AnimationType.IsAttackAction(currentActionInfo.ActionName))
-    //    {
-    //        if (currentActionInfo.IsHitMove && currentActionInfo.HitMoveDistance > 0f && currentActionInfo.HitMoveTime > 0f)
-    //        {
-    //            beAttacker.DoHitMove(tCreature.GetPosition(), currentActionInfo.HitMoveDistance, currentActionInfo.HitMoveTime);
-    //        }
-    //        else if (currentActionInfo.IsHitFly && currentActionInfo.HitFlyDistance > 0f && currentActionInfo.HitFlyTime > 0f)
-    //        {
-    //            beAttacker.DoHitFly(tCreature.GetPosition(), currentActionInfo.HitMoveDistance, currentActionInfo.HitMoveTime);
-    //        }
-    //        else
-    //        {
-    //            beAttacker.DoHit();
-    //        }
-    //    }
-    //}
-
+    
     private void OnEndHandler()
     {
         tCreature.DoIdle();

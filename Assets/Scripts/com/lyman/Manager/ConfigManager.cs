@@ -67,6 +67,9 @@ public class ConfigManager
                         case "Length":
                             float.TryParse(value, out actionInfo.Length);
                             break;
+                        case "IsLangAttack":
+                            actionInfo.IsLangAttack = (value == "1" ? true : false);
+                            break;
                         case "PlaySpeed":
                             float.TryParse(value, out actionInfo.PlaySpeed);
                             break;

@@ -7,6 +7,7 @@ public class ActionInfo
 {
     public string ActionName;//动作名称
     public float Length = 0f;
+    public bool IsLangAttack = false;
     public float PlaySpeed = 1f;//播放速度
     public string SoundName = BindTypes.NONE;//音效名称
     public float SoundPlayDelayTime = 0f;//音效播放开始时间
@@ -51,6 +52,8 @@ public class ActionInfo
         stringbuilder.Append("\t<as n='actioninfos'>\n");
         PushToStringBuilder(stringbuilder, "ActionName", ActionName);
         PushToStringBuilder(stringbuilder, "Length", Length.ToString());
+        PushToStringBuilder(stringbuilder, "IsLangAttack", IsLangAttack ? "1":"0");
+        
         PushToStringBuilder(stringbuilder, "IsLoop", (IsLoop ? 1 : 0).ToString());
         PushToStringBuilder(stringbuilder, "PlaySpeed", PlaySpeed.ToString());
         PushToStringBuilder(stringbuilder, "SoundName", SoundName);

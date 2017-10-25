@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>5.6.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -488,6 +486,7 @@
     <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Specular\T4M 3 TexturesSpec.shader" />
     <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Specular\T4M 4 TexturesSpec.shader" />
     <None Include="Assets\ArtAssets\prefabs\configs\ai.xml" />
+    <None Include="Assets\ArtAssets\prefabs\configs\arm_dwarf_archer_01.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\h_human_mars_01.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\shakecamera.xml" />
     <None Include="Assets\ArtAssets\prefabs\fonts\GlodYellow_small_font\GoldYellowSmall.fnt" />

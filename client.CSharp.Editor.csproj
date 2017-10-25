@@ -240,6 +240,7 @@
     <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Specular\T4M 3 TexturesSpec.shader" />
     <None Include="Assets\ArtAssets\original\T4M\Shaders\ShaderModel3\Specular\T4M 4 TexturesSpec.shader" />
     <None Include="Assets\ArtAssets\prefabs\configs\ai.xml" />
+    <None Include="Assets\ArtAssets\prefabs\configs\arm_dwarf_archer_01.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\h_human_mars_01.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\shakecamera.xml" />
     <None Include="Assets\ArtAssets\prefabs\fonts\GlodYellow_small_font\GoldYellowSmall.fnt" />
