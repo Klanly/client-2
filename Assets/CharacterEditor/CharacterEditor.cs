@@ -28,12 +28,16 @@ public class CharacterEditor : MonoBehaviour {
         //to do
         CharacterConfigInfo characterConfigInfo = DataManager.GetCharacterConfigInfo(abn);
         if (tCreature == null)
+        {
             tCreature = new TCreature();
+            EntityManager.AddEntity(tCreature);
+        } 
         tCreature.Init(characterConfigInfo);
 
         if (beAttacker == null)
         {
             beAttacker = new TCreature();
+            EntityManager.AddEntity(beAttacker);
             beAttacker.Init(tCreature.GetCharacterConfigInfo());
         }
         beAttacker.Hide();

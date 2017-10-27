@@ -28,5 +28,17 @@ public class Entity
     {
 
     }
+
+
+    private static int index;
+    public static int UniqueID
+    {
+        get
+        {
+            index++;
+            return index;
+        }
+    }
+
 	
 }

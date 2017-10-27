@@ -8,6 +8,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Idle</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -31,6 +32,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Walk</a>
 		<a n='Length'>1.066667</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1.13</a>
 		<a n='SoundName'>none</a>
@@ -54,6 +56,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Run</a>
 		<a n='Length'>0.833333</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>1</a>
 		<a n='PlaySpeed'>1.18</a>
 		<a n='SoundName'>none</a>
@@ -87,6 +90,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Die</a>
 		<a n='Length'>2.033335</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>airen_siwang</a>
@@ -120,6 +124,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Hit</a>
 		<a n='Length'>0.6999998</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -143,11 +148,12 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_1</a>
 		<a n='Length'>1.333333</a>
+		<a n='IsLangAttack'>1</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
 		<a n='SoundPlayDelayTime'>0</a>
-		<a n='AttRange'>3</a>
+		<a n='AttRange'>20.5</a>
 		<a n='AttAngle'>90</a>
 		<a n='SelfMoveDelayTime'>0</a>
 		<a n='SelfMoveDistance'>0</a>
@@ -166,8 +172,8 @@
 				<ac n='EffectType'>1</ac>
 				<ac n='SoundName'>none</ac>
 				<ac n='SoundPlayDelayTime'>0</ac>
-				<ac n='BindType'>0</ac>
-				<ac n='BindName'>none</ac>
+				<ac n='BindType'>4</ac>
+				<ac n='BindName'>weaponpoint</ac>
 				<ac n='IsLoop'>0</ac>
 				<ac n='ColliderDisappear'>1</ac>
 			</acs>
@@ -176,6 +182,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_2</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -199,6 +206,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_3</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -222,6 +230,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_4</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -245,6 +254,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_5</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -268,6 +278,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_6</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -291,6 +302,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Att_7</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>
@@ -314,6 +326,7 @@
 	<as n='actioninfos'>
 		<a n='ActionName'>Skill</a>
 		<a n='Length'>0</a>
+		<a n='IsLangAttack'>0</a>
 		<a n='IsLoop'>0</a>
 		<a n='PlaySpeed'>1</a>
 		<a n='SoundName'>none</a>

@@ -35,7 +35,7 @@ public class SceneEntity : Entity
         {
             base.Tag = value;
             if (model != null)
-                model.Tag = tag;
+                model.Tag = value;
         }
     }
     

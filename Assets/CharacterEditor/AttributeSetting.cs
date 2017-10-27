@@ -39,6 +39,8 @@ public class AttributeSetting
     private Text actionSpeedtext;
     private Toggle actionIsLoop;
 
+    private Toggle actionIsLang;
+
     private Combobox actionSoundSet;
 
     private RangeSliderFloat actionSoundPlayPointSet;
@@ -141,7 +143,12 @@ public class AttributeSetting
         actionIsLoop = content.Find("actionIsLoop").GetComponent<Toggle>();
         actionIsLoop.isOn = false;
         actionIsLoop.onValueChanged.AddListener(OnActionIsLoopHandler);
-        
+
+        actionIsLang = content.Find("actionIsLang").GetComponent<Toggle>();
+        actionIsLang.isOn = false;
+        actionIsLang.onValueChanged.AddListener(OnActionIsLangHandler);
+
+
 
         actionSoundSet = content.Find("actionSoundSet/combobox/Combobox").GetComponent<Combobox>();
         actionSoundSet.ListView.Sort = false;
@@ -455,7 +462,8 @@ public class AttributeSetting
         actionSpeedtext.text = actionInfo.PlaySpeed.ToString();
 
         actionIsLoop.isOn = actionInfo.IsLoop;
-
+        actionIsLang.isOn = actionInfo.IsLangAttack;
+        
         selfMoveDelayTimeSet.SetValue(actionInfo.SelfMoveDelayTime,10f);
         selfMoveDelayText.text = actionInfo.SelfMoveDelayTime.ToString();
 
@@ -576,13 +584,17 @@ public class AttributeSetting
             currentActionInfo.IsLoop = isOn;
         }
     }
-
-
-
+    private void OnActionIsLangHandler(bool isOn)
+    {
+        if (currentActionInfo != null)
+        {
+            currentActionInfo.IsLangAttack = isOn;
+        }
+    }
+    
     private void OnActionSoundPointSliderChangeHandler(float a, float b)
     {
         Debug.LogError("a:" + a + "/b:" + b);
-
         if (currentActionInfo != null)
         {
             string v = a.ToString("0.00");

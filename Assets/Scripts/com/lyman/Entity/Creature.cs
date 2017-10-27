@@ -285,6 +285,9 @@ public class Creature : SceneEntity
         return nEffect;
     }
     
+
+
+
     public void PlayAnimation(string actionName, bool isClearOldActionInfo = true, Action hitHandler = null,Action endHandler = null)
     {
         if (currentActionName == actionName) return;

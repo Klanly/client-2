@@ -62,7 +62,32 @@ public class AttackState : FSMState
             }
             else
             {
-
+                for (int i = 0; i < actionInfo.ActionEffectInfos.Count; ++i)
+                {
+                    EffectInfo effectInfo = actionInfo.ActionEffectInfos[i];
+                    if (effectInfo.EffectType == EffectTypes.Bullet)
+                    {
+                        BulletEntity bulletEntity = new BulletEntity();
+                        
+                        Transform bron = creature.Model.GetChild(effectInfo.BindName);
+                        if (bron != null)
+                        {
+                            bulletEntity.ID = Entity.UniqueID;
+                            bulletEntity.OwnerId = creature.ID;
+                            bulletEntity.TargetId = Target.ID;
+                            bulletEntity.HitFly = actionInfo.IsHitFly;
+                            bulletEntity.HitFlyDistance = actionInfo.HitFlyDistance;
+                            bulletEntity.HitFlyTime = actionInfo.HitFlyTime;
+                            bulletEntity.HitMove = actionInfo.IsHitMove;
+                            bulletEntity.HitMoveDistance = actionInfo.HitMoveDistance;
+                            bulletEntity.HitMoveTime = actionInfo.HitMoveTime;
+                            Vector3 pos = Target.Model.GetChild(BoneTypes.CenterPoint).position;
+                            Vector3 pos1 = Target.Container.transform.TransformDirection(Vector3.back * 5f);
+                            pos1.y = pos.y;
+                            bulletEntity.Play(bron.position, pos + pos1, 5f, effectInfo.EffectName, effectInfo.EffectName, effectInfo.SoundName, effectInfo.SoundPlayDelayTime);
+                        }
+                    }
+                }
             }
         }
     }

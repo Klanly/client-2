@@ -79,6 +79,18 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Demigiant\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ArtAssets\original\Effects\plug-in\DeadTime.cs" />
@@ -107,10 +119,13 @@
     <Compile Include="Assets\CharacterEditor\EffectList.cs" />
     <Compile Include="Assets\CharacterEditor\ModelList.cs" />
     <Compile Include="Assets\CharacterEditor\core\EditorCameraController.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\Scripts\Client.cs" />
     <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\AnimationClipEventHandler.cs" />
     <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\AnimationType.cs" />
     <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\CharacterAnimatorController.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Entity\BulletEntity.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\CommonModel.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\Creature.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Entity\Entity.cs" />
@@ -137,6 +152,7 @@
     <Compile Include="Assets\Scripts\com\lyman\FSM\FSMTranslationMap.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Manager\ABManager.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Manager\ConfigManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Manager\EntityManager.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Manager\ObjectPoolManager.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Manager\ResourceManager.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Manager\SEffectManager.cs" />
@@ -156,6 +172,7 @@
     <Compile Include="Assets\Scripts\com\lyman\VO\CommonProperties.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\EffectInfo.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\EffectTypes.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\GameObjectTags.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\ShakeCameraConfigInfo.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\AccordionTest.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\CenteredSliderLabel.cs" />
@@ -502,6 +519,12 @@
     <None Include="Assets\ArtAssets\prefabs\fonts\green_small\green_small.fnt" />
     <None Include="Assets\ArtAssets\prefabs\fonts\grey_small\grey_small.fnt" />
     <None Include="Assets\ArtAssets\prefabs\fonts\herofont\herofont.fnt" />
+    <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Shaders\UIGradientShaderHLineHSV.shader" />
     <None Include="Assets\Shaders\UIGradientShaderHLineRGB.shader" />
     <None Include="Assets\Shaders\UIGradientShaderPlaneHSV.shader" />

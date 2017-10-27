@@ -20,7 +20,6 @@ public class NEffect
     public void Init(string effectABName, string effectName, string audioClipName = "",float delayTime = 0f,bool loop = false)
     {
         effect = SEffectManager.GetEffect(effectABName, effectName);
-        
         soundName = audioClipName;
         soundDelayTime = delayTime;
         isLoop = loop;
