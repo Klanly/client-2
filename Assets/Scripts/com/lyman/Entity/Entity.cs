@@ -29,7 +29,9 @@ public class Entity
 
     }
 
-
+    /// <summary>
+    /// 客户端自用唯一DI获取
+    /// </summary>
     private static int index;
     public static int UniqueID
     {

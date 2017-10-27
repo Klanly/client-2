@@ -24,6 +24,8 @@ public class AddEffectSetting
     //private GameObject closeBtn;
     private Combobox effectNameSet;
     private Combobox effectTypeSet;
+    private RangeSliderFloat flySpeed;
+    private Text speedText;
     private Combobox soundNameSet;
     private RangeSliderFloat soundPlayPointSet;
 
@@ -78,6 +80,15 @@ public class AddEffectSetting
         effectTypeSet.ListView.Sort = false;
         effectTypeSet.ListView.DataSource = DataManager.GetEffectTypeList();
         effectTypeSet.OnSelect.AddListener(OnEffectTypeSelected);
+        
+
+        flySpeed = go.transform.Find("flySpeed").GetComponent<RangeSliderFloat>();
+        flySpeed.SetLimit(DataManager.FlySpeedMin, DataManager.FlySpeedMax);
+        flySpeed.Step = DataManager.FlySpeedStep;
+        flySpeed.OnValuesChange.AddListener(OnFlySpeedChangeHandler);
+
+        speedText = go.transform.Find("flySpeed/speedText").GetComponent<Text>();
+        speedText.text = "";
 
         soundNameSet = go.transform.Find("soundName/Combobox").GetComponent<Combobox>();
         soundNameSet.ListView.Sort = false;
@@ -147,9 +158,11 @@ public class AddEffectSetting
             effectBindNameSet.transform.parent.gameObject.SetActive(true);
             text1.SetActive(true);
             text2.SetActive(true);
+            flySpeed.gameObject.SetActive(false);
         }
         else if (ty == EffectTypes.Bullet)
         {
+            flySpeed.gameObject.SetActive(true);
             //effectBindTypeSet.transform.parent.gameObject.SetActive(false);
             //effectBindNameSet.transform.parent.gameObject.SetActive(false);
             //text1.SetActive(false);
@@ -169,6 +182,18 @@ public class AddEffectSetting
             effectInfo.SoundName = title;
         }
     }
+    
+    private void OnFlySpeedChangeHandler(float a, float b)
+    {
+       
+        if (effectInfo != null)
+        {
+            string v = a.ToString("0.00");
+            effectInfo.FlySpeed = float.Parse(v);
+            speedText.text = v;
+        }
+    }
+
 
     private void OnSoundPointSliderChangeHandler(float a, float b)
     {
@@ -215,7 +240,9 @@ public class AddEffectSetting
         isNewCreate = isNew;
         oldEffectInfo = effectInfo.Clone();
         OnEditorCompleteHandler = onEditorCompleteHandler;
-        
+        flySpeed.SetValue(effectInfo.FlySpeed, DataManager.FlySpeedMax);
+        speedText.text = effectInfo.FlySpeed.ToString();
+
 
         int index = DataManager.GetEffectIndex(effectInfo.EffectName);
         effectNameSet.ListView.Select(index);

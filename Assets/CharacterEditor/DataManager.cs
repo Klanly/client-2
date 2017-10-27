@@ -44,6 +44,12 @@ public class DataManager
     public static float ActionSoundDelayMax = 5f;
     public static float ActionSoundStep = 0.01f;
 
+
+    public static float FlySpeedMin = 0f;
+    public static float FlySpeedMax = 50f;
+    public static float FlySpeedStep = 0.01f;
+
+
     private static ObservableList<string> soundList = new ObservableList<string>();
     public static ObservableList<string> GetSoundList()
     {

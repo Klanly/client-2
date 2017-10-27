@@ -10,6 +10,7 @@ public class EffectInfo
     public string Title = string.Empty;
     public string EffectName = BindTypes.NONE;//特效名称
     public int EffectType = EffectTypes.Normal;//特效类型
+    public float FlySpeed = 0f;
     public string SoundName = BindTypes.NONE;//对应音效名称
     public float SoundPlayDelayTime = 0f;   //音效播放延迟时间
     public int BindType = BindTypes.None;//绑定对象类型
@@ -34,6 +35,7 @@ public class EffectInfo
         effectInfo.Title = Title;
         effectInfo.EffectName = EffectName;
         effectInfo.EffectType = EffectType;
+        effectInfo.FlySpeed = FlySpeed;
         effectInfo.SoundName = SoundName;
         effectInfo.SoundPlayDelayTime = SoundPlayDelayTime;
         effectInfo.BindType = BindType;
@@ -55,6 +57,7 @@ public class EffectInfo
         stringBuilder.Append("'>\n");
         PushToStringBuilder(stringBuilder, title, "EffectName", EffectName);
         PushToStringBuilder(stringBuilder, title, "EffectType", EffectType.ToString());
+        PushToStringBuilder(stringBuilder, title, "FlySpeed", FlySpeed.ToString());
         PushToStringBuilder(stringBuilder, title, "SoundName", SoundName);
         PushToStringBuilder(stringBuilder, title, "SoundPlayDelayTime", SoundPlayDelayTime.ToString());
         PushToStringBuilder(stringBuilder, title, "BindType", BindType.ToString());

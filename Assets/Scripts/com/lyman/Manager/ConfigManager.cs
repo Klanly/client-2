@@ -153,6 +153,9 @@ public class ConfigManager
                     case "EffectType":
                         int.TryParse(value, out effectinfo.EffectType);
                         break;
+                    case "FlySpeed":
+                        float.TryParse(value, out effectinfo.FlySpeed);
+                        break;
                     case "SoundName":
                         effectinfo.SoundName = value;
                         break;

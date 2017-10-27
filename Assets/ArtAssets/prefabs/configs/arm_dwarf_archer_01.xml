@@ -78,6 +78,7 @@
 			<acs n='acs'>
 				<ac n='EffectName'>tx_cj_smog_002</ac>
 				<ac n='EffectType'>0</ac>
+				<ac n='FlySpeed'>0</ac>
 				<ac n='SoundName'>none</ac>
 				<ac n='SoundPlayDelayTime'>0</ac>
 				<ac n='BindType'>1</ac>
@@ -112,6 +113,7 @@
 			<acs n='acs'>
 				<ac n='EffectName'>tx_8-swyw_001</ac>
 				<ac n='EffectType'>0</ac>
+				<ac n='FlySpeed'>0</ac>
 				<ac n='SoundName'>none</ac>
 				<ac n='SoundPlayDelayTime'>0</ac>
 				<ac n='BindType'>2</ac>
@@ -159,7 +161,7 @@
 		<a n='SelfMoveDistance'>0</a>
 		<a n='SelfMoveTime'>0</a>
 		<a n='IsHitMove'>1</a>
-		<a n='HitMoveDistance'>0.99</a>
+		<a n='HitMoveDistance'>3.12</a>
 		<a n='HitMoveTime'>0.1</a>
 		<a n='IsHitFly'>0</a>
 		<a n='HitFlyDistance'>0.1</a>
@@ -170,6 +172,7 @@
 			<acs n='acs'>
 				<ac n='EffectName'>tx_roer_att1_002</ac>
 				<ac n='EffectType'>1</ac>
+				<ac n='FlySpeed'>16.6</ac>
 				<ac n='SoundName'>none</ac>
 				<ac n='SoundPlayDelayTime'>0</ac>
 				<ac n='BindType'>4</ac>

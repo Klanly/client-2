@@ -87,6 +87,10 @@ public class AttributeSetting
     private Button previewBtn;
     private Button saveBtn;
 
+    
+
+
+
     public void Hide()
     {
         if (container != null)

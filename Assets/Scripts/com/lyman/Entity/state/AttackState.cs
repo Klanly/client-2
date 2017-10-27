@@ -84,7 +84,7 @@ public class AttackState : FSMState
                             Vector3 pos = Target.Model.GetChild(BoneTypes.CenterPoint).position;
                             Vector3 pos1 = Target.Container.transform.TransformDirection(Vector3.back * 5f);
                             pos1.y = pos.y;
-                            bulletEntity.Play(bron.position, pos + pos1, 5f, effectInfo.EffectName, effectInfo.EffectName, effectInfo.SoundName, effectInfo.SoundPlayDelayTime);
+                            bulletEntity.Play(bron.position, pos + pos1, effectInfo.FlySpeed, effectInfo.EffectName, effectInfo.EffectName, effectInfo.SoundName, effectInfo.SoundPlayDelayTime);
                         }
                     }
                 }
