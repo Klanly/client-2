@@ -76,6 +76,7 @@ public class BulletEntity:Entity
         bullet = new NEffect();
         bullet.Init(effectABName, effectName, audioClipName, delayTime,true);
         GameObject go = bullet.GetEffect();
+        go.transform.SetParent(null);
         go.transform.position = bPosition;
         go.tag = GameObjectTags.Bullet;
         CapsuleCollider capsuleCollider = go.GetComponent<CapsuleCollider>();
@@ -100,6 +101,12 @@ public class BulletEntity:Entity
 
         float duration = distance / flySpeed;
         tween = go.transform.DOMove(targetPosition, duration);
+
+        //Vector3[] path = new Vector3[2];
+        //path[0] = (bPosition + targetPosition) * 0.5f;
+        //path[0].y += 3f;
+        //path[1] = targetPosition;
+        //tween = go.transform.DOPath(path, duration, PathType.Linear);
         tween.OnComplete(OnCompleteHandler);
     }
 
@@ -175,7 +182,11 @@ public class BulletEntity:Entity
     public override void Destroy()
     {
         base.Destroy();
-        if(bullet != null)
+        if (tween != null)
+        {
+            tween.Kill();
+        }
+        if (bullet != null)
             bullet.Stop();
         Debug.LogError("destroy");
     }

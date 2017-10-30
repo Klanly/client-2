@@ -61,6 +61,8 @@ public class NEffect
             audioSource.Stop();
             audioSource.clip = null;
         }
+        audioSource = null;
+        effect = null;
     }
     
     public void OnDelayHandler(float delaytime)
