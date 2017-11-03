@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ArtAssets/original/Scenes/bingfengyiji_fb_hy/bingfengyiji_fb_hy.unity
+- path: Assets/ArtAssets/original/Scenes/test_scene/test_scene.unity
   isLoaded: 1
   isActive: 1
