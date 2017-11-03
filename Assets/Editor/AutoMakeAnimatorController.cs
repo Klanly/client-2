@@ -10,7 +10,7 @@ public class AutoMakeAnimatorController : Editor
     public static string AssetsExtName = ".FBX";
     public static string AnimatorControllerExtName = ".controller";
     
-    [MenuItem("GameTools/自动生成AnimatorController")]
+    [MenuItem("GameTools/自动生成AnimatorController",false,4)]
     public static void DoCreateAnimationAssets()
     {
         List<UnityEditor.Animations.AnimatorState> states = new List<UnityEditor.Animations.AnimatorState>();

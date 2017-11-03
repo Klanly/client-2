@@ -115,12 +115,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
@@ -132,6 +126,12 @@
     </Reference>
     <Reference Include="DOTween50">
       <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-UnityScript">
       <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
@@ -147,6 +147,7 @@
     <Compile Include="Assets\ArtAssets\original\T4M\Editor\T4MExtendsSC.cs" />
     <Compile Include="Assets\ArtAssets\original\T4M\Editor\T4MSC.cs" />
     <Compile Include="Assets\Editor\AutoMakeAnimatorController.cs" />
+    <Compile Include="Assets\Editor\AutoMakeSceneConfig.cs" />
     <Compile Include="Assets\Editor\Packager.cs" />
     <Compile Include="Assets\Editor\UIWidgets\AccordionItemDrawer.cs" />
     <Compile Include="Assets\Editor\UIWidgets\CenteredSliderEditor.cs" />

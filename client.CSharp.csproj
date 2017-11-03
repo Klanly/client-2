@@ -76,9 +76,6 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
@@ -90,6 +87,9 @@
     </Reference>
     <Reference Include="DOTween50">
       <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +173,7 @@
     <Compile Include="Assets\Scripts\com\lyman\VO\EffectInfo.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\EffectTypes.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\GameObjectTags.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\SceneInfo.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\ShakeCameraConfigInfo.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\AccordionTest.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\CenteredSliderLabel.cs" />
