@@ -7,8 +7,14 @@ public class GameObjectTags
     public static string Terrain = "terrain";
     //未定义
     public static string Untagged = "Untagged";
-    //地形
+    //子弹飞行类
     public static string Bullet = "bullet";
     //实体
     public static string Entity = "entity";
+
+    //阻挡
+    public static string Block = "block";
+
+    //非阻挡
+    public static string NON_Block = "nonblock";
 }

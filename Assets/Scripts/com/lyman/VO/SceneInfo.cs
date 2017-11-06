@@ -38,10 +38,7 @@ public class SceneInfo
             stringBuilder.Append("\t");
             GameObjectInfo gameObjectInfo = GameObjectInfos[i];
             stringBuilder.Append(gameObjectInfo.ToXMLString());
-            if (i < length)
-            {
-                stringBuilder.Append("\n");
-            }
+            stringBuilder.Append("\n");
         }
         stringBuilder.Append("</table>");
         return stringBuilder.ToString();
@@ -67,7 +64,7 @@ public class GameObjectInfo
     public string ToXMLString()
     {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.Append("< n='GameObjectInfo'>");
+        stringBuilder.Append("<a n='GameObjectInfo'>");
         stringBuilder.Append(GameObjectName);
         stringBuilder.Append(",");
         stringBuilder.Append(IsTerrain ? "1" : "0");
@@ -92,7 +89,7 @@ public class GameObjectInfo
         stringBuilder.Append(",");
         stringBuilder.Append(ScaleZ.ToString("0.000"));
 
-        stringBuilder.Append("</>");
+        stringBuilder.Append("</a>");
         return stringBuilder.ToString();
     }
 
