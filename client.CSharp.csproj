@@ -508,6 +508,7 @@
     <None Include="Assets\ArtAssets\prefabs\configs\arm_dwarf_archer_01.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\h_human_mars_01.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\shakecamera.xml" />
+    <None Include="Assets\ArtAssets\prefabs\configs\test_scene.xml" />
     <None Include="Assets\ArtAssets\prefabs\fonts\GlodYellow_small_font\GoldYellowSmall.fnt" />
     <None Include="Assets\ArtAssets\prefabs\fonts\Gold_font\Glod_font1.fnt" />
     <None Include="Assets\ArtAssets\prefabs\fonts\Hell_big_font\Hell_big_font.fnt" />

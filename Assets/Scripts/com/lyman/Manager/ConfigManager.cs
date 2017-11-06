@@ -11,8 +11,63 @@ public class ConfigManager
     //角色信息配置
     private static Dictionary<string, CharacterConfigInfo> characterConfigInfos = new Dictionary<string, CharacterConfigInfo>();
 
+    //场景配置
+    private static Dictionary<string, SceneInfo> sceneConfigInfos = new Dictionary<string, SceneInfo>();
 
-    
+    private static void ParseSceneConfig(string sceneName,XmlNodeList nodeList)
+    {
+        if (nodeList == null)
+        {
+            return;
+        }
+        int count = nodeList.Count;
+        SceneInfo sceneInfo = new SceneInfo();
+        XmlElement node = nodeList[0] as XmlElement;
+        XmlNodeList childList = node.GetElementsByTagName("a");
+        for (int j = 0; j < childList.Count; j++)
+        {
+            GameObjectInfo gameObjectInfo = new GameObjectInfo();
+            XmlElement child = childList[j] as XmlElement;
+            string value = child.InnerXml;
+            string[] values = value.Split(',');
+            gameObjectInfo.GameObjectName = values[0];
+            gameObjectInfo.IsTerrain = values[1] == "1" ? true : false;
+            gameObjectInfo.X = float.Parse(values[2]);
+            gameObjectInfo.Y = float.Parse(values[3]);
+            gameObjectInfo.Z = float.Parse(values[4]);
+            gameObjectInfo.RotationX = float.Parse(values[5]);
+            gameObjectInfo.RotationY = float.Parse(values[6]);
+            gameObjectInfo.RotationZ = float.Parse(values[7]);
+            gameObjectInfo.ScaleX = float.Parse(values[8]);
+            gameObjectInfo.ScaleY = float.Parse(values[9]);
+            gameObjectInfo.ScaleZ = float.Parse(values[10]);
+            sceneInfo.AddGameObjectInfo(gameObjectInfo);
+        }
+        sceneConfigInfos.Add(sceneName, sceneInfo);
+    }
+
+    //获取场景配置信息
+    public static SceneInfo GetSceneConfigInfo(string sceneName)
+    {
+        string name = sceneName.ToLower();
+        SceneInfo sceneInfo;
+        sceneConfigInfos.TryGetValue(name, out sceneInfo);
+        if (sceneInfo == null)
+        {
+            
+            XmlNodeList xmlnode = GetXML(name);
+            if (xmlnode != null)
+            {
+                ParseSceneConfig(name, xmlnode);
+                sceneConfigInfos.TryGetValue(name, out sceneInfo);
+            }
+        }
+        return sceneInfo;
+    }
+
+
+
+
     private static void ParseSingleCharacter(XmlNodeList nodeList)
     {
         if (nodeList == null)

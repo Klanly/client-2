@@ -146,7 +146,7 @@ public class AutoMakeSceneConfig
     {
         string content = sceneInfo.ToXMLString();
         string name = Path.GetFileNameWithoutExtension(path);
-        path =  Path.GetDirectoryName(path)+"/"+ name+".xml";
+        path =  Application.dataPath + "/ArtAssets/prefabs/configs/" + name+".xml";
 
         if (File.Exists(path))
         {

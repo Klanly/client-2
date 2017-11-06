@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 987885919
+CRC: 552978808
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7ad91c7d4d50e97df624f2be5c8adc06
+    Hash: 13e41f3adccf9a14505d0000a3420589
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1033bf7ddfd4c6d43e7a6382c0a0a61a
@@ -13,6 +13,7 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/ArtAssets/prefabs/configs/ai.xml
+- Assets/ArtAssets/prefabs/configs/test_scene.xml
 - Assets/ArtAssets/prefabs/configs/arm_dwarf_archer_01.xml
 - Assets/ArtAssets/prefabs/configs/shakecamera.xml
 - Assets/ArtAssets/prefabs/configs/h_human_mars_01.xml
