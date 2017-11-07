@@ -159,6 +159,7 @@
     <Compile Include="Assets\Scripts\com\lyman\Manager\TimerManager.cs" />
     <Compile Include="Assets\Scripts\com\lyman\ObjectPool\GameObjectPool.cs" />
     <Compile Include="Assets\Scripts\com\lyman\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Scene\Scene.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Util\EventTriggerListener.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Util\GUtil.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Util\GameConst.cs" />

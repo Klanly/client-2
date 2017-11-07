@@ -20,11 +20,12 @@ public class ConfigManager
         {
             return;
         }
-        int count = nodeList.Count;
         SceneInfo sceneInfo = new SceneInfo();
+        sceneInfo.SceneName = sceneName;
         XmlElement node = nodeList[0] as XmlElement;
         XmlNodeList childList = node.GetElementsByTagName("a");
-        for (int j = 0; j < childList.Count; j++)
+        int count = childList.Count;
+        for (int j = 0; j < count; ++j)
         {
             GameObjectInfo gameObjectInfo = new GameObjectInfo();
             XmlElement child = childList[j] as XmlElement;

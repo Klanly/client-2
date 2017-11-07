@@ -5,6 +5,7 @@ using System;
 using System.Text;
 public class SceneInfo
 {
+    private string sceneName = string.Empty;
     private GameObjectInfo terrainInfo;
     private List<GameObjectInfo> GameObjectInfos = new List<GameObjectInfo>();
 
@@ -20,6 +21,13 @@ public class SceneInfo
             GameObjectInfos.Add(gameObjectInfo);
         }
     }
+
+    public string SceneName
+    {
+        get { return sceneName; }
+        set { sceneName = value; }
+    }
+
 
     public GameObjectInfo TerrainInfo
     {
