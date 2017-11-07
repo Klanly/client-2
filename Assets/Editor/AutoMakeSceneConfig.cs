@@ -8,11 +8,11 @@ using System.IO;
 public class AutoMakeSceneConfig
 {
 
-    [MenuItem("GameTools/自动生成场景配置",false,5)]
+    [MenuItem("GameTools/自动生成场景配置", false, 5)]
     public static void AutoMakeScene()
     {
         UnityEngine.SceneManagement.Scene scene = EditorSceneManager.GetActiveScene();
-        Debug.Log("scene name:"+ scene.name+" / scene path:"+scene.path);
+        Debug.Log("scene name:" + scene.name + " / scene path:" + scene.path);
         GameObject[] gos = scene.GetRootGameObjects();
         SceneInfo sceneInfo = new SceneInfo();
         int count = 0;
@@ -77,7 +77,7 @@ public class AutoMakeSceneConfig
                     Renderer render = ts.GetComponent<Renderer>();
                     if (render == null || (render != null && !render.enabled))
                     {
-                        if(render == null)
+                        if (render == null)
                             throw new System.Exception("非阻挡节点下有名称为:" + ts.name + "的GameObject不带有渲染组件，请添加渲染组件！！！");
                         else
                             throw new System.Exception("非阻挡节点下有名称为:" + ts.name + "的GameObject的渲染组件未激活，请激活渲染组件！！！");
@@ -95,7 +95,7 @@ public class AutoMakeSceneConfig
                     if (!ts.gameObject.activeSelf)
                     {
                         continue;
-                    } 
+                    }
                     if (ts.tag != GameObjectTags.Block)
                     {
                         throw new System.Exception("阻挡节点下有名称为:" + ts.name + "的GameObject的Tag不为block,请重新设置！！！");
@@ -103,7 +103,7 @@ public class AutoMakeSceneConfig
                     Collider collider = ts.GetComponent<Collider>();
                     if (collider == null || (collider != null && !collider.enabled))
                     {
-                        if(collider == null)
+                        if (collider == null)
                             throw new System.Exception("阻挡节点下有名称为:" + ts.name + "的GameObject没有碰撞组件，请添加！！！");
                         else
                             throw new System.Exception("阻挡节点下有名称为:" + ts.name + "的GameObject碰撞组件未激活，请激活！！！");
@@ -116,7 +116,7 @@ public class AutoMakeSceneConfig
                 }
             }
         }
-        if(!isHaveTerrain)
+        if (!isHaveTerrain)
             throw new System.Exception("该地图没有地形GameObject，请添加!!!");
 
         SaveConfig(sceneInfo, scene.path);
@@ -142,11 +142,11 @@ public class AutoMakeSceneConfig
     }
 
 
-    private static void SaveConfig(SceneInfo sceneInfo,string path)
+    private static void SaveConfig(SceneInfo sceneInfo, string path)
     {
         string content = sceneInfo.ToXMLString();
         string name = Path.GetFileNameWithoutExtension(path);
-        path =  Application.dataPath + "/ArtAssets/prefabs/configs/" + name+".xml";
+        path = Application.dataPath + "/ArtAssets/prefabs/configs/" + name + ".xml";
 
         if (File.Exists(path))
         {

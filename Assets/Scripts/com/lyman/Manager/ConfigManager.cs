@@ -409,7 +409,6 @@ public class ConfigManager
                 xmlDoc = new XmlDocument();
                 xmlDoc.Load(path);
             }
-            
         }
         if (xmlDoc != null)
         {

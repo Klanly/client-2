@@ -18,6 +18,9 @@ public class CharacterEditor : MonoBehaviour {
         modelList = new ModelList();
         modelList.onSelectedHandler = OnModelSelectedHandler;
         modelList.Init(GameObject.Find("Canvas/modelList"), "models/characters");
+
+
+        ConfigManager.GetSceneConfigInfo("test_scene");
     }
 
     private TCreature tCreature;
