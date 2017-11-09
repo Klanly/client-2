@@ -122,6 +122,12 @@
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\Scripts\Client.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Algorithms\AuthorAttribute.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Algorithms\IPathFinder.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Algorithms\PathFinder.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Algorithms\PathFinderFast.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Algorithms\Point.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\Algorithms\PriorityQueueB.cs" />
     <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\AnimationClipEventHandler.cs" />
     <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\AnimationType.cs" />
     <Compile Include="Assets\Scripts\com\lyman\AnimationSystem\CharacterAnimatorController.cs" />

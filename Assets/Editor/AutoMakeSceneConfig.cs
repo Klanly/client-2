@@ -18,6 +18,7 @@ public class AutoMakeSceneConfig
         int count = 0;
         int j;
         bool isHaveTerrain = false;
+        GameObject nonblocks = null;
         for (int i = 0; i < gos.Length; ++i)
         {
             GameObject go = gos[i];
@@ -61,6 +62,7 @@ public class AutoMakeSceneConfig
             {
                 //非阻挡
                 count = go.transform.childCount;
+                nonblocks = go;
                 for (j = 0; j < count; ++j)
                 {
                     ts = go.transform.GetChild(j);
@@ -118,6 +120,13 @@ public class AutoMakeSceneConfig
         }
         if (!isHaveTerrain)
             throw new System.Exception("该地图没有地形GameObject，请添加!!!");
+        if (nonblocks != null)
+        {
+            nonblocks.SetActive(false);
+        }
+
+        
+
 
         SaveConfig(sceneInfo, scene.path);
     }

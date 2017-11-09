@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Algorithms;
 public class CharacterEditor : MonoBehaviour {
 
     private ModelList modelList;
@@ -18,9 +18,7 @@ public class CharacterEditor : MonoBehaviour {
         modelList = new ModelList();
         modelList.onSelectedHandler = OnModelSelectedHandler;
         modelList.Init(GameObject.Find("Canvas/modelList"), "models/characters");
-
-
-        ConfigManager.GetSceneConfigInfo("test_scene");
+        
     }
 
     private TCreature tCreature;
@@ -53,6 +51,29 @@ public class CharacterEditor : MonoBehaviour {
         AttributeSetting.Instance.OnActionSelectedHandler = OnActionSelectedHandler;
         AttributeSetting.Instance.GetActionLength = GetActionLength;
         AttributeSetting.Instance.PreviewHandler = PreviewHandler;
+
+        int row = 20;
+        int col = 20;
+        byte[,] grids = new byte[row, col];
+        for (int i = 0; i < row; ++i)
+        {
+            for (int j = 0; j < col; ++j)
+            {
+                grids[i, j] = 1;// (byte)(((i % 6 == 0) && (j % 4 == 0)) == true ? 1 : 0);
+            }
+        }
+        //1为可行走点 0为阻挡点
+        PathFinder mPathFinder = new PathFinder(grids);
+        mPathFinder.Formula = HeuristicFormula.Manhattan;
+        mPathFinder.Diagonals = true;
+        mPathFinder.HeavyDiagonals = false;
+        mPathFinder.HeuristicEstimate = 2;
+        mPathFinder.PunishChangeDirection = false;
+        mPathFinder.TieBreaker = false;
+        mPathFinder.SearchLimit = 50000;
+        mPathFinder.ReopenCloseNodes = true;
+        List<PathFinderNode> path = mPathFinder.FindPath(new Point(0, 0), new Point(5, 5));
+        
     }
 
     private void ShowWeapon(string name, string weaponName, string parentName)
