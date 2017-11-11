@@ -132,6 +132,7 @@ public class AutoMakeSceneConfig
         {
             MeshRenderer meshRender = terrainGo.GetComponent<MeshRenderer>();
             Vector3 vector3 = meshRender.bounds.size;
+            
             int xLenght = 0;
             int zLength = 0;
             if (vector3.x % 2f != 0f)
@@ -142,6 +143,10 @@ public class AutoMakeSceneConfig
                     xLenght++;
                 }
             }
+            else
+            {
+                xLenght = (int)vector3.x;
+            }
             if (vector3.z % 2f != 0f)
             {
                 zLength = (int)vector3.z + 1;
@@ -150,25 +155,29 @@ public class AutoMakeSceneConfig
                     zLength++;
                 }
             }
+            else
+            {
+                zLength = (int)vector3.z;
+            }
 
             byte[,] grids = new byte[xLenght, zLength];
 
-            for (int i = -xLenght / 2; i < xLenght; ++i)
+            //for (int i = -xLenght / 2; i <= -xLenght/2; ++i)
+            for (int i = 0; i <= 0; ++i)
             {
-                for (j = -zLength / 2; j < zLength; ++j)
+                int x = i + xLenght / 2;
+                float xx = i + 0.5f;
+                for (j = -zLength / 2; j < zLength/2; ++j)
                 {
-                    int x = i + xLenght / 2;
-                    float xx = i + 0.5f;
-
                     int y = j + zLength / 2;
                     float yy = j + 0.5f;
 
                     //todo 射线检测
                     
                     RaycastHit raycastHit;
-                    Vector3 startPosition = new Vector3(xx, 10f, yy);
-                    Ray ray = new Ray(startPosition, Vector3.down);
-                    bool isHit = Physics.Raycast(ray, out raycastHit, 20f);
+                    Vector3 startPosition = new Vector3(xx, 30f, yy);
+                    
+                    bool isHit = Physics.Raycast(startPosition, Vector3.down*50f, out raycastHit);
                     if (isHit)
                     {
                         if (raycastHit.transform.tag == GameObjectTags.Block)
@@ -183,7 +192,9 @@ public class AutoMakeSceneConfig
                     else
                     {
                         grids[x, y] = 0;
+                        Debug.Log("hh");
                     }
+                    Debug.Log(x + "_" + y+": "+ grids[x, y]+"/"+ xx+"/"+yy);
                 }
             }
             Debug.Log(grids);
