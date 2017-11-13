@@ -5,6 +5,7 @@ using System;
 using System.Text;
 public class SceneInfo
 {
+    private string gridsContent;
     private string sceneName = string.Empty;
     private GameObjectInfo terrainInfo;
     private List<GameObjectInfo> GameObjectInfos = new List<GameObjectInfo>();
@@ -34,6 +35,12 @@ public class SceneInfo
         get { return terrainInfo; }
     }
 
+    public string GridsContent
+    {
+        set { gridsContent = value; }
+    }
+
+
     public string ToXMLString()
     {
         StringBuilder stringBuilder = new StringBuilder();
@@ -48,6 +55,13 @@ public class SceneInfo
             stringBuilder.Append(gameObjectInfo.ToXMLString());
             stringBuilder.Append("\n");
         }
+
+        stringBuilder.Append("\t");
+        stringBuilder.Append("<a n='Grids'>");
+        stringBuilder.Append(gridsContent);
+        stringBuilder.Append("</a>");
+        stringBuilder.Append("\n");
+
         stringBuilder.Append("</table>");
         return stringBuilder.ToString();
     }

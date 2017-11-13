@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEditor.SceneManagement;
 using System.IO;
+using System.Text;
 public class AutoMakeSceneConfig
 {
 
@@ -128,6 +129,7 @@ public class AutoMakeSceneConfig
         {
             nonblocks.SetActive(false);
         }
+        StringBuilder strinBuilder = new StringBuilder();
         if (terrainGo != null)
         {
             MeshRenderer meshRender = terrainGo.GetComponent<MeshRenderer>();
@@ -166,6 +168,13 @@ public class AutoMakeSceneConfig
             }
 
             byte[,] grids = new byte[xLength, zLength];
+            
+
+            strinBuilder.Append(xLength.ToString());
+            strinBuilder.Append(",");
+            strinBuilder.Append(zLength.ToString());
+            strinBuilder.Append("/");
+
 
             Debug.Log("xLength:"+xLength+" / zLength:"+zLength);
 
@@ -178,38 +187,45 @@ public class AutoMakeSceneConfig
             if(center.x != 0f)
                 offsetX = center.x - (int)center.x != 0f ? (int)center.x + (center.x > 0f ? 1:-1) : (int)center.x;
 
-            Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
+            //Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
 
             int startX = -xLength / 2 + offsetX;
             int endX = xLength / 2 + offsetX;
-            Debug.Log("startX:" + startX + " / endX:" + endX);
+            //Debug.Log("startX:" + startX + " / endX:" + endX);
 
             int startZ = -zLength / 2 + offsetZ;
             int endZ = zLength / 2 + offsetZ;
 
-            Debug.Log("startZ:" + startZ + " / endZ:" + endZ);
-
+            //Debug.Log("startZ:" + startZ + " / endZ:" + endZ);
+            
             int x = 0;
+            
             for (int i = startX; i < endX; ++i)
             {
                 float xx = i + 0.5f;
-                
                 int y = 0;
                 for (j = startZ; j < endZ; ++j)
                 {
                     float yy = j + 0.5f;
                     //todo 射线检测
+                    strinBuilder.Append(x.ToString());
+                    strinBuilder.Append(",");
+                    strinBuilder.Append(y.ToString());
+                    strinBuilder.Append(",");
+                    Vector3 position = Vector3.zero;
                     RaycastHit raycastHit;
                     Vector3 startPosition = new Vector3(xx, 30f, yy);
                     bool isHit = Physics.Raycast(startPosition, Vector3.down*50f, out raycastHit);
                     if (isHit)
                     {
+                        position = raycastHit.point;
                         if (raycastHit.transform.tag == GameObjectTags.Block)
                         {
                             grids[x, y] = 0;
                         }
-                        else
+                        else if(raycastHit.transform.tag == GameObjectTags.Terrain)
                         {
+                            //Debug.Log(raycastHit.point);
                             grids[x, y] = 1;
                         }
                     }
@@ -217,19 +233,34 @@ public class AutoMakeSceneConfig
                     {
                         grids[x, y] = 0;
                     }
-                    Debug.Log(x + "_" + y + ": " + grids[x, y] + "/" + xx + "/" + yy);
+
+                    strinBuilder.Append(position.x.ToString("0.00"));
+                    strinBuilder.Append(",");
+                    strinBuilder.Append(position.y.ToString("0.00"));
+                    strinBuilder.Append(",");
+                    strinBuilder.Append(position.z.ToString("0.00"));
+                    if (x == xLength - 1 && y == zLength - 1)
+                    {
+
+                    }
+                    else
+                    {
+                        strinBuilder.Append("/");
+                    }
+                    
+                    //Debug.Log(x + "_" + y + ": " + grids[x, y] + "/" + xx + "/" + yy);
                     y++;
                 }
-                Debug.Log("y:" + y);
+                //Debug.Log("y:" + y);
                 x++;
 
             }
             Debug.Log("x:"+x);
         }
-        
+        sceneInfo.GridsContent = strinBuilder.ToString();
 
 
-        //SaveConfig(sceneInfo, scene.path);
+        SaveConfig(sceneInfo, scene.path);
     }
 
 
