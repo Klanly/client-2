@@ -131,25 +131,30 @@ public class AutoMakeSceneConfig
         if (terrainGo != null)
         {
             MeshRenderer meshRender = terrainGo.GetComponent<MeshRenderer>();
-            Vector3 vector3 = meshRender.bounds.size;
-            
-            int xLenght = 0;
+            Vector3 size = meshRender.bounds.size;
+            Vector3 center = meshRender.bounds.center;
+
+
+            float allX = size.x;// + Mathf.Abs(center.x)*2f;
+            float allZ = size.z;// + Mathf.Abs(center.z)*2f;
+
+            int xLength = 0;
             int zLength = 0;
-            if (vector3.x % 2f != 0f)
+            if (allX % 2f != 0f)
             {
-                xLenght = (int)vector3.x + 1;
-                if (xLenght % 2 != 0)
+                xLength = (int)allX + 1;
+                if (xLength % 2 != 0)
                 {
-                    xLenght++;
+                    xLength++;
                 }
             }
             else
             {
-                xLenght = (int)vector3.x;
+                xLength = (int)allX;
             }
-            if (vector3.z % 2f != 0f)
+            if (allZ % 2f != 0f)
             {
-                zLength = (int)vector3.z + 1;
+                zLength = (int)allZ + 1;
                 if (zLength % 2 != 0)
                 {
                     zLength++;
@@ -157,26 +162,45 @@ public class AutoMakeSceneConfig
             }
             else
             {
-                zLength = (int)vector3.z;
+                zLength = (int)allZ;
             }
 
-            byte[,] grids = new byte[xLenght, zLength];
+            byte[,] grids = new byte[xLength, zLength];
 
-            //for (int i = -xLenght / 2; i <= -xLenght/2; ++i)
-            for (int i = 0; i <= 0; ++i)
+            Debug.Log("xLength:"+xLength+" / zLength:"+zLength);
+
+            int offsetZ = 0;
+            if (center.z != 0f)
             {
-                int x = i + xLenght / 2;
-                float xx = i + 0.5f;
-                for (j = -zLength / 2; j < zLength/2; ++j)
-                {
-                    int y = j + zLength / 2;
-                    float yy = j + 0.5f;
+                offsetZ = center.z - (int)center.z != 0f ? (int)center.z + (center.z > 0f ? 1 : -1) : (int)center.z;
+            }
+            int offsetX = 0;
+            if(center.x != 0f)
+                offsetX = center.x - (int)center.x != 0f ? (int)center.x + (center.x > 0f ? 1:-1) : (int)center.x;
 
+            Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
+
+            int startX = -xLength / 2 + offsetX;
+            int endX = xLength / 2 + offsetX;
+            Debug.Log("startX:" + startX + " / endX:" + endX);
+
+            int startZ = -zLength / 2 + offsetZ;
+            int endZ = zLength / 2 + offsetZ;
+
+            Debug.Log("startZ:" + startZ + " / endZ:" + endZ);
+
+            int x = 0;
+            for (int i = startX; i < endX; ++i)
+            {
+                float xx = i + 0.5f;
+                
+                int y = 0;
+                for (j = startZ; j < endZ; ++j)
+                {
+                    float yy = j + 0.5f;
                     //todo 射线检测
-                    
                     RaycastHit raycastHit;
                     Vector3 startPosition = new Vector3(xx, 30f, yy);
-                    
                     bool isHit = Physics.Raycast(startPosition, Vector3.down*50f, out raycastHit);
                     if (isHit)
                     {
@@ -192,12 +216,15 @@ public class AutoMakeSceneConfig
                     else
                     {
                         grids[x, y] = 0;
-                        Debug.Log("hh");
                     }
-                    Debug.Log(x + "_" + y+": "+ grids[x, y]+"/"+ xx+"/"+yy);
+                    Debug.Log(x + "_" + y + ": " + grids[x, y] + "/" + xx + "/" + yy);
+                    y++;
                 }
+                Debug.Log("y:" + y);
+                x++;
+
             }
-            Debug.Log(grids);
+            Debug.Log("x:"+x);
         }
         
 
