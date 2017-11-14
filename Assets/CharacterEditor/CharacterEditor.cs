@@ -63,19 +63,24 @@ public class CharacterEditor : MonoBehaviour {
             }
         }
         //1为可行走点 0为阻挡点
-        PathFinder mPathFinder = new PathFinder(grids);
-        mPathFinder.Formula = HeuristicFormula.Manhattan;
-        mPathFinder.Diagonals = true;
-        mPathFinder.HeavyDiagonals = false;
-        mPathFinder.HeuristicEstimate = 2;
-        mPathFinder.PunishChangeDirection = false;
-        mPathFinder.TieBreaker = false;
-        mPathFinder.SearchLimit = 50000;
-        mPathFinder.ReopenCloseNodes = true;
-        List<PathFinderNode> path = mPathFinder.FindPath(new Point(0, 0), new Point(5, 5));
+        //PathFinder mPathFinder = new PathFinder(grids);
+        //mPathFinder.Formula = HeuristicFormula.Manhattan;
+        //mPathFinder.Diagonals = true;
+        //mPathFinder.HeavyDiagonals = false;
+        //mPathFinder.HeuristicEstimate = 2;
+        //mPathFinder.PunishChangeDirection = false;
+        //mPathFinder.TieBreaker = false;
+        //mPathFinder.SearchLimit = 50000;
+        //mPathFinder.ReopenCloseNodes = true;
+        //List<PathFinderNode> path = mPathFinder.FindPath(new Point(0, 0), new Point(5, 5));
+
+        ResourceManager.CreateAssetBundle("configs/configs");
+        ResourceManager.GetText("configs/configs","test_scene");
+        ConfigManager.GetSceneConfigInfo("test_scene");
         
     }
 
+    
     private void ShowWeapon(string name, string weaponName, string parentName)
     {
         if (tCreature != null)

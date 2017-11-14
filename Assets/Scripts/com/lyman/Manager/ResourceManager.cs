@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Diagnostics;
 /// <summary>
 /// 資源管理
 /// </summary>
@@ -17,6 +18,14 @@ public class ResourceManager
         }
     }
 
+    //同步创建，建议不用，或者比较小得assetbundle（比如50K内的）
+    public static void CreateAssetBundle(string abPath)
+    {
+        abManager.LoadAssetBundle(abPath);
+    }
+
+    
+    //异步创建,建议优先使用
     public static void CreateAssetBundleAsync(string abPath, Action onCompleteHandler)
     {
         abManager.LoadAssetBundleAsync(abPath, onCompleteHandler);

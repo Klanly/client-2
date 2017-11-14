@@ -51,10 +51,18 @@ public class ABManager
     /// <returns></returns>
     public TextAsset LoadTextAsset(string abName, string textName)
     {
+        
         abName = abName.ToLower();
         AssetBundle bundle = LoadAssetBundle(abName);
         if (bundle != null)
-            return bundle.LoadAsset<TextAsset>(textName);
+        {
+            System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
+            TextAsset textAsset = bundle.LoadAsset<TextAsset>(textName);
+            stopwatch.Stop();
+            Debug.LogError("LoadTextAsset:" + textName + ",用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
+            return textAsset;
+        }
         return null;
     }
     /// <summary>
@@ -126,12 +134,12 @@ public class ABManager
             if (!bundles.ContainsKey(abName))
             {
                 string uri = GameConst.DataPath + abName;
-                LoadDependencies(abName); 
-                //System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
-                //stopwatch.Start();
+                LoadDependencies(abName);
+                System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
+                stopwatch.Start();
                 bundle = AssetBundle.LoadFromFile(uri); //关联的素材绑定
-                //stopwatch.Stop();
-                //Debug.LogError("创建:" + abn + ",用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
+                stopwatch.Stop();
+                Debug.LogError("创建:" + uri + ",用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
                 bundles.Add(abName, bundle);
             }
             else
@@ -145,7 +153,7 @@ public class ABManager
         }
         return bundle;
     }
-
+    
     private Dictionary<string, CreateAssetBundleAsync> asyncCreateList = new Dictionary<string, CreateAssetBundleAsync>();
 
     /// <summary>

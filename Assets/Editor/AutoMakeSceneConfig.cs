@@ -173,7 +173,7 @@ public class AutoMakeSceneConfig
             strinBuilder.Append(xLength.ToString());
             strinBuilder.Append(",");
             strinBuilder.Append(zLength.ToString());
-            strinBuilder.Append("/");
+            strinBuilder.Append(",");
 
 
             Debug.Log("xLength:"+xLength+" / zLength:"+zLength);
@@ -186,6 +186,12 @@ public class AutoMakeSceneConfig
             int offsetX = 0;
             if(center.x != 0f)
                 offsetX = center.x - (int)center.x != 0f ? (int)center.x + (center.x > 0f ? 1:-1) : (int)center.x;
+
+            strinBuilder.Append(offsetX.ToString());
+            strinBuilder.Append(",");
+            strinBuilder.Append(offsetZ.ToString());
+            strinBuilder.Append("/");
+
 
             //Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
 
@@ -233,12 +239,13 @@ public class AutoMakeSceneConfig
                     {
                         grids[x, y] = 0;
                     }
-
-                    strinBuilder.Append(position.x.ToString("0.00"));
+                    strinBuilder.Append(grids[x, y].ToString());
                     strinBuilder.Append(",");
+                   // strinBuilder.Append(position.x.ToString("0.00"));
+                   // strinBuilder.Append(",");
                     strinBuilder.Append(position.y.ToString("0.00"));
-                    strinBuilder.Append(",");
-                    strinBuilder.Append(position.z.ToString("0.00"));
+                    //strinBuilder.Append(",");
+                    //strinBuilder.Append(position.z.ToString("0.00"));
                     if (x == xLength - 1 && y == zLength - 1)
                     {
 
@@ -247,7 +254,6 @@ public class AutoMakeSceneConfig
                     {
                         strinBuilder.Append("/");
                     }
-                    
                     //Debug.Log(x + "_" + y + ": " + grids[x, y] + "/" + xx + "/" + yy);
                     y++;
                 }
@@ -261,6 +267,8 @@ public class AutoMakeSceneConfig
 
 
         SaveConfig(sceneInfo, scene.path);
+
+        AssetDatabase.Refresh();
     }
 
 

@@ -29,20 +29,30 @@ public class ConfigManager
         {
             GameObjectInfo gameObjectInfo = new GameObjectInfo();
             XmlElement child = childList[j] as XmlElement;
+            string nn = child.GetAttribute("n");
             string value = child.InnerXml;
-            string[] values = value.Split(',');
-            gameObjectInfo.GameObjectName = values[0];
-            gameObjectInfo.IsTerrain = values[1] == "1" ? true : false;
-            gameObjectInfo.X = float.Parse(values[2]);
-            gameObjectInfo.Y = float.Parse(values[3]);
-            gameObjectInfo.Z = float.Parse(values[4]);
-            gameObjectInfo.RotationX = float.Parse(values[5]);
-            gameObjectInfo.RotationY = float.Parse(values[6]);
-            gameObjectInfo.RotationZ = float.Parse(values[7]);
-            gameObjectInfo.ScaleX = float.Parse(values[8]);
-            gameObjectInfo.ScaleY = float.Parse(values[9]);
-            gameObjectInfo.ScaleZ = float.Parse(values[10]);
-            sceneInfo.AddGameObjectInfo(gameObjectInfo);
+            
+            if (nn == "G")
+            {
+                
+                string[] values = value.Split(',');
+                gameObjectInfo.GameObjectName = values[0];
+                gameObjectInfo.IsTerrain = values[1] == "1" ? true : false;
+                gameObjectInfo.X = float.Parse(values[2]);
+                gameObjectInfo.Y = float.Parse(values[3]);
+                gameObjectInfo.Z = float.Parse(values[4]);
+                gameObjectInfo.RotationX = float.Parse(values[5]);
+                gameObjectInfo.RotationY = float.Parse(values[6]);
+                gameObjectInfo.RotationZ = float.Parse(values[7]);
+                gameObjectInfo.ScaleX = float.Parse(values[8]);
+                gameObjectInfo.ScaleY = float.Parse(values[9]);
+                gameObjectInfo.ScaleZ = float.Parse(values[10]);
+                sceneInfo.AddGameObjectInfo(gameObjectInfo);
+            }
+            else if(nn == "GS")
+            {
+                sceneInfo.GridsContent = value;
+            }
         }
         sceneConfigInfos.Add(sceneName, sceneInfo);
     }
@@ -55,7 +65,6 @@ public class ConfigManager
         sceneConfigInfos.TryGetValue(name, out sceneInfo);
         if (sceneInfo == null)
         {
-            
             XmlNodeList xmlnode = GetXML(name);
             if (xmlnode != null)
             {
@@ -399,7 +408,11 @@ public class ConfigManager
         {
             string content = ResourceManager.GetText("configs/configs", abName);
             xmlDoc = new XmlDocument();
+            System.Diagnostics.Stopwatch stopWatch = new System.Diagnostics.Stopwatch();
+            stopWatch.Start();
             xmlDoc.LoadXml(content);
+            stopWatch.Stop();
+            Debug.LogError("loadxml:"+ abName+" 用时:"+ stopWatch.ElapsedMilliseconds+"毫秒");
         }
         else
         {
