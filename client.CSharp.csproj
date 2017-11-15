@@ -182,7 +182,6 @@
     <Compile Include="Assets\Scripts\com\lyman\VO\GameObjectTags.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\SceneInfo.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\ShakeCameraConfigInfo.cs" />
-    <Compile Include="Assets\TT.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\AccordionTest.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\CenteredSliderLabel.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\Combobox\KeyValueCombobox.cs" />

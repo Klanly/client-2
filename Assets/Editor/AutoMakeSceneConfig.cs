@@ -9,6 +9,7 @@ using System.Text;
 public class AutoMakeSceneConfig
 {
 
+    
     [MenuItem("GameTools/自动生成场景配置", false, 5)]
     public static void AutoMakeScene()
     {

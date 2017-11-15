@@ -105,10 +105,19 @@ public class SceneInfo
     private Vector2 tempVector2 = Vector2.zero;
     public Vector2 PixelToGrid(float x,float z)
     {
-        x = (int)x + (x >= 0f ? harfGridSize : -harfGridSize);
-        z = (int)z + (z >= 0f ? harfGridSize : -harfGridSize);
-        int xIndex = (int)((x + harfXLength - offsetX - harfGridSize) / gridSize);
-        int zIndex = (int)((z + harfZLength - offsetZ - harfGridSize) / gridSize);
+
+        bool xIsI = x - (int)x == 0f;
+        if(!xIsI)
+            x = (int)x + (x >= 0f ? harfGridSize : -harfGridSize);
+
+        bool zIsI = z - (int)z == 0f;
+        if(!zIsI)
+            z = (int)z + (z >= 0f ? harfGridSize : -harfGridSize);
+
+        int xIndex = (int)((x + harfXLength - offsetX - (xIsI ? 0 : harfGridSize)) / gridSize);
+
+
+        int zIndex = (int)((z + harfZLength - offsetZ - (zIsI ? 0 : harfGridSize)) / gridSize);
         tempVector2.Set(xIndex, zIndex);
         return tempVector2;
     }
