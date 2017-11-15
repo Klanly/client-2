@@ -12,6 +12,7 @@ public class AutoMakeSceneConfig
     [MenuItem("GameTools/自动生成场景配置", false, 5)]
     public static void AutoMakeScene()
     {
+        
         UnityEngine.SceneManagement.Scene scene = EditorSceneManager.GetActiveScene();
         Debug.Log("scene name:" + scene.name + " / scene path:" + scene.path);
         GameObject[] gos = scene.GetRootGameObjects();
@@ -192,6 +193,7 @@ public class AutoMakeSceneConfig
             strinBuilder.Append(offsetZ.ToString());
             strinBuilder.Append("/");
 
+            
 
             //Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
 
