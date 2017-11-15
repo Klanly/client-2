@@ -12,6 +12,8 @@ public class SceneInfo
 
     private int xLength;
     private int zLength;
+    private float harfXLength;
+    private float harfZLength;
 
     private int offsetX;
     private int offsetZ;
@@ -19,7 +21,9 @@ public class SceneInfo
     private byte[,] grids;
     private float[,] yPositions;
 
-    private float gridSize = 1f;
+    private static float gridSize = 1f;
+    private float harfGridSize = gridSize / 2f;
+
 
     public void AddGameObjectInfo(GameObjectInfo gameObjectInfo)
     {
@@ -62,7 +66,9 @@ public class SceneInfo
         
         string[] temp = splits[0].Split(',');
         xLength = int.Parse(temp[0]);
+        harfXLength = (float)xLength / 2;
         zLength = int.Parse(temp[1]);
+        harfZLength = (float)zLength / 2;
         offsetX = int.Parse(temp[2]);
         offsetZ = int.Parse(temp[3]);
         
@@ -89,9 +95,9 @@ public class SceneInfo
     private Vector3 tempVector3 = Vector3.zero;
     public Vector3 GridToPixel(int xIndex,int zIndex)
     {
-        float x = -(float)xLength/2f + offsetX + xIndex * gridSize + gridSize/2f; 
+        float x = -harfXLength + offsetX + xIndex * gridSize + harfGridSize; 
         float y = yPositions[xIndex, zIndex];
-        float z = -(float)zLength/2f + offsetZ + zIndex * gridSize + gridSize/2f;
+        float z = -harfZLength + offsetZ + zIndex * gridSize + harfGridSize;
         tempVector3.Set(x,y,z);
         return tempVector3;
     }
@@ -99,10 +105,11 @@ public class SceneInfo
     private Vector2 tempVector2 = Vector2.zero;
     public Vector2 PixelToGrid(float x,float z)
     {
-        x = (int)x + gridSize / 2f;
-        z = (int)z + gridSize / 2f;
-        int xIndex = (int)((x + (float)xLength/2f - offsetX - gridSize/2f) / gridSize);
-        int zIndex = (int)((z + (float)zLength/2f - offsetZ - gridSize/2f) / gridSize);
+        x = (int)x + (x >= 0f ? harfGridSize : -harfGridSize);
+        z = (int)z + (z >= 0f ? harfGridSize : -harfGridSize);
+        int xIndex = (int)((x + harfXLength - offsetX - harfGridSize) / gridSize);
+        int zIndex = (int)((z + harfZLength - offsetZ - harfGridSize) / gridSize);
+        tempVector2.Set(xIndex, zIndex);
         return tempVector2;
     }
 
