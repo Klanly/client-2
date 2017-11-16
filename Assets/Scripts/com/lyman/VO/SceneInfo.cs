@@ -57,13 +57,16 @@ public class SceneInfo
             gridsContent = value;
         }
     }
-
+    private bool isParsed = false;
+    private string[] splits;
     public void ParseGrids()
     {
-        System.Diagnostics.Stopwatch stopWatch;
-        
-        string[] splits = gridsContent.Split('/');
-        
+        if (isParsed)
+            return;
+        isParsed = true;
+        //System.Diagnostics.Stopwatch stopWatch;
+        splits = gridsContent.Split('/');
+
         string[] temp = splits[0].Split(',');
         xLength = int.Parse(temp[0]);
         harfXLength = (float)xLength / 2;
@@ -71,25 +74,31 @@ public class SceneInfo
         harfZLength = (float)zLength / 2;
         offsetX = int.Parse(temp[2]);
         offsetZ = int.Parse(temp[3]);
-        
+
         int length = splits.Length;
-        Debug.LogError("length:" + length);
-        
+        //Debug.LogError("length:"+ length + " / xLength:" + xLength+ " / zLength:"+ zLength);
+
         grids = new byte[xLength, zLength];
         yPositions = new float[xLength, zLength];
-        stopWatch = new System.Diagnostics.Stopwatch();
-        stopWatch.Start();
+        //stopWatch = new System.Diagnostics.Stopwatch();
+        //stopWatch.Start();
+        int xIndex = 0;
+        int yIndex = 0;
         for (int i = 1; i < length; ++i)
         {
             temp = splits[i].Split(',');
-            int xIndex = int.Parse(temp[0]);
-            int yIndex = int.Parse(temp[1]);
-            grids[xIndex, yIndex] = byte.Parse(temp[2]);
-            float y = float.Parse(temp[3]);
+            grids[xIndex, yIndex] = byte.Parse(temp[0]);
+            float y = float.Parse(temp[1]);
             yPositions[xIndex, yIndex] = y;
+            yIndex++;
+            if (yIndex == zLength)
+            {
+                yIndex = 0;
+                xIndex++;
+            }
         }
-        stopWatch.Stop();
-        Debug.LogError("4:" + stopWatch.ElapsedMilliseconds);
+        //stopWatch.Stop();
+        //Debug.LogError("解析" + SceneName + ".xml用时:" + stopWatch.ElapsedMilliseconds);
     }
 
     private Vector3 tempVector3 = Vector3.zero;

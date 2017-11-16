@@ -62,17 +62,7 @@ public class CharacterEditor : MonoBehaviour {
                 grids[i, j] = 1;// (byte)(((i % 6 == 0) && (j % 4 == 0)) == true ? 1 : 0);
             }
         }
-        //1为可行走点 0为阻挡点
-        //PathFinder mPathFinder = new PathFinder(grids);
-        //mPathFinder.Formula = HeuristicFormula.Manhattan;
-        //mPathFinder.Diagonals = true;
-        //mPathFinder.HeavyDiagonals = false;
-        //mPathFinder.HeuristicEstimate = 2;
-        //mPathFinder.PunishChangeDirection = false;
-        //mPathFinder.TieBreaker = false;
-        //mPathFinder.SearchLimit = 50000;
-        //mPathFinder.ReopenCloseNodes = true;
-        //List<PathFinderNode> path = mPathFinder.FindPath(new Point(0, 0), new Point(5, 5));
+        
 
         ResourceManager.CreateAssetBundle("configs/configs");
         ResourceManager.GetText("configs/configs","test_scene");

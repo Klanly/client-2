@@ -34,7 +34,6 @@ public class ConfigManager
             
             if (nn == "G")
             {
-                
                 string[] values = value.Split(',');
                 gameObjectInfo.GameObjectName = values[0];
                 gameObjectInfo.IsTerrain = values[1] == "1" ? true : false;
@@ -58,14 +57,14 @@ public class ConfigManager
     }
 
     //获取场景配置信息
-    public static SceneInfo GetSceneConfigInfo(string sceneName)
+    public static SceneInfo GetSceneConfigInfo(string sceneName,bool getByFile = false)
     {
         string name = sceneName.ToLower();
         SceneInfo sceneInfo;
         sceneConfigInfos.TryGetValue(name, out sceneInfo);
         if (sceneInfo == null)
         {
-            XmlNodeList xmlnode = GetXML(name);
+            XmlNodeList xmlnode = GetXML(name, getByFile);
             if (xmlnode != null)
             {
                 ParseSceneConfig(name, xmlnode);
@@ -402,13 +401,15 @@ public class ConfigManager
 
     public static XmlNodeList GetXML(string abName,bool getByFile = false)
     {
+        System.Diagnostics.Stopwatch stopWatch = null;
+        
         XmlNodeList nodeList = null;
         XmlDocument xmlDoc = null;
         if (!getByFile)
         {
             string content = ResourceManager.GetText("configs/configs", abName);
             xmlDoc = new XmlDocument();
-            System.Diagnostics.Stopwatch stopWatch = new System.Diagnostics.Stopwatch();
+            stopWatch = new System.Diagnostics.Stopwatch();
             stopWatch.Start();
             xmlDoc.LoadXml(content);
             stopWatch.Stop();
@@ -421,7 +422,11 @@ public class ConfigManager
             if (File.Exists(path))
             {
                 xmlDoc = new XmlDocument();
+                stopWatch = new System.Diagnostics.Stopwatch();
+                stopWatch.Start();
                 xmlDoc.Load(path);
+                stopWatch.Stop();
+                Debug.LogError("loadxml:" + abName + " 用时:" + stopWatch.ElapsedMilliseconds + "毫秒");
             }
         }
         if (xmlDoc != null)
@@ -429,6 +434,7 @@ public class ConfigManager
             nodeList = xmlDoc.GetElementsByTagName("table");
             xmlDoc.RemoveAll();
             xmlDoc = null;
+            
         }
         return nodeList;
     }

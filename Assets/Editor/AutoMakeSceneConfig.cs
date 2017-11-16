@@ -217,10 +217,10 @@ public class AutoMakeSceneConfig
                 {
                     float yy = j + 0.5f;
                     //todo 射线检测
-                    strinBuilder.Append(x.ToString());
-                    strinBuilder.Append(",");
-                    strinBuilder.Append(y.ToString());
-                    strinBuilder.Append(",");
+                    //strinBuilder.Append(x.ToString());
+                    //strinBuilder.Append(",");
+                    //strinBuilder.Append(y.ToString());
+                    //strinBuilder.Append(",");
                     Vector3 position = Vector3.zero;
                     RaycastHit raycastHit;
                     Vector3 startPosition = new Vector3(xx, 30f, yy);
