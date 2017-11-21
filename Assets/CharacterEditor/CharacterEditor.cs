@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Algorithms;
+
 public class CharacterEditor : MonoBehaviour {
 
     private ModelList modelList;

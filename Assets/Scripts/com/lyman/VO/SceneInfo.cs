@@ -19,6 +19,12 @@ public class SceneInfo
     private int offsetZ;
 
     private byte[,] grids;
+
+    public byte[,] Grids
+    {
+        get { return grids; }
+    }
+
     private float[,] yPositions;
 
     private static float gridSize = 1f;
