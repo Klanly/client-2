@@ -122,6 +122,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\Scripts\Client.cs" />
+    <Compile Include="Assets\Scripts\PrefabLightmapData.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Algorithms\AuthorAttribute.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Algorithms\IPathFinder.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Algorithms\PathFinder.cs" />

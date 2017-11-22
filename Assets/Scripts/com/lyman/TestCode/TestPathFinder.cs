@@ -16,8 +16,17 @@ public class TestPathFinder : MonoBehaviour
     {
         testPlayer = GameObject.Find("player");
         myCamera = Camera.main;
-        sceneInfo = ConfigManager.GetSceneConfigInfo("test_scene", true);
-        sceneInfo.ParseGrids();
+        //sceneInfo = ConfigManager.GetSceneConfigInfo("test_scene", true);
+        //sceneInfo.ParseGrids();
+
+        LightmapData[] lightmapDatas = LightmapSettings.lightmaps;
+        for (int i = 0; i < lightmapDatas.Length; ++i)
+        {
+            LightmapData lightmapData = lightmapDatas[i];
+            Debug.Log("lightmapData.lightmapColor.name:"+ lightmapData.lightmapColor.name);
+            Debug.Log("lightmapData.lightmapDir.name:" + lightmapData.lightmapDir.name);
+            
+        }
     }
 
     private Point sPoint;

@@ -91,6 +91,17 @@ public class AutoMakeSceneConfig
                         else
                             throw new System.Exception("非阻挡节点下有名称为:" + ts.name + "的GameObject的渲染组件未激活，请激活渲染组件！！！");
                     }
+                        
+                    Debug.LogError("render.lightmapIndex:" + render.lightmapIndex);
+                    Debug.LogError("render.lightmapScaleOffset:" + render.lightmapScaleOffset);
+                    //    render.lightmapScaleOffset
+                    //    render.lightProbeAnchor
+                    //    render.lightProbeProxyVolumeOverride
+                    //    render.lightProbeUsage
+                    //    render.realtimeLightmapIndex
+                    //    render.realtimeLightmapScaleOffset
+                    //    render.useLightProbes
+
                     gameObjectInfo = GetGameObjectInfo(ts);
                     sceneInfo.AddGameObjectInfo(gameObjectInfo);
                 }
@@ -267,7 +278,10 @@ public class AutoMakeSceneConfig
             Debug.Log("x:"+x);
         }
         sceneInfo.GridsContent = strinBuilder.ToString();
-
+        if (nonblocks != null)
+        {
+            nonblocks.SetActive(true);
+        }
 
         SaveConfig(sceneInfo, scene.path);
 
@@ -309,7 +323,27 @@ public class AutoMakeSceneConfig
         SW.WriteLine(content);
         SW.Close();
     }
-    
+
+    [MenuItem("GameTools/保存该场景预制件的烘焙信息", false, 6)]
+    public static void SaveLightmapInfoByGameObject()
+    {
+        GameObject go = Selection.activeGameObject;
+
+        if (null == go) return;
+
+        PrefabLightmapData data = go.GetComponent<PrefabLightmapData>();
+        if (data == null)
+        {
+            data = go.AddComponent<PrefabLightmapData>();
+        }
+        //save lightmapdata info by mesh.render
+        data.SaveLightmap();
+
+        EditorUtility.SetDirty(go);
+        //applay prefab
+        PrefabUtility.ReplacePrefab(go, PrefabUtility.GetPrefabParent(go), ReplacePrefabOptions.ConnectToPrefab);
+    }
+
 }
 
 
