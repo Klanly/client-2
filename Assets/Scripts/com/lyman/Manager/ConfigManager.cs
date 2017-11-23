@@ -46,12 +46,14 @@ public class ConfigManager
                 gameObjectInfo.ScaleX = float.Parse(values[8]);
                 gameObjectInfo.ScaleY = float.Parse(values[9]);
                 gameObjectInfo.ScaleZ = float.Parse(values[10]);
+                gameObjectInfo.Type = int.Parse(values[11]);
+
                 sceneInfo.AddGameObjectInfo(gameObjectInfo);
             }
-            else if(nn == "GS")
-            {
-                sceneInfo.GridsContent = value;
-            }
+            //else if(nn == "GS")
+            //{
+            //    sceneInfo.GridsContent = value;
+            //}
         }
         sceneConfigInfos.Add(sceneName, sceneInfo);
     }

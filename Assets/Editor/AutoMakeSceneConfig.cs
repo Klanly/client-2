@@ -62,7 +62,7 @@ public class AutoMakeSceneConfig
                     else
                         throw new System.Exception("地形节点下有名称为:" + ts.name + "的GameObject的渲染组件未激活，请激活渲染组件！！！");
                 }
-                gameObjectInfo = GetGameObjectInfo(ts, true);
+                gameObjectInfo = GetGameObjectInfo(ts, GameObjectTypes.Terrain);
                 sceneInfo.AddGameObjectInfo(gameObjectInfo);
             }
             else if (go.name == "nonblocks")
@@ -91,9 +91,9 @@ public class AutoMakeSceneConfig
                         else
                             throw new System.Exception("非阻挡节点下有名称为:" + ts.name + "的GameObject的渲染组件未激活，请激活渲染组件！！！");
                     }
-                        
-                    Debug.LogError("render.lightmapIndex:" + render.lightmapIndex);
-                    Debug.LogError("render.lightmapScaleOffset:" + render.lightmapScaleOffset);
+
+                    //Debug.LogError("render.lightmapIndex:" + render.lightmapIndex);
+                    //Debug.LogError("render.lightmapScaleOffset:" + render.lightmapScaleOffset);
                     //    render.lightmapScaleOffset
                     //    render.lightProbeAnchor
                     //    render.lightProbeProxyVolumeOverride
@@ -102,7 +102,7 @@ public class AutoMakeSceneConfig
                     //    render.realtimeLightmapScaleOffset
                     //    render.useLightProbes
 
-                    gameObjectInfo = GetGameObjectInfo(ts);
+                    gameObjectInfo = GetGameObjectInfo(ts, GameObjectTypes.NonBlock);
                     sceneInfo.AddGameObjectInfo(gameObjectInfo);
                 }
             }
@@ -133,6 +133,34 @@ public class AutoMakeSceneConfig
                     {
                         throw new System.Exception("阻挡节点下有名称为:" + ts.name + "的GameObject带有渲染组件，请删除渲染组件！！！");
                     }
+                    gameObjectInfo = GetGameObjectInfo(ts, GameObjectTypes.Block);
+                    sceneInfo.AddGameObjectInfo(gameObjectInfo);
+                }
+            }
+            else if (go.name == "effects")
+            {
+                count = go.transform.childCount;
+                for (j = 0; j < count; ++j)
+                {
+                    ts = go.transform.GetChild(j);
+                    if (!ts.gameObject.activeSelf) continue;
+                    if (ts.tag != GameObjectTags.Scene_Effect)
+                    {
+                        throw new System.Exception("场景特效节点下有名称为:" + ts.name + "的GameObject的Tag不为scene_effect,请重新设置！！！");
+                    }
+                    gameObjectInfo = GetGameObjectInfo(ts, GameObjectTypes.Effect);
+                    sceneInfo.AddGameObjectInfo(gameObjectInfo);
+                }
+            }
+            else if (go.name == "lights")
+            {
+                count = go.transform.childCount;
+                for (j = 0; j < count; ++j)
+                {
+                    ts = go.transform.GetChild(j);
+                    if (!ts.gameObject.activeSelf) continue;
+                    gameObjectInfo = GetGameObjectInfo(ts, GameObjectTypes.Light);
+                    sceneInfo.AddGameObjectInfo(gameObjectInfo);
                 }
             }
         }
@@ -289,11 +317,11 @@ public class AutoMakeSceneConfig
     }
 
 
-    private static GameObjectInfo GetGameObjectInfo(Transform ts, bool isTerrain = false)
+    private static GameObjectInfo GetGameObjectInfo(Transform ts, int type)
     {
         if (ts == null) return null;
         GameObjectInfo gameObjectInfo = new GameObjectInfo();
-        gameObjectInfo.IsTerrain = isTerrain;
+        gameObjectInfo.Type = type;
         gameObjectInfo.GameObjectName = ts.gameObject.name;
         gameObjectInfo.X = ts.position.x;
         gameObjectInfo.Y = ts.position.y;
@@ -304,6 +332,63 @@ public class AutoMakeSceneConfig
         gameObjectInfo.ScaleX = ts.localScale.x;
         gameObjectInfo.ScaleY = ts.localScale.y;
         gameObjectInfo.ScaleZ = ts.localScale.z;
+        if (type == GameObjectTypes.Block)
+        {
+
+            CapsuleCollider capsuleCollider = ts.GetComponent<CapsuleCollider>();
+            if (capsuleCollider != null)
+            {
+                //对于CapsuleCollider类型的限定美术把CapsuleCollider的Center属性设置成0,0,0;Direction设置成Y-Axis,这样可以减小配置表大小
+                gameObjectInfo.ColliderType = ColliderTypes.CapsuleCollider;
+                gameObjectInfo.Radius = capsuleCollider.radius;
+                gameObjectInfo.Height = capsuleCollider.height;
+            }
+            else
+            {
+                BoxCollider boxCollider = ts.GetComponent<BoxCollider>();
+                if (boxCollider != null)
+                {
+                    //对于BoxCollider类型的限定美术把BoxCollider的Center属性设置成0,0,0  Size属性设置成1,1,1这样可以减小配置表大小
+                    gameObjectInfo.ColliderType = ColliderTypes.BoxCollider;
+                }
+                else
+                {
+                    //对于SphereCollider类型的限定美术把SphereCollider的Center属性设置成0,0,0;这样可以减小配置表大小
+                    SphereCollider sphereCollider = ts.GetComponent<SphereCollider>();
+                    if (sphereCollider)
+                    {
+                        gameObjectInfo.ColliderType = ColliderTypes.SphereCollider;
+                        gameObjectInfo.Radius = sphereCollider.radius;
+                    }
+                }
+            }
+        }
+        else if (type == GameObjectTypes.Light)
+        {
+
+            Light light = ts.GetComponent<Light>();
+            gameObjectInfo.LightType = (int)light.type;
+            //if (light.type == LightType.Area)
+            //{
+            //    gameObjectInfo.LightType = 3;
+            //}
+            //else if (light.type == LightType.Directional)
+            //{
+            //    gameObjectInfo.LightType = 1;
+            //}
+            //else if (light.type == LightType.Point)
+            //{
+            //    gameObjectInfo.LightType = 2;
+            //}
+            //else if (light.type == LightType.Spot)
+            //{
+            //    gameObjectInfo.LightType = 0;
+            //}
+            gameObjectInfo.color = light.color.r + "_" + light.color.g + "_" + light.color.b + "_" + light.color.a;
+            //gameObjectInfo.Mode = light.renderMode
+
+
+        }
         return gameObjectInfo;
     }
 

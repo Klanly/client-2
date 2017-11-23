@@ -17,4 +17,7 @@ public class GameObjectTags
 
     //非阻挡
     public static string NON_Block = "nonblock";
+
+    //场景特效
+    public static string Scene_Effect = "scene_effect";
 }

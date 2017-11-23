@@ -9,7 +9,7 @@ public class SceneInfo
     private string sceneName = string.Empty;
     private GameObjectInfo terrainInfo;
     private List<GameObjectInfo> GameObjectInfos = new List<GameObjectInfo>();
-
+    
     private int xLength;
     private int zLength;
     private float harfXLength;
@@ -153,11 +153,11 @@ public class SceneInfo
             stringBuilder.Append("\n");
         }
 
-        stringBuilder.Append("\t");
-        stringBuilder.Append("<a n='GS'>");
-        stringBuilder.Append(gridsContent);
-        stringBuilder.Append("</a>");
-        stringBuilder.Append("\n");
+        //stringBuilder.Append("\t");
+        //stringBuilder.Append("<a n='GS'>");
+        //stringBuilder.Append(gridsContent);
+        //stringBuilder.Append("</a>");
+        //stringBuilder.Append("\n");
 
         stringBuilder.Append("</table>");
         return stringBuilder.ToString();
@@ -179,6 +179,35 @@ public class GameObjectInfo
     public float ScaleX;
     public float ScaleY;
     public float ScaleZ;
+    private int type;
+
+    //阻挡物才有的属性
+    public int ColliderType;
+    public float Radius;
+    public float Height;
+
+    //灯光才有的属性
+    public int LightType;
+    public string color;
+    public int Mode;
+    public float Intensity;
+    public float IndirectMultiplier;
+    public int ShadowType;
+    public float BakeShadowAngle;
+    public int DrawHalo;
+    public int RenderMode;
+    public int CollingMask;
+    
+
+    public int Type
+    {
+        get { return type; }
+        set
+        {
+            type = value;
+            IsTerrain = type == GameObjectTypes.Terrain;
+        }
+    }
 
     public string ToXMLString()
     {
@@ -207,7 +236,25 @@ public class GameObjectInfo
         stringBuilder.Append(ScaleY.ToString("0.00"));
         stringBuilder.Append(",");
         stringBuilder.Append(ScaleZ.ToString("0.00"));
+        stringBuilder.Append(",");
 
+        stringBuilder.Append(type.ToString());
+        if (type == GameObjectTypes.Block)
+        {
+            stringBuilder.Append(",");
+            stringBuilder.Append(ColliderType.ToString());
+
+            if (ColliderType == ColliderTypes.SphereCollider || ColliderType == ColliderTypes.CapsuleCollider)
+            {
+                stringBuilder.Append(",");
+                stringBuilder.Append(Radius.ToString("0.0"));
+            }
+            if (ColliderType == ColliderTypes.CapsuleCollider)
+            {
+                stringBuilder.Append(",");
+                stringBuilder.Append(Height.ToString("0.0"));
+            }
+        }
         stringBuilder.Append("</a>");
         return stringBuilder.ToString();
     }

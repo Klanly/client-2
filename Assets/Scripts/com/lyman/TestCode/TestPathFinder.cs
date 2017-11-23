@@ -14,6 +14,10 @@ public class TestPathFinder : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
+
+        
+
+
         testPlayer = GameObject.Find("player");
         myCamera = Camera.main;
         //sceneInfo = ConfigManager.GetSceneConfigInfo("test_scene", true);

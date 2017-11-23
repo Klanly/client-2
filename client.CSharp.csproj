@@ -178,10 +178,12 @@
     <Compile Include="Assets\Scripts\com\lyman\VO\BindTypes.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\BoneTypes.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\CharacterConfigInfo.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\ColliderTypes.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\CommonProperties.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\EffectInfo.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\EffectTypes.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\GameObjectTags.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\VO\GameObjectTypes.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\SceneInfo.cs" />
     <Compile Include="Assets\Scripts\com\lyman\VO\ShakeCameraConfigInfo.cs" />
     <Compile Include="Assets\UIWidgets\Sample Assets\AccordionTest.cs" />
