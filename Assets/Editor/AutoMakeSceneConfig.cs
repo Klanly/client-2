@@ -334,7 +334,6 @@ public class AutoMakeSceneConfig
         gameObjectInfo.ScaleZ = ts.localScale.z;
         if (type == GameObjectTypes.Block)
         {
-
             CapsuleCollider capsuleCollider = ts.GetComponent<CapsuleCollider>();
             if (capsuleCollider != null)
             {
@@ -365,9 +364,8 @@ public class AutoMakeSceneConfig
         }
         else if (type == GameObjectTypes.Light)
         {
-
-            Light light = ts.GetComponent<Light>();
-            gameObjectInfo.LightType = (int)light.type;
+            //Light light = ts.GetComponent<Light>();
+            //gameObjectInfo.LightType = (int)light.type;
             //if (light.type == LightType.Area)
             //{
             //    gameObjectInfo.LightType = 3;
@@ -384,8 +382,9 @@ public class AutoMakeSceneConfig
             //{
             //    gameObjectInfo.LightType = 0;
             //}
-            gameObjectInfo.color = light.color.r + "_" + light.color.g + "_" + light.color.b + "_" + light.color.a;
-            //gameObjectInfo.Mode = light.renderMode
+            
+            //gameObjectInfo.color = light.color.r + "_" + light.color.g + "_" + light.color.b + "_" + light.color.a;
+            //gameObjectInfo.Mode = 
 
 
         }
@@ -428,9 +427,5 @@ public class AutoMakeSceneConfig
         //applay prefab
         PrefabUtility.ReplacePrefab(go, PrefabUtility.GetPrefabParent(go), ReplacePrefabOptions.ConnectToPrefab);
     }
-
 }
-
-
-
 

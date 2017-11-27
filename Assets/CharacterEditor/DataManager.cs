@@ -298,7 +298,7 @@ public class DataManager
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.Append("<?xml version='1.0' encoding='utf-8'?>\n");
         stringBuilder.Append(content);
-        string path = Application.dataPath + "/ArtAssets/prefabs/configs/" + characterConfigInfo.ModelName.ToLower() + ".xml";
+        string path = Application.dataPath + "/ArtAssets/prefabs/configs/characters/" + characterConfigInfo.ModelName.ToLower() + ".xml";
         if (File.Exists(path))
         {
             File.Delete(path);

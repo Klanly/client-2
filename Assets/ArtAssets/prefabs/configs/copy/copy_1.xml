@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table n='MapConfig'>
+	<p n='Name'>测试地图1</p>
+	<p n='ResName'>test_scene</p>
+	<p n='NPCNumber'>0</p>
+	<p n='NPCList'></p>
+</table>

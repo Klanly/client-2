@@ -246,6 +246,20 @@ public class Packager
     private static void SetConfigABNameWithMeta()
     {
         string path = Application.dataPath + "/ArtAssets/prefabs/configs/";
+        
+        string[] dirs = Directory.GetDirectories(path);
+        foreach (string dir in dirs)
+        {
+            string[] fs = Directory.GetFiles(dir);
+            foreach (string f in fs)
+            {
+                if (!f.EndsWith(".meta")) continue;
+                string[] allLines = File.ReadAllLines(f);
+                allLines[6] = "  assetBundleName: configs/configs" + GameConst.ABExtensionName;
+                SaveMeta(f, allLines);
+            }
+        }
+
         string[] files = Directory.GetFiles(path);
         foreach (string file in files)
         {
