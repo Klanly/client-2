@@ -262,7 +262,10 @@ public class ConfigManager
         return characterConfigInfo;
     }
 
+    public static void GetCopyInfo()
+    {
 
+    }
 
 
 
