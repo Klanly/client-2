@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class MapEditor : MonoBehaviour
 {
-
-	// Use this for initialization
+    private ModelList modelList;
 	void Start ()
     {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        ResourceManager.Init();
+        Alert.Init(GameObject.Find("alert"));
+        Alert.Hide();
+        modelList = new ModelList();
+        modelList.onSelectedHandler = OnCopySelectedHandler;
+        modelList.Init(gameObject.transform.FindChild("copyList").gameObject, DataManager.GetCopyList());
+
+    }
+
+    private void OnCopySelectedHandler(string copyName)
     {
-		
-	}
+        Debug.Log(copyName);
+    }
+
+
+    void Update()
+    {
+        TimerManager.Update(Time.deltaTime);
+
+    }
 }

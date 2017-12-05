@@ -49,6 +49,26 @@ public class DataManager
     public static float FlySpeedMax = 50f;
     public static float FlySpeedStep = 0.01f;
 
+    private static ObservableList<string> copyList = new ObservableList<string>();
+    public static ObservableList<string> GetCopyList()
+    {
+        if (copyList.Count > 0)
+        {
+            return copyList;
+        }
+        string path = Application.dataPath + "/ArtAssets/prefabs/configs/copy/";
+        string[] files = Directory.GetFiles(path);
+        foreach (string file in files)
+        {
+            if (file.EndsWith(GameConst.XMLExtensionName))
+            {
+                string n = Path.GetFileNameWithoutExtension(file);
+                copyList.Add(n);
+            }
+        }
+        return copyList;
+    }
+
 
     private static ObservableList<string> soundList = new ObservableList<string>();
     public static ObservableList<string> GetSoundList()

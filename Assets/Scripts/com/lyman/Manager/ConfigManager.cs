@@ -11,8 +11,8 @@ public class ConfigManager
     //角色信息配置
     private static Dictionary<string, CharacterConfigInfo> characterConfigInfos = new Dictionary<string, CharacterConfigInfo>();
 
-    //场景配置
-    private static Dictionary<string, SceneInfo> sceneConfigInfos = new Dictionary<string, SceneInfo>();
+    //场景资源配置
+    private static Dictionary<string, SceneInfo> sceneResConfigInfos = new Dictionary<string, SceneInfo>();
 
     private static void ParseSceneConfig(string sceneName,XmlNodeList nodeList)
     {
@@ -55,22 +55,22 @@ public class ConfigManager
             //    sceneInfo.GridsContent = value;
             //}
         }
-        sceneConfigInfos.Add(sceneName, sceneInfo);
+        sceneResConfigInfos.Add(sceneName, sceneInfo);
     }
 
-    //获取场景配置信息
+    //获取场景资源配置信息
     public static SceneInfo GetSceneConfigInfo(string sceneName,bool getByFile = false)
     {
-        string name = sceneName.ToLower();
+        string name ="map_res/" + sceneName.ToLower();
         SceneInfo sceneInfo;
-        sceneConfigInfos.TryGetValue(name, out sceneInfo);
+        sceneResConfigInfos.TryGetValue(name, out sceneInfo);
         if (sceneInfo == null)
         {
             XmlNodeList xmlnode = GetXML(name, getByFile);
             if (xmlnode != null)
             {
                 ParseSceneConfig(name, xmlnode);
-                sceneConfigInfos.TryGetValue(name, out sceneInfo);
+                sceneResConfigInfos.TryGetValue(name, out sceneInfo);
             }
         }
         return sceneInfo;
@@ -251,7 +251,7 @@ public class ConfigManager
         characterConfigInfos.TryGetValue(modelName, out characterConfigInfo);
         if (characterConfigInfo == null)
         {
-            string name = modelName.ToLower();
+            string name = "characters/"+modelName.ToLower();
             XmlNodeList xmlnode = GetXML(name, isEditor);
             if (xmlnode != null)
             {
@@ -262,34 +262,55 @@ public class ConfigManager
         return characterConfigInfo;
     }
 
-    public static void GetCopyInfo()
-    {
 
+    private static Dictionary<string, CopyInfo> copyInfos = new Dictionary<string, CopyInfo>();
+    public static CopyInfo GetCopyInfo(string copyName, bool isEditor = false)
+    {
+        CopyInfo copyInfo = null;
+        copyInfos.TryGetValue(copyName, out copyInfo);
+        if (copyInfo == null)
+        {
+            string name = "copy/"+copyName.ToLower();
+            XmlNodeList xmlnode = GetXML(name, isEditor);
+            if (xmlnode != null)
+            {
+                ParseCopyInfo(xmlnode);
+                copyInfos.TryGetValue(copyName, out copyInfo);
+            }
+        }
+        return copyInfo;
     }
 
+    private static void ParseCopyInfo(XmlNodeList nodeList)
+    {
+        if (nodeList == null)
+        {
+            return;
+        }
+        XmlElement node = nodeList[0] as XmlElement;
+        CopyInfo copyInfo = new CopyInfo();
+        XmlNodeList childList = node.GetElementsByTagName("p");
+        for (int j = 0; j < childList.Count; j++)
+        {
+            XmlElement child = childList[j] as XmlElement;
+            string key = child.GetAttribute("n");
+            string value = child.InnerXml;
+            switch (key)
+            {
+                case "Name":
+                    copyInfo.Name = value;
+                    break;
+                case "ResName":
+                    copyInfo.ResName = value;
+                    break;
+                case "NPCList":
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    break;
+            }
+        }
+        copyInfos.Add(copyInfo.Name, copyInfo);
+        
+    }
 
     public static ShakeCameraConfigInfo GetShakeCameraConfigInfo(string id)
     {

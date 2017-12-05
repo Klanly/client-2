@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameConst
 {
     public const string GameName = "mygame";
+    public const string XMLExtensionName = ".xml";
     public const string ABExtensionName = ".assetbundle";
     public const string MetaExtensionn = ".meta";
     public const string StreamingAssets = "StreamingAssets";

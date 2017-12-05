@@ -7,5 +7,5 @@ public class CopyInfo
     public string Name;
     public string ResName;
     public int NPCNumber;
-    public string[] NPCList;
+    public List<NpcInfo> NPCList = new List<NpcInfo>();
 }

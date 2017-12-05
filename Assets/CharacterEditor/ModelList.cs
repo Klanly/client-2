@@ -35,6 +35,16 @@ public class ModelList
         listView.OnSelect.AddListener(OnSelectedModelHandler);
     }
 
+    public virtual void Init(GameObject content, ObservableList<string> vList)
+    {
+        list = vList;
+        container = content;
+        listView = content.transform.Find("ListView").GetComponent<ListView>();
+        listView.DataSource = vList;
+        listView.OnSelect.AddListener(OnSelectedModelHandler);
+    }
+
+
     private int oldIndex = -1;
 
     private void OnSelectedModelHandler(int index, ListViewItem listViewItem)
