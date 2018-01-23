@@ -13,8 +13,8 @@ public class Alert
     public static void Init(GameObject container)
     {
         content = container;
-        mask = content.transform.FindChild("mask").gameObject;
-        text = content.transform.FindChild("Text").GetComponent<Text>();
+        mask = content.transform.Find("mask").gameObject;
+        text = content.transform.Find("Text").GetComponent<Text>();
         content.SetActive(false);
     }
 
@@ -25,7 +25,6 @@ public class Alert
         {
             content.SetActive(true);
         }
-
         if (hideTime <= 0)
         {
             text.text = msgContent;
@@ -37,8 +36,7 @@ public class Alert
             timerInfo = TimerManager.AddDelayHandler(OnDelHandler, 1f, (uint)hideTime+1);
         }
     }
-
-
+    
     private static void OnDelHandler(float del)
     {
         index--;
@@ -59,6 +57,7 @@ public class Alert
             content.SetActive(false);
         }
         TimerManager.RemoveHandler(timerInfo);
+        timerInfo = null;
     }
 
 }

@@ -1,0 +1,462 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-unsafe
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/Managed/UnityEngine.dll"
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:Assets/Demigiant/DOTween/DOTween.dll
+-r:Assets/Demigiant/DOTween/DOTween43.dll
+-r:Assets/Demigiant/DOTween/DOTween46.dll
+-r:Assets/Demigiant/DOTween/DOTween50.dll
+-r:Assets/Plugins/ICSharpCode.SharpZipLib.dll
+-r:"D:/Program Files/Unity5_6_5f1/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_5_6_5
+-define:UNITY_5_6
+-define:UNITY_5
+-define:UNITY_64
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_RUNTIME_NAVMESH_BUILDING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:ENABLE_VIDEO
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_NATIVE_ARRAY_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+Assets/ArtAssets/original/Effects/plug-in/DeadTime.cs
+Assets/ArtAssets/original/Effects/plug-in/Delay.cs
+Assets/ArtAssets/original/Effects/plug-in/F3DParticleScale.cs
+Assets/ArtAssets/original/Effects/plug-in/ParticleScaler.cs
+Assets/ArtAssets/original/Effects/plug-in/SM_RotateThis.cs
+Assets/ArtAssets/original/Effects/plug-in/SM_prefabGenerator.cs
+Assets/ArtAssets/original/Effects/plug-in/ScrollingUVs.cs
+Assets/ArtAssets/original/Effects/plug-in/UIDepth.cs
+Assets/ArtAssets/original/Effects/plug-in/cb.cs
+Assets/ArtAssets/original/Effects/plug-in/test_two_uv.cs
+Assets/ArtAssets/original/Effects/plug-in/test_uv.cs
+Assets/ArtAssets/original/T4M/Scripts/T4MBillBObjSC.cs
+Assets/ArtAssets/original/T4M/Scripts/T4MLodObjSC.cs
+Assets/ArtAssets/original/T4M/Scripts/T4MObjSC.cs
+Assets/ArtAssets/original/T4M/Scripts/T4MPartSC.cs
+Assets/ArtAssets/original/T4M/Scripts/T4MPlantObjSC.cs
+Assets/ArtAssets/original/T4M/Tutorial/Scripts/FlyCam.cs
+Assets/ArtAssets/original/T4M/Tutorial/Scripts/WaypointCam.cs
+Assets/CharacterEditor/AddEffectSetting.cs
+Assets/CharacterEditor/Alert.cs
+Assets/CharacterEditor/AttributeSetting.cs
+Assets/CharacterEditor/CharacterEditor.cs
+Assets/CharacterEditor/DataManager.cs
+Assets/CharacterEditor/EffectList.cs
+Assets/CharacterEditor/ModelList.cs
+Assets/CharacterEditor/core/EditorCameraController.cs
+Assets/Demigiant/DOTween/Examples/Basics.cs
+Assets/Demigiant/DOTween/Examples/Sequences.cs
+Assets/MapEditor/CopyInfoView.cs
+Assets/MapEditor/MapEditor.cs
+Assets/Scripts/Client.cs
+Assets/Scripts/PrefabLightmapData.cs
+Assets/Scripts/com/lyman/Algorithms/AuthorAttribute.cs
+Assets/Scripts/com/lyman/Algorithms/IPathFinder.cs
+Assets/Scripts/com/lyman/Algorithms/PathFinder.cs
+Assets/Scripts/com/lyman/Algorithms/PathFinderFast.cs
+Assets/Scripts/com/lyman/Algorithms/Point.cs
+Assets/Scripts/com/lyman/Algorithms/PriorityQueueB.cs
+Assets/Scripts/com/lyman/AnimationSystem/AnimationClipEventHandler.cs
+Assets/Scripts/com/lyman/AnimationSystem/AnimationType.cs
+Assets/Scripts/com/lyman/AnimationSystem/CharacterAnimatorController.cs
+Assets/Scripts/com/lyman/Entity/BulletEntity.cs
+Assets/Scripts/com/lyman/Entity/CommonModel.cs
+Assets/Scripts/com/lyman/Entity/Creature.cs
+Assets/Scripts/com/lyman/Entity/Entity.cs
+Assets/Scripts/com/lyman/Entity/NEffect.cs
+Assets/Scripts/com/lyman/Entity/SceneEntity.cs
+Assets/Scripts/com/lyman/Entity/SelectorKeeper.cs
+Assets/Scripts/com/lyman/Entity/TCreature.cs
+Assets/Scripts/com/lyman/Entity/state/AttackState.cs
+Assets/Scripts/com/lyman/Entity/state/CreatureStateType.cs
+Assets/Scripts/com/lyman/Entity/state/DeadState.cs
+Assets/Scripts/com/lyman/Entity/state/FSMFactory.cs
+Assets/Scripts/com/lyman/Entity/state/HitFlyState.cs
+Assets/Scripts/com/lyman/Entity/state/HitMoveState.cs
+Assets/Scripts/com/lyman/Entity/state/HitState.cs
+Assets/Scripts/com/lyman/Entity/state/IdleState.cs
+Assets/Scripts/com/lyman/Entity/state/RunState.cs
+Assets/Scripts/com/lyman/Entity/state/WalkState.cs
+Assets/Scripts/com/lyman/EventSystem/EventDispatcher.cs
+Assets/Scripts/com/lyman/EventSystem/IEvent.cs
+Assets/Scripts/com/lyman/EventSystem/IEventDispatcher.cs
+Assets/Scripts/com/lyman/FSM/FSMState.cs
+Assets/Scripts/com/lyman/FSM/FSMStateMachine.cs
+Assets/Scripts/com/lyman/FSM/FSMTranslation.cs
+Assets/Scripts/com/lyman/FSM/FSMTranslationMap.cs
+Assets/Scripts/com/lyman/Manager/ABManager.cs
+Assets/Scripts/com/lyman/Manager/ConfigManager.cs
+Assets/Scripts/com/lyman/Manager/EntityManager.cs
+Assets/Scripts/com/lyman/Manager/ObjectPoolManager.cs
+Assets/Scripts/com/lyman/Manager/ResourceManager.cs
+Assets/Scripts/com/lyman/Manager/SEffectManager.cs
+Assets/Scripts/com/lyman/Manager/TimerManager.cs
+Assets/Scripts/com/lyman/ObjectPool/GameObjectPool.cs
+Assets/Scripts/com/lyman/ObjectPool/ObjectPool.cs
+Assets/Scripts/com/lyman/Scene/Scene.cs
+Assets/Scripts/com/lyman/TestCode/TestPathFinder.cs
+Assets/Scripts/com/lyman/Util/EventTriggerListener.cs
+Assets/Scripts/com/lyman/Util/GUtil.cs
+Assets/Scripts/com/lyman/Util/GameConst.cs
+Assets/Scripts/com/lyman/Util/Loom.cs
+Assets/Scripts/com/lyman/Util/ParticleHelper.cs
+Assets/Scripts/com/lyman/Util/Util.cs
+Assets/Scripts/com/lyman/VO/ActionInfo.cs
+Assets/Scripts/com/lyman/VO/BindTypes.cs
+Assets/Scripts/com/lyman/VO/BoneTypes.cs
+Assets/Scripts/com/lyman/VO/CharacterConfigInfo.cs
+Assets/Scripts/com/lyman/VO/ColliderTypes.cs
+Assets/Scripts/com/lyman/VO/CommonProperties.cs
+Assets/Scripts/com/lyman/VO/CopyInfo.cs
+Assets/Scripts/com/lyman/VO/EffectInfo.cs
+Assets/Scripts/com/lyman/VO/EffectTypes.cs
+Assets/Scripts/com/lyman/VO/GameObjectTags.cs
+Assets/Scripts/com/lyman/VO/GameObjectTypes.cs
+Assets/Scripts/com/lyman/VO/NpcInfo.cs
+Assets/Scripts/com/lyman/VO/SceneInfo.cs
+Assets/Scripts/com/lyman/VO/ShakeCameraConfigInfo.cs
+"Assets/UIWidgets/Sample Assets/AccordionTest.cs"
+"Assets/UIWidgets/Sample Assets/CenteredSliderLabel.cs"
+"Assets/UIWidgets/Sample Assets/Combobox/KeyValueCombobox.cs"
+"Assets/UIWidgets/Sample Assets/Combobox/KeyValueListView.cs"
+"Assets/UIWidgets/Sample Assets/Combobox/KeyValueListViewDataSource.cs"
+"Assets/UIWidgets/Sample Assets/Combobox/KeyValueListViewItem.cs"
+"Assets/UIWidgets/Sample Assets/DialogInputHelper.cs"
+"Assets/UIWidgets/Sample Assets/DialogTreeViewInputHelper.cs"
+"Assets/UIWidgets/Sample Assets/ListView/Chat/ChatLine.cs"
+"Assets/UIWidgets/Sample Assets/ListView/Chat/ChatLineComponent.cs"
+"Assets/UIWidgets/Sample Assets/ListView/Chat/ChatView.cs"
+"Assets/UIWidgets/Sample Assets/ListView/Chat/ChatViewTest.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewCustomSample/ListViewCustomSample.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewCustomSample/ListViewCustomSampleComponent.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewCustomSample/ListViewCustomSampleItemDescription.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewImages/ListViewImages.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewImages/ListViewImagesComponent.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewImages/ListViewImagesItem.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewNoColoring.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewSlider/ListViewSlider.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewSlider/ListViewSliderComponent.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewSlider/ListViewSliderItem.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewUnderlineSample/ListViewUnderlineSample.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewUnderlineSample/ListViewUnderlineSampleComponent.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewUnderlineSample/ListViewUnderlineSampleItemDescription.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewVariableHeight/ListViewVariableHeight.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewVariableHeight/ListViewVariableHeightComponent.cs"
+"Assets/UIWidgets/Sample Assets/ListView/ListViewVariableHeight/ListViewVariableHeightItemDescription.cs"
+"Assets/UIWidgets/Sample Assets/ListView/TasksView/Task.cs"
+"Assets/UIWidgets/Sample Assets/ListView/TasksView/TaskAutocomplete.cs"
+"Assets/UIWidgets/Sample Assets/ListView/TasksView/TaskComponent.cs"
+"Assets/UIWidgets/Sample Assets/ListView/TasksView/TaskPicker.cs"
+"Assets/UIWidgets/Sample Assets/ListView/TasksView/TaskTests.cs"
+"Assets/UIWidgets/Sample Assets/ListView/TasksView/TaskView.cs"
+"Assets/UIWidgets/Sample Assets/Picker/PickerIntTest.cs"
+"Assets/UIWidgets/Sample Assets/PopupTest.cs"
+"Assets/UIWidgets/Sample Assets/Progressbar/SampleProgressBar1.cs"
+"Assets/UIWidgets/Sample Assets/Progressbar/SampleProgressBar2.cs"
+"Assets/UIWidgets/Sample Assets/Progressbar/SampleProgressbar.cs"
+"Assets/UIWidgets/Sample Assets/RangeSlider/RangeSliderFloatSample.cs"
+"Assets/UIWidgets/Sample Assets/RangeSlider/RangeSliderSample.cs"
+"Assets/UIWidgets/Sample Assets/Shops/HarborShop/HarborListView.cs"
+"Assets/UIWidgets/Sample Assets/Shops/HarborShop/HarborListViewComponent.cs"
+"Assets/UIWidgets/Sample Assets/Shops/HarborShop/HarborOrder.cs"
+"Assets/UIWidgets/Sample Assets/Shops/HarborShop/HarborOrderLine.cs"
+"Assets/UIWidgets/Sample Assets/Shops/HarborShop/HarborShop.cs"
+"Assets/UIWidgets/Sample Assets/Shops/IOrder.cs"
+"Assets/UIWidgets/Sample Assets/Shops/IOrderLine.cs"
+"Assets/UIWidgets/Sample Assets/Shops/Item.cs"
+"Assets/UIWidgets/Sample Assets/Shops/JRPGShop/JRPGOrder.cs"
+"Assets/UIWidgets/Sample Assets/Shops/JRPGShop/JRPGOrderLine.cs"
+"Assets/UIWidgets/Sample Assets/Shops/JRPGShop/JRPGShop.cs"
+"Assets/UIWidgets/Sample Assets/Shops/JRPGShop/TraderListView.cs"
+"Assets/UIWidgets/Sample Assets/Shops/JRPGShop/TraderListViewComponent.cs"
+"Assets/UIWidgets/Sample Assets/Shops/Prices.cs"
+"Assets/UIWidgets/Sample Assets/Shops/ResultOrderLine.cs"
+"Assets/UIWidgets/Sample Assets/Shops/Trader.cs"
+"Assets/UIWidgets/Sample Assets/StandaloneExit.cs"
+"Assets/UIWidgets/Sample Assets/SwitchTest.cs"
+"Assets/UIWidgets/Sample Assets/Table/SteamSpyComponent.cs"
+"Assets/UIWidgets/Sample Assets/Table/SteamSpyItem.cs"
+"Assets/UIWidgets/Sample Assets/Table/SteamSpyView.cs"
+"Assets/UIWidgets/Sample Assets/Table/Table.cs"
+"Assets/UIWidgets/Sample Assets/Table/TableCell.cs"
+"Assets/UIWidgets/Sample Assets/Table/TableRow.cs"
+"Assets/UIWidgets/Sample Assets/Table/TableRowComponent.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/ListViewSaveIndicies.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/LocalizationSample.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/SampleFilter.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/SmokeTest.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestColorPicker.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestColorPickerRange.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestFolderRenamed/TestScriptRenamed.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestListView.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestListViewPerformance.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestListViewSlider.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestNotify.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestPaginator.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestScrollRectEvents.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestSpinnerFloat.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TestTreeView.cs"
+"Assets/UIWidgets/Sample Assets/TestScripts/TreeViewListeners.cs"
+"Assets/UIWidgets/Sample Assets/TestTabs.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewComponentSample.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewIcons.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewIconsDataSource.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewIconsLayoutWidthExtender.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewIconsTest.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewItemSample.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewResizeHelper.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewSample.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewSampleDataSource.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewSampleDragSupport.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewSampleDropSupport.cs"
+"Assets/UIWidgets/Sample Assets/TileView/TileViewToggleDirection.cs"
+"Assets/UIWidgets/Sample Assets/ToDoList/ToDoListView.cs"
+"Assets/UIWidgets/Sample Assets/ToDoList/ToDoListViewComponent.cs"
+"Assets/UIWidgets/Sample Assets/ToDoList/ToDoListViewItem.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewCheckboxes/TestTreeViewCheckboxes.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewCheckboxes/TreeViewCheckboxes.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewCheckboxes/TreeViewCheckboxesComponent.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewCheckboxes/TreeViewCheckboxesItem.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewSample.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewSampleComponent.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewSampleData.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewSampleItem.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewSampleItemContinent.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewSampleItemCountry.cs"
+"Assets/UIWidgets/Sample Assets/TreeView/TreeViewToggle/TreeViewToggleComponent.cs"
+"Assets/UIWidgets/Sample Assets/UITestSamples.cs"
+"Assets/UIWidgets/Standart Assets/Accordion/Accordion.cs"
+"Assets/UIWidgets/Standart Assets/Accordion/AccordionEvent.cs"
+"Assets/UIWidgets/Standart Assets/Accordion/AccordionItem.cs"
+"Assets/UIWidgets/Standart Assets/Accordion/AccordionItemComponent.cs"
+"Assets/UIWidgets/Standart Assets/Autocomplete/Autocomplete.cs"
+"Assets/UIWidgets/Standart Assets/Autocomplete/AutocompleteCustom.cs"
+"Assets/UIWidgets/Standart Assets/Autocomplete/AutocompleteDataSource.cs"
+"Assets/UIWidgets/Standart Assets/Autocomplete/AutocompleteIcons.cs"
+"Assets/UIWidgets/Standart Assets/CenteredSlider/CenteredSlider.cs"
+"Assets/UIWidgets/Standart Assets/CenteredSlider/CenteredSliderBase.cs"
+"Assets/UIWidgets/Standart Assets/CenteredSlider/CenteredSliderVertical.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorHSV.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPicker.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPickerABlock.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPickerColorBlock.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPickerHSVBlock.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPickerHSVPalette.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPickerRGBBlock.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPickerRGBPalette.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/ColorPickerRange.cs"
+"Assets/UIWidgets/Standart Assets/ColorPicker/IColorPickerBlock.cs"
+"Assets/UIWidgets/Standart Assets/Combobox/Combobox.cs"
+"Assets/UIWidgets/Standart Assets/Combobox/ComboboxCustom.cs"
+"Assets/UIWidgets/Standart Assets/Combobox/ComboboxIcons.cs"
+"Assets/UIWidgets/Standart Assets/Combobox/ComboboxIconsItemComponent.cs"
+"Assets/UIWidgets/Standart Assets/Connector/ConnectorBase.cs"
+"Assets/UIWidgets/Standart Assets/Connector/ConnectorLine.cs"
+"Assets/UIWidgets/Standart Assets/Connector/MultipleConnector.cs"
+"Assets/UIWidgets/Standart Assets/Connector/SingleConnector.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/BringToFront.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/Dialog.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/DialogActions.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/DialogButtonComponent.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/DialogButtonComponentBase.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/DialogInfo.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/DialogInfoBase.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/Picker.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/PickerIcons.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/PickerInt.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/PickerString.cs"
+"Assets/UIWidgets/Standart Assets/Dialog/Popup.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/BaseDragSupport.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/DragSupport.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/IDropSupport.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/ListViewDropIndicator.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/ListViewIconsDragSupport.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/ListViewIconsDropSupport.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/TreeViewDropSupport.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/TreeViewNodeDragSupport.cs"
+"Assets/UIWidgets/Standart Assets/Drag-and-Drop/TreeViewNodeDropSupport.cs"
+"Assets/UIWidgets/Standart Assets/Draggable/Draggable.cs"
+"Assets/UIWidgets/Standart Assets/Draggable/DraggableHandle.cs"
+"Assets/UIWidgets/Standart Assets/Draggable/OnDragKeepSelected.cs"
+"Assets/UIWidgets/Standart Assets/Draggable/OnDragListener.cs"
+"Assets/UIWidgets/Standart Assets/EasyLayout/EasyLayout.cs"
+"Assets/UIWidgets/Standart Assets/EasyLayout/EasyLayoutCompact.cs"
+"Assets/UIWidgets/Standart Assets/EasyLayout/EasyLayoutExtensions.cs"
+"Assets/UIWidgets/Standart Assets/EasyLayout/EasyLayoutGrid.cs"
+"Assets/UIWidgets/Standart Assets/EasyLayout/EasyLayoutUtilites.cs"
+"Assets/UIWidgets/Standart Assets/ITemplatable.cs"
+"Assets/UIWidgets/Standart Assets/LayoutSwitcher/LayoutSwitcher.cs"
+"Assets/UIWidgets/Standart Assets/LayoutSwitcher/UILayout.cs"
+"Assets/UIWidgets/Standart Assets/LayoutSwitcher/UIPosition.cs"
+"Assets/UIWidgets/Standart Assets/ListView/EasyLayoutBridge.cs"
+"Assets/UIWidgets/Standart Assets/ListView/IItemHeight.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ILayoutBridge.cs"
+"Assets/UIWidgets/Standart Assets/ListView/IListViewItemHeight.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListView.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewBase.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewCustom.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewCustomHeight.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewGameObjects.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewHeight.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewIcons.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewIconsItemComponent.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewInt/ListViewInt.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewInt/ListViewIntComponent.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewInt/ListViewIntComponentBase.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewItem.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewItemEventData.cs"
+"Assets/UIWidgets/Standart Assets/ListView/ListViewStringComponent.cs"
+"Assets/UIWidgets/Standart Assets/ListView/StandardLayoutBridge.cs"
+"Assets/UIWidgets/Standart Assets/Listeners/TransformListener.cs"
+"Assets/UIWidgets/Standart Assets/Notify/Notify.cs"
+"Assets/UIWidgets/Standart Assets/Notify/NotifyInfoBase.cs"
+"Assets/UIWidgets/Standart Assets/Notify/NotifySequenceManager.cs"
+"Assets/UIWidgets/Standart Assets/Progressbar.cs"
+"Assets/UIWidgets/Standart Assets/RangeSlider/RangeSlider.cs"
+"Assets/UIWidgets/Standart Assets/RangeSlider/RangeSliderBase.cs"
+"Assets/UIWidgets/Standart Assets/RangeSlider/RangeSliderFloat.cs"
+"Assets/UIWidgets/Standart Assets/RangeSlider/RangeSliderFloatVertical.cs"
+"Assets/UIWidgets/Standart Assets/RangeSlider/RangeSliderHandle.cs"
+"Assets/UIWidgets/Standart Assets/RangeSlider/RangeSliderVertical.cs"
+"Assets/UIWidgets/Standart Assets/Resizable/Resizable.cs"
+"Assets/UIWidgets/Standart Assets/Resizable/ResizableHeader.cs"
+"Assets/UIWidgets/Standart Assets/Resizable/ResizableHeaderCell.cs"
+"Assets/UIWidgets/Standart Assets/Resizable/ResizableHeaderDragCell.cs"
+"Assets/UIWidgets/Standart Assets/Resizable/Splitter.cs"
+"Assets/UIWidgets/Standart Assets/ScrollRectUtilites/ListViewPaginator.cs"
+"Assets/UIWidgets/Standart Assets/ScrollRectUtilites/ScrollRectEvents.cs"
+"Assets/UIWidgets/Standart Assets/ScrollRectUtilites/ScrollRectPage.cs"
+"Assets/UIWidgets/Standart Assets/ScrollRectUtilites/ScrollRectPageWithNumber.cs"
+"Assets/UIWidgets/Standart Assets/ScrollRectUtilites/ScrollRectPaginator.cs"
+"Assets/UIWidgets/Standart Assets/ScrollRectUtilites/ScrollRectRestrictedDrag.cs"
+"Assets/UIWidgets/Standart Assets/SlideBlock/SlideBlock.cs"
+"Assets/UIWidgets/Standart Assets/SlideBlock/SlideBlockHandle.cs"
+"Assets/UIWidgets/Standart Assets/Spinner/Spinner.cs"
+"Assets/UIWidgets/Standart Assets/Spinner/SpinnerBase.cs"
+"Assets/UIWidgets/Standart Assets/Spinner/SpinnerFloat.cs"
+"Assets/UIWidgets/Standart Assets/Switch/Switch.cs"
+"Assets/UIWidgets/Standart Assets/Switch/SwitchGroup.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/Tab.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabButton.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabButtonComponent.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabButtonComponentBase.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabIconActiveButton.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabIconButton.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabIconButtonBase.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabIconDefaultButton.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabIcons.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/Tabs.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabsCustom.cs"
+"Assets/UIWidgets/Standart Assets/Tabs/TabsIcons.cs"
+"Assets/UIWidgets/Standart Assets/Templates.cs"
+"Assets/UIWidgets/Standart Assets/TileView/TileView.cs"
+"Assets/UIWidgets/Standart Assets/TileView/TileViewScrollRectFitter.cs"
+"Assets/UIWidgets/Standart Assets/Tooltip.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/ListNode.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeNode.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeNodeToggle.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeView.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeViewComponent.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeViewComponentBase.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeViewCustom.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeViewDataSource.cs"
+"Assets/UIWidgets/Standart Assets/TreeView/TreeViewItem.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/Animations.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ButtonAdvanced.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ComparisonCompare.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/DragRedirect.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/Extensions.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ICollectionChanged.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ICollectionItemChanged.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/IInputFieldProxy.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/IObservable.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/IObservableList.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ImageAdvanced.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/InputFieldListener.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/InputFieldProxy.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ModalHelper.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ObservableList.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/ResizeListener.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/SelectListener.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/SelectableHelper.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/SlideUp.cs"
+"Assets/UIWidgets/Standart Assets/Utilites/Utilites.cs"
+-r:"D:\Program Files\Unity5_6_5f1\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"D:\Program Files\Unity5_6_5f1\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
+-r:"D:\Program Files\Unity5_6_5f1\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
+-r:"D:\Program Files\Unity5_6_5f1\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
+-r:"D:\Program Files\Unity5_6_5f1\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

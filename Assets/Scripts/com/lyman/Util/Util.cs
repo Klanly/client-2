@@ -33,7 +33,7 @@ public class Util
     {
         if (childName == null)
             return null;
-        Transform child = parent.FindChild(childName);
+        Transform child = parent.Find(childName);
         if (child == null)
         {
             for (int i = 0; i < parent.childCount; i++)

@@ -14,7 +14,7 @@ public class ConfigManager
     //场景资源配置
     private static Dictionary<string, SceneInfo> sceneResConfigInfos = new Dictionary<string, SceneInfo>();
 
-    private static void ParseSceneConfig(string sceneName,XmlNodeList nodeList)
+    private static void ParseSceneConfig(string sceneName, XmlNodeList nodeList)
     {
         if (nodeList == null)
         {
@@ -31,7 +31,7 @@ public class ConfigManager
             XmlElement child = childList[j] as XmlElement;
             string nn = child.GetAttribute("n");
             string value = child.InnerXml;
-            
+
             if (nn == "G")
             {
                 string[] values = value.Split(',');
@@ -58,6 +58,8 @@ public class ConfigManager
         sceneResConfigInfos.Add(sceneName, sceneInfo);
     }
 
+
+   
     //获取场景资源配置信息
     public static SceneInfo GetSceneConfigInfo(string sceneName,bool getByFile = false)
     {
@@ -263,6 +265,7 @@ public class ConfigManager
     }
 
 
+    //获取副本配置信息
     private static Dictionary<string, CopyInfo> copyInfos = new Dictionary<string, CopyInfo>();
     public static CopyInfo GetCopyInfo(string copyName, bool isEditor = false)
     {

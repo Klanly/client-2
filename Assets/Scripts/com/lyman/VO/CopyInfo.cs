@@ -6,6 +6,6 @@ public class CopyInfo
 {
     public string Name;
     public string ResName;
-    public int NPCNumber;
+    public int NpcNumber;
     public List<NpcInfo> NPCList = new List<NpcInfo>();
 }

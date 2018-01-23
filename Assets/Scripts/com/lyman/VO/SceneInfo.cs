@@ -8,7 +8,7 @@ public class SceneInfo
     private string gridsContent = string.Empty;
     private string sceneName = string.Empty;
     private GameObjectInfo terrainInfo;
-    private List<GameObjectInfo> GameObjectInfos = new List<GameObjectInfo>();
+    private List<GameObjectInfo> gameObjectInfos = new List<GameObjectInfo>();
     
     private int xLength;
     private int zLength;
@@ -31,6 +31,11 @@ public class SceneInfo
     private float harfGridSize = gridSize / 2f;
 
 
+    public List<GameObjectInfo> GameObjectInfos
+    {
+        get { return gameObjectInfos; }
+    }
+
     public void AddGameObjectInfo(GameObjectInfo gameObjectInfo)
     {
         if (gameObjectInfo == null) return;
@@ -40,7 +45,7 @@ public class SceneInfo
         }
         else
         {
-            GameObjectInfos.Add(gameObjectInfo);
+            gameObjectInfos.Add(gameObjectInfo);
         }
     }
 
@@ -143,12 +148,12 @@ public class SceneInfo
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.Append("<?xml version='1.0' encoding='utf-8'?>\n");
         stringBuilder.Append("<table n='SceneConfig'>\n");
-        GameObjectInfos.Add(terrainInfo);
-        int length = GameObjectInfos.Count;
+        gameObjectInfos.Add(terrainInfo);
+        int length = gameObjectInfos.Count;
         for (int i = 0; i < length; ++i)
         {
             stringBuilder.Append("\t");
-            GameObjectInfo gameObjectInfo = GameObjectInfos[i];
+            GameObjectInfo gameObjectInfo = gameObjectInfos[i];
             stringBuilder.Append(gameObjectInfo.ToXMLString());
             stringBuilder.Append("\n");
         }
