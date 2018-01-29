@@ -54,12 +54,7 @@ public class ResourceManager
         }
         return null;
     }
-
-
-
-
-
-
+    
     public static string GetText(string abPath, string assetName)
     {
         if (abManager != null)

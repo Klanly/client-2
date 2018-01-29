@@ -5,11 +5,16 @@ using System;
 using System.Text;
 public class SceneInfo
 {
+    
+
     private string gridsContent = string.Empty;
     private string sceneName = string.Empty;
     private GameObjectInfo terrainInfo;
-    private List<GameObjectInfo> gameObjectInfos = new List<GameObjectInfo>();
-    
+    private List<GameObjectInfo> things = new List<GameObjectInfo>();
+    private List<GameObjectInfo> effects = new List<GameObjectInfo>();
+
+
+
     private int xLength;
     private int zLength;
     private float harfXLength;
@@ -31,9 +36,14 @@ public class SceneInfo
     private float harfGridSize = gridSize / 2f;
 
 
-    public List<GameObjectInfo> GameObjectInfos
+    public List<GameObjectInfo> Things
     {
-        get { return gameObjectInfos; }
+        get { return things; }
+    }
+
+    public List<GameObjectInfo> Effects
+    {
+        get { return effects; }
     }
 
     public void AddGameObjectInfo(GameObjectInfo gameObjectInfo)
@@ -43,9 +53,13 @@ public class SceneInfo
         {
             terrainInfo = gameObjectInfo;
         }
+        else if (gameObjectInfo.Type == GameObjectTypes.Effect)
+        {
+            effects.Add(gameObjectInfo);
+        }
         else
         {
-            gameObjectInfos.Add(gameObjectInfo);
+            things.Add(gameObjectInfo);
         }
     }
 
@@ -148,12 +162,21 @@ public class SceneInfo
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.Append("<?xml version='1.0' encoding='utf-8'?>\n");
         stringBuilder.Append("<table n='SceneConfig'>\n");
-        gameObjectInfos.Add(terrainInfo);
-        int length = gameObjectInfos.Count;
+        things.Add(terrainInfo);
+        GameObjectInfo gameObjectInfo = null;
+        int length = things.Count;
         for (int i = 0; i < length; ++i)
         {
             stringBuilder.Append("\t");
-            GameObjectInfo gameObjectInfo = gameObjectInfos[i];
+            gameObjectInfo = things[i];
+            stringBuilder.Append(gameObjectInfo.ToXMLString());
+            stringBuilder.Append("\n");
+        }
+        length = effects.Count;
+        for (int i = 0; i < length; ++i)
+        {
+            stringBuilder.Append("\t");
+            gameObjectInfo = effects[i];
             stringBuilder.Append(gameObjectInfo.ToXMLString());
             stringBuilder.Append("\n");
         }
@@ -173,8 +196,26 @@ public class SceneInfo
 
 public class GameObjectInfo
 {
+
+    private static int index = 0;
+
+    public static int Index
+    {
+        get
+        {
+            index++;
+            return index;
+        }
+    }
+
+    public  GameObjectInfo()
+    {
+        myIndex = Index;
+    }
+
     public bool IsTerrain = false;
-    public string GameObjectName;
+    public string PrefabName;
+    public int myIndex;
     public float X;
     public float Y;
     public float Z;
@@ -204,6 +245,7 @@ public class GameObjectInfo
     public int CollingMask;
     
 
+
     public int Type
     {
         get { return type; }
@@ -218,7 +260,7 @@ public class GameObjectInfo
     {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.Append("<a n='G'>");
-        stringBuilder.Append(GameObjectName);
+        stringBuilder.Append(PrefabName);
         stringBuilder.Append(",");
         stringBuilder.Append(IsTerrain ? "1" : "0");
         stringBuilder.Append(",");

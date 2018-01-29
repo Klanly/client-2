@@ -35,7 +35,7 @@ public class ConfigManager
             if (nn == "G")
             {
                 string[] values = value.Split(',');
-                gameObjectInfo.GameObjectName = values[0];
+                gameObjectInfo.PrefabName = values[0];
                 gameObjectInfo.IsTerrain = values[1] == "1" ? true : false;
                 gameObjectInfo.X = float.Parse(values[2]);
                 gameObjectInfo.Y = float.Parse(values[3]);

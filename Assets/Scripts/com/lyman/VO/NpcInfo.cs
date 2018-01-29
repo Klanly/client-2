@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NpcInfo
 {
-    
+    public int type;
+    public string PrefabName;
+
 	
 }

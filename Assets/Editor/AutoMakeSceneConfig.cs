@@ -322,7 +322,7 @@ public class AutoMakeSceneConfig
         if (ts == null) return null;
         GameObjectInfo gameObjectInfo = new GameObjectInfo();
         gameObjectInfo.Type = type;
-        gameObjectInfo.GameObjectName = ts.gameObject.name;
+        gameObjectInfo.PrefabName = ts.gameObject.name;
         gameObjectInfo.X = ts.position.x;
         gameObjectInfo.Y = ts.position.y;
         gameObjectInfo.Z = ts.position.z;

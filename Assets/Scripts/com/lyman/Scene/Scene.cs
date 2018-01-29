@@ -7,6 +7,7 @@ public class Scene
     private string name = string.Empty;
     private SceneInfo sceneInfo;
     private float distance;
+   
     public void Init(SceneInfo sInfo)
     {
         sceneInfo = sInfo;
@@ -34,9 +35,19 @@ public class SceneThing
     private GameObjectInfo gameObjectInfo;
     private GameObject gameObject;
     private bool isHide = true;
+    private string abPath;
+    private bool isDestroy;
     public void Init(GameObjectInfo goInfo)
     {
         gameObjectInfo = goInfo;
+        if (gameObjectInfo.Type == GameObjectTypes.Effect)
+        {
+            abPath = GameConst.SceneEffectABDirectory + "/" + gameObjectInfo.PrefabName;
+        }
+        else
+        {
+            abPath = GameConst.SceneModelABDirectory + "/" + gameObjectInfo.PrefabName;
+        }
     }
 
     public void Show()
@@ -48,12 +59,23 @@ public class SceneThing
         }
         else
         {
-            
-            //ResourceManager.CreateAssetBundleAsync()
+            ResourceManager.CreateAssetBundleAsync(abPath, OnCreateCompleteHandler);
         }
     }
 
+    private void OnCreateCompleteHandler()
+    {
+        gameObject = ResourceManager.GetGameObjectInstance(abPath, gameObjectInfo.PrefabName);
+        if (isHide)
+        {
+            Hide();
+        }
+        else
+        {
+            //显示出来
 
+        }
+    }
 
 
     public void Hide()
@@ -69,6 +91,11 @@ public class SceneThing
     public void Clear()
     {
         Hide();
+    }
+
+    public void Destroy()
+    {
+        isDestroy = true;
     }
 
 }

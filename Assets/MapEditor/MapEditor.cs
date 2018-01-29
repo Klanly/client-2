@@ -46,6 +46,5 @@ public class MapEditor : MonoBehaviour
     void Update()
     {
         TimerManager.Update(Time.deltaTime);
-
     }
 }
