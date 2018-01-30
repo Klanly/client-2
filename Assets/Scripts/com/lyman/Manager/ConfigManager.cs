@@ -277,14 +277,14 @@ public class ConfigManager
             XmlNodeList xmlnode = GetXML(name, isEditor);
             if (xmlnode != null)
             {
-                ParseCopyInfo(xmlnode);
+                ParseCopyInfo(copyName,xmlnode);
                 copyInfos.TryGetValue(copyName, out copyInfo);
             }
         }
         return copyInfo;
     }
 
-    private static void ParseCopyInfo(XmlNodeList nodeList)
+    private static void ParseCopyInfo(string copyName ,XmlNodeList nodeList)
     {
         if (nodeList == null)
         {
@@ -311,7 +311,7 @@ public class ConfigManager
                     break;
             }
         }
-        copyInfos.Add(copyInfo.Name, copyInfo);
+        copyInfos.Add(copyName, copyInfo);
         
     }
 

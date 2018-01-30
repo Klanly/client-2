@@ -322,7 +322,7 @@ public class AutoMakeSceneConfig
         if (ts == null) return null;
         GameObjectInfo gameObjectInfo = new GameObjectInfo();
         gameObjectInfo.Type = type;
-        gameObjectInfo.PrefabName = ts.gameObject.name;
+        gameObjectInfo.PrefabName = ts.gameObject.name.ToLower();
         gameObjectInfo.X = ts.position.x;
         gameObjectInfo.Y = ts.position.y;
         gameObjectInfo.Z = ts.position.z;
@@ -396,7 +396,7 @@ public class AutoMakeSceneConfig
     {
         string content = sceneInfo.ToXMLString();
         string name = Path.GetFileNameWithoutExtension(path);
-        path = Application.dataPath + "/ArtAssets/prefabs/configs/" + name + ".xml";
+        path = Application.dataPath + "/ArtAssets/prefabs/configs/map_res/" + name + ".xml";
 
         if (File.Exists(path))
         {

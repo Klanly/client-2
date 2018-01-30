@@ -6,7 +6,7 @@ public class MapEditor : MonoBehaviour
 {
     private ModelList modelList;
     private CopyInfoView copyInfoView;
-
+    private Scene scene;
     void Start ()
     {
         ResourceManager.Init();
@@ -38,6 +38,11 @@ public class MapEditor : MonoBehaviour
             {
                 //开始加载地图
                 copyInfoView.Show(copyInfo,sceneInfo);
+                if (scene == null)
+                {
+                    scene = new Scene();
+                    scene.Init(sceneInfo);
+                }
             }
         }
     }

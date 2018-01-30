@@ -53,23 +53,26 @@ public class Packager
     }
 
     //重命名文件
-    //[MenuItem("GameTools/Rename", false, 4)]
-    //public static void ReName()
-    //{
-    //    string path = Application.dataPath + "/ArtAssets/prefabs/sounds/ui";
-    //    DirectoryInfo fileDirInfo = new DirectoryInfo(path);
-    //    FileInfo[] fileInfos = fileDirInfo.GetFiles();
-    //    foreach (FileInfo fileInfo in fileInfos)
-    //    {
-    //        if (fileInfo.FullName.EndsWith(".mp3") || fileInfo.FullName.EndsWith(".ogg"))
-    //        {
-    //            string lowName = fileInfo.Name.ToLower();
-    //            string fullPath = fileInfo.FullName.Replace(fileInfo.Name, lowName);
-    //            UnityEngine.Debug.Log("fileInfo.FullName:" + fileInfo.Name);
-    //            fileInfo.MoveTo(Path.Combine(fileInfo.DirectoryName, fullPath));
-    //        }
-    //    }
-    //}
+    [MenuItem("GameTools/Rename", false, 4)]
+    public static void ReName()
+    {
+        //string path = Application.dataPath + "/ArtAssets/prefabs/sounds/ui";
+
+        //string path = Application.dataPath + "/ArtAssets/prefabs/models/scene/wooden_cask";
+
+        //DirectoryInfo fileDirInfo = new DirectoryInfo(path);
+        //FileInfo[] fileInfos = fileDirInfo.GetFiles();
+        //foreach (FileInfo fileInfo in fileInfos)
+        //{
+        //    if (fileInfo.FullName.EndsWith(".prefab"))
+        //    {
+        //        string lowName = fileInfo.Name.ToLower();
+        //        string fullPath = fileInfo.FullName.Replace(fileInfo.Name, lowName);
+        //        UnityEngine.Debug.Log("fileInfo.FullName:" + fileInfo.Name);
+        //        fileInfo.MoveTo(Path.Combine(fileInfo.DirectoryName, fullPath));
+        //    }
+        //}
+    }
 
 
     /// <summary>
@@ -99,8 +102,10 @@ public class Packager
         SetFontABNameWithMeta();
         SetSoundsABNameWithMeta();
         SetUITexturesABName();
+        
     }
 
+    
     private static List<string> importSetting = new List<string>();
 
 
@@ -309,8 +314,28 @@ public class Packager
         SetModelABName(path, "characters");
         path = Application.dataPath + "/ArtAssets/prefabs/models/equipments/";
         SetModelABName(path, "equipments");
-        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/";
+        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/building";
         SetModelABName(path, "scene");
+
+        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/collider";
+        SetModelABName(path, "scene");
+
+        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/light";
+        SetModelABName(path, "scene");
+
+        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/stone";
+        SetModelABName(path, "scene");
+
+        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/terrain";
+        SetModelABName(path, "scene");
+
+        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/tree";
+        SetModelABName(path, "scene");
+
+        path = Application.dataPath + "/ArtAssets/prefabs/models/scene/wooden_cask";
+        SetModelABName(path, "scene");
+
+        
         AssetDatabase.Refresh();
     }
 

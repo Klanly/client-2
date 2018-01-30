@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2351595713
+CRC: 3807612283
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -2476,4 +2476,121 @@ AssetBundleManifest:
       Dependencies: {}
     Info_822:
       Name: effects/fight/tx_army_magician_hit3_001.assetbundle
+      Dependencies: {}
+    Info_823:
+      Name: models/scene/capsule.assetbundle
+      Dependencies: {}
+    Info_824:
+      Name: models/scene/sc_yonghengsenlin_32.assetbundle
+      Dependencies: {}
+    Info_825:
+      Name: models/scene/sc_yonghengsenlin_01.assetbundle
+      Dependencies: {}
+    Info_826:
+      Name: models/scene/sc_yonghengsenlin_35.assetbundle
+      Dependencies: {}
+    Info_827:
+      Name: models/scene/sc_bingfengyiji_11.assetbundle
+      Dependencies: {}
+    Info_828:
+      Name: models/scene/sphere.assetbundle
+      Dependencies: {}
+    Info_829:
+      Name: models/scene/sc_bingfengyiji_shitou04.assetbundle
+      Dependencies: {}
+    Info_830:
+      Name: models/scene/sc_yonghengsenlin_fb01_05.assetbundle
+      Dependencies: {}
+    Info_831:
+      Name: models/scene/sc_bingfengyiji_15.assetbundle
+      Dependencies: {}
+    Info_832:
+      Name: models/scene/sc_yonghengsenlin_37.assetbundle
+      Dependencies: {}
+    Info_833:
+      Name: models/scene/sc_bingfengyiji_14.assetbundle
+      Dependencies: {}
+    Info_834:
+      Name: models/scene/sc_bingfengyiji_shitou03.assetbundle
+      Dependencies: {}
+    Info_835:
+      Name: models/scene/sc_yonghengsenlin_31.assetbundle
+      Dependencies: {}
+    Info_836:
+      Name: models/scene/sc_bingfengyiji_shitou07.assetbundle
+      Dependencies: {}
+    Info_837:
+      Name: models/scene/sc_bingfengyiji_03.assetbundle
+      Dependencies: {}
+    Info_838:
+      Name: models/scene/sc_yonghengsenlin_05.assetbundle
+      Dependencies: {}
+    Info_839:
+      Name: models/scene/sc_bingfengyiji_shitou02.assetbundle
+      Dependencies: {}
+    Info_840:
+      Name: models/scene/sc_bingfengyiji_04.assetbundle
+      Dependencies: {}
+    Info_841:
+      Name: models/scene/sc_bingfengyiji_shitou06.assetbundle
+      Dependencies: {}
+    Info_842:
+      Name: models/scene/sc_yonghengsenlin_24.assetbundle
+      Dependencies: {}
+    Info_843:
+      Name: models/scene/sc_yonghengsenlin_21.assetbundle
+      Dependencies: {}
+    Info_844:
+      Name: models/scene/sc_bingfengyiji_01.assetbundle
+      Dependencies: {}
+    Info_845:
+      Name: models/scene/directionalight.assetbundle
+      Dependencies: {}
+    Info_846:
+      Name: models/scene/sc_yonghengsenlin_03.assetbundle
+      Dependencies: {}
+    Info_847:
+      Name: models/scene/cube.assetbundle
+      Dependencies: {}
+    Info_848:
+      Name: models/scene/sc_yonghengsenlin_09.assetbundle
+      Dependencies: {}
+    Info_849:
+      Name: models/scene/sc_bingfengyiji_13.assetbundle
+      Dependencies: {}
+    Info_850:
+      Name: models/scene/sc_bingfengyiji_shitou05.assetbundle
+      Dependencies: {}
+    Info_851:
+      Name: models/scene/sc_yonghengsenlin_30.assetbundle
+      Dependencies: {}
+    Info_852:
+      Name: models/scene/sc_bingfengyiji_09.assetbundle
+      Dependencies: {}
+    Info_853:
+      Name: models/scene/sc_yonghengsenlin_36.assetbundle
+      Dependencies: {}
+    Info_854:
+      Name: models/scene/sc_bingfengyiji_12.assetbundle
+      Dependencies: {}
+    Info_855:
+      Name: models/scene/cylinder.assetbundle
+      Dependencies: {}
+    Info_856:
+      Name: models/scene/sc_yonghengsenlin_12.assetbundle
+      Dependencies: {}
+    Info_857:
+      Name: models/scene/sc_bingfengyiji_terrain.assetbundle
+      Dependencies: {}
+    Info_858:
+      Name: models/scene/sc_bingfengyiji_07.assetbundle
+      Dependencies: {}
+    Info_859:
+      Name: models/scene/sc_bingfengyiji_10.assetbundle
+      Dependencies: {}
+    Info_860:
+      Name: models/scene/sc_yonghengsenlin_34.assetbundle
+      Dependencies: {}
+    Info_861:
+      Name: models/scene/sc_yonghengsenlin_38.assetbundle
       Dependencies: {}

@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 343258838
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 240bf243b036466f035e4dd5cbc4cf16
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a98348999420ce9a36b92fe2d6aff9fa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAssets/prefabs/models/scene/terrain/sc_bingfengyiji_terrain.prefab
+Dependencies: []

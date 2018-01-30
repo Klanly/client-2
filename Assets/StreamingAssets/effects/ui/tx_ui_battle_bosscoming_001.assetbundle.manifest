@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 564331030
+CRC: 1574348805
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0443e0cb3ac537cc7817cbf2a2d97c3e
+    Hash: 53f23fb0ccd8e49e5318c3517b285b21
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 8662af036071b556da2493ead20447af
+    Hash: 9610c5615105bdc30d16be3639cb4748
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -38,4 +38,4 @@ ClassTypes:
 Assets:
 - Assets/ArtAssets/prefabs/effects/ui/tx_ui_battle_bosscoming_001.prefab
 Dependencies:
-- F:/client/client/Assets/StreamingAssets/ui/textures/common.assetbundle
+- F:/github/client/Assets/StreamingAssets/ui/textures/common.assetbundle
