@@ -28,6 +28,7 @@ public class ResourceManager
     //异步创建,建议优先使用
     public static void CreateAssetBundleAsync(string abPath, Action onCompleteHandler)
     {
+
         abManager.LoadAssetBundleAsync(abPath, onCompleteHandler);
     }
 

@@ -17,8 +17,9 @@ public class MapEditor : MonoBehaviour
         modelList.Init(gameObject.transform.Find("copyList").gameObject, DataManager.GetCopyList());
         copyInfoView = new CopyInfoView();
         copyInfoView.Init(GameObject.Find("copyInfoList").transform);
+        
     }
-
+    
     private void OnCopySelectedHandler(string copyName)
     {
         Debug.Log(copyName);

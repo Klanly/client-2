@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Text;
+using System.IO;
 public class SceneInfo
 {
     
@@ -12,7 +13,7 @@ public class SceneInfo
     private GameObjectInfo terrainInfo;
     private List<GameObjectInfo> things = new List<GameObjectInfo>();
     private List<GameObjectInfo> effects = new List<GameObjectInfo>();
-
+    private List<GameObjectInfo> allGameObjectInfos = new List<GameObjectInfo>();
 
 
     private int xLength;
@@ -49,6 +50,7 @@ public class SceneInfo
     public void AddGameObjectInfo(GameObjectInfo gameObjectInfo)
     {
         if (gameObjectInfo == null) return;
+        allGameObjectInfos.Add(gameObjectInfo);
         if (gameObjectInfo.IsTerrain)
         {
             terrainInfo = gameObjectInfo;
@@ -181,16 +183,40 @@ public class SceneInfo
             stringBuilder.Append("\n");
         }
 
-        //stringBuilder.Append("\t");
-        //stringBuilder.Append("<a n='GS'>");
-        //stringBuilder.Append(gridsContent);
-        //stringBuilder.Append("</a>");
-        //stringBuilder.Append("\n");
+        stringBuilder.Append("\t");
+        stringBuilder.Append("<a n='GS'>");
+        stringBuilder.Append(gridsContent);
+        stringBuilder.Append("</a>");
+        stringBuilder.Append("\n");
 
         stringBuilder.Append("</table>");
         return stringBuilder.ToString();
     }
 
+    public byte[] GameObjectsToBytes()
+    {
+        ByteBuffer byteBuffer = new ByteBuffer();
+        things.Add(terrainInfo);
+        GameObjectInfo gameObjectInfo = null;
+        Byte[] bytes;
+        int length = allGameObjectInfos.Count;
+        byteBuffer.WriteUShort((ushort)(length));
+
+        for (int i = 0; i < length; ++i)
+        {
+            gameObjectInfo = allGameObjectInfos[i];
+            bytes = gameObjectInfo.ToBytes();
+            byteBuffer.WriteInt(bytes.Length);
+            byteBuffer.WriteBytes(bytes);
+        }
+        return byteBuffer.ToBytes();
+    }
+
+    public void GridsToBytes()
+    {
+
+    }
+        
 
 }
 
@@ -304,6 +330,60 @@ public class GameObjectInfo
         }
         stringBuilder.Append("</a>");
         return stringBuilder.ToString();
+    }
+
+    public byte[] ToBytes()
+    {
+        ByteBuffer byteBuffer = new ByteBuffer();
+        byteBuffer.WriteByte((Byte)PrefabName.Length);
+        byteBuffer.WriteString(PrefabName);
+
+        byteBuffer.WriteInt((int)(X * 100f));
+        byteBuffer.WriteInt((int)(Y * 100f));
+        byteBuffer.WriteInt((int)(Z * 100f));
+
+        byteBuffer.WriteShort((short)(RotationX * 100f));
+        byteBuffer.WriteShort((short)(RotationX * 100f));
+        byteBuffer.WriteShort((short)(RotationX * 100f));
+
+
+        byteBuffer.WriteShort((short)(ScaleX * 100f));
+        byteBuffer.WriteShort((short)(ScaleY * 100f));
+        byteBuffer.WriteShort((short)(ScaleZ * 100f));
+
+        byteBuffer.WriteByte((Byte)(type));
+        if (type != GameObjectTypes.Block) return byteBuffer.ToBytes();
+        byteBuffer.WriteByte((Byte)(ColliderType));
+        byteBuffer.WriteShort((Byte)(Radius*100f));
+        if (ColliderType == ColliderTypes.CapsuleCollider)
+            byteBuffer.WriteShort((Byte)(Height*100f));
+
+        return byteBuffer.ToBytes();
+    }
+
+    public void ParseByBytes(byte[] bytes)
+    {
+        ByteBuffer byteBuffer = new ByteBuffer(bytes);
+        byte length = byteBuffer.ReadByte();
+        PrefabName = byteBuffer.ReadString((int)length);
+        X = (float)byteBuffer.ReadInt32() / 100f;
+        Y = (float)byteBuffer.ReadInt32() / 100f;
+        Z = (float)byteBuffer.ReadInt32() / 100f;
+
+        RotationX = (float)byteBuffer.ReadShort() / 100f;
+        RotationY = (float)byteBuffer.ReadShort() / 100f;
+        RotationZ = (float)byteBuffer.ReadShort() / 100f;
+
+        ScaleX = (float)byteBuffer.ReadShort() / 100f;
+        ScaleY = (float)byteBuffer.ReadShort() / 100f;
+        ScaleZ = (float)byteBuffer.ReadShort() / 100f;
+
+        type = byteBuffer.ReadByte();
+        if (type != GameObjectTypes.Block) return;
+        ColliderType = byteBuffer.ReadByte();
+        Radius = (float)byteBuffer.ReadShort() / 100f;
+        if (ColliderType == ColliderTypes.CapsuleCollider)
+            Height = (float)byteBuffer.ReadShort() / 100f;
     }
 
 }

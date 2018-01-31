@@ -31,7 +31,6 @@ public class ConfigManager
             XmlElement child = childList[j] as XmlElement;
             string nn = child.GetAttribute("n");
             string value = child.InnerXml;
-
             if (nn == "G")
             {
                 string[] values = value.Split(',');
@@ -50,10 +49,10 @@ public class ConfigManager
 
                 sceneInfo.AddGameObjectInfo(gameObjectInfo);
             }
-            //else if(nn == "GS")
-            //{
-            //    sceneInfo.GridsContent = value;
-            //}
+            else if (nn == "GS")
+            {
+                sceneInfo.GridsContent = value;
+            }
         }
         sceneResConfigInfos.Add(sceneName, sceneInfo);
     }
@@ -455,7 +454,7 @@ public class ConfigManager
                 stopWatch.Start();
                 xmlDoc.Load(path);
                 stopWatch.Stop();
-                Debug.LogError("loadxml:" + abName + " 用时:" + stopWatch.ElapsedMilliseconds + "毫秒");
+                Debug.Log("loadxml:" + abName + " 用时:" + stopWatch.ElapsedMilliseconds + "毫秒");
             }
         }
         if (xmlDoc != null)

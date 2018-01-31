@@ -13,7 +13,6 @@ public class AutoMakeSceneConfig
     [MenuItem("GameTools/自动生成场景配置", false, 5)]
     public static void AutoMakeScene()
     {
-        
         UnityEngine.SceneManagement.Scene scene = EditorSceneManager.GetActiveScene();
         Debug.Log("scene name:" + scene.name + " / scene path:" + scene.path);
         GameObject[] gos = scene.GetRootGameObjects();
@@ -173,6 +172,7 @@ public class AutoMakeSceneConfig
         StringBuilder strinBuilder = new StringBuilder();
         if (terrainGo != null)
         {
+            //生成网格用来寻路
             MeshRenderer meshRender = terrainGo.GetComponent<MeshRenderer>();
             Vector3 size = meshRender.bounds.size;
             Vector3 center = meshRender.bounds.center;

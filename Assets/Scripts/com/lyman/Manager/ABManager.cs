@@ -139,7 +139,7 @@ public class ABManager
                 stopwatch.Start();
                 bundle = AssetBundle.LoadFromFile(uri); //关联的素材绑定
                 stopwatch.Stop();
-                Debug.LogError("创建:" + uri + ",用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
+                Debug.Log("创建:" + uri + ",用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
                 bundles.Add(abName, bundle);
             }
             else
@@ -163,6 +163,11 @@ public class ABManager
     /// <param name="onCreateCompleteHandler"></param>
     public void LoadAssetBundleAsync(string abName,Action onCreateCompleteHandler)
     {
+        abName = abName.ToLower();
+        if (!abName.EndsWith(GameConst.ABExtensionName))
+        {
+            abName += GameConst.ABExtensionName;
+        }
         bool haveBundle = HaveBundle(abName);
         if (haveBundle)
         {
@@ -283,7 +288,7 @@ public class CreateAssetBundleAsync
     {
         assetBundleName = abName;
         assetBundleCacheHandler = abCacheHandler;
-        assetBundleCreateRequest = AssetBundle.LoadFromFileAsync(abName);
+        assetBundleCreateRequest = AssetBundle.LoadFromFileAsync(GameConst.DataPath + abName);
         timerInfo = TimerManager.AddHandler(OnUpdateHandler);
     }
 

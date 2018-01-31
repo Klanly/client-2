@@ -116,9 +116,9 @@
     <Compile Include="Assets\CharacterEditor\AttributeSetting.cs" />
     <Compile Include="Assets\CharacterEditor\CharacterEditor.cs" />
     <Compile Include="Assets\CharacterEditor\DataManager.cs" />
+    <Compile Include="Assets\CharacterEditor\EditorCameraController.cs" />
     <Compile Include="Assets\CharacterEditor\EffectList.cs" />
     <Compile Include="Assets\CharacterEditor\ModelList.cs" />
-    <Compile Include="Assets\CharacterEditor\core\EditorCameraController.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\MapEditor\CopyInfoView.cs" />
@@ -166,6 +166,7 @@
     <Compile Include="Assets\Scripts\com\lyman\Manager\ResourceManager.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Manager\SEffectManager.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Manager\TimerManager.cs" />
+    <Compile Include="Assets\Scripts\com\lyman\NetWork\ByteBuffer.cs" />
     <Compile Include="Assets\Scripts\com\lyman\ObjectPool\GameObjectPool.cs" />
     <Compile Include="Assets\Scripts\com\lyman\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\com\lyman\Scene\Scene.cs" />
