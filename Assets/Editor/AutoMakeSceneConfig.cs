@@ -8,7 +8,7 @@ using System.IO;
 using System.Text;
 public class AutoMakeSceneConfig
 {
-
+    public static bool IsSaveByBytes = true;
     
     [MenuItem("GameTools/自动生成场景配置", false, 5)]
     public static void AutoMakeScene()
@@ -17,6 +17,7 @@ public class AutoMakeSceneConfig
         Debug.Log("scene name:" + scene.name + " / scene path:" + scene.path);
         GameObject[] gos = scene.GetRootGameObjects();
         SceneInfo sceneInfo = new SceneInfo();
+        sceneInfo.SaveGridsByBytes = IsSaveByBytes;
         int count = 0;
         int j;
         
@@ -169,6 +170,131 @@ public class AutoMakeSceneConfig
         {
             nonblocks.SetActive(false);
         }
+        if (sceneInfo.SaveGridsByBytes)
+        {
+            MakeGridToBytes(terrainGo, sceneInfo);
+        }
+        else
+        {
+            MakeGridToString(terrainGo, sceneInfo);
+        }
+        if (nonblocks != null)
+        {
+            nonblocks.SetActive(true);
+        }
+
+        SaveConfig(sceneInfo, scene.path);
+
+        AssetDatabase.Refresh();
+    }
+
+    private static void MakeGridToBytes(GameObject terrainGo, SceneInfo sceneInfo)
+    {
+        if (terrainGo != null)
+        {
+            //生成网格用来寻路
+            MeshRenderer meshRender = terrainGo.GetComponent<MeshRenderer>();
+            Vector3 size = meshRender.bounds.size;
+            Vector3 center = meshRender.bounds.center;
+            ByteBuffer byteBuffer = new ByteBuffer();
+            float allX = size.x;// + Mathf.Abs(center.x)*2f;
+            float allZ = size.z;// + Mathf.Abs(center.z)*2f;
+            int xLength = 0;
+            int zLength = 0;
+            if (allX % 2f != 0f)
+            {
+                xLength = (int)allX + 1;
+                if (xLength % 2 != 0)
+                {
+                    xLength++;
+                }
+            }
+            else
+            {
+                xLength = (int)allX;
+            }
+            if (allZ % 2f != 0f)
+            {
+                zLength = (int)allZ + 1;
+                if (zLength % 2 != 0)
+                {
+                    zLength++;
+                }
+            }
+            else
+            {
+                zLength = (int)allZ;
+            }
+            byte[,] grids = new byte[xLength, zLength];
+            byteBuffer.WriteUShort((ushort)xLength);
+            byteBuffer.WriteUShort((ushort)zLength);
+            Debug.Log("xLength:" + xLength + " / zLength:" + zLength);
+
+            int offsetZ = 0;
+            if (center.z != 0f)
+            {
+                offsetZ = center.z - (int)center.z != 0f ? (int)center.z + (center.z > 0f ? 1 : -1) : (int)center.z;
+            }
+            int offsetX = 0;
+            if (center.x != 0f)
+                offsetX = center.x - (int)center.x != 0f ? (int)center.x + (center.x > 0f ? 1 : -1) : (int)center.x;
+            byteBuffer.WriteUShort((ushort)offsetX);
+            byteBuffer.WriteUShort((ushort)offsetZ);
+            //Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
+
+            int startX = -xLength / 2 + offsetX;
+            int endX = xLength / 2 + offsetX;
+            //Debug.Log("startX:" + startX + " / endX:" + endX);
+
+            int startZ = -zLength / 2 + offsetZ;
+            int endZ = zLength / 2 + offsetZ;
+
+            //Debug.Log("startZ:" + startZ + " / endZ:" + endZ);
+
+            int x = 0;
+            int j = 0;
+            for (int i = startX; i < endX; ++i)
+            {
+                float xx = i + 0.5f;
+                int y = 0;
+                for (j = startZ; j < endZ; ++j)
+                {
+                    float yy = j + 0.5f;
+                    //todo 射线检测
+                    Vector3 position = Vector3.zero;
+                    RaycastHit raycastHit;
+                    Vector3 startPosition = new Vector3(xx, 30f, yy);
+                    bool isHit = Physics.Raycast(startPosition, Vector3.down * 50f, out raycastHit);
+                    if (isHit)
+                    {
+                        position = raycastHit.point;
+                        if (raycastHit.transform.tag == GameObjectTags.Block)
+                        {
+                            grids[x, y] = 0;
+                        }
+                        else if (raycastHit.transform.tag == GameObjectTags.Terrain)
+                        {
+                            //Debug.Log(raycastHit.point);
+                            grids[x, y] = 1;
+                        }
+                    }
+                    else
+                    {
+                        grids[x, y] = 0;
+                    }
+                    
+                    byteBuffer.WriteBoolean(grids[x, y] == 1);
+                    byteBuffer.WriteInt((int)(position.y * 100f));
+                    y++;
+                }
+                x++;
+            }
+            sceneInfo.GridsBytes = byteBuffer.ToBytes();
+        }
+    }
+
+    private static void MakeGridToString(GameObject terrainGo,SceneInfo sceneInfo)
+    {
         StringBuilder strinBuilder = new StringBuilder();
         if (terrainGo != null)
         {
@@ -209,7 +335,7 @@ public class AutoMakeSceneConfig
             }
 
             byte[,] grids = new byte[xLength, zLength];
-            
+
 
             strinBuilder.Append(xLength.ToString());
             strinBuilder.Append(",");
@@ -217,7 +343,7 @@ public class AutoMakeSceneConfig
             strinBuilder.Append(",");
 
 
-            Debug.Log("xLength:"+xLength+" / zLength:"+zLength);
+            Debug.Log("xLength:" + xLength + " / zLength:" + zLength);
 
             int offsetZ = 0;
             if (center.z != 0f)
@@ -225,15 +351,15 @@ public class AutoMakeSceneConfig
                 offsetZ = center.z - (int)center.z != 0f ? (int)center.z + (center.z > 0f ? 1 : -1) : (int)center.z;
             }
             int offsetX = 0;
-            if(center.x != 0f)
-                offsetX = center.x - (int)center.x != 0f ? (int)center.x + (center.x > 0f ? 1:-1) : (int)center.x;
+            if (center.x != 0f)
+                offsetX = center.x - (int)center.x != 0f ? (int)center.x + (center.x > 0f ? 1 : -1) : (int)center.x;
 
             strinBuilder.Append(offsetX.ToString());
             strinBuilder.Append(",");
             strinBuilder.Append(offsetZ.ToString());
             strinBuilder.Append("/");
 
-            
+
 
             //Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
 
@@ -245,9 +371,9 @@ public class AutoMakeSceneConfig
             int endZ = zLength / 2 + offsetZ;
 
             //Debug.Log("startZ:" + startZ + " / endZ:" + endZ);
-            
+
             int x = 0;
-            
+            int j = 0;
             for (int i = startX; i < endX; ++i)
             {
                 float xx = i + 0.5f;
@@ -263,7 +389,7 @@ public class AutoMakeSceneConfig
                     Vector3 position = Vector3.zero;
                     RaycastHit raycastHit;
                     Vector3 startPosition = new Vector3(xx, 30f, yy);
-                    bool isHit = Physics.Raycast(startPosition, Vector3.down*50f, out raycastHit);
+                    bool isHit = Physics.Raycast(startPosition, Vector3.down * 50f, out raycastHit);
                     if (isHit)
                     {
                         position = raycastHit.point;
@@ -271,7 +397,7 @@ public class AutoMakeSceneConfig
                         {
                             grids[x, y] = 0;
                         }
-                        else if(raycastHit.transform.tag == GameObjectTags.Terrain)
+                        else if (raycastHit.transform.tag == GameObjectTags.Terrain)
                         {
                             //Debug.Log(raycastHit.point);
                             grids[x, y] = 1;
@@ -283,8 +409,8 @@ public class AutoMakeSceneConfig
                     }
                     strinBuilder.Append(grids[x, y].ToString());
                     strinBuilder.Append(",");
-                   // strinBuilder.Append(position.x.ToString("0.00"));
-                   // strinBuilder.Append(",");
+                    // strinBuilder.Append(position.x.ToString("0.00"));
+                    // strinBuilder.Append(",");
                     strinBuilder.Append(position.y.ToString("0.00"));
                     //strinBuilder.Append(",");
                     //strinBuilder.Append(position.z.ToString("0.00"));
@@ -303,17 +429,9 @@ public class AutoMakeSceneConfig
                 x++;
 
             }
-            Debug.Log("x:"+x);
+            Debug.Log("x:" + x);
         }
         sceneInfo.GridsContent = strinBuilder.ToString();
-        if (nonblocks != null)
-        {
-            nonblocks.SetActive(true);
-        }
-
-        SaveConfig(sceneInfo, scene.path);
-
-        AssetDatabase.Refresh();
     }
 
 
@@ -406,6 +524,23 @@ public class AutoMakeSceneConfig
         SW = File.CreateText(path);
         SW.WriteLine(content);
         SW.Close();
+
+        if (sceneInfo.SaveGridsByBytes)
+        {
+            //存为byte stream
+            path = Application.dataPath + "/ArtAssets/prefabs/configs/map_res/" + name + "_grids" + ".byte";
+            FileStream fileStream = File.Create(path);
+            fileStream.Write(sceneInfo.GridsBytes, 0, sceneInfo.GridsBytes.Length);
+            fileStream.Close();
+        }
+        else
+        {
+            // 存为txt
+            path = Application.dataPath + "/ArtAssets/prefabs/configs/map_res/" + name + "_grids" + ".txt";
+            SW = File.CreateText(path);
+            SW.WriteLine(content);
+            SW.Close();
+        }
     }
 
     [MenuItem("GameTools/保存该场景预制件的烘焙信息", false, 6)]

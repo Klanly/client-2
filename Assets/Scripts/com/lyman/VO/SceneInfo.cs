@@ -6,7 +6,14 @@ using System.Text;
 using System.IO;
 public class SceneInfo
 {
-    
+    private bool saveGridsByBytes;
+
+    public bool SaveGridsByBytes
+    {
+        get { return saveGridsByBytes; }
+        set { saveGridsByBytes = value; }
+    }
+
 
     private string gridsContent = string.Empty;
     private string sceneName = string.Empty;
@@ -84,6 +91,17 @@ public class SceneInfo
             gridsContent = value;
         }
     }
+    private byte[] gridsBytes;
+    public byte[] GridsBytes
+    {
+        set
+        {
+            gridsBytes = value;
+        }
+        get { return gridsBytes; }
+    }
+
+
     private bool isParsed = false;
     private string[] splits;
     public void ParseGrids()
@@ -127,6 +145,30 @@ public class SceneInfo
         //stopWatch.Stop();
         //Debug.LogError("解析" + SceneName + ".xml用时:" + stopWatch.ElapsedMilliseconds);
     }
+
+    public void ParseGridsByBytes()
+    {
+        ByteBuffer byteBuffer = new ByteBuffer(gridsBytes);
+        xLength = byteBuffer.ReadUShort();
+        zLength = byteBuffer.ReadUShort();
+        harfXLength = (float)xLength / 2;
+        harfZLength = (float)zLength / 2;
+        offsetX = byteBuffer.ReadUShort();
+        offsetZ = byteBuffer.ReadUShort();
+        grids = new byte[xLength, zLength];
+        yPositions = new float[xLength, zLength];
+        for (int i = 0; i < xLength; ++i)
+        {
+            for (int j = 0; j < zLength; ++j)
+            {
+                grids[i, j] = (byte)(byteBuffer.ReadBoolean() ? 1 : 0);
+                yPositions[i, j] = (float)byteBuffer.ReadInt32() / 100f;
+            }
+        }
+
+    }
+
+
 
     private Vector3 tempVector3 = Vector3.zero;
     public Vector3 GridToPixel(int xIndex,int zIndex)
@@ -183,11 +225,11 @@ public class SceneInfo
             stringBuilder.Append("\n");
         }
 
-        stringBuilder.Append("\t");
-        stringBuilder.Append("<a n='GS'>");
-        stringBuilder.Append(gridsContent);
-        stringBuilder.Append("</a>");
-        stringBuilder.Append("\n");
+        //stringBuilder.Append("\t");
+        //stringBuilder.Append("<a n='GS'>");
+        //stringBuilder.Append(gridsContent);
+        //stringBuilder.Append("</a>");
+        //stringBuilder.Append("\n");
 
         stringBuilder.Append("</table>");
         return stringBuilder.ToString();
@@ -210,13 +252,7 @@ public class SceneInfo
             byteBuffer.WriteBytes(bytes);
         }
         return byteBuffer.ToBytes();
-    }
-
-    public void GridsToBytes()
-    {
-
-    }
-        
+    } 
 
 }
 
