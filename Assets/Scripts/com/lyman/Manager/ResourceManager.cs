@@ -66,6 +66,16 @@ public class ResourceManager
         }
         return string.Empty;
     }
+    public static byte[] GetBytes(string abPath, string assetName)
+    {
+        if (abManager != null)
+        {
+            TextAsset textAsset = abManager.LoadTextAsset(abPath, assetName);
+            if (textAsset != null)
+                return textAsset.bytes;
+        }
+        return null;
+    }
 
 
 

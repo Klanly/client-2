@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1407686606
+CRC: 1432739364
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ba26e64276b310b2b381c3123bd6ea38
+    Hash: 32c850cdce41ab4c24efc8c1210439e1
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1033bf7ddfd4c6d43e7a6382c0a0a61a
@@ -18,4 +18,5 @@ Assets:
 - Assets/ArtAssets/prefabs/configs/characters/arm_dwarf_archer_01.xml
 - Assets/ArtAssets/prefabs/configs/shakecamera.xml
 - Assets/ArtAssets/prefabs/configs/characters/h_human_mars_01.xml
+- Assets/ArtAssets/prefabs/configs/map_res/test_scene_grids.txt
 Dependencies: []

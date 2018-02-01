@@ -14,6 +14,9 @@ public class ConfigManager
     //场景资源配置
     private static Dictionary<string, SceneInfo> sceneResConfigInfos = new Dictionary<string, SceneInfo>();
 
+    //场景资源配置
+    private static Dictionary<string, SceneInfo> sceneGrids = new Dictionary<string, SceneInfo>();
+
     private static void ParseSceneConfig(string sceneName, XmlNodeList nodeList)
     {
         if (nodeList == null)
@@ -75,6 +78,24 @@ public class ConfigManager
             }
         }
         return sceneInfo;
+    }
+
+    public static void ParseSceneGrids(string sceneName)
+    {
+        SceneInfo sceneInfo;
+        string name = "map_res/" + sceneName.ToLower();
+        sceneResConfigInfos.TryGetValue(name, out sceneInfo);
+        if (sceneInfo != null && !sceneInfo.Parsed)
+        {
+            name += "_grids";
+            byte[] bytes = ResourceManager.GetBytes(GameConst.ConfigABDirectory, name);
+            if (bytes != null)
+            {
+                sceneInfo.GridsBytes = bytes;
+                sceneInfo.ParseGridsByBytes();
+                sceneInfo.GridsBytes = null;
+            }
+        }
     }
 
 

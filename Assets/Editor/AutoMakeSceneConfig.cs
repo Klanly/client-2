@@ -528,7 +528,7 @@ public class AutoMakeSceneConfig
         if (sceneInfo.SaveGridsByBytes)
         {
             //存为byte stream
-            path = Application.dataPath + "/ArtAssets/prefabs/configs/map_res/" + name + "_grids" + ".byte";
+            path = Application.dataPath + "/ArtAssets/prefabs/configs/map_res/" + name + "_grids" + ".txt";
             FileStream fileStream = File.Create(path);
             fileStream.Write(sceneInfo.GridsBytes, 0, sceneInfo.GridsBytes.Length);
             fileStream.Close();
@@ -538,7 +538,7 @@ public class AutoMakeSceneConfig
             // 存为txt
             path = Application.dataPath + "/ArtAssets/prefabs/configs/map_res/" + name + "_grids" + ".txt";
             SW = File.CreateText(path);
-            SW.WriteLine(content);
+            SW.WriteLine(sceneInfo.GridsContent);
             SW.Close();
         }
     }

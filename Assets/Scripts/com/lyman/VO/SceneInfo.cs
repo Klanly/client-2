@@ -90,6 +90,7 @@ public class SceneInfo
         {
             gridsContent = value;
         }
+        get { return gridsContent; }
     }
     private byte[] gridsBytes;
     public byte[] GridsBytes
@@ -146,8 +147,18 @@ public class SceneInfo
         //Debug.LogError("解析" + SceneName + ".xml用时:" + stopWatch.ElapsedMilliseconds);
     }
 
+
+    private bool parseed = false;
+
+    public bool Parsed
+    {
+        get { return parseed; }
+    }
+
     public void ParseGridsByBytes()
     {
+        if (parseed) return;
+        parseed = true;
         ByteBuffer byteBuffer = new ByteBuffer(gridsBytes);
         xLength = byteBuffer.ReadUShort();
         zLength = byteBuffer.ReadUShort();
@@ -165,7 +176,6 @@ public class SceneInfo
                 yPositions[i, j] = (float)byteBuffer.ReadInt32() / 100f;
             }
         }
-
     }
 
 

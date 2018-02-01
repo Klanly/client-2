@@ -528,6 +528,7 @@
     <None Include="Assets\ArtAssets\prefabs\configs\characters\h_human_mars_01.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\copy\copy_1.xml" />
     <None Include="Assets\ArtAssets\prefabs\configs\map_res\test_scene.xml" />
+    <None Include="Assets\ArtAssets\prefabs\configs\map_res\test_scene_grids.txt" />
     <None Include="Assets\ArtAssets\prefabs\configs\shakecamera.xml" />
     <None Include="Assets\ArtAssets\prefabs\fonts\GlodYellow_small_font\GoldYellowSmall.fnt" />
     <None Include="Assets\ArtAssets\prefabs\fonts\Gold_font\Glod_font1.fnt" />
