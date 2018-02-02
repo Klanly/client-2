@@ -249,7 +249,7 @@ public class DataManager
         characterInfos.TryGetValue(modelName, out characterConfigInfo);
         if (characterConfigInfo == null)
         {
-            characterConfigInfo = ConfigManager.GetCharacterConfigInfo(modelName,true);
+            characterConfigInfo = ConfigManager.GetCharacterConfigInfo(modelName);
             if (characterConfigInfo != null)
             {
                 characterInfos.Add(modelName, characterConfigInfo);

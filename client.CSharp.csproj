@@ -469,7 +469,6 @@
     <None Include="Assets\ArtAssets\original\Effects\plug-in\SM_TransparentRim.shader" />
     <None Include="Assets\ArtAssets\original\Effects\plug-in\UI-Alpha.shader" />
     <None Include="Assets\ArtAssets\original\Effects\plug-in\effect_Distort.shader" />
-    <None Include="Assets\ArtAssets\original\Scenes\test_scene\test_scene.xml" />
     <None Include="Assets\ArtAssets\original\T4M\READMEFIRST.txt" />
     <None Include="Assets\ArtAssets\original\T4M\Shaders\PreviewT4M.shader" />
     <None Include="Assets\ArtAssets\original\T4M\Shaders\PreviewT4M1.shader" />

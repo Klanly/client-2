@@ -60,7 +60,7 @@ public class ABManager
             stopwatch.Start();
             TextAsset textAsset = bundle.LoadAsset<TextAsset>(textName);
             stopwatch.Stop();
-            Debug.LogError("LoadTextAsset:" + textName + ",用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
+            Debug.Log("LoadTextAsset:" + textName + ",用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
             return textAsset;
         }
         return null;

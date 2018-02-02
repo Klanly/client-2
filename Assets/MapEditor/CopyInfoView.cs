@@ -37,10 +37,11 @@ public class CopyInfoView
         thingsListView.Clear();
         things.Clear();
         GameObjectInfo gameObjectInfo = null;
-        for (int i = 0; i < sceneInfo.Things.Count; ++i)
+        for (int i = 0; i < sceneInfo.AllGameObjectInfos.Count; ++i)
         {
-            gameObjectInfo = sceneInfo.Things[i];
-            things.Add(gameObjectInfo.myIndex+":"+ gameObjectInfo.PrefabName);
+            gameObjectInfo = sceneInfo.AllGameObjectInfos[i];
+            if(gameObjectInfo.Type != GameObjectTypes.Effect)
+                things.Add(gameObjectInfo.myIndex+":"+ gameObjectInfo.PrefabName);
         }
         gameObjectInfo = sceneInfo.TerrainInfo;
         things.Add(gameObjectInfo.myIndex + ":" + gameObjectInfo.PrefabName);

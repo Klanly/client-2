@@ -18,10 +18,18 @@ public class SceneInfo
     private string gridsContent = string.Empty;
     private string sceneName = string.Empty;
     private GameObjectInfo terrainInfo;
-    private List<GameObjectInfo> things = new List<GameObjectInfo>();
+    private List<GameObjectInfo> blocks = new List<GameObjectInfo>();
+    private List<GameObjectInfo> nonblocks = new List<GameObjectInfo>();
     private List<GameObjectInfo> effects = new List<GameObjectInfo>();
+    private List<GameObjectInfo> lights = new List<GameObjectInfo>();
+
     private List<GameObjectInfo> allGameObjectInfos = new List<GameObjectInfo>();
 
+
+    public List<GameObjectInfo> AllGameObjectInfos
+    {
+        get { return allGameObjectInfos; }
+    }
 
     private int xLength;
     private int zLength;
@@ -44,31 +52,51 @@ public class SceneInfo
     private float harfGridSize = gridSize / 2f;
 
 
-    public List<GameObjectInfo> Things
+    public List<GameObjectInfo> NonBlocks
     {
-        get { return things; }
+        get { return nonblocks; }
+    }
+
+    public List<GameObjectInfo> Blocks
+    {
+        get { return blocks; }
     }
 
     public List<GameObjectInfo> Effects
     {
         get { return effects; }
     }
+    public List<GameObjectInfo> Lights
+    {
+        get { return lights; }
+    }
 
     public void AddGameObjectInfo(GameObjectInfo gameObjectInfo)
     {
         if (gameObjectInfo == null) return;
-        allGameObjectInfos.Add(gameObjectInfo);
-        if (gameObjectInfo.IsTerrain)
+        if (gameObjectInfo.Type != GameObjectTypes.Terrain)
         {
-            terrainInfo = gameObjectInfo;
-        }
-        else if (gameObjectInfo.Type == GameObjectTypes.Effect)
-        {
-            effects.Add(gameObjectInfo);
+            allGameObjectInfos.Add(gameObjectInfo);
+            if (gameObjectInfo.Type == GameObjectTypes.Effect)
+            {
+                effects.Add(gameObjectInfo);
+            }
+            else if (gameObjectInfo.Type == GameObjectTypes.Block)
+            {
+                blocks.Add(gameObjectInfo);
+            }
+            else if (gameObjectInfo.Type == GameObjectTypes.NonBlock)
+            {
+                nonblocks.Add(gameObjectInfo);
+            }
+            else if (gameObjectInfo.Type == GameObjectTypes.Light)
+            {
+                lights.Add(gameObjectInfo);
+            }
         }
         else
         {
-            things.Add(gameObjectInfo);
+            terrainInfo = gameObjectInfo;
         }
     }
 
@@ -216,24 +244,17 @@ public class SceneInfo
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.Append("<?xml version='1.0' encoding='utf-8'?>\n");
         stringBuilder.Append("<table n='SceneConfig'>\n");
-        things.Add(terrainInfo);
+        allGameObjectInfos.Add(terrainInfo);
         GameObjectInfo gameObjectInfo = null;
-        int length = things.Count;
+        int length = allGameObjectInfos.Count;
         for (int i = 0; i < length; ++i)
         {
             stringBuilder.Append("\t");
-            gameObjectInfo = things[i];
+            gameObjectInfo = allGameObjectInfos[i];
             stringBuilder.Append(gameObjectInfo.ToXMLString());
             stringBuilder.Append("\n");
         }
-        length = effects.Count;
-        for (int i = 0; i < length; ++i)
-        {
-            stringBuilder.Append("\t");
-            gameObjectInfo = effects[i];
-            stringBuilder.Append(gameObjectInfo.ToXMLString());
-            stringBuilder.Append("\n");
-        }
+        allGameObjectInfos.Remove(terrainInfo);
 
         //stringBuilder.Append("\t");
         //stringBuilder.Append("<a n='GS'>");
@@ -248,7 +269,8 @@ public class SceneInfo
     public byte[] GameObjectsToBytes()
     {
         ByteBuffer byteBuffer = new ByteBuffer();
-        things.Add(terrainInfo);
+        if(!allGameObjectInfos.Contains(terrainInfo))
+            allGameObjectInfos.Add(terrainInfo);
         GameObjectInfo gameObjectInfo = null;
         Byte[] bytes;
         int length = allGameObjectInfos.Count;
@@ -261,6 +283,7 @@ public class SceneInfo
             byteBuffer.WriteInt(bytes.Length);
             byteBuffer.WriteBytes(bytes);
         }
+        allGameObjectInfos.Remove(terrainInfo);
         return byteBuffer.ToBytes();
     } 
 
@@ -285,7 +308,7 @@ public class GameObjectInfo
         myIndex = Index;
     }
 
-    public bool IsTerrain = false;
+    
     public string PrefabName;
     public int myIndex;
     public float X;
@@ -324,7 +347,6 @@ public class GameObjectInfo
         set
         {
             type = value;
-            IsTerrain = type == GameObjectTypes.Terrain;
         }
     }
 
@@ -333,8 +355,6 @@ public class GameObjectInfo
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.Append("<a n='G'>");
         stringBuilder.Append(PrefabName);
-        stringBuilder.Append(",");
-        stringBuilder.Append(IsTerrain ? "1" : "0");
         stringBuilder.Append(",");
         stringBuilder.Append(X.ToString("0.00"));
         stringBuilder.Append(",");

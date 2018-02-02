@@ -48,27 +48,42 @@ public class Scene
 
     private Vector3 tempVector3 = Vector3.zero;
 
-    private List<SceneThing> sceneThings = new List<SceneThing>();
-    private List<SceneThing> sceneEffects = new List<SceneThing>();
+    private List<SceneThing> blocks = new List<SceneThing>();
+    private List<SceneThing> nonBlocks = new List<SceneThing>();
+    private List<SceneThing> effects = new List<SceneThing>();
 
     public void LoadRangeThings(Vector3 position)
     {
-        SyncShowThing(sceneInfo.Things, position, sceneThings);
-        SyncShowThing(sceneInfo.Effects, position, sceneEffects);
+
+        SyncShowThing(sceneInfo.Blocks, position, blocks, distance);
+        SyncShowThing(sceneInfo.NonBlocks, position, nonBlocks, distance);
+        SyncShowThing(sceneInfo.Effects, position, effects, distance);
     }
 
-    private void SyncShowThing(List<GameObjectInfo> list,Vector3 position, List<SceneThing> things)
+
+    public void LoadAllThings()
+    {
+        SyncShowThing(sceneInfo.Blocks, Vector3.zero, blocks, 10000f);
+        SyncShowThing(sceneInfo.NonBlocks, Vector3.zero, nonBlocks, 10000f);
+        SyncShowThing(sceneInfo.Effects, Vector3.zero, effects, 10000f);
+    }
+
+
+    private void SyncShowThing(List<GameObjectInfo> list,Vector3 position, List<SceneThing> things,float range)
     {
         GameObjectInfo gameObjectInfo;
-        SceneThing sceneThing;
+        SceneThing sceneThing = null;
         int i = 0;
         for (i = 0; i < list.Count; ++i)
         {
             gameObjectInfo = list[i];
             tempVector3.Set(gameObjectInfo.X, gameObjectInfo.Y, gameObjectInfo.Z);
             float tdistance = Vector3.Distance(position, tempVector3);
-            sceneThing = things[i];
-            if (tdistance <= distance)
+            if (things.Count > i)
+            {
+                sceneThing = things[i];
+            }
+            if (tdistance <= range)
             {
                 if (sceneThing == null)
                 {
@@ -77,7 +92,7 @@ public class Scene
                     sceneThing.NonblocksContainer = nonblocksContainer;
                     sceneThing.EffectContainer = effectsContainer;
                     sceneThing.LightsContainer = lightsContainer;
-                    things[i] = sceneThing;
+                    things.Add(sceneThing);
                 }
                 sceneThing.Init(gameObjectInfo);
                 sceneThing.Show();
@@ -86,6 +101,7 @@ public class Scene
             {
                 sceneThing.Hide();
             }
+            sceneThing = null;
         }
     }
 

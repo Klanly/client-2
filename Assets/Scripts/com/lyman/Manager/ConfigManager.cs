@@ -38,18 +38,16 @@ public class ConfigManager
             {
                 string[] values = value.Split(',');
                 gameObjectInfo.PrefabName = values[0];
-                gameObjectInfo.IsTerrain = values[1] == "1" ? true : false;
-                gameObjectInfo.X = float.Parse(values[2]);
-                gameObjectInfo.Y = float.Parse(values[3]);
-                gameObjectInfo.Z = float.Parse(values[4]);
-                gameObjectInfo.RotationX = float.Parse(values[5]);
-                gameObjectInfo.RotationY = float.Parse(values[6]);
-                gameObjectInfo.RotationZ = float.Parse(values[7]);
-                gameObjectInfo.ScaleX = float.Parse(values[8]);
-                gameObjectInfo.ScaleY = float.Parse(values[9]);
-                gameObjectInfo.ScaleZ = float.Parse(values[10]);
-                gameObjectInfo.Type = int.Parse(values[11]);
-
+                gameObjectInfo.X = float.Parse(values[1]);
+                gameObjectInfo.Y = float.Parse(values[2]);
+                gameObjectInfo.Z = float.Parse(values[3]);
+                gameObjectInfo.RotationX = float.Parse(values[4]);
+                gameObjectInfo.RotationY = float.Parse(values[5]);
+                gameObjectInfo.RotationZ = float.Parse(values[6]);
+                gameObjectInfo.ScaleX = float.Parse(values[7]);
+                gameObjectInfo.ScaleY = float.Parse(values[8]);
+                gameObjectInfo.ScaleZ = float.Parse(values[9]);
+                gameObjectInfo.Type = int.Parse(values[10]);
                 sceneInfo.AddGameObjectInfo(gameObjectInfo);
             }
             else if (nn == "GS")
@@ -63,14 +61,14 @@ public class ConfigManager
 
    
     //获取场景资源配置信息
-    public static SceneInfo GetSceneConfigInfo(string sceneName,bool getByFile = false)
+    public static SceneInfo GetSceneConfigInfo(string sceneName)
     {
-        string name ="map_res/" + sceneName.ToLower();
+        string name = sceneName.ToLower();
         SceneInfo sceneInfo;
         sceneResConfigInfos.TryGetValue(name, out sceneInfo);
         if (sceneInfo == null)
         {
-            XmlNodeList xmlnode = GetXML(name, getByFile);
+            XmlNodeList xmlnode = GetXML(name);
             if (xmlnode != null)
             {
                 ParseSceneConfig(name, xmlnode);
@@ -82,20 +80,31 @@ public class ConfigManager
 
     public static void ParseSceneGrids(string sceneName)
     {
+        
         SceneInfo sceneInfo;
-        string name = "map_res/" + sceneName.ToLower();
+        string name = sceneName.ToLower();
         sceneResConfigInfos.TryGetValue(name, out sceneInfo);
         if (sceneInfo != null && !sceneInfo.Parsed)
         {
             name += "_grids";
-            byte[] bytes = ResourceManager.GetBytes(GameConst.ConfigABDirectory, name);
+            System.Diagnostics.Stopwatch stopwatch;
+            stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
+            byte[] bytes = ResourceManager.GetBytes(GameConst.ConfigABPath, name);
+            stopwatch.Stop();
+            Debug.Log("获取" + name + "字节数组用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
             if (bytes != null)
             {
                 sceneInfo.GridsBytes = bytes;
+                stopwatch = new System.Diagnostics.Stopwatch();
+                stopwatch.Start();
                 sceneInfo.ParseGridsByBytes();
+                stopwatch.Stop();
+                Debug.Log("解析" + name + "用时:" + stopwatch.ElapsedMilliseconds + "毫秒");
                 sceneInfo.GridsBytes = null;
             }
         }
+        
     }
 
 
@@ -267,14 +276,14 @@ public class ConfigManager
 
 
     //获取模型配置信息
-    public static CharacterConfigInfo GetCharacterConfigInfo(string modelName, bool isEditor = false)
+    public static CharacterConfigInfo GetCharacterConfigInfo(string modelName)
     {
         CharacterConfigInfo characterConfigInfo;
         characterConfigInfos.TryGetValue(modelName, out characterConfigInfo);
         if (characterConfigInfo == null)
         {
-            string name = "characters/"+modelName.ToLower();
-            XmlNodeList xmlnode = GetXML(name, isEditor);
+            string name = modelName.ToLower();
+            XmlNodeList xmlnode = GetXML(name);
             if (xmlnode != null)
             {
                 ParseSingleCharacter(xmlnode);
@@ -287,14 +296,14 @@ public class ConfigManager
 
     //获取副本配置信息
     private static Dictionary<string, CopyInfo> copyInfos = new Dictionary<string, CopyInfo>();
-    public static CopyInfo GetCopyInfo(string copyName, bool isEditor = false)
+    public static CopyInfo GetCopyInfo(string copyName)
     {
         CopyInfo copyInfo = null;
         copyInfos.TryGetValue(copyName, out copyInfo);
         if (copyInfo == null)
         {
-            string name = "copy/"+copyName.ToLower();
-            XmlNodeList xmlnode = GetXML(name, isEditor);
+            string name = copyName.ToLower();
+            XmlNodeList xmlnode = GetXML(name);
             if (xmlnode != null)
             {
                 ParseCopyInfo(copyName,xmlnode);
@@ -448,36 +457,37 @@ public class ConfigManager
 
     
 
-    public static XmlNodeList GetXML(string abName,bool getByFile = false)
+    public static XmlNodeList GetXML(string abName)
     {
         System.Diagnostics.Stopwatch stopWatch = null;
         
         XmlNodeList nodeList = null;
         XmlDocument xmlDoc = null;
-        if (!getByFile)
-        {
-            string content = ResourceManager.GetText("configs/configs", abName);
-            xmlDoc = new XmlDocument();
-            stopWatch = new System.Diagnostics.Stopwatch();
-            stopWatch.Start();
-            xmlDoc.LoadXml(content);
-            stopWatch.Stop();
-            Debug.LogError("loadxml:"+ abName+" 用时:"+ stopWatch.ElapsedMilliseconds+"毫秒");
-        }
-        else
-        {
+        string content = ResourceManager.GetText(GameConst.ConfigABPath, abName);
+        xmlDoc = new XmlDocument();
+        stopWatch = new System.Diagnostics.Stopwatch();
+        stopWatch.Start();
+        xmlDoc.LoadXml(content);
+        stopWatch.Stop();
+        Debug.Log("loadxml:" + abName + " 用时:" + stopWatch.ElapsedMilliseconds + "毫秒");
+        //if (!getByFile)
+        //{
             
-            string path = Application.dataPath + "/ArtAssets/prefabs/configs/" + abName + ".xml";
-            if (File.Exists(path))
-            {
-                xmlDoc = new XmlDocument();
-                stopWatch = new System.Diagnostics.Stopwatch();
-                stopWatch.Start();
-                xmlDoc.Load(path);
-                stopWatch.Stop();
-                Debug.Log("loadxml:" + abName + " 用时:" + stopWatch.ElapsedMilliseconds + "毫秒");
-            }
-        }
+        //}
+        //else
+        //{
+            
+        //    string path = Application.dataPath + "/ArtAssets/prefabs/configs/" + abName + ".xml";
+        //    if (File.Exists(path))
+        //    {
+        //        xmlDoc = new XmlDocument();
+        //        stopWatch = new System.Diagnostics.Stopwatch();
+        //        stopWatch.Start();
+        //        xmlDoc.Load(path);
+        //        stopWatch.Stop();
+        //        Debug.Log("loadxml:" + abName + " 用时:" + stopWatch.ElapsedMilliseconds + "毫秒");
+        //    }
+        //}
         if (xmlDoc != null)
         {
             nodeList = xmlDoc.GetElementsByTagName("table");

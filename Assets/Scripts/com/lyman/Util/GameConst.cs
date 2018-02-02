@@ -13,7 +13,7 @@ public class GameConst
     private static string assetBundlerPath = string.Empty;
 
     //配置表 ab path
-    public const string ConfigABDirectory = "configs/configs";
+    public const string ConfigABPath = "configs/configs.assetbundle";
     //字体 ab path
     public const string FontABDirectory = "fonts";
     //声音 ab path
