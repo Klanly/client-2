@@ -52,20 +52,23 @@ public class MapEditor : MonoBehaviour
                     }
                 }
                 Alert.Show("初始化中，请稍等......");
-                string abPath = assetbundleList[assetbundleList.Count - 1];
-                assetbundleList.RemoveAt(assetbundleList.Count - 1);
-                ResourceManager.CreateAssetBundleAsync(abPath, onCreateABCompleteHandler);
+                Load();
             }
         }
+    }
+
+    private void Load()
+    {
+        string abPath = assetbundleList[assetbundleList.Count - 1];
+        assetbundleList.RemoveAt(assetbundleList.Count - 1);
+        ResourceManager.CreateAssetBundleAsync(abPath, onCreateABCompleteHandler);
     }
 
     private void onCreateABCompleteHandler()
     {
         if (assetbundleList.Count > 0)
         {
-            string abPath = assetbundleList[assetbundleList.Count - 1];
-            assetbundleList.RemoveAt(assetbundleList.Count - 1);
-            ResourceManager.CreateAssetBundleAsync(abPath, onCreateABCompleteHandler);
+            Load();
         }
         else
         {

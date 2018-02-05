@@ -192,8 +192,9 @@ public class SceneInfo
         zLength = byteBuffer.ReadUShort();
         harfXLength = (float)xLength / 2;
         harfZLength = (float)zLength / 2;
-        offsetX = byteBuffer.ReadUShort();
-        offsetZ = byteBuffer.ReadUShort();
+        offsetX = byteBuffer.ReadShort();
+        offsetZ = byteBuffer.ReadShort();
+
         grids = new byte[xLength, zLength];
         yPositions = new float[xLength, zLength];
         for (int i = 0; i < xLength; ++i)
@@ -205,6 +206,8 @@ public class SceneInfo
             }
         }
     }
+
+
 
 
 

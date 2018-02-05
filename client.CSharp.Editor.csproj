@@ -489,6 +489,8 @@
     <None Include="Assets\UIWidgets\Sample Assets\countries.txt" />
     <None Include="Assets\UIWidgets\changelog.txt" />
     <None Include="Assets\UIWidgets\readme.txt" />
+    <None Include="Assets\grid1.txt" />
+    <None Include="Assets\grids.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

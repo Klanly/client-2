@@ -228,7 +228,7 @@ public class AutoMakeSceneConfig
             byte[,] grids = new byte[xLength, zLength];
             byteBuffer.WriteUShort((ushort)xLength);
             byteBuffer.WriteUShort((ushort)zLength);
-            Debug.Log("xLength:" + xLength + " / zLength:" + zLength);
+            //Debug.Log("xLength:" + xLength + " / zLength:" + zLength);
 
             int offsetZ = 0;
             if (center.z != 0f)
@@ -238,10 +238,9 @@ public class AutoMakeSceneConfig
             int offsetX = 0;
             if (center.x != 0f)
                 offsetX = center.x - (int)center.x != 0f ? (int)center.x + (center.x > 0f ? 1 : -1) : (int)center.x;
-            byteBuffer.WriteUShort((ushort)offsetX);
-            byteBuffer.WriteUShort((ushort)offsetZ);
+            byteBuffer.WriteShort((short)offsetX);
+            byteBuffer.WriteShort((short)offsetZ);
             //Debug.Log("offsetZ:" + offsetZ + " / offsetX:" + offsetX);
-
             int startX = -xLength / 2 + offsetX;
             int endX = xLength / 2 + offsetX;
             //Debug.Log("startX:" + startX + " / endX:" + endX);
@@ -290,7 +289,9 @@ public class AutoMakeSceneConfig
                 x++;
             }
             sceneInfo.GridsBytes = byteBuffer.ToBytes();
+            streamWriter.Close();
         }
+        
     }
 
     private static void MakeGridToString(GameObject terrainGo,SceneInfo sceneInfo)
