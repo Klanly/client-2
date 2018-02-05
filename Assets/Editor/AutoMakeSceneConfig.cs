@@ -289,7 +289,7 @@ public class AutoMakeSceneConfig
                 x++;
             }
             sceneInfo.GridsBytes = byteBuffer.ToBytes();
-            streamWriter.Close();
+            //streamWriter.Close();
         }
         
     }

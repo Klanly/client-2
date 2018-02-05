@@ -122,6 +122,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\MapEditor\CopyInfoView.cs" />
+    <Compile Include="Assets\MapEditor\EntityInfoView.cs" />
     <Compile Include="Assets\MapEditor\MapEditor.cs" />
     <Compile Include="Assets\Scripts\Client.cs" />
     <Compile Include="Assets\Scripts\PrefabLightmapData.cs" />
@@ -754,8 +755,6 @@
     <None Include="Assets\UIWidgets\Sample Assets\countries.txt" />
     <None Include="Assets\UIWidgets\changelog.txt" />
     <None Include="Assets\UIWidgets\readme.txt" />
-    <None Include="Assets\grid1.txt" />
-    <None Include="Assets\grids.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
